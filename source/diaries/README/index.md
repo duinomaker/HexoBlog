@@ -24,7 +24,7 @@ comment:
 </p>
 </div>
 
-<span class="encrypted" iv="BK3S1+ERkBA5BnCa">22 da b4 c9 cd 36 45 a8 7c c5 a0 bd 87 91 35 8c ba 56 43 61 b9 99 0a 70 f4 00 f4 d7 af 02 2c 00 c4 e7 27 9f 24 bd 98 fa 49 d8 a4 d8 1f a9 0a 14</span>
+<span class="encrypted" iv="QXnPMZuv96yrTA+c">2e 7e ff 63 30 b3 bb 99 4b c8 0c af ab 8e a8 c2 1b 2e 11 36 7a cf 30 d4 ac 13 bd 76 e8 63 9c af b9 e7 88 8e 89 7e 28 5e 2d f6 48 7f 5f 4d de b2</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
