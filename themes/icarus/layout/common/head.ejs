@@ -1,0 +1,50 @@
+<meta charset="utf-8" />
+<% if (get_config('meta_generator', true)) { %>
+<meta name="generator" content="Hexo <%= hexo_version() %>" />
+<% } %>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<%- meta() %>
+<meta name="format-detection" content="telephone=no">
+<title><%= page_title() %></title>
+
+<% if (has_config('open_graph')) { %>
+    <%- open_graph({
+        twitter_id: get_config('open_graph.twitter_id'),
+        twitter_site: get_config('open_graph.twitter_site'),
+        google_plus: get_config('open_graph.google_plus'),
+        fb_admins: get_config('open_graph.fb_admins'),
+        fb_app_id: get_config('open_graph.fb_app_id'),
+        image: get_og_image(page)
+    }) %>
+<% } %>
+
+<% if (has_config('canonical_url')) { %>
+<link rel="canonical" href="<%- get_config('canonical_url') %>" />
+<% } %>
+
+<% if (has_config('rss')) { %>
+<link rel="alternative" href="<%- get_config('rss') %>" title="<%= get_config('title') %>" type="application/atom+xml">
+<% } %>
+
+<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/images/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+<link rel="alternate icon" type="image/png" href="/images/favicon.png" />
+<link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="/images/favicon-32x32.ico" />
+<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="/images/favicon-16x16.ico" />
+
+<%- _css(cdn('bulma', 'latest', 'css/bulma.min.css')) %>
+<%- _css(iconcdn()) %>
+<%- _css(fontcdn('Ubuntu:400,600|Source+Code+Pro')) %>
+<%- _css(cdn('highlight.js', 'latest', 'styles/' + get_config('article.highlight.theme') + '.min.css')) %>
+
+<!-- <%- _css('css/particle-bg') %> -->
+<%- _css('css/style') %>
+
+<% if (has_config('plugins')) { %>
+    <% for (let plugin in get_config('plugins')) { %>
+    <%- _partial('plugin/' + plugin, { head: true, plugin: get_config('plugins')[plugin] }) %>
+    <% } %>
+<% } %>

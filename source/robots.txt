@@ -1,0 +1,26 @@
+User-agent: *
+
+Allow: /*
+Allow: /posts/*
+Allow: /posts/*/*
+Allow: /about/*
+
+Disallow: /diaries/*
+Disallow: /diaries/*/*
+Disallow: /repos/*
+Disallow: /repos/*/*
+Disallow: /maintenance/*
+Disallow: /archives/*
+Disallow: /archives/*/*
+Disallow: /archives/*/*/*
+Disallow: /categories/*
+Disallow: /categories/*/*
+Disallow: /tags/*
+Disallow: /tags/*/*
+Disallow: /css/*
+Disallow: /images/*
+Disallow: /js/*
+
+Disallow: /404.html
+
+Sitemap: https://duinomaker.top/sitemap.xml
