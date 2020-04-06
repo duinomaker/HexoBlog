@@ -10,10 +10,10 @@ license: by-sa
 
 最近在学习线段树的有关知识，期间遇到的重要的知识点和不错的习题，我会总结并记录下来。本文将持续更新，并将作为该系列的索引置顶一段时间。当前的索引如下：
 
-<span class="mono">[x]-</span>&hairsp;<a href="/posts/segment-tree/" title="线段树之基本概念" target="_self">基本概念</a>
-<span class="mono">[x]-</span>&hairsp;<a href="/posts/segment-tree-lazytag/" title="线段树之懒惰标记" target="_self">懒惰标记</a>
-<span class="mono">[ ]-</span>&hairsp;扫描线（学习中…）
-<span class="mono">[ ]-</span>&hairsp;……
+<span class="mono has-mr-8">[x]-</span><a href="/posts/segment-tree/" title="线段树之基本概念" target="_self">基本概念</a>
+<span class="mono has-mr-8">[x]-</span><a href="/posts/segment-tree-lazytag/" title="线段树之懒惰标记" target="_self">懒惰标记</a>
+<span class="mono has-mr-8">[ ]-</span>扫描线（学习中…）
+<span class="mono has-mr-8">[ ]-</span>……
 
 <!-- more -->
 
