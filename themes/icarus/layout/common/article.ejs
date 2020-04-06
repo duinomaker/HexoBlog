@@ -73,11 +73,11 @@
         <% } %>
         <% if (!index && post.tags && post.tags.length) { %>
         <div class="article-tags is-size-7 is-uppercase" style="word-wrap: anywhere;">
-            <span class="is-size-6 has-text-grey rigid">#&hairsp;</span><%- list_tags(post.tags, {
+            <span class="is-size-6 has-mr-8 has-text-grey rigid">#</span><%- list_tags(post.tags, {
                 class: 'has-link-grey has-mr-6 rigid',
                 show_count: false,
                 style: '',
-                separator: '&#8203;<span class="is-size-6 has-text-grey rigid">#&hairsp;</span>'
+                separator: '&#8203;<span class="is-size-6 has-mr-8 has-text-grey rigid">#&hairsp;</span>'
             }) %>
         </div>
         <% } %>
