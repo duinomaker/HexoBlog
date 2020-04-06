@@ -3,6 +3,9 @@ User-agent: *
 Allow: /*
 Allow: /posts/*
 Allow: /posts/*/*
+Allow: /SICP/*
+Allow: /SICP/*/*
+Allow: /SICP/*/*/*
 Allow: /about/*
 
 Disallow: /diaries/*
