@@ -25,7 +25,7 @@ comment:
 </p>
 </div>
 
-<span class="encrypted" iv="xLp5yxp7MqqXHutd">7c ff 0f f6 68 cc e4 9b 84 65 17 68 06 23 88 16 8d 84 e2 00 c5 b3 3b 72 9f 77 b7 bd 55 00 80 b5 71 24 e3 08 49 4e a8 22 5f 86 39 4b d2 50 b6 0b</span>
+<span class="encrypted" iv="BZwPEpXACB4NQIZM">9b 85 18 1c ec 1b 9a df 9d b4 27 ca dd a1 60 75 10 af 4b 65 fd db 3b 78 95 fb f0 e1 4e 6c 9d 2a 7a 9f 44 67 36 a3 f4 66 4b 06 25 f1 4b 6f 0b 68</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
@@ -33,7 +33,7 @@ comment:
 
 “这是一段加密文字。”
 
-# 目录
+## 目录
 
 <span class="mono">2020-03-21</span>&nbsp;<a href="/diaries/waste-of-time/">/diaries/waste-of-time/</a>
 <span class="mono">2020-03-18</span>&nbsp;<a href="/diaries/tik-tok/">/diaries/tik-tok/</a>
