@@ -85,7 +85,7 @@ $$\frac1\phi+\frac1{\phi^2}=1,\\;\frac1\psi+\frac1{\psi^2}=1$$
 
 代回上式，算式左右两边相等，所以假设成立。接下来将其拆开：
 
-$${\rm Fib}(n)=\frac{(\phi^n-\psi^n)}{\sqrt5}=\frac{\phi^n}{\sqrt5}-\frac{\psi^n}{\sqrt5}$$
+$${\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5}-\frac{\psi^n}{\sqrt5}$$
 
 要证明 ${\rm Fib}(n)$ 是与 $\frac{\phi^n}{\sqrt5}$ 最接近的整数，需要证明 $\left|\frac{\psi^n}{\sqrt5}\right|<\frac1{2}$ 对于一切非负整数 $n$ 成立：
 
