@@ -106,3 +106,8 @@ $$\begin{eqnarray}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5
 接下来，`(cc n 2)`、`(cc n 3)` 等的情况，可以仿照 `(cc n 1)` 的情况来分析，`kinds` 每增加 `1`，所需时间就得 “乘上一个 $n$”。
 
 总上所述，有 $k$ 种货币时，时间为 $\Theta(n^k)$。
+
+## Exercise 1.15
+
+a. `p` 被调用了 $5$ 次。
+b. 空间增长为 $\Theta(\log n)$ 阶，时间增长为 $\Theta(\log n)$ 阶。
