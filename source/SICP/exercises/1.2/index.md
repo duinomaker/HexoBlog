@@ -77,9 +77,7 @@ $${\rm Fib}(n)={\rm Fib}(n-1)+{\rm Fib}(n-2)$$
 
 若假设成立，则将 ${\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}$ 代入式中，得出：
 
-$$\frac{(\phi^n-\psi^n)}{\sqrt5}=\frac{(\phi^{n-1}-\psi^{n-1})}{\sqrt5}+\frac{(\phi^{n-2}-\psi^{n-2})}{\sqrt5}$$
-
-$$\phi^n-\psi^n=\phi^n\left(\frac1\phi+\frac1{\phi^2}\right)-\psi^n\left(\frac1\psi+\frac1{\psi^2}\right)$$
+$$\begin{eqnarray}\frac{(\phi^n-\psi^n)}{\sqrt5}=\frac{(\phi^{n-1}-\psi^{n-1})}{\sqrt5}+\frac{(\phi^{n-2}-\psi^{n-2})}{\sqrt5}\\\\\phi^n-\psi^n=\phi^n\left(\frac1\phi+\frac1{\phi^2}\right)-\psi^n\left(\frac1\psi+\frac1{\psi^2}\right)\end{eqnarray}$$
 
 由 $\phi=\frac{1+\sqrt5}{2}$ 和 $\psi=\frac{1-\sqrt5}{2}$ 可知：
 
