@@ -3,6 +3,7 @@ title: 博客维护记录
 canonical_url: https://duinomaker.top/maintenance/
 ---
 
+<span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
 <span class="mono">2020-04-05</span> 将博客转移至自己的服务器。
 <span class="mono">2020-04-03</span> 修改标签 white-space 属性为 nowrap，使它们在空白符处不会自动换行。
 <span class="mono">2020-04-03</span> 修改内联代码字体颜色为 #7f7f7f，大小为 0.875em。

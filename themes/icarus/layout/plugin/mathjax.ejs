@@ -1,22 +1,26 @@
-<%- _js(cdn('mathjax', 'latest', 'MathJax.js?config=TeX-MML-AM_CHTML'), true) %>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    MathJax.Hub.Config({
-        'HTML-CSS': {
+    window.MathJax = {
+        chtml: {
             matchFontHeight: false
         },
-        SVG: {
-            matchFontHeight: false
-        },
-        CommonHTML: {
-            matchFontHeight: false
-        },
-        tex2jax: {
+        tex: {
             inlineMath: [
-                ['$','$'],
-                ['\\(','\\)']
-            ]
+                ['$', '$'],
+                ['\\(', '\\)']
+            ],
+            autoload: {
+                color: [],
+                colorV2: ['color']
+            },
+            packages: { '[+]': ['noerrors'] }
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        },
+        loader: {
+            load: ['input/asciimath', '[tex]/noerrors']
         }
-    });
-});
+    };
 </script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.js" id="MathJax-script" defer></script>
