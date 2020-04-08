@@ -3,6 +3,7 @@ title: '摸鱼笔记'
 canonical_url: https://duinomaker.top/diaries/waste-of-time/
 widgets:
 comment:
+license: noshare
 ---
 
 ---

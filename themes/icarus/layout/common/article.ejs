@@ -56,11 +56,13 @@
         <div class="content">
             <%- index && post.excerpt ? post.excerpt : post.content %>
         </div>
-        <% if (!index && post.layout == 'post') { %>
+        <% if (!index && (post.layout == 'post' || post.license != null)) { %>
         <div class="copyright">
             <p><strong class="rigid">本文作者：</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
             <p><strong class="rigid">本文链接：</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
-            <% if (post.license == 'by-sa') { %>
+            <% if (post.license == 'noshare') { %>
+                <p><strong class="rigid">版权声明：</strong>作者对该作品保留所有权利，未经允许禁止转载。</p>
+            <% } else if (post.license == 'by-sa') { %>
                 <p><strong class="rigid">版权声明：</strong>与本博客中的大部分作品不同，本作品采用<a
                 rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"
                 title="Creative Commons Attribution-ShareAlike 4.0 International License" target="_blank">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可，转载请注明出处。</p>

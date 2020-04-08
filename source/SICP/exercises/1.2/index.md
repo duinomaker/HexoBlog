@@ -3,6 +3,7 @@ title: 1.2 过程与它们所产生的计算
 canonical_url: https://duinomaker.top/SICP/exercises/1.2/
 widgets:
 comment:
+license: by-nc-sa
 ---
 
 ---
@@ -74,7 +75,7 @@ $h(n)=2^{2^{2^{\cdot^{\cdot^\cdot}}}}$（共有 $n$ 个 $2$）
 
 $${\rm Fib}(n)={\rm Fib}(n-1)+{\rm Fib}(n-2)$$
 
-若假设成立，则将 ${\rm Fib}(n)=\frac{(\phi^n-\psi^n)}{\sqrt5}$ 代入式中，得出：
+若假设成立，则将 ${\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}$ 代入式中，得出：
 
 $$\frac{(\phi^n-\psi^n)}{\sqrt5}=\frac{(\phi^{n-1}-\psi^{n-1})}{\sqrt5}+\frac{(\phi^{n-2}-\psi^{n-2})}{\sqrt5}$$
 
