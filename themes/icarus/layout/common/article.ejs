@@ -53,7 +53,7 @@
             <%= post.title %>
             <% } %>
         </h1>
-        <div class="content">
+        <div class="content has-math">
             <%- index && post.excerpt ? post.excerpt : post.content %>
         </div>
         <% if (!index && (post.layout == 'post' || post.license != null)) { %>
@@ -186,7 +186,7 @@
 
 <% if (post.title == "About") { %>
 <div class="card">
-    <div class="card-content">
+    <div class="card-content has-math">
         <h3 class="title is-5 has-text-weight-normal">Friends</h3>
         <% for (let i in friends) { %>
         <% if (!(i % per_row)) { %>

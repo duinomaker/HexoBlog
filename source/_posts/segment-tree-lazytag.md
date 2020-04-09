@@ -122,7 +122,7 @@ lazymul[p] *= val;
 
 接下来考虑父区间将信息传递给子区间的 pushdown 操作。以子区间 $1$ 为例，将父区间加上 $3$ 和乘以 $4$ 的信息传入。假设该区间本身就有懒惰标记，其初始值分别为 $lazyadd^\prime_1$ 和 $lazymul^\prime_1$，于是有：
 
-$$\begin{aligned}sum_1 & =\\, (sum^\prime_1\times\overbrace{lazymul^\prime_1}^{lazymul_1} +\overbrace{lazyadd^\prime_1}^{lazyadd_1}\times span_1 + 3\times span_1)\times 4\\\\& =\\, [sum^\prime_1\times\overbrace{lazymul^\prime_1}^{lazymul_1} +\overbrace{(lazyadd^\prime_1+3)}^{lazyadd_1}\times span_1]\times 4\\\\& =\\, sum^\prime_1\times\overbrace{lazymul^\prime_1\times 4}^{lazymul_1} +\overbrace{(lazyadd^\prime_1\times 4+12)}^{lazyadd_1}\times span_1\\\\& =\\, sum^\prime_1\times\overbrace{lazymul^\prime_1\times lazymul_0}^{lazymul_1} +\overbrace{(lazyadd^\prime_1\times lazymul_0+lazyadd_0)}^{lazyadd_1}\times span_1\end{aligned}$$
+$$\begin{aligned}sum_1&=\\,(sum^\prime_1\times\overbrace{lazymul^\prime_1}^{lazymul_1}+\overbrace{lazyadd^\prime_1}^{lazyadd_1}\times span_1+3\times span_1)\times4\\\\&=\\,[sum^\prime_1\times\overbrace{lazymul^\prime_1}^{lazymul_1} +\overbrace{(lazyadd^\prime_1+3)}^{lazyadd_1}\times span_1]\times4\\\\&=\\, sum^\prime_1\times\overbrace{lazymul^\prime_1\times 4}^{lazymul_1}+\overbrace{(lazyadd^\prime_1\times 4+12)}^{lazyadd_1}\times span_1\\\\&=\\, sum^\prime_1\times\overbrace{lazymul^\prime_1\times lazymul_0}^{lazymul_1} +\overbrace{(lazyadd^\prime_1\times lazymul_0+lazyadd_0)}^{lazyadd_1}\times span_1\end{aligned}$$
 
 上式最后一步的转换比较关键，这样就和父区间建立起了联系。这对应了父区间向下传递的代码：
 

@@ -3,6 +3,7 @@ title: SICP Note
 canonical_url: https://duinomaker.top/SICP/
 widgets:
 comment:
+plugins:
 ---
 
 ## Notes

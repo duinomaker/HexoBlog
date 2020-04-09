@@ -34,7 +34,7 @@
 <%- _js(cdn('katex', 'latest', 'dist/contrib/auto-render.min.js'), true) %>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        contents = document.getElementsByClassName("content");
+        contents = document.getElementsByClassName("has-math");
         for (i = 0; i < contents.length; ++i) {
             renderMathInElement(contents[i], {
                 delimiters: [

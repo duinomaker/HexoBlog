@@ -2,6 +2,7 @@
 title: 'Hello, intrepid explorer'
 canonical_url: https://duinomaker.top/diaries/
 comment:
+plugins:
 ---
 
 There're possibly three reasons to explain your clicking on my avatar:

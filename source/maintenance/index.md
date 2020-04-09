@@ -1,13 +1,14 @@
 ---
 title: 博客维护记录
 canonical_url: https://duinomaker.top/maintenance/
+plugins:
 ---
 
 <span class="mono">2020-04-09</span> 将数学公式渲染器 MathJax 更换为 Katex。
 <span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
 <span class="mono">2020-04-06</span> 开设 /SICP/ 用于记录 *SICP* 学习心得。
 <span class="mono">2020-04-05</span> 将博客转移至自己的服务器。
-<span class="mono">2020-04-03</span> 修改标签 white-space 属性为 nowrap，使它们在空白符处不会自动换行。
+<span class="mono">2020-04-03</span> 修改 hashtag 的 white-space 属性为 nowrap，使它们在空白符处不会自动换行。
 <span class="mono">2020-04-03</span> 修改内联代码字体颜色为 currentColor，大小为 0.875em。
 
 <span class="mono">2020-03-30</span> 将版权声明改为中文。
