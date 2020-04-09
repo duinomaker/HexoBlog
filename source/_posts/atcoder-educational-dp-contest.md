@@ -388,7 +388,7 @@ int main()
 用 $dp[x][y][z]$ 表示 $x$ 个盘子里有一个寿司，$y$ 个盘子里有两个寿司，$z$ 个盘子里有三个寿司时，需要选择盘子的期望次数。
 
 一共有 $n$ 个盘子，其中有 $x+y+z$ 个盘子里至少有一个寿司。那么选择到一个有寿司的盘子的期望次数为 $\frac{n}{x+y+z}$ 。选到之后，有 $\frac{x}{x+y+z}$ 的概率选到有一个寿司的盘子、$\frac{y}{x+y+z}$ 的概率选到有两个寿司的盘子、$\frac{z}{x+y+z}$ 的概率选到有三个寿司的盘子。于是就有：
-$$\begin{eqnarray}dp[x][y][z]&=&dp[x-1][y][z]\times\frac{x}{x+y+z}\\\\&+&dp[x+1][y-1][z]\times\frac{y}{x+y+z}\\\\&+&dp[x][y+1][z-1]\times\frac{z}{x+y+z}\\\\&+&\frac{n}{x+y+z}\end{eqnarray}$$
+$$\begin{aligned}dp[x][y][z]&=&dp[x-1][y][z]\times\frac{x}{x+y+z}\\\\&+&dp[x+1][y-1][z]\times\frac{y}{x+y+z}\\\\&+&dp[x][y+1][z-1]\times\frac{z}{x+y+z}\\\\&+&\frac{n}{x+y+z}\end{aligned}$$
 
 ### 参考代码
 

@@ -77,7 +77,7 @@ $${\rm Fib}(n)={\rm Fib}(n-1)+{\rm Fib}(n-2)$$
 
 若假设成立，则将 ${\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}$ 代入式中，得出：
 
-$$\begin{eqnarray}\frac{(\phi^n-\psi^n)}{\sqrt5}=\frac{(\phi^{n-1}-\psi^{n-1})}{\sqrt5}+\frac{(\phi^{n-2}-\psi^{n-2})}{\sqrt5}\\\\\phi^n-\psi^n=\phi^n\left(\frac1\phi+\frac1{\phi^2}\right)-\psi^n\left(\frac1\psi+\frac1{\psi^2}\right)\end{eqnarray}$$
+$$\begin{aligned}\frac{(\phi^n-\psi^n)}{\sqrt5}=\frac{(\phi^{n-1}-\psi^{n-1})}{\sqrt5}+\frac{(\phi^{n-2}-\psi^{n-2})}{\sqrt5}\\\\\phi^n-\psi^n=\phi^n\left(\frac1\phi+\frac1{\phi^2}\right)-\psi^n\left(\frac1\psi+\frac1{\psi^2}\right)\end{aligned}$$
 
 由 $\phi=\frac{1+\sqrt5}{2}$ 和 $\psi=\frac{1-\sqrt5}{2}$ 可知：
 
@@ -85,7 +85,7 @@ $$\frac1\phi+\frac1{\phi^2}=1,\\;\frac1\psi+\frac1{\psi^2}=1$$
 
 代回上式，算式左右两边相等，所以假设成立。接下来将其拆开：
 
-$$\begin{eqnarray}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5}-\frac{\psi^n}{\sqrt5}\\\\\frac{\phi^n}{\sqrt5}={\rm Fib}(n)+\frac{\psi^n}{\sqrt5}\end{eqnarray}$$
+$$\begin{aligned}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5}-\frac{\psi^n}{\sqrt5}\\\\\frac{\phi^n}{\sqrt5}={\rm Fib}(n)+\frac{\psi^n}{\sqrt5}\end{aligned}$$
 
 要证明 ${\rm Fib}(n)$ 是与 $\frac{\phi^n}{\sqrt5}$ 最接近的整数，只需证明 $\left|\frac{\psi^n}{\sqrt5}\right|<\frac1{2}$ 对于一切非负整数 $n$ 成立：
 
@@ -97,7 +97,7 @@ $$\begin{eqnarray}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5
 
 ## Exercise 1.14
 
-递归过程中只需要记录该节点上方的部分，所以需要的空间与调用树的最大深度成正比。
+递归过程中只需要记录该节点之上的节点信息，所以需要的空间与调用树的最大深度成正比。
 
 `(cc amount kinds)` 节点包含着种类数不变而零钱量减少某个常数的节点，其以下部分的最大深度显然与 `amount` 成正比，所以空间为 $\Theta(n)$。
 
@@ -111,3 +111,110 @@ $$\begin{eqnarray}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5
 
 a. `p` 被调用了 $5$ 次。
 b. 空间增长为 $\Theta(\log n)$ 阶，时间增长为 $\Theta(\log n)$ 阶。
+
+## Exercide 1.16
+
+    (define (fast-expt b n)
+      (define (fast-expt-impl ans tmp m)
+        (if (= m 0)
+            ans
+            (if (even? m)
+                (fast-expt-impl ans (square tmp) (/ m 2))
+                (fast-expt-impl (* ans tmp) tmp (- m 1)))))
+      (fast-expt-impl 1 b n))
+
+## Exercise 1.17
+
+    (define (double x) (+ x x))
+    (define (halve x) (/ x 2))
+    
+    (define (mul a b)
+      (if (= b 0)
+          0
+          (if (even? b)
+              (mul (double a) (halve b))
+              (+ a (mul a (- b 1))))))
+
+## Exercise 1.18
+
+    (define (double x) (+ x x))
+    (define (halve x) (/ x 2))
+
+    (define (mul a b)
+      (define (mul-impl ans tmp m)
+        (if (= m 0)
+            ans
+            (if (even? m)
+                (mul-impl ans (double tmp) (halve m))
+                (mul-impl (+ ans tmp) tmp (- m 1)))))
+      (mul-impl 0 a b))
+
+## Exercise 1.19
+
+    (define (fib n)
+      (fib-iter 1 0 0 1 n))
+    (define (fib-iter a b p q count)
+      (cond ((= count 0) b)
+            ((even? count)
+             (fib-iter a
+                       b
+                       (+ (* p p) (* q q))
+                       (+ (* q q) (* p q 2))
+                       (/ count 2)))
+            (else
+             (fib-iter (+ (* b q) (* a q) (* a p))
+                       (+ (* b p) (* a q))
+                       p
+                       q
+                       (- count 1)))))
+
+## Exercise 1.20
+
+应用序求值
+
+    (gcd 206 40)
+    (gcd 40 (remainder 206 40))
+    (gcd 6 (remainder 40 6))
+    (gcd 4 (remainder 6 4))
+    (gcd 2 (remainder 4 2))
+    (gcd 2 0)
+    2
+
+`remainder` 一共被调用了 $4$ 次。
+
+正则序求值
+
+    (gcd 206 40)
+    (if (= 40 0) ...)
+    (gcd 40 (remainder 206 40))
+    (if (= (remainder 206 40) 0) ...)
+    (if (= 6 0) ...)
+    (gcd (remainder 206 40) (remainder 40 (remainder 206 40)))
+    (if (= (remainder 40 (remainder 206 40)) 0) ...)
+    (if (= 4 0) ...)
+    (gcd (remainder 40 (remainder 206 40)) (remainder (remainder 206 40) (remainder 40 (remainder 206 40))))
+    (if (= (remainder (remainder 206 40) (remainder 40 (remainder 206 40))) 0) ...)
+    (if (= 2 0) ...)
+    (gcd (remainder (remainder 206 40) (remainder 40 (remainder 206 40))) (remainder (remainder 40 (remainder 206 40)) (remainder (remainder 206 40) (remainder 40 (remainder 206 40)))))
+    (if (= (remainder (remainder 40 (remainder 206 40)) (remainder (remainder 206 40) (remainder 40 (remainder 206 40)))) 0) ...)
+    (if (= 0 0) ...)
+    (remainder (remainder 206 40) (remainder 40 (remainder 206 40)))
+    2
+
+`remainder` 一共被调用了 $18$ 次。$14$ 次用在条件判断中，$4$ 次用在最后的计算中。
+
+正则序求值用于计算的调用次数，等于应用序求值的调用次数。接下来只需要分析用于条件判断的调用次数。
+
+将第 $n$ 条 `if` 表达式的条件部分中 `remainder` 的出现次数记作 $f(n)$，可以发现：
+
+$$\begin{aligned}f(0)&=0,\\;f(1)=1\\\\f(n)&=f(n-1)+f(n-2)+1\end{aligned}$$
+
+稍加推导，可以发现：
+
+$$\begin{aligned}f(n)-f(n-1)&={\rm Fib}(n)\\\\f(n)&=\sum_{i=0}^n{\rm Fib}(n)\\\\f(n)&={\rm Fib}(n+2)-1\end{aligned}$$
+
+设 `remainder` 在应用序求值中的总调用次数为 $n$，在正则序求值中的总调用次数为 ${\rm R}(n)$，可得：
+
+$$\begin{aligned}{\rm R}(n)&=n+\sum_{i=0}^nf(n)\\\\{\rm R}(n)&={\rm Fib}(n+4)-3\end{aligned}$$
+
+本题中 ${\rm R}(4)=18$，由此可以看出正则序求值可能造成大量的冗余计算。

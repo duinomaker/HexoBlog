@@ -109,11 +109,11 @@ $$
 考虑将 $0$ 区间，先整体加上 $3$，再整体乘以 $4$，于是有：
 
 $$
-\begin{eqnarray}
+\begin{aligned}
 sum_0 & = & (sum'_0 \times \overbrace{1}^{lazymul_0} + \overbrace{0}^{lazyadd_0} \times span_0 + 3 \times span_0) \times 4 \\\\
 & = & (sum'_0 \times \overbrace{1}^{lazymul_0} + \overbrace{3}^{lazyadd_0} \times span_0) \times 4 \\\\
 & = & sum'_0 \times \overbrace{4}^{lazymul_0} + \overbrace{12}^{lazyadd_0} \times span_0
-\end{eqnarray}
+\end{aligned}
 $$
 
 上式中转换的两步，分别对应了递归更新区间 “懒惰加法” 和 “懒惰乘法” 的代码（`rs[p] - ls[p]` 即 $span_p$）：
@@ -131,12 +131,12 @@ lazymul[p] *= val;
 接下来考虑父区间将信息传递给子区间的 pushdown 操作。以子区间 $1$ 为例，将父区间加上 $3$ 和乘以 $4$ 的信息传入。假设该区间本身就有懒惰标记，其初始值分别为 $lazyadd'_1$ 和 $lazymul'_1$，于是有：
 
 $$
-\begin{eqnarray}
+\begin{aligned}
 sum_1 & = & (sum'_1 \times \overbrace{lazymul'_1}^{lazymul_1} + \overbrace{lazyadd'_1}^{lazyadd_1} \times span_1 + 3 \times span_1) \times 4 \\\\
 & = & [sum'_1 \times \overbrace{lazymul'_1}^{lazymul_1} + \overbrace{(lazyadd'_1+3)}^{lazyadd_1} \times span_1] \times 4 \\\\
 & = & sum'_1 \times \overbrace{lazymul'_1 \times 4}^{lazymul_1} + \overbrace{(lazyadd'_1 \times 4+12)}^{lazyadd_1} \times span_1 \\\\
 & = & sum'_1 \times \overbrace{lazymul'_1 \times lazymul_0}^{lazymul_1} + \overbrace{(lazyadd'_1 \times lazymul_0+lazyadd_0)}^{lazyadd_1} \times span_1 \\\\
-\end{eqnarray}
+\end{aligned}
 $$
 
 上式最后一步的转换比较关键，这样就和父区间建立起了联系。这对应了父区间向下传递的代码：
