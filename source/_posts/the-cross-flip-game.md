@@ -58,14 +58,11 @@ toc: true
 
 所以我们引入如下方法，首先给这 $ 16 $ 个火堆编号：
 
-$$
-\begin{array}{|c|c|c|c|} \hline
+$$\begin{array}{|c|c|c|c|} \hline
 1 & 2 & 3 & 4  \\\\ \hline
 5 & 6 & 7 & 8  \\\\ \hline
 9 & 10& 11& 12 \\\\ \hline
-13& 14& 15& 16 \\\\ \hline
-\hline \end{array}
-$$
+13& 14& 15& 16 \\\\ \hline\end{array}$$
 
 用 $ b_i $ 表示第 $ i $ 个火堆的状态，$ b_i $ 取值 $ 1 $ 为熄灭状态，取值 $ 0 $ 为燃烧状态。样例中，$ b $ 就可以如此表示为如下的 “状态向量”：
 
