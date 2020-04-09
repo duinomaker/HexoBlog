@@ -62,13 +62,13 @@ $$\begin{array}{|c|c|c|c|}\hline1&2&3&4\\\\\hline5&6&7&8\\\\\hline9&10&11&12\\\\
 
 用 $ b_i $ 表示第 $ i $ 个火堆的状态，$ b_i $ 取值 $ 1 $ 为熄灭状态，取值 $ 0 $ 为燃烧状态。样例中，$ b $ 就可以如此表示为如下的 “状态向量”：
 
-$$ b = (1,1,1,0, 1,0,0,1, 1,0,0,1, 0,1,1,1)^\mathrm{T} $$
+$$b=(1,1,1,0,1,0,0,1,1,0,0,1,0,1,1,1)^{\rm T}$$
 
 接下来定义向量 $ x $，用 $ x_i $ 表示是否需要对第 $ i $ 个火堆进行切换，是为 $ 1 $，不是为 $ 0 $ 。我们发现，火堆状态的切换可以用**异或运算**来表示；又由于火堆最终都将处于熄灭状态，我们可以对第一个火堆列出方程，并化简：
 
-$$ b_1\oplus x_1\oplus x_2\oplus x_3\oplus x_4\oplus x_5\oplus x_9\oplus x_{13} = 0 $$
+$$b_1\oplus x_1\oplus x_2\oplus x_3\oplus x_4\oplus x_5\oplus x_9\oplus x_{13} = 0$$
 
-$$ x_1\oplus x_2\oplus x_3\oplus x_4\oplus x_5\oplus x_9\oplus x_{13} = b_1 $$
+$$x_1\oplus x_2\oplus x_3\oplus x_4\oplus x_5\oplus x_9\oplus x_{13} = b_1$$
 
 类似地，可以对第 $ 2,3,\ldots , 16 $ 个火堆列出方程，并组成方程组：
 

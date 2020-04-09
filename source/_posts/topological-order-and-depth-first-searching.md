@@ -21,7 +21,7 @@ toc: true
 In computer science, a topological sort or topological ordering of a directed graph is a linear ordering of its vertices such that for every directed edge uv from vertex u to vertex v, u comes before v in the ordering. 
 {% endblockquote %}
 
-拓扑排序，是将一个有向无环图中所有顶点排成一个线性序列，使得图中任意一条边 $\langle u,v \rangle$ 都满足 $u$ 在线性序列中出现在 $v$ 之前。
+拓扑排序，是将一个有向无环图中所有顶点排成一个线性序列，使得图中任意一条边 $\langle u,v\rangle$ 都满足 $u$ 在线性序列中出现在 $v$ 之前。
 
 # 算法
 
@@ -145,7 +145,7 @@ int main()
 
 给出一张有向无环图，每条边的长度都是 $1$，求出图中最长路径的长度。
 
-将前面的深度优先搜索算法改一改，除去 “临时标记”，并且在回溯过程中记下以某顶点为起点的最长路径长度$({\rm dp}_i)$ 。
+将前面的深度优先搜索算法改一改，除去 “临时标记”，并且在回溯过程中记下以某顶点为起点的最长路径长度$(dp_i)$ 。
 
 为什么这与拓扑序有关？深度优先搜索的顺序其实就是拓扑序，先被访问的顶点不会再被访问。所以沿途记录下的最长路径长度，确定后便不再改变。基于先前的的计算结果，按照一定的顺序和规则不断更新，这也是使用动态规划的理由。
 

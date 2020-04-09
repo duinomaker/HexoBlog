@@ -37,7 +37,7 @@ license: by-sa
 
 假设原数列为 $a$，显然有 $f(i,0)=a_i$ 。之后使用状态转移方程 $f(i,j)=\max\lbrace f(i,j-1),f(i+2^{j-1},j-1)\rbrace$ 填充完整张表格即可完成预处理。
 
-若要查询区间 $[l,r)$ 上的最大值，返回 $\max\lbrace f(l,s),f(r-2^s,s)\rbrace$ 即可，其中 $s=\lfloor \log_2(r-l)\rfloor$ 。
+若要查询区间 $[l,r)$ 上的最大值，返回 $\max\lbrace f(l,s),f(r-2^s,s)\rbrace$ 即可，其中 $s=\lfloor\log_2(r-l)\rfloor$ 。
 
 ## 【习题】{% link Balanced Lineup https://www.luogu.com.cn/problem/P2880 P2880 - [USACO07JAN]Balanced Lineup G %}
 
