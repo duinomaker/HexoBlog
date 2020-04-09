@@ -3,6 +3,7 @@ title: 博客维护记录
 canonical_url: https://duinomaker.top/maintenance/
 ---
 
+<span class="mono">2020-04-09</span> 将数学公式渲染器 MathJax 更换为 Katex。
 <span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
 <span class="mono">2020-04-06</span> 开设 /SICP/ 用于记录 *SICP* 学习心得。
 <span class="mono">2020-04-05</span> 将博客转移至自己的服务器。

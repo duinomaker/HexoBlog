@@ -1,7 +1,8 @@
-<script>
+<!-- <script>
     window.MathJax = {
         chtml: {
-            matchFontHeight: false
+            scale: 0.85,
+            matchFontHeight: true
         },
         tex: {
             inlineMath: [
@@ -26,4 +27,21 @@
         }
     };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" defer></script> -->
+
+<%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
+<%- _js(cdn('katex', 'latest', 'dist/katex.min.js'), true) %>
+<%- _js(cdn('katex', 'latest', 'dist/contrib/auto-render.min.js'), true) %>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        contents = document.getElementsByClassName("content");
+        for (i = 0; i < contents.length; ++i) {
+            renderMathInElement(contents[i], {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false }
+                ]
+            });
+        }
+    });
+</script>

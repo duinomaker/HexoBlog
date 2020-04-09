@@ -23,7 +23,7 @@ license: by-sa
 
 懒惰标记的用处，就是更快地实现实现区间修改、区间查询。
 
-考虑之前讲到的线段树。如果用线段树的单点修改，我们需要先改变叶子节点的值，然后不断地向上递归修改祖先节点直至到达根节点，时间复杂度最高可以到达 $O(n \log n)$ 的级别，这还只是单次操作，更别说有 $10^5$ 次指令的情况了。
+考虑之前讲到的线段树。如果用线段树的单点修改，我们需要先改变叶子节点的值，然后不断地向上递归修改祖先节点直至到达根节点，时间复杂度最高可以到达 $O(n\log n)$ 的级别，这还只是单次操作，更别说有 $10^5$ 次指令的情况了。
 
 ## 该怎么实现？
 
@@ -100,17 +100,13 @@ void modify(int x, int y, int val, int p = 0)
 
 <img class="lazyload" src="/images/segment-tree-lazytag_1.jpg" width="100%" alt="">
 
-接着，我们记区间 $i$ 的区间的元素个数为 $span_i$、区间和为 $sum_i$、修改前的初始区间和为 $sum'_i$、区间延迟加法的懒标记为 $lazyadd_i$、区间延迟乘法的懒标记为 $lazymul_i$ 。于是有以下初始情况，初始情况下，$lazyadd_i=0,lazymul_i=1$：
+接着，我们记区间 $i$ 的区间的元素个数为 $span_i$、区间和为 $sum_i$、修改前的初始区间和为 $sum^\prime_i$、区间延迟加法的懒标记为 $lazyadd_i$、区间延迟乘法的懒标记为 $lazymul_i$ 。于是有以下初始情况，初始情况下，$lazyadd_i=0,lazymul_i=1$：
 
-$$sum'_0 = sum'_0 \times \overbrace{1}^{lazymul_0} + \overbrace{0}^{lazyadd_0} \times span_0$$
+$$sum^\prime_0 = sum^\prime_0\times\overbrace{1}^{lazymul_0} +\overbrace{0}^{lazyadd_0}\times span_0$$
 
 考虑将 $0$ 区间，先整体加上 $3$，再整体乘以 $4$，于是有：
 
-$$\begin{aligned}
-sum_0  = &\\, (sum'_0 \times \overbrace{1}^{lazymul_0} + \overbrace{0}^{lazyadd_0} \times span_0 + 3 \times span_0) \times 4 \\\\
- = &\\, (sum'_0 \times \overbrace{1}^{lazymul_0} + \overbrace{3}^{lazyadd_0} \times span_0) \times 4 \\\\
- = &\\, sum'_0 \times \overbrace{4}^{lazymul_0} + \overbrace{12}^{lazyadd_0} \times span_0
-\end{aligned}$$
+$$\begin{aligned}sum_0=&\\,(sum^\prime_0\times\overbrace{1}^{lazymul_0} +\overbrace{0}^{lazyadd_0}\times span_0 + 3\times span_0)\times 4\\\\=&\\,(sum^\prime_0\times\overbrace{1}^{lazymul_0} +\overbrace{3}^{lazyadd_0}\times span_0)\times 4\\\\=&\\,sum^\prime_0\times\overbrace{4}^{lazymul_0} +\overbrace{12}^{lazyadd_0}\times span_0\end{aligned}$$
 
 上式中转换的两步，分别对应了递归更新区间 “懒惰加法” 和 “懒惰乘法” 的代码（`rs[p] - ls[p]` 即 $span_p$）：
 
@@ -124,9 +120,9 @@ lazyadd[p] *= val;
 lazymul[p] *= val;
 ```
 
-接下来考虑父区间将信息传递给子区间的 pushdown 操作。以子区间 $1$ 为例，将父区间加上 $3$ 和乘以 $4$ 的信息传入。假设该区间本身就有懒惰标记，其初始值分别为 $lazyadd'_1$ 和 $lazymul'_1$，于是有：
+接下来考虑父区间将信息传递给子区间的 pushdown 操作。以子区间 $1$ 为例，将父区间加上 $3$ 和乘以 $4$ 的信息传入。假设该区间本身就有懒惰标记，其初始值分别为 $lazyadd^\prime_1$ 和 $lazymul^\prime_1$，于是有：
 
-$$\begin{aligned}sum_1 & =\\, (sum'_1 \times \overbrace{lazymul'_1}^{lazymul_1} + \overbrace{lazyadd'_1}^{lazyadd_1} \times span_1 + 3 \times span_1) \times 4 \\\\& =\\, [sum'_1 \times \overbrace{lazymul'_1}^{lazymul_1} + \overbrace{(lazyadd'_1+3)}^{lazyadd_1} \times span_1] \times 4 \\\\& =\\, sum'_1 \times \overbrace{lazymul'_1 \times 4}^{lazymul_1} + \overbrace{(lazyadd'_1 \times 4+12)}^{lazyadd_1} \times span_1 \\\\& =\\, sum'_1 \times \overbrace{lazymul'_1 \times lazymul_0}^{lazymul_1} + \overbrace{(lazyadd'_1 \times lazymul_0+lazyadd_0)}^{lazyadd_1} \times span_1\end{aligned}$$
+$$\begin{aligned}sum_1 & =\\, (sum^\prime_1\times\overbrace{lazymul^\prime_1}^{lazymul_1} +\overbrace{lazyadd^\prime_1}^{lazyadd_1}\times span_1 + 3\times span_1)\times 4\\\\& =\\, [sum^\prime_1\times\overbrace{lazymul^\prime_1}^{lazymul_1} +\overbrace{(lazyadd^\prime_1+3)}^{lazyadd_1}\times span_1]\times 4\\\\& =\\, sum^\prime_1\times\overbrace{lazymul^\prime_1\times 4}^{lazymul_1} +\overbrace{(lazyadd^\prime_1\times 4+12)}^{lazyadd_1}\times span_1\\\\& =\\, sum^\prime_1\times\overbrace{lazymul^\prime_1\times lazymul_0}^{lazymul_1} +\overbrace{(lazyadd^\prime_1\times lazymul_0+lazyadd_0)}^{lazyadd_1}\times span_1\end{aligned}$$
 
 上式最后一步的转换比较关键，这样就和父区间建立起了联系。这对应了父区间向下传递的代码：
 
