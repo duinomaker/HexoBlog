@@ -497,7 +497,24 @@ figure.highlight
         all: initial
 
 /* ---------------------------------
- *        My Own preferences
+ * Fix Math Overflow and Truncation Problems
+ * --------------------------------- */
+
+.MJXc-display, .MathJax, .katex-display
+    overflow-x: auto
+    overflow-y: hidden
+
+.katex-html
+    padding-top: 1em
+
+.katex-display
+    margin-top: -1em !important
+
+.katex
+    font-size: 1em !important
+
+/* ---------------------------------
+ *        Other Preferences
  * --------------------------------- */
 
 .copyright
@@ -516,19 +533,6 @@ figure.highlight
 
 .mono
     font-family: family-mono
-
-.MJXc-display, .MathJax, .katex-display
-    overflow-x: auto
-    overflow-y: hidden
-
-.katex-html
-    padding-top: 1em
-
-.katex-display
-    margin-top: -1em !important
-
-.katex
-    font-size: 1em !important
 
 .rigid, .rigid-link
     white-space: nowrap
