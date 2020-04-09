@@ -65,7 +65,7 @@ WXY
 
 由于插入和删除操作只能在字符串末尾进行，这题简单了很多。
 
-$$\text{转化步数} = max \lbrace m,n \rbrace \\, - \\, \text{重合的字符个数}$$
+$$\text{转化步数} = \max \lbrace m,n \rbrace \\, - \\, \text{重合的字符个数}$$
 
 ### 参考代码
 

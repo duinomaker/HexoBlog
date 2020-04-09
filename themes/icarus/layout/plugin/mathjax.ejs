@@ -1,12 +1,12 @@
 <script>
     window.MathJax = {
         chtml: {
-            matchFontHeight: false
+            scale: 0.85,
+            matchFontHeight: true
         },
         tex: {
             inlineMath: [
-                ['$', '$'],
-                ['\\(', '\\)']
+                ['$', '$']
             ],
             autoload: {
                 color: [],
@@ -14,13 +14,17 @@
             },
             packages: { '[+]': ['noerrors'] }
         },
+        svg: {
+            scale: 0.85,
+            fontCache: 'global'
+        },
         options: {
             ignoreHtmlClass: 'tex2jax_ignore',
             processHtmlClass: 'tex2jax_process'
         },
         loader: {
-            load: ['input/asciimath', '[tex]/noerrors']
+            load: ['[tex]/noerrors']
         }
     };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.js" id="MathJax-script" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-chtml.js" id="MathJax-script" defer></script>
