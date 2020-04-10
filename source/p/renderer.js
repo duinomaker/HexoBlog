@@ -34,8 +34,7 @@ function handler(id) {
                     render("服务器内部发生了错误");
                 }
             } else {
-                console.log(opener.status);
-                render("内容获取失败，请检查是否正确地复制了网址");
+                render("发生了未知错误");
             }
         }
     };
