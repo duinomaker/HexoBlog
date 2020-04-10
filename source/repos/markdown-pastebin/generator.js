@@ -11,7 +11,7 @@ clipboard.on("success", function (e) {
 });
 clipboard.on("error", function (e) {
     e.clearSelection();
-    permalink_hint_bar.innerHTML = "请手动复制永久链接";
+    permalink_hint_bar.innerHTML = " 请手动复制永久链接";
 });
 
 function b64encode(str) {
@@ -44,7 +44,7 @@ function generate(token) {
     opener.onreadystatechange = function () {
         if (opener.readyState == 4) {
             if (opener.status == 201) {
-                permalink_hint_bar.innerHTML = "永久链接已生成，点击链接复制 ";
+                permalink_hint_bar.innerHTML = " 永久链接已生成，点击链接复制";
                 permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
             } else if (opener.status == 403) {
                 if (opener.responseText == "Malformed Data") {
