@@ -19,7 +19,7 @@ function b64decode(str) {
     return CryptoJS.enc.Base64.parse(str).toString(CryptoJS.enc.Utf8);
 }
 function render() {
-    out_bar.innerHTML = in_bar.value;
+    out_bar.innerHTML = marked(in_bar.value);
     renderMathInElement(out_bar, {
         delimiters: [
             { left: "$$", right: "$$", display: true },
@@ -31,9 +31,9 @@ function render() {
 }
 function copyPermalink() {
     if (in_bar.value.length) {
-        permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/?" + b64encode(in_bar.value);
+        permalink_bar.innerHTML = "https://duinomaker.top/repos/marked/?" + b64encode(in_bar.value);
     } else {
-        permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/";
+        permalink_bar.innerHTML = "https://duinomaker.top/repos/marked/";
     }
 }
 document.addEventListener("DOMContentLoaded", function () {

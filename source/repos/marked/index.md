@@ -1,14 +1,12 @@
 ---
-title: 'Math Renderer'
-canonical_url: https://duinomaker.top/repos/math-renderer/
+title: 'Markdown Renderer'
+canonical_url: https://duinomaker.top/repos/marked/
 widgets:
 comment:
 article:
     highlight:
         clipboard: false
 ---
-
-<style>.katex { font-size: initial !important; }</style>
 
 ---
 
@@ -21,9 +19,11 @@ article:
 <a id="permalink"></a>
 <p id="permalink-hint"></p>
 <div class="field has-addons" style="margin-bottom: -1rem;"><p class="control"><button id="render" class="button" onclick="render();" disabled="disabled">render</button></p><p class="control"><button id="copy" class="button" onclick="copyPermalink();" data-clipboard-target="#permalink" disabled="disabled">copy permalink</button></p></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
-<script src="renderer-v2.js"></script>
+<script src="renderer.js"></script>
 
 ---
 
@@ -31,8 +31,8 @@ article:
 该项目的源代码由<a rel="license" href="https://opensource.org/licenses/mit-license.php" title="The MIT License" target="_blank">MIT许可证</a>进行许可。
 
 ``` plain project-hierarchy >folded
-math-renderer
+marked
 ├── index.html
-├── renderer-v2.js
+├── renderer.js
 └── LICENSE
 ```
