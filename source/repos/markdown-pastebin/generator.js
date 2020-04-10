@@ -39,7 +39,9 @@ function render() {
 }
 
 function generate() {
-    while (token_global === null) { }
+    while (token_global === null) {
+        setTimeout(function () { }, 1000);
+    }
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) { return; }
     permalink_hint_bar.innerHTML = "正在生成永久链接...";
