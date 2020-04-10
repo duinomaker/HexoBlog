@@ -15,9 +15,8 @@ article:
 ---
 
 <script>
-    token_global = null
     function onSubmit(token) {
-        token_global = token;
+        generate(token);
     }
 </script>
 
