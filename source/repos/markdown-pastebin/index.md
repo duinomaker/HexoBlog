@@ -17,13 +17,16 @@ article:
 <textarea id="in" class="textarea" rows="8"></textarea>
 
 <div class="level"><div class="level-item"><a id="permalink"></a><p id="permalink-hint"></p></div><div class="level-item"><div class="field has-addons" style="margin-bottom: -0.5em;"><p class="control"><button id="render" class="button" onclick="render();">render</button></p><p class="control"><button id="copy" class="button" onclick="generate();" data-clipboard-target="#permalink">generate permalink</button></p></div></div></div>
-<div class="g-recaptcha" data-sitekey="6LeMh-gUAAAAAOeLZ-lMPtWFyNNtvROjywhUFjW1"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
-<script src="https://recaptcha.net/recaptcha/api.js">
+<script src="https://recaptcha.net/recaptcha/api.js?render=6LeMh-gUAAAAAOeLZ-lMPtWFyNNtvROjywhUFjW1"></script>
 <script src="generator.js"></script>
+
+<form>
+<div class="g-recaptcha" data-sitekey="6LeMh-gUAAAAAOeLZ-lMPtWFyNNtvROjywhUFjW1"></div>
+</form>
 
 ---
 
