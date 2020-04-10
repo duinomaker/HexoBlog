@@ -38,10 +38,11 @@ function render() {
     });
 }
 
-function generate() {
+function generate(token) {
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) { return; }
     permalink_hint_bar.innerHTML = "正在生成永久链接...";
+    console.log(token);
     opener = new XMLHttpRequest();
     opener.open("POST", "https://duinomaker.top/server/generate", false);
     opener.setRequestHeader("Content-Type", "text/html");
