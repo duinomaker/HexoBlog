@@ -18,13 +18,17 @@ article:
 ---
 
 <script>
+permalink_hint_bar = document.getElementById("permalink-hint");
+counter = 0;
 function onSubmit(token) {
-    console.log('1');
     generate(token);
+    counter = 0;
 }
 
 function onClick() {
-    console.log('0');
+    if (++counter > 3) {
+        permalink_hint_bar.innerHTML = "资源有限，请仔细考虑后再做决定～";
+    }
 }
 </script>
 
