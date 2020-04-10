@@ -67,5 +67,5 @@ function generate(token) {
     };
 }
 
-document.getElementById("render").removeAttribute("disabled");
-document.getElementById("copy").removeAttribute("disabled");
+document.getElementsByClassName("button")[0].removeAttribute("disabled");
+document.getElementsByClassName("button")[1].removeAttribute("disabled");
