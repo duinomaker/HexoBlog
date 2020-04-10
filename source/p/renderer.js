@@ -1,4 +1,4 @@
-out_bar = document.getElementsByClassName("has-math")[0];
+out_bar = document.getElementsById("out");
 
 function b64decode(str) {
     return CryptoJS.enc.Base64.parse(str).toString(CryptoJS.enc.Utf8);
