@@ -1,4 +1,4 @@
-out_bar = document.getElementsById("out");
+out_bar = document.getElementById("out");
 
 function b64decode(str) {
     return CryptoJS.enc.Base64.parse(str).toString(CryptoJS.enc.Utf8);
