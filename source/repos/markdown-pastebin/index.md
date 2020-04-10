@@ -14,18 +14,15 @@ article:
 
 ---
 
-<span id="token" hidden="hidden"></span>
-
 <script>
-    token_bar = document.getElementById("token");
+    token_global = null
     function onSubmit(token) {
-        console.log("tokened");
-        token_bar.innerHTML = token;
+        token_global = token;
     }
 </script>
 
 <textarea id="in" class="textarea" rows="8"></textarea>
-<div class="level"><div class="level-item"><a id="permalink"></a><p id="permalink-hint"></p></div><div class="level-item"><div class="field has-addons" style="margin-bottom: -0.5em;"><p class="control"><button id="render" class="button" onclick="render();" disabled="disabled">render</button></p><p class="control"><button id="copy" class="g-recaptcha button" onclick="generate();" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy" data-callback="onSubmit" data-clipboard-target="#permalink" disabled="disabled">generate permalink</button></p></div></div></div>
+<div class="level"><div class="level-item"><a id="permalink"></a><p id="permalink-hint"></p></div><div class="level-item"><div class="field has-addons" style="margin-bottom: -0.5em;"><p class="control"><button id="render" class="button" onclick="render();" disabled="disabled">render</button></p><p class="control"><button id="copy" class="g-recaptcha button" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy" data-callback="onSubmit" disabled="disabled">generate permalink</button></p></div></div></div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
