@@ -9,9 +9,10 @@ article:
 license: notrust
 ---
 
+<style>.katex { font-size: initial !important; }</style>
+
 页面内容加载中...
 
-<style>.katex { font-size: initial !important; }</style>
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
 <script src="renderer.js"></script>
