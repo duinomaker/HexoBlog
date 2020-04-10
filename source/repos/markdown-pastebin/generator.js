@@ -38,9 +38,18 @@ function render() {
     });
 }
 
+function sleep(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+}
+
 function generate() {
-    while (token_global === null) {
-        setTimeout(function () { }, 1000);
+    flag = true
+    while (flag) {
+        sleep(100).then(() => {
+            if (token_global !== null) {
+                flag = false;
+            }
+        });
     }
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) { return; }
