@@ -14,8 +14,8 @@ function handler(id) {
     opener.open("GET", url, true);
     opener.send(null);
     opener.onreadystatechange = function () {
-        if (opener.readyState == 4) {
-            if (opener.status == 200) {
+        if (opener.readyState === 4) {
+            if (opener.status === 200) {
                 render(b64decode(opener.response));
                 renderMathInElement(out_bar, {
                     delimiters: [
@@ -25,10 +25,10 @@ function handler(id) {
                         { left: "\\(", right: "\\)", display: false }
                     ]
                 });
-            } else if (opener.status == 403) {
+            } else if (opener.status === 403) {
                 render("编号无效，请检查是否正确地复制了网址");
-            } else if (opener.status == 500) {
-                if (opener.responseText == "Malformed Data") {
+            } else if (opener.status === 500) {
+                if (opener.responseText === "Malformed Data") {
                     render("服务器提供了错误格式的内容");
                 } else {
                     render("服务器内部发生了错误");
@@ -41,7 +41,7 @@ function handler(id) {
 }
 
 matched = window.location.toString().match(/\?([a-zA-Z]+)/);
-if (matched !== null && matched[1].length == 8) {
+if (matched !== null && matched[1].length === 8) {
     try {
         content = handler(matched[1]);
     }
