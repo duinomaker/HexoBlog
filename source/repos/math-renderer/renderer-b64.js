@@ -24,12 +24,12 @@ function render() {
     });
 }
 function copyPermalink() {
-    permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/?" + escape(in_bar.value);
+    permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/?" + btoa(in_bar.value);
 }
 document.addEventListener("DOMContentLoaded", function () {
-    matched = window.location.toString().match(/\?(.+)/);
+    matched = window.location.toString().match(/\?([a-zA-Z0-9/=]+)/);
     if (matched !== null) {
-        in_bar.value = unescape(matched[1]);
+        in_bar.value = atob(matched[1]);
         render();
     }
     document.getElementById("render").removeAttribute("disabled");
