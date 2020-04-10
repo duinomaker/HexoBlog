@@ -21,12 +21,15 @@ article:
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
-<script src="https://recaptcha.net/recaptcha/api.js?render=6LeMh-gUAAAAAOeLZ-lMPtWFyNNtvROjywhUFjW1"></script>
+<script src="https://recaptcha.net/recaptcha/api.js"></script>
 <script src="generator.js"></script>
 
-<form>
+<form action="?" method="POST">
 <div class="g-recaptcha" data-sitekey="6LeMh-gUAAAAAOeLZ-lMPtWFyNNtvROjywhUFjW1"></div>
+<br/>
+<input type="submit" value="Submit">
 </form>
+
 
 ---
 
