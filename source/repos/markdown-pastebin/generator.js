@@ -43,7 +43,7 @@ function generate(token) {
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) { return; }
     permalink_hint_bar.innerHTML = "正在生成永久链接...";
-    console.log([1, token, 3]);
+    console.log(token);
     document.getElementById("form").submit();
     return;
     opener = new XMLHttpRequest();
