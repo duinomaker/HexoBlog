@@ -7,7 +7,8 @@ render_button = document.getElementById("render");
 copy_button = document.getElementById("copy");
 token_global = null
 clipboard = new ClipboardJS("#copy", {});
-clipboard.on('success', function (e) {
+clipboard.on("success", function (e) {
+    console.log("copied");
     if (permalink_bar.innerHTML.length) {
         permalink_bar.innerHTML = "";
         permalink_hint_bar.innerHTML = "永久链接已复制至剪贴板";
@@ -17,7 +18,7 @@ clipboard.on('success', function (e) {
         permalink_hint_bar.innerHTML = "生成失败，请检查网络连接";
     }
 });
-clipboard.on('error', function (e) {
+clipboard.on("error", function (e) {
     e.clearSelection();
     permalink_bar.setAttribute("href", permalink_bar.innerHTML);
     permalink_hint_bar.innerHTML = "请手动复制永久链接";
