@@ -28,7 +28,11 @@ function handler(id) {
             } else if (opener.status == 403) {
                 render("编号无效，请检查是否正确地复制了网址");
             } else if (opener.status == 500) {
-                render("服务器提供了错误格式的内容");
+                if (opener.responseText == "Malformed Data") {
+                    render("服务器提供了错误格式的内容");
+                } else {
+                    render("服务器内部发生了错误");
+                }
             } else {
                 console.log(opener.status);
                 render("内容获取失败，请检查是否正确地复制了网址");
