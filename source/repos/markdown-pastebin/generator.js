@@ -45,8 +45,12 @@ function generate(token) {
     console.log(token);
     opener = new XMLHttpRequest();
     opener.open("POST", "https://duinomaker.top/server/generate", false);
-    opener.setRequestHeader("Content-Type", "text/html");
-    opener.send(b64encode(in_bar.value));
+    opener.setRequestHeader("Content-Type", "application/json");
+    // opener.send("content=" + b64encode(in_bar.value) + "g-recaptcha-response=" + token);
+    opener.send(JSON.stringify({
+        "content": b64encode(in_bar.value),
+        "g-recaptcha-response": token
+    }));
     if (opener.status == 201) {
         permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
     }
