@@ -1,5 +1,6 @@
 in_bar = document.getElementById("in");
 out_bar = document.getElementById("out");
+token_bar = document.getElementById("token");
 permalink_bar = document.getElementById("permalink");
 permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
@@ -46,7 +47,7 @@ function generate() {
     flag = true
     while (flag) {
         sleep(100).then(() => {
-            if (token_global !== null) {
+            if (token_bar.innerHTML.length) {
                 flag = false;
             }
         });
