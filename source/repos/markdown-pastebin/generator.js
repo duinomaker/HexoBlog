@@ -8,6 +8,7 @@ clipboard = new ClipboardJS("#permalink", {});
 clipboard.on("success", function (e) {
     permalink_bar.innerHTML = "";
     permalink_hint_bar.innerHTML = "永久链接已复制至剪贴板";
+    setTimeout(function () { permalink_hint_bar.innerHTML = ""; }, 5000);
 });
 clipboard.on("error", function (e) {
     e.clearSelection();
