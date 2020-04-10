@@ -26,6 +26,7 @@ function handler(id) {
                     ]
                 });
             } else {
+                console.log(opener.status);
                 render("内容获取失败，请检查是否正确地复制了网址");
             }
         }
