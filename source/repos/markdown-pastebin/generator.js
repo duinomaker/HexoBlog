@@ -39,19 +39,7 @@ function render() {
     });
 }
 
-function sleep(time) {
-    return new Promise((resolve) => setTimeout(resolve, time));
-}
-
 function generate() {
-    flag = true
-    while (flag) {
-        sleep(100).then(() => {
-            if (token_bar.innerHTML.length) {
-                flag = false;
-            }
-        });
-    }
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) { return; }
     permalink_hint_bar.innerHTML = "正在生成永久链接...";
