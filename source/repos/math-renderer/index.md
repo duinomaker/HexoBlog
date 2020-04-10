@@ -21,9 +21,9 @@ article:
 <a id="permalink"></a>
 <p id="permalink-hint"></p>
 <div class="field has-addons" style="margin-bottom: -1rem;"><p class="control"><button id="render" class="button" onclick="render();" disabled="disabled">render</button></p><p class="control"><button id="copy" class="button" onclick="copyPermalink();" data-clipboard-target="#permalink" disabled="disabled">copy permalink</button></p></div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
-<script src="renderer-b64.js"></script>
+<script src="renderer-cryptojs.js"></script>
 
 ---
 
@@ -33,6 +33,6 @@ article:
 ``` plain project-hierarchy >folded
 math-renderer
 ├── index.html
-├── renderer-b64.js
+├── renderer-cryptojs.js
 └── LICENSE
 ```
