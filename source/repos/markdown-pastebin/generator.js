@@ -50,6 +50,7 @@ function generate(token) {
         "g-recaptcha-response": token
     }));
     if (opener.status == 201) {
+        permalink_hint_bar.innerHTML = "永久链接已生成，点击链接复制 "
         permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
     }
 }
