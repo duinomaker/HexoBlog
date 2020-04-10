@@ -7,7 +7,10 @@ article:
     highlight:
         clipboard: false
 ---
-<style>.katex { font-size: initial !important; }</style>
+<style>
+.katex { font-size: initial !important; }
+.grecaptcha-badge { z-index: 1; }
+</style>
 ---
 
 <div id="out"><br /></div>
