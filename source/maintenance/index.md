@@ -2,6 +2,9 @@
 title: 博客维护记录
 canonical_url: https://duinomaker.top/maintenance/
 plugins:
+article:
+    highlight:
+        clipboard: false
 ---
 
 <span class="mono">2020-04-09</span> 将数学公式渲染器 MathJax 更换为 Katex。

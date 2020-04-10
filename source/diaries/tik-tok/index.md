@@ -4,6 +4,9 @@ canonical_url: https://duinomaker.top/diaries/tik-tok/
 widgets:
 comment:
 plugins:
+article:
+    highlight:
+        clipboard: false
 license: noshare
 ---
 
@@ -46,7 +49,7 @@ Tik Tok 这个平台，我们都听说过，自己身边不少人会去看。
 
 好，原因列出来了，我想前三条都不是大问题。最让我自己担心的是：第四条的逻辑何在？
 
-这样的逻辑，似乎有点眼熟？我记得在我的舍友 <span class="encrypted" iv="WGUmbOntoCbyxgJf">89 36 f6 4d 0c 69 35 21 b8 74 1e c1 d9 b7 11 ae</span> 身上也见到过。他是个游戏玩家，每天可以在打游戏上面花极多时间，可以说占用了超过半数的学习时间。期末考试之前一段时间，我非常明显地见识到了这个逻辑：
+这样的逻辑，似乎有点眼熟？我记得在我的舍友 <span class="encrypted" iv="z0bp3zIfFTWI0Ank">6a 20 62 9c 04 4a 3b de c5 6b a9 a8 76 88 9c 51</span> 身上也见到过。他是个游戏玩家，每天可以在打游戏上面花极多时间，可以说占用了超过半数的学习时间。期末考试之前一段时间，我非常明显地见识到了这个逻辑：
 
 “你们都学得好认真啊，我都要跟不上了。”
 “那就赶紧去学习啊。”

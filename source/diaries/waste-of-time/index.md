@@ -4,6 +4,9 @@ canonical_url: https://duinomaker.top/diaries/waste-of-time/
 widgets:
 comment:
 plugins:
+article:
+    highlight:
+        clipboard: false
 license: noshare
 ---
 

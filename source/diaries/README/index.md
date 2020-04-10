@@ -4,6 +4,9 @@ canonical_url: https://duinomaker.top/diaries/README/
 widgets:
 comment:
 plugins:
+article:
+    highlight:
+        clipboard: false
 license: noshare
 ---
 
@@ -27,7 +30,7 @@ license: noshare
 </p>
 </div>
 
-<span class="encrypted" iv="MJRa1vie19JuswnN">54 1c aa ec e7 e9 7e 93 a0 b6 27 23 38 f5 75 e5 d3 3e 89 2f d7 ef 2d 10 9b 66 72 94 1d 8c eb b3 14 f2 a9 b8 f1 90 bd f0 ab 25 85 50 9e 97 27 c7</span>
+<span class="encrypted" iv="nfbdB34DLx4LG0DV">74 9f 81 9f 36 5d 3a 9e 23 95 61 23 8e ed e1 69 e1 0a 49 eb 10 3f 45 25 6d 3c 05 da 3c 65 53 2f 0c c6 b5 d0 ec da 18 f4 22 65 27 26 32 65 41 42</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 

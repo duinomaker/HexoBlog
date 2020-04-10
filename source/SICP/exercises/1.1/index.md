@@ -4,6 +4,9 @@ canonical_url: https://duinomaker.top/SICP/exercises/1.1/
 widgets:
 comment:
 plugins:
+article:
+    highlight:
+        clipboard: false
 license: by-nc-sa
 ---
 

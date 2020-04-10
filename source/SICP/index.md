@@ -4,6 +4,9 @@ canonical_url: https://duinomaker.top/SICP/
 widgets:
 comment:
 plugins:
+article:
+    highlight:
+        clipboard: false
 ---
 
 ## Notes
