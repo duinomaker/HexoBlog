@@ -25,6 +25,10 @@ function handler(id) {
                         { left: "\\(", right: "\\)", display: false }
                     ]
                 });
+            } else if (opener.status == 403) {
+                render("编号无效，请检查是否正确地复制了网址");
+            } else if (opener.status == 500) {
+                render("服务器提供了错误格式的内容");
             } else {
                 console.log(opener.status);
                 render("内容获取失败，请检查是否正确地复制了网址");
