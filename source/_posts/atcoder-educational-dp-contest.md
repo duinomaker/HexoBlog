@@ -167,10 +167,10 @@ int main()
 
 给你一个容量为 $W$ 的背包，问能容纳下的物品的最大价值和。但是限制如下：
 
-$1\leq N\leq 100$
+$1\leq N\leq100$
 $1\leq W\leq10^9$
 $1\leq w_i\leq W$
-$1\leq v_i\leq 10^3$
+$1\leq v_i\leq10^3$
 
 ### 题解
 

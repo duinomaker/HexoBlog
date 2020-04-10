@@ -25,9 +25,9 @@ $$\min_{i=1}^{n-x+1}{\rm lcm}(a_i,a_{i+1},\ldots,a_{i+x-1})$$
 
 数列 ${a_i}$ 的长度为 $n$，一个 $x$ 就是一次询问，共有 $m$ 次询问，并有以下限制：
 
-$1\leq n\leq 2\times 10^4$
-$1\leq m\leq 10^6$
-$1\leq a_i\leq 60$
+$1\leq n\leq2\times10^4$
+$1\leq m\leq10^6$
+$1\leq a_i\leq60$
 $1\leq x\leq n$
 
 ## 题解

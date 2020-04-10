@@ -90,7 +90,7 @@ Lisp 采用应用序求值，部分原因在于这样做能避免对于表达式
 
 **增长阶**为计算所需要的资源量，提供了粗略的估计。设 ${\rm R}(n)$ 为问题规模为 $n$ 时所需的计算资源量。当
 
-$$\exists k_1,k_2,N\\;(n>N\land k_1f(n)\leq{\rm R}(n)\leq k_2f(n))$$
+$$\exists k_1,k_2,N\\;\forall n>N\\;(k_1f(n)\leq{\rm R}(n)\leq k_2f(n))$$
 
 成立时，我们称 ${\rm R}(n)$ 有 $\Theta(f(n))$ 的增长阶，记作 ${\rm R}(n)\sim\Theta(f(n))$ 。
 
