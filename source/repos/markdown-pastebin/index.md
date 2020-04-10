@@ -23,12 +23,17 @@ article:
 <script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
 <script src="https://recaptcha.net/recaptcha/api.js"></script>
 <script src="generator.js"></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
+</script>
 
-<form action="?" method="POST">
-<div class="g-recaptcha" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy"></div>
-<br/>
-<input type="submit" value="Submit">
+<form id='demo-form' action="?" method="POST">
+    <button class="g-recaptcha" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy" data-callback='onSubmit'>Submit</button>
+    <br/>
 </form>
+
 
 
 ---
