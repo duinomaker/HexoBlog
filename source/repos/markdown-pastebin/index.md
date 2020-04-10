@@ -25,7 +25,7 @@ article:
 <script src="generator.js"></script>
 
 <form action="?" method="POST">
-<div class="g-recaptcha" data-sitekey="6LeMh-gUAAAAAOeLZ-lMPtWFyNNtvROjywhUFjW1"></div>
+<div class="g-recaptcha" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy"></div>
 <br/>
 <input type="submit" value="Submit">
 </form>
