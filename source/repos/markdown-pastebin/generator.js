@@ -43,8 +43,7 @@ function generate() {
     if (!in_bar.value.length) { return; }
     permalink_hint_bar.innerHTML = "正在生成永久链接...";
     opener = new XMLHttpRequest();
-    // opener.open("POST", "https://duinomaker.top/server/generate", false);
-    opener.open("POST", "https://paste.ubuntu.com/", false);
+    opener.open("POST", "https://duinomaker.top/server/generate", false);
     opener.setRequestHeader("Content-Type", "text/html");
     opener.send(b64encode(in_bar.value));
     if (opener.status == 201) {
