@@ -6,14 +6,8 @@ render_button = document.getElementById("render");
 
 clipboard = new ClipboardJS("#permalink", {});
 clipboard.on("success", function (e) {
-    if (permalink_bar.innerHTML.length) {
-        permalink_bar.innerHTML = "";
-        permalink_hint_bar.innerHTML = "永久链接已复制至剪贴板";
-    } else if (!in_bar.value.length) {
-        permalink_hint_bar.innerHTML = "生成前请先输入内容";
-    } else {
-        permalink_hint_bar.innerHTML = "生成失败，请检查网络连接";
-    }
+    permalink_bar.innerHTML = "";
+    permalink_hint_bar.innerHTML = "永久链接已复制至剪贴板";
 });
 clipboard.on("error", function (e) {
     e.clearSelection();
