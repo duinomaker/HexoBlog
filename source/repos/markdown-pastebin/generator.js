@@ -54,6 +54,7 @@ function generate(token) {
             if (opener.status === 201) {
                 permalink_hint_bar.innerHTML = "永久链接已生成，点击链接复制";
                 permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
+                last_input = in_bar.value;
             } else if (opener.status === 403) {
                 if (opener.responseText === "Malformed Data") {
                     permalink_hint_bar.innerHTML = "文本框内包含错误格式的内容，请修改后重试";
