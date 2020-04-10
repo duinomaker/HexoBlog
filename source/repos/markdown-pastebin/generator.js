@@ -4,7 +4,7 @@ permalink_bar = document.getElementById("permalink");
 permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
 copy_button = document.getElementById("copy");
-
+token_global = null
 clipboard = new ClipboardJS("#copy", {});
 clipboard.on('success', function (e) {
     if (permalink_bar.innerHTML.length) {
@@ -38,7 +38,8 @@ function render() {
     });
 }
 
-function generate(token) {
+function generate() {
+    while (token_global === null) { }
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) { return; }
     permalink_hint_bar.innerHTML = "正在生成永久链接...";
