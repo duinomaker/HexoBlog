@@ -9,9 +9,6 @@ screen-fullhd = 1472px
 /* ---------------------------------
  *       Override CSS Framework
  * --------------------------------- */
-html
-    text-rendering: geometricPrecision !important
-
 @media screen and (max-width: screen-tablet - 1)
     html
         font-size: 12px
@@ -330,6 +327,9 @@ img.thumbnail
 .has-link-black-ter
     color: hsl(0, 0%, 14%) !important
 
+.has-underline-grey
+    border-bottom: 1px solid grey
+
 @media screen and (max-width: screen-tablet - 1)
     .has-text-centered-mobile
         text-align: center !important
@@ -511,7 +511,6 @@ figure.highlight
     margin-top: -1em !important
 
 .katex
-    text-rendering: geometricPrecision !important
     font-size: 1em !important
     white-space: nowrap
 
@@ -538,9 +537,6 @@ figure.highlight
 
 .rigid, .rigid-link
     white-space: nowrap
-
-.has-underline-grey
-    border-bottom: 1px solid grey
 
 .foreword
     font-size: 0.85em
