@@ -30,10 +30,14 @@ function render() {
     });
 }
 function copyPermalink() {
-    permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/?" + b64encode(in_bar.value);
+    if (in_bar.value.length) {
+        permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/?" + b64encode(in_bar.value);
+    } else {
+        permalink_bar.innerHTML = "https://duinomaker.top/repos/math-renderer/";
+    }
 }
 document.addEventListener("DOMContentLoaded", function () {
-    matched = window.location.toString().match(/\?([a-zA-Z0-9/=]+)/);
+    matched = window.location.toString().match(/\?([a-zA-Z0-9/+=]+)/);
     if (matched !== null) {
         in_bar.value = b64decode(matched[1]);
         render();
