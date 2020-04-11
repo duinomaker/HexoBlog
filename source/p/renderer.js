@@ -1,11 +1,31 @@
+title_bar = document.getElementById("out-title");
 out_bar = document.getElementById("out");
+
+katex_config = {
+    delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false }
+    ]
+};
 
 function b64decode(str) {
     return CryptoJS.enc.Base64.parse(str).toString(CryptoJS.enc.Utf8);
 }
 
-function render(content) {
+function render(content, title) {
+    if (title === undefined) {
+        out_bar.innerHTML = marked(content);
+        return;
+    }
+    if (title.length) {
+        title_bar.removeAttribute("hidden");
+        title_bar.innerHTML = title;
+        renderMathInElement(title_bar, katex_config);
+    }
     out_bar.innerHTML = marked(content);
+    renderMathInElement(out_bar, katex_config);
 }
 
 function handler(id) {
@@ -16,15 +36,8 @@ function handler(id) {
     opener.onreadystatechange = function () {
         if (opener.readyState === 4) {
             if (opener.status === 200) {
-                render(b64decode(opener.response));
-                renderMathInElement(out_bar, {
-                    delimiters: [
-                        { left: "$$", right: "$$", display: true },
-                        { left: "\\[", right: "\\]", display: true },
-                        { left: "$", right: "$", display: false },
-                        { left: "\\(", right: "\\)", display: false }
-                    ]
-                });
+                data = JSON.parse(opener.response);
+                render(b64decode(data["content"], data["title"]));
             } else if (opener.status === 403) {
                 render("编号无效，请检查是否正确地复制了网址");
             } else if (opener.status === 500) {
