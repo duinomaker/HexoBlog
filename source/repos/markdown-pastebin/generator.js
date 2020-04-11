@@ -3,6 +3,7 @@ out_bar = document.getElementById("out");
 permalink_bar = document.getElementById("permalink");
 permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
+generate_button = document.getElementById("generate");
 last_input = "";
 
 clipboard = new ClipboardJS("#permalink", {});
@@ -32,6 +33,7 @@ function render() {
 }
 
 function generate(token) {
+    generate_button.setAttribute("disabled", "disabled");
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) {
         permalink_hint_bar.innerHTML = "请先输入内容";
@@ -70,5 +72,4 @@ function generate(token) {
     };
 }
 
-// document.getElementsByClassName("button")[0].removeAttribute("disabled");
-// document.getElementsByClassName("button")[1].removeAttribute("disabled");
+render_button.removeAttribute("disabled");
