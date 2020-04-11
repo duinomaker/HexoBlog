@@ -6,7 +6,7 @@ permalink_bar = document.getElementById("permalink");
 permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
 generate_button = document.getElementById("generate");
-last_input = "";
+last_input = ["", ""];
 
 katex_config = {
     delimiters: [
@@ -42,14 +42,6 @@ function render() {
     renderMathInElement(out_bar, katex_config);
 }
 
-function get_input() {
-    if (in_title_bar.value.length) {
-        return "<h1 class=\"title is-size-3 is-size-4-mobile has-text-weight-normal\">"
-            + in_title_bar.value + "</h1>\n" + in_bar.value;
-    }
-    return in_bar.value;
-}
-
 function generate(token) {
     generate_button.setAttribute("disabled", "disabled");
     permalink_bar.innerHTML = "";
@@ -57,7 +49,7 @@ function generate(token) {
         permalink_hint_bar.innerHTML = "请先输入内容";
         return;
     }
-    if (get_input() === last_input) {
+    if (in_title_bar.value === last_input[0] && in_bar.value === last_input[1]) {
         permalink_hint_bar.innerHTML = "你提交了一篇与之前完全一样的文章";
         return;
     }
@@ -66,7 +58,8 @@ function generate(token) {
     opener.open("POST", "https://duinomaker.top/server/generate", true);
     opener.setRequestHeader("Content-Type", "application/json");
     opener.send(JSON.stringify({
-        "content": b64encode(get_input()),
+        "title": b64encode(in_title_bar.value),
+        "content": b64encode(in_bar.value),
         "g-recaptcha-response": token
     }));
     opener.onreadystatechange = function () {
@@ -74,7 +67,7 @@ function generate(token) {
             if (opener.status === 201) {
                 permalink_hint_bar.innerHTML = "永久链接已生成，点击链接复制";
                 permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
-                last_input = get_input();
+                last_input = [in_title_bar.value, in_bar.value];
             } else if (opener.status === 403) {
                 if (opener.responseText === "Malformed Data") {
                     permalink_hint_bar.innerHTML = "文本框内包含错误格式的内容，请修改后重试";
