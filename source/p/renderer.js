@@ -17,14 +17,14 @@ function handler(id) {
         if (opener.readyState === 4) {
             if (opener.status === 200) {
                 render(b64decode(opener.response));
-                // renderMathInElement(out_bar, {
-                //     delimiters: [
-                //         { left: "$$", right: "$$", display: true },
-                //         { left: "\\[", right: "\\]", display: true },
-                //         { left: "$", right: "$", display: false },
-                //         { left: "\\(", right: "\\)", display: false }
-                //     ]
-                // });
+                renderMathInElement(out_bar, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "\\[", right: "\\]", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false }
+                    ]
+                });
             } else if (opener.status === 403) {
                 render("编号无效，请检查是否正确地复制了网址");
             } else if (opener.status === 500) {
