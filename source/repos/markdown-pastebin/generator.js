@@ -49,7 +49,7 @@ function generate(token) {
     generate_button.setAttribute("disabled", "disabled");
     permalink_bar.innerHTML = "";
     if (!in_bar.value.length) {
-        permalink_hint_bar.innerHTML = "请先输入内容";
+        permalink_hint_bar.innerHTML = "正文不能为空";
         return;
     }
     if (in_title_bar.value === last_input[0] && in_bar.value === last_input[1]) {
