@@ -45,7 +45,7 @@ function render() {
 function get_input() {
     if (in_title_bar.value.length) {
         return "<h1 class=\"title is-size-3 is-size-4-mobile has-text-weight-normal\">"
-            + in_title_bar.value + "</h1>" + in_bar.value;
+            + in_title_bar.value + "</h1>\n" + in_bar.value;
     }
     return in_bar.value;
 }
