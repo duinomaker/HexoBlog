@@ -6,7 +6,6 @@ splitter = document.getElementById("splitter");
 permalink_bar = document.getElementById("permalink");
 permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
-copy_button = document.getElementById("copy-permalink");
 generate_button = document.getElementById("generate");
 last_input = ["", ""];
 
@@ -19,9 +18,8 @@ katex_config = {
     ]
 };
 
-clipboard = new ClipboardJS("#copy-permalink", {});
+clipboard = new ClipboardJS("#permalink", {});
 clipboard.on("success", function (e) {
-    copy_button.style.display = "none";
     permalink_bar.innerHTML = "";
     permalink_hint_bar.innerHTML = "永久链接已复制至剪贴板";
 });
@@ -71,7 +69,6 @@ function generate(token) {
         if (opener.readyState === 4) {
             if (opener.status === 201) {
                 permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
-                copy_button.style.display = "";
                 permalink_hint_bar.innerHTML = "永久链接已生成，点击链接复制";
                 last_input[0] = in_title_bar.value
                 last_input[1] = in_bar.value;
