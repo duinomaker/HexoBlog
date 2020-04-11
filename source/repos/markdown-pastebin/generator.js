@@ -58,8 +58,8 @@ function generate(token) {
     opener.open("POST", "https://duinomaker.top/server/generate", true);
     opener.setRequestHeader("Content-Type", "application/json");
     opener.send(JSON.stringify({
-        "title": in_title_bar.value,
-        "content": in_bar.value,
+        "title": b64encode(in_title_bar.value),
+        "content": b64encode(in_bar.value),
         "g-recaptcha-response": token
     }));
     opener.onreadystatechange = function () {
