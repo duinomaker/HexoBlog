@@ -37,7 +37,7 @@ function handler(id) {
         if (opener.readyState === 4) {
             if (opener.status === 200) {
                 data = JSON.parse(opener.response);
-                render(b64decode(data["content"], data["title"]));
+                render(b64decode(data["content"]), b64decode(data["title"]));
             } else if (opener.status === 403) {
                 render("编号无效，请检查是否正确地复制了网址");
             } else if (opener.status === 500) {
@@ -47,7 +47,7 @@ function handler(id) {
                     render("服务器处理数据时发生了错误，内容加载失败");
                 }
             } else {
-                render("发生了未知错误");
+                render("发生了未知错误，可能由跨域请求造成");
             }
         }
     };
