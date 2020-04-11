@@ -34,15 +34,20 @@ function b64encode(str) {
 
 function render() {
     if (in_title_bar.value.length) {
-        splitter.style.display = "none";
-        title_bar.innerHTML = marked(in_title_bar.value);
-        renderMathInElement(title_bar, katex_config);
+        if (in_title_bar.value !== last_input[0]) {
+            splitter.style.display = "none";
+            title_bar.innerHTML = in_title_bar.value;
+        }
     } else {
-        splitter.style.display = "";
-        title_bar.innerHTML = "Markdown Pastebin";
+        if (last_input.value.length) {
+            splitter.style.display = "";
+            title_bar.innerHTML = "Markdown Pastebin";
+        }
     }
-    out_bar.innerHTML = marked(in_bar.value);
-    renderMathInElement(out_bar, katex_config);
+    if (in_bar.value !== last_input[1]) {
+        out_bar.innerHTML = marked(in_bar.value);
+        renderMathInElement(out_bar, katex_config);
+    }
 }
 
 function generate(token) {
