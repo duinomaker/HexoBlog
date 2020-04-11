@@ -2,6 +2,7 @@ in_title_bar = document.getElementById("in-title");
 in_bar = document.getElementById("in");
 title_bar = document.getElementsByClassName("title")[0];
 out_bar = document.getElementById("out");
+splitter = document.getElementById("splitter");
 permalink_bar = document.getElementById("permalink");
 permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
@@ -33,9 +34,11 @@ function b64encode(str) {
 
 function render() {
     if (in_title_bar.value.length) {
+        splitter.style.display = "none";
         title_bar.innerHTML = marked(in_title_bar.value);
         renderMathInElement(title_bar, katex_config);
     } else {
+        splitter.style.display = "";
         title_bar.innerHTML = "Markdown Pastebin";
     }
     out_bar.innerHTML = marked(in_bar.value);
@@ -67,7 +70,8 @@ function generate(token) {
             if (opener.status === 201) {
                 permalink_hint_bar.innerHTML = "永久链接已生成，点击链接复制";
                 permalink_bar.innerHTML = "https://duinomaker.top/p/?" + opener.response;
-                last_input = [in_title_bar.value, in_bar.value];
+                last_input[0] = in_title_bar.value
+                last_input[1] = in_bar.value;
             } else if (opener.status === 403) {
                 if (opener.responseText === "Malformed Data") {
                     permalink_hint_bar.innerHTML = "文本框内包含错误格式的内容，请修改后重试";
