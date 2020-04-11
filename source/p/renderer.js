@@ -17,21 +17,21 @@ function handler(id) {
         if (opener.readyState === 4) {
             if (opener.status === 200) {
                 render(b64decode(opener.response));
-                renderMathInElement(out_bar, {
-                    delimiters: [
-                        { left: "$$", right: "$$", display: true },
-                        { left: "\\[", right: "\\]", display: true },
-                        { left: "$", right: "$", display: false },
-                        { left: "\\(", right: "\\)", display: false }
-                    ]
-                });
+                // renderMathInElement(out_bar, {
+                //     delimiters: [
+                //         { left: "$$", right: "$$", display: true },
+                //         { left: "\\[", right: "\\]", display: true },
+                //         { left: "$", right: "$", display: false },
+                //         { left: "\\(", right: "\\)", display: false }
+                //     ]
+                // });
             } else if (opener.status === 403) {
                 render("编号无效，请检查是否正确地复制了网址");
             } else if (opener.status === 500) {
                 if (opener.responseText === "Malformed Data") {
-                    render("服务器提供了错误格式的内容");
+                    render("服务器提供了错误格式的内容，内容加载失败");
                 } else {
-                    render("服务器内部发生了错误");
+                    render("服务器处理数据时发生了错误，内容加载失败");
                 }
             } else {
                 render("发生了未知错误");

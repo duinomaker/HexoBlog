@@ -55,9 +55,13 @@
             <% } %>
         </h1>
         <% } %>
-        <div class="content has-math">
+        <% if (!post.nocontent) { %>
+            <div class="content has-math">
+        <% } %>
             <%- index && post.excerpt ? post.excerpt : post.content %>
-        </div>
+        <% if (!post.nocontent) { %>
+            </div>
+        <% } %>
         <% if (!index && (post.layout == 'post' || post.license != null)) { %>
         <div class="copyright">
             <% if (post.license != 'notrust') { %>

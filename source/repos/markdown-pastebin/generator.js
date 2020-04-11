@@ -59,10 +59,10 @@ function generate(token) {
                 if (opener.responseText === "Malformed Data") {
                     permalink_hint_bar.innerHTML = "文本框内包含错误格式的内容，请修改后重试";
                 } else {
-                    permalink_hint_bar.innerHTML = "reCAPTCHA验证失败或超时，请重试";
+                    permalink_hint_bar.innerHTML = "reCAPTCHA 验证失败或超时，请重试";
                 }
             } else if (opener.status === 500) {
-                permalink_hint_bar.innerHTML = "服务器内部发生了错误，内容上传失败";
+                permalink_hint_bar.innerHTML = "服务器处理数据时发生了错误，内容上传失败";
             } else {
                 permalink_hint_bar.innerHTML = "发生了未知错误，内容上传失败";
             }
