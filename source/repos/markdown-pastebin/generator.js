@@ -81,7 +81,7 @@ function generate(token) {
             } else if (opener.status === 500) {
                 permalink_hint_bar.innerHTML = "服务器处理数据时发生了错误，内容上传失败";
             } else {
-                permalink_hint_bar.innerHTML = "发生了未知错误，内容上传失败";
+                permalink_hint_bar.innerHTML = "发生了未知错误，内容上传失败，可能的原因是内容过长";
             }
         }
     };
