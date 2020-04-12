@@ -82,7 +82,7 @@ function generate(token) {
             } else if (opener.status === 500) {
                 permalink_hint_bar.innerHTML = "服务器处理数据时发生了错误，内容上传失败";
             } else if (opener.status === 503) {
-                permalink_hint_bar.innerHTML = "您的浏览器未通过安全验证，请刷新重试";
+                permalink_hint_bar.innerHTML = "您的浏览器未通过安全验证，请刷新后重试";
             } else {
                 permalink_hint_bar.innerHTML = "内容上传失败，可能的原因是内容过长";
             }
