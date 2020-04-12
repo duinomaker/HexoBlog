@@ -6,7 +6,7 @@ splitter = document.getElementById("splitter");
 permalink_bar = document.getElementById("permalink");
 // permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
-// generate_button = document.getElementById("generate");
+generate_button = document.getElementById("generate");
 last_input = ["", ""];
 
 katex_config = {
@@ -45,6 +45,7 @@ function render() {
 }
 
 function generate(token) {
+    generate_button.setAttribute("disabled", "disabled");
     permalink_bar.innerHTML = "";
     if (in_title_bar.value === "" && in_bar.value === "") {
         permalink_hint_bar.innerHTML = "全文不能为空";

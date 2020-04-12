@@ -27,7 +27,6 @@ function onSubmit(token) {
 }
 
 function onClick() {
-    generate_button.setAttribute("disabled", "disabled");
     if (++counter > 3) {
         permalink_hint_bar.innerHTML = "您的操作过于频繁，请仔细考虑后再做决定哦～";
     }
