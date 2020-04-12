@@ -34,9 +34,11 @@ function b64encode(str) {
 
 function render() {
     if (in_title_bar.value !== "") {
+        document.title = in_title_bar.value;
         splitter.style.display = "none";
         title_bar.innerText = in_title_bar.value;
     } else {
+        document.title = "Markdown Pastebin - duinomaker's blog";
         splitter.style.display = "";
         title_bar.innerText = "Markdown Pastebin";
     }

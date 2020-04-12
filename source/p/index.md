@@ -1,5 +1,5 @@
 ---
-title:
+title: Markdown Pastebin
 canonical_url: https://duinomaker.top/p/
 widgets:
 comment:

@@ -20,6 +20,7 @@ function render(content, title) {
         return;
     }
     if (title.length) {
+        document.title = title;
         title_bar.removeAttribute("hidden");
         title_bar.innerText = title;
     }
