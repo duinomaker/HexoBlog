@@ -54,7 +54,7 @@ function handler(id) {
 }
 
 matched = window.location.toString().match(/\?([a-zA-Z]+)/);
-if (matched !== null && matched[1].length === 4) {
+if (matched !== null && matched[1].length === 8) {
     try {
         content = handler(matched[1]);
     }
