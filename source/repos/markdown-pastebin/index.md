@@ -19,6 +19,7 @@ article:
 
 <script>
 permalink_hint_bar = document.getElementById("permalink-hint");
+generate_button = document.getElementById("generate");
 counter = 0;
 function onSubmit(token) {
     generate(token);
@@ -26,6 +27,7 @@ function onSubmit(token) {
 }
 
 function onClick() {
+    generate_button.setAttribute("disabled", "disabled");
     if (++counter > 3) {
         permalink_hint_bar.innerHTML = "您的操作过于频繁，请仔细考虑后再做决定哦～";
     }

@@ -4,9 +4,9 @@ title_bar = document.getElementsByClassName("title")[0];
 out_bar = document.getElementById("out");
 splitter = document.getElementById("splitter");
 permalink_bar = document.getElementById("permalink");
-permalink_hint_bar = document.getElementById("permalink-hint");
+// permalink_hint_bar = document.getElementById("permalink-hint");
 render_button = document.getElementById("render");
-generate_button = document.getElementById("generate");
+// generate_button = document.getElementById("generate");
 last_input = ["", ""];
 
 katex_config = {
@@ -33,28 +33,21 @@ function b64encode(str) {
 }
 
 function render() {
-    if (in_title_bar.value.length) {
-        if (in_title_bar.value !== last_input[0]) {
-            splitter.style.display = "none";
-            title_bar.innerHTML = in_title_bar.value;
-        }
+    if (in_title_bar.value !== "") {
+        splitter.style.display = "none";
+        title_bar.innerText = in_title_bar.value;
     } else {
-        if (last_input.value.length) {
-            splitter.style.display = "";
-            title_bar.innerHTML = "Markdown Pastebin";
-        }
+        splitter.style.display = "";
+        title_bar.innerText = "Markdown Pastebin";
     }
-    if (in_bar.value !== last_input[1]) {
-        out_bar.innerHTML = marked(in_bar.value);
-        renderMathInElement(out_bar, katex_config);
-    }
+    out_bar.innerHTML = marked(in_bar.value);
+    renderMathInElement(out_bar, katex_config);
 }
 
 function generate(token) {
-    generate_button.setAttribute("disabled", "disabled");
     permalink_bar.innerHTML = "";
-    if (!in_bar.value.length) {
-        permalink_hint_bar.innerHTML = "正文不能为空";
+    if (in_title_bar.value === "" && in_bar.value === "") {
+        permalink_hint_bar.innerHTML = "全文不能为空";
         return;
     }
     if (in_title_bar.value === last_input[0] && in_bar.value === last_input[1]) {
@@ -79,7 +72,7 @@ function generate(token) {
                 last_input[1] = in_bar.value;
             } else if (opener.status === 403) {
                 if (opener.responseText === "Malformed Data") {
-                    permalink_hint_bar.innerHTML = "文本框内包含错误格式的内容，请修改后重试";
+                    permalink_hint_bar.innerHTML = "文本框内容格式有误，请修改后重试";
                 } else {
                     permalink_hint_bar.innerHTML = "reCAPTCHA 验证失败或超时，请重试";
                 }
