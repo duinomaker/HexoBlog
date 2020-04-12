@@ -21,8 +21,7 @@ function render(content, title) {
     }
     if (title.length) {
         title_bar.removeAttribute("hidden");
-        title_bar.innerHTML = title;
-        renderMathInElement(title_bar, katex_config);
+        title_bar.innerText = title;
     }
     out_bar.innerHTML = marked(content);
     renderMathInElement(out_bar, katex_config);
