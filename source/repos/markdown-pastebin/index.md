@@ -11,9 +11,9 @@ article:
 .katex { font-size: initial !important; }
 .grecaptcha-badge { z-index: 1; }
 </style>
-<hr id="splitter" />
+<hr id="splitter" style="display: none;" />
 
-<div id="out"><br /></div>
+<div id="out"></div>
 
 ---
 

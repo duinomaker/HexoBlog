@@ -39,7 +39,7 @@ function render() {
         title_bar.innerText = in_title_bar.value;
     } else {
         document.title = "Markdown Pastebin - duinomaker's blog";
-        splitter.style.display = "";
+        splitter.style.display = in_bar.value === "" ? "none" : "";
         title_bar.innerText = "Markdown Pastebin";
     }
     out_bar.innerHTML = marked(in_bar.value);
