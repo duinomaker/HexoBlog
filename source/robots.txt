@@ -12,6 +12,7 @@ Disallow: /diaries/*
 Disallow: /diaries/*/*
 Disallow: /repos/*
 Disallow: /repos/*/*
+Disallow: /p/*
 Disallow: /maintenance/*
 Disallow: /archives/*
 Disallow: /archives/*/*

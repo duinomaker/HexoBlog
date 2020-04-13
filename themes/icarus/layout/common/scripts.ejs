@@ -1,6 +1,6 @@
 <%- _js(cdn('jquery', 'latest', 'dist/jquery.min.js')) %>
 <%- _js(cdn('moment', 'latest', 'min/moment-with-locales.min.js')) %>
-<script>moment.locale("<%= get_config('language', 'en') %>");</script>
+<script type="text/javascript">moment.locale("<%= get_config('language', 'en') %>");</script>
 
 <%
 let externalLink = get_config('external_link');
@@ -13,7 +13,7 @@ if (typeof externalLink === 'boolean') {
     };
 }
 %>
-<script>
+<script type="text/javascript">
 var IcarusThemeSettings = {
     site: {
         url: '<%= config.url %>',

@@ -1,5 +1,5 @@
 <% if (has_config('comment.shortname')) { %>
-<script>
+<script type="text/javascript">
     var disqus_config = function () {
         this.page.url = '<%= permalink %>';
         this.page.identifier = '<%= disqusId || path %>';

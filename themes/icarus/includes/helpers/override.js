@@ -147,7 +147,7 @@ module.exports = function (hexo) {
         if (!url.endsWith('.js') && !url.includes('?')) {
             url += '.js';
         }
-        return `<script src="${urlFor(url)}"${async ? ' async' : ''}${defer ? ' defer' : ''}></script>`;
+        return `<script type="text/javascript" src="${urlFor(url)}"${async ? ' async' : ''}${defer ? ' defer' : ''}></script>`;
     });
 
     hexo.extend.helper.register('_css', function (url) {

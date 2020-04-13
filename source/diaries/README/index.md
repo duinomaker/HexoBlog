@@ -16,8 +16,8 @@ license: noshare
 
 某些时候，一些特定的内容涉及隐私。这些内容我不想揭露，但必须得写下来，于是就有了加密机制。下方是加密内容的一个例子，我使用了 AES (CBC 模式 + PKCS7 填充)：
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" defer></script>
-<script src="/js/decrypt.js" defer></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" defer></script>
+<script type="text/javascript" src="/js/decrypt.js" defer></script>
 <div class="field has-addons">
 <p class="control has-icons-left">
     <input id="password" class="input" type="password" maxlength="16" placeholder="Type your AES key here" digest="81c20ce8ef4b4f89f892054c327a16a994ffff00835dc507084444b82f448c86">
@@ -30,7 +30,7 @@ license: noshare
 </p>
 </div>
 
-<span class="encrypted" iv="9l+vzPUXSdwbdqIV">9a f5 ea 4e 68 da 9d 7f 37 60 35 bd ae da e9 99 ac 25 c3 e5 66 22 b2 26 99 83 c8 87 fe dc 6f 10 a3 48 42 24 6e f5 31 87 a4 c5 0f 52 42 a3 e3 23</span>
+<span class="encrypted" iv="pRJKA8gLz6MnZWV3">9a bc c3 09 cb 6f bd 94 bc e3 77 66 50 e1 3a 59 bf 34 6f 2f 6a eb 01 38 d1 d4 79 b6 b8 7f b9 7c 62 d5 a9 44 2a f0 f8 25 00 eb 88 ce 2b 78 8e ac</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 

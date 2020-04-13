@@ -1,4 +1,4 @@
-<!-- <script>
+<!-- <script type="text/javascript">
     window.MathJax = {
         chtml: {
             scale: 0.85,
@@ -27,12 +27,12 @@
         }
     };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" defer></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" defer></script> -->
 
 <%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
 <%- _js(cdn('katex', 'latest', 'dist/katex.min.js'), true) %>
 <%- _js(cdn('katex', 'latest', 'dist/contrib/auto-render.min.js'), true) %>
-<script>
+<script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
         contents = document.getElementsByClassName("has-math");
         for (i = 0; i < contents.length; ++i) {

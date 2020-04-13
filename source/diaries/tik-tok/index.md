@@ -14,8 +14,8 @@ license: noshare
 
 <span class="mono">2020-03-18</span>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" defer></script>
-<script src="/js/decrypt.js" defer></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" defer></script>
+<script type="text/javascript" src="/js/decrypt.js" defer></script>
 <div class="field has-addons">
 <p class="control has-icons-left">
     <input id="password" class="input" type="password" maxlength="16" placeholder="Type your AES key here" digest="e83879cd6fbd119cd9f3323c1ae63dbd1059802d922b15099f8b289bf15c86a3">
@@ -49,7 +49,7 @@ Tik Tok 这个平台，我们都听说过，自己身边不少人会去看。
 
 好，原因列出来了，我想前三条都不是大问题。最让我自己担心的是：第四条的逻辑何在？
 
-这样的逻辑，似乎有点眼熟？我记得在我的舍友 <span class="encrypted" iv="pDVeZ+agJPreVOuC">88 84 1e d6 6a 78 f2 53 c3 91 0c 86 01 a3 61 39</span> 身上也见到过。他是个游戏玩家，每天可以在打游戏上面花极多时间，可以说占用了超过半数的学习时间。期末考试之前一段时间，我非常明显地见识到了这个逻辑：
+这样的逻辑，似乎有点眼熟？我记得在我的舍友 <span class="encrypted" iv="serz3HvOIoxnATXW">6f 3a a1 7a c6 3e eb 4d 72 dd 02 3e a1 1b bd 44</span> 身上也见到过。他是个游戏玩家，每天可以在打游戏上面花极多时间，可以说占用了超过半数的学习时间。期末考试之前一段时间，我非常明显地见识到了这个逻辑：
 
 “你们都学得好认真啊，我都要跟不上了。”
 “那就赶紧去学习啊。”

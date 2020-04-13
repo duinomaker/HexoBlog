@@ -18,9 +18,9 @@ article:
 ---
 
 <p id="out" class="mono"><br /></p>
-<script src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
-<script src="converter.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="converter.js"></script>
 
 ---
 
