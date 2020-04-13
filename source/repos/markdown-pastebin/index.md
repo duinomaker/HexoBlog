@@ -8,7 +8,7 @@ article:
         clipboard: false
 ---
 <style>
-.katex { font-size: initial !important; }
+.katex { font-size: 1.21em !important; }
 .grecaptcha-badge { z-index: 1; }
 </style>
 <hr id="splitter" style="display: none;" />
