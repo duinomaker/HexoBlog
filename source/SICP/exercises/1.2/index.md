@@ -214,7 +214,7 @@ $$\begin{aligned}f(0)&=0,\\;f(1)=1\\\\f(n)&=f(n-1)+f(n-2)+1\end{aligned}$$
 
 稍加推导，可以发现：
 
-$$\begin{aligned}f(n)-f(n-1)&={\rm Fib}(n)\\\\f(n)&=\sum_{i=0}^n{\rm Fib}(n)\\\\f(n)&={\rm Fib}(n+2)-1\end{aligned}$$
+$$\begin{aligned}f(n)-f(n-1)&={\rm Fib}(n)\\\\f(n)&=\sum_{i=0}^n{\rm Fib}(i)\\\\f(n)&={\rm Fib}(n+2)-1\end{aligned}$$
 
 设 `remainder` 在应用序求值中的总调用次数为 $n$，在正则序求值中的总调用次数为 ${\rm R}(n)$，可以得出：
 
