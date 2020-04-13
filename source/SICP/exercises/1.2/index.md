@@ -218,6 +218,6 @@ $$\begin{aligned}f(n)-f(n-1)&={\rm Fib}(n)\\\\f(n)&=\sum_{i=0}^n{\rm Fib}(i)\\\\
 
 设 `remainder` 在应用序求值中的总调用次数为 $n$，在正则序求值中的总调用次数为 ${\rm R}(n)$，可以得出：
 
-$$\begin{aligned}{\rm R}(n)&=n+\sum_{i=0}^nf(n)\\\\{\rm R}(n)&={\rm Fib}(n+4)-3\end{aligned}$$
+$$\begin{aligned}{\rm R}(n)&=n+\sum_{i=0}^nf(i)\\\\{\rm R}(n)&={\rm Fib}(n+4)-3\end{aligned}$$
 
 本题中 ${\rm R}(4)=18$，由此可以看出正则序求值可能造成大量的冗余计算。
