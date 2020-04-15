@@ -5,7 +5,7 @@ widgets:
 comment:
 license: by-nc-sa
 ---
-<style>.katex { font-size: initial !important; }</style>
+
 ---
 
 为了探究一奇数 $n>1$ 的素性，将其用 $e$ 和 $k$ 来表示，使得 $n-1=2^ek$，其中 $k$ 为奇数。

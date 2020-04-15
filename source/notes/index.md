@@ -1,6 +1,7 @@
 ---
 title: Notes
 canonical_url: https://duinomaker.top/notes/
+comment:
 plugins:
 article:
     highlight:
