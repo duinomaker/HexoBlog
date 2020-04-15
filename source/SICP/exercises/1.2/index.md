@@ -208,16 +208,117 @@ b. 空间增长为 $\Theta(\log n)$ 阶，时间增长也为 $\Theta(\log n)$ �
 
 正则序求值最后用于计算的调用次数，等于应用序求值的总调用次数。接下来只需要分析用于条件判断的调用次数。
 
-将第 $n$ 条 `if` 表达式的条件部分中 `remainder` 的出现次数记作 $f(n)$，可以发现：
+将第 $n$ 条 `if` 表达式的条件部分中 `remainder` 的出现次数记作 $f(n)$，可以发现
 
 $$\begin{aligned}f(0)&=0,\\;f(1)=1\\\\f(n)&=f(n-1)+f(n-2)+1\end{aligned}$$
 
-稍加推导，可以发现：
+稍加推导，可以发现
 
 $$\begin{aligned}f(n)-f(n-1)&={\rm Fib}(n)\\\\f(n)&=\sum_{i=0}^n{\rm Fib}(i)\\\\f(n)&={\rm Fib}(n+2)-1\end{aligned}$$
 
-设 `remainder` 在应用序求值中的总调用次数为 $n$，在正则序求值中的总调用次数为 ${\rm R}(n)$，可以得出：
+设 `remainder` 在应用序求值中的总调用次数为 $n$，在正则序求值中的总调用次数为 ${\rm R}(n)$，可以得出
 
 $$\begin{aligned}{\rm R}(n)&=n+\sum_{i=0}^nf(i)\\\\{\rm R}(n)&={\rm Fib}(n+4)-3\end{aligned}$$
 
 本题中 ${\rm R}(4)=18$，由此可以看出正则序求值可能造成大量的冗余计算。
+
+## Exercise 1.21
+
+    199, 1999, 7
+
+## Exercise 1.22
+
+不得不吐槽书中的程序，实在不好用，所以自己重写了一个，正好后面几题也用得到：
+
+    (define (report-time start-time) 
+      (display (- (runtime) start-time))
+      (newline))
+    (define (conditional-time-report pred-proc p1)
+      (define (timer start-time)
+        (cond ((pred-proc p1) (report-time start-time) #t)
+              (else #f)))
+      (timer (runtime)))
+    (define (search-for-primes num cnt)
+      (if (> cnt 0)
+          (if (conditional-time-report prime? num)
+              (search-for-primes (+ num 2) (- cnt 1))
+              (search-for-primes (+ num 2) cnt))))
+    (search-for-primes <an odd number to start with> <how many prime numbers before stop>)
+
+$n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验证该算法的增长阶为 $\Theta(\sqrt n)$ 。
+
+## Exercise 1.23
+
+时间大约是原来的一半多一些：一半因为要测试的数减少了约一半，多一些是因为一个额外的 `if` 语句。
+
+## Exercise 1.24
+
+增长得比预期更快。这是因为，基本操作的所需时间，会随着数字规模的增大而增加的。而这时，我们得出增长阶为 $\Theta(\log n)$ 的假设——基本操作需要常数时间——失效了。
+
+## Exercise 1.25
+
+对是对，但这样做会产生巨大的中间数，从而需要大量时间来处理大数。
+
+## Exercise 1.26
+
+用两次递归调用代替了原来的平方，现在的 `expmod` 呈现树形递归，计算树形递归的所需时间根据树高指数增长。这里树高为 $\log(n)$，那么增长阶为 $\Theta(e^{\log n})=\Theta(n)$ 。
+
+## Exercise 1.27
+
+    (define (full-fermat-test n)
+      (define (test-it a)
+        (= (expmod a n n) a))
+      (define (test-impl m)
+        (cond ((= m n) #t)
+              ((test-it m) (test-impl (+ m 1)))
+              (else #f)))
+      (test-impl 1))
+    (full-fermat-test 561)
+    (full-fermat-test 1105)
+    (full-fermat-test 1729)
+    ...
+    (prime? 561)
+    (prime? 1105)
+    (prime? 1729)
+    ...
+
+用 `prime?` 确定它们都不是质数，但 “骗过” 了所有费马测试。
+
+## Exercise 1.28
+
+这题有些难度，用到了一个结论：若存在 $1\lt a\lt n-1$，使得 $a^2\equiv 1\mod n$ 成立，则 $n$ 不是质数。
+
+证明这个结论，需要证明若 $n$ 是质数，则 $x_1=1,x_2=n-1$ 是 $x^2\equiv1\mod n$ 仅有的两个解：
+
+$$\begin{aligned}\begin{aligned}x^2&\equiv1\mod n\\\\x^2-1&\equiv0\mod n\\\\(x-1)(x+1)&\equiv0\mod n\end{aligned}\\\\\begin{aligned}&\therefore n\mid(x-1)\\;\text{或}\\;n\mid(x+1)\\\\&\because n\\;\text{是质数}\\;\therefore(x-1)\\;\text{或}\\;(x+1)\\;\text{是}\\;n\\;\text{的倍数}\\\\&\therefore x_1=1,x_2=n-1\end{aligned}\end{aligned}$$
+
+若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 $nontrivial\\;square\\;root\\,(\text{非平凡平方根})$，若 $n$ 有非平凡平方根，则其不是质数。
+
+这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0$ 。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/SICP/assets/miller-rabin/">$Miller\text{-}Rabin$ 素性测试的原理及实现</a>。
+
+    (define (square x) (* x x))
+
+    (define (miller-rabin-expmod base ex n)
+      (define (squaremod-with-check x)
+        (define (check squaremod-x)
+          (if (and (= squaremod-x 1)
+                   (not (= x 1))
+                   (not (= x (- n 1))))
+              0
+              squaremod-x))
+        (check (remainder (* x x) n)))
+      (cond ((= ex 0) 1)
+            ((even? ex)
+             (squaremod-with-check (miller-rabin-expmod base (/ ex 2) n)))
+            (else
+             (remainder (* base (miller-rabin-expmod base (- ex 1) n)) n))))
+    
+    (define (miller-rabin-test n rounds)
+      (define (test-it a)
+        (define (test-impl expmod-a)
+          (and (= expmod-a 1) (not (= expmod-a 0))))
+        (test-impl (miller-rabin-expmod a (- n 1) n)))
+      (cond ((= rounds 0) #t)
+            ((test-it (+ 1 (random (- n 1))))
+             (miller-rabin-test n (- rounds 1)))
+            (else #f)))

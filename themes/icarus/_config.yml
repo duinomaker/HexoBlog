@@ -33,7 +33,8 @@ navbar:
         Home: /
         Archives: /archives/
         Categories: /categories/
-        Tags: /tags/
+        Notes: /notes/
+        # Tags: /tags/
         About: /about/
     # Navigation bar links to be shown on the right
     # links:

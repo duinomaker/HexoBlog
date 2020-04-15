@@ -98,7 +98,7 @@ void modify(int x, int y, int val, int p = 0)
 
 于是考虑这样一个区间 $0$，和它的两个子区间 $1$ 和 $2$，如图：
 
-<img class="lazyload" src="/images/segment-tree-lazytag_1.jpg" width="100%" alt="">
+<img src="/images/segment-tree-lazytag_1.jpg" width="100%">
 
 接着，我们记区间 $i$ 的区间的元素个数为 $span_i$、区间和为 $sum_i$、修改前的初始区间和为 $sum^\prime_i$、区间延迟加法的懒标记为 $lazyadd_i$、区间延迟乘法的懒标记为 $lazymul_i$ 。于是有以下初始情况，初始情况下，$lazyadd_i=0,lazymul_i=1$：
 
