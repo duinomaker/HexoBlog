@@ -292,7 +292,7 @@ $n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验
 
 $$\begin{aligned}\begin{aligned}x^2&\equiv1\mod n\\\\x^2-1&\equiv0\mod n\\\\(x-1)(x+1)&\equiv0\mod n\end{aligned}\\\\\begin{aligned}&\therefore n\mid(x-1)\\;\text{或}\\;n\mid(x+1)\\\\&\because n\\;\text{是质数}\\;\therefore(x-1)\\;\text{或}\\;(x+1)\\;\text{是}\\;n\\;\text{的倍数}\\\\&\therefore x_1=1,x_2=n-1\end{aligned}\end{aligned}$$
 
-若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 $nontrivial\\;square\\;root\\,(\text{非平凡平方根})$，若 $n$ 有非平凡平方根，则其不是质数。
+若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 $nontrivial\\;square\\;root$（非平凡平方根）。若 $n$ 有非平凡平方根，则其不是质数。
 
 这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0$ 。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/SICP/assets/miller-rabin/">$Miller\text{-}Rabin$ 素性测试的原理及实现</a>。
 
