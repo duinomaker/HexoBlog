@@ -92,7 +92,7 @@ function decode() {
 document.getElementById('decode').removeAttribute('disabled')
 document.getElementById('encode').removeAttribute('disabled')
 
-var clipboard = new ClipboardJS("#encode", {})
+var clipboard = new ClipboardJS("#encode")
 clipboard.on('success', function (e) {
     if (output_bar.innerHTML == '')
         output_bar.innerHTML = '请输入需要编码的内容'

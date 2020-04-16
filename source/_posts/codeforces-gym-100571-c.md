@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/codeforces-gym-100571-c/
 date: 2020-03-27 18:14:59
 categories: [Algorithm Contest]
 tags: [Offline Query, Sparse Table]
-toc: true
+widgets:
 ---
 
 题目链接：{% link Codeforces Hello 2015 (Div.2) - LCM Query https://codeforces.com/gym/100571/problem/C %}

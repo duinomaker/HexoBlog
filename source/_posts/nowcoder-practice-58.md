@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/nowcoder-practice-58/
 date: 2020-03-02 11:11:11
 categories: [Algorithm Contest]
 tags: [Brute Force, Depth-first Searching, Dynamic Programming, Offline Query]
-toc: true
+widgets:
 ---
 
 解题报告 ( <font color="#0db104">A</font><font color="#0db104">B</font><font color="#0db104">C</font><font color="#0db104">D</font><font color="#0db104">E</font><font color="#7a7a7a">F</font> )

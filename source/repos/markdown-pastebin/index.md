@@ -21,7 +21,7 @@ article:
 
 <input id="in-title" class="input" type="text" placeholder="标题" />
 <textarea id="in" class="textarea" rows="8" placeholder="正文"></textarea>
-<div class="level"><div class="level-item"><a id="permalink" data-clipboard-target="#permalink"></a></div><div class="level-item"><p id="permalink-hint"></p></div></div><div class="level"><div class="level-item"><div class="field has-addons" style="margin-bottom: -1em;"><p class="control"><button id="render" class="button" onclick="render();" disabled="disabled">render</button></p><p class="control"><button id="generate" class="g-recaptcha button" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy" data-callback="onSubmit" disabled="disabled">generate permalink</button></p></div></div></div>
+<div class="level"><div class="level-item"><a id="permalink" href="javascript:;" data-clipboard-target="#permalink"></a></div><div class="level-item"><p id="permalink-hint"></p></div></div><div class="level"><div class="level-item"><div class="field has-addons" style="margin-bottom: -1em;"><p class="control"><button id="render" class="button" onclick="render();" disabled="disabled">render</button></p><p class="control"><button id="generate" class="g-recaptcha button" data-sitekey="6LdbiegUAAAAAEzvi3nQoBl2viN_2dV2uBsT9iDy" data-callback="onSubmit" disabled="disabled">generate permalink</button></p></div></div></div>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/crypto-js@latest/crypto-js.min.js"></script>

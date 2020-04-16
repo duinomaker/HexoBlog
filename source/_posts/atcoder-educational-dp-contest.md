@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/atcoder-educational-dp-contest/
 date: 2020-05-15 23:14:59
 categories: [Algorithm Contest]
 tags: [Dynamic Programming]
-toc: true
+widgets:
 ---
 
 比赛链接：{% link AtCoder Educational DP Contest https://atcoder.jp/contests/dp %}
@@ -469,4 +469,15 @@ int main()
         scanf("%d", &a[i]);
     puts(dfs(k) == 1 ? "First" : "Second");
 }
+```
+
+## L - {% link Deque https://atcoder.jp/contests/dp/tasks/dp_l AtCoder Educational DP Contest - L - Deque %}
+
+### 题意
+
+### 题解
+
+### 参考代码
+
+``` c++ L.cpp
 ```

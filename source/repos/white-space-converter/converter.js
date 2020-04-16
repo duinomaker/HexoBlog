@@ -51,7 +51,7 @@ function decode() {
         output_bar.innerHTML = cipherToString(cipher.join(''), dict)
 }
 
-const clipboard = new ClipboardJS("#encode", {})
+const clipboard = new ClipboardJS("#encode")
 clipboard.on('success', function (e) {
     if (output_bar.innerHTML == '')
         output_bar.innerHTML = '请输入需要编码的内容'

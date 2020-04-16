@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/segment-tree-lazytag/
 date: 2020-03-15 20:28:39
 categories: [Algorithm Contest, Segment Tree]
 tags: [Segment Tree]
-toc: true
+widgets:
 license: by-sa
 ---
 

@@ -10,7 +10,7 @@ canonical_url: https://duinomaker.top/
 rss: /atom.xml
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 # logo: /images/logo.svg
-logo: /images/logo.svg
+logo: /images/misc/logo.svg
 
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
@@ -159,7 +159,7 @@ widgets:
         location: Jiangsu, China
         # Path or URL to the avatar to be shown in the profile widget
         # avatar: /images/avatar.jpg
-        avatar: /images/avatar.jpg
+        avatar: /images/misc/avatar.jpg
         # Email address for the Gravatar to be shown in the profile widget
         gravatar: 
         # Whether to show avatar image rounded or square

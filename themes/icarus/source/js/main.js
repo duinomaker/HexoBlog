@@ -72,7 +72,10 @@
                 $(this).attr('id', id);
                 $(this).find('figcaption div.level-right').append(button);
             });
-            new ClipboardJS('.highlight .copy');
+            selection = new ClipboardJS('.highlight .copy');
+            selection.on("success", function (e) {
+                e.clearSelection();
+            });
         }
 
         if (fold) {

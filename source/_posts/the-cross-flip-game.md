@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/the-cross-flip-game/
 date: 2020-02-11 22:34:37
 categories: [Algorithm Contest]
 tags: [Linear Algebra]
-toc: true
+widgets:
 ---
 
 十字翻转棋问题有更巧妙的解法吗？线性代数带给我们不少启发。

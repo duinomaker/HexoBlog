@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/sparse-table/
 date: 2020-03-25 23:49:12
 categories: [Algorithm Contest]
 tags: [Sparse Table]
-toc: true
+widgets:
 license: by-sa
 ---
 

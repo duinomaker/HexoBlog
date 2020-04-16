@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/nowcoder-2020-winter-camp-6/
 date: 2020-02-15 23:02:53
 categories: [Algorithm Contest]
 tags: [Graph Theory, Depth-first Searching]
-toc: true
+widgets:
 ---
 
 解题报告 ( <font color="#0db104">A</font><font color="#0db104">B</font><font color="#7a7a7a">C</font><font color="#0db104">D</font><font color="#7a7a7a">E</font><font color="#0db104">F</font><font color="#0db104">G</font><font color="#0db104">H</font><font color="#7a7a7a">I</font><font color="#0db104">J</font> )

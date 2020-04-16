@@ -1,4 +1,7 @@
 <% post = post(); %>
+<% if (!index && post.redirect) { %>
+    <script type="text/javascript">document.location = "<%= post.canonical_url.slice(22) %>";</script>
+<% } else { %>
 <div class="card">
     <% if (has_thumbnail(post)) { %>
     <div class="card-image">
@@ -30,26 +33,26 @@
                 <span class="level-item has-text-grey">
                     <i class="fas fa-file-word"></i>&nbsp;<%= wordcount(post.content) %>&nbsp;words
                 </span>
-                <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
+                <!-- <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
                 <span class="level-item has-text-grey">
                     <% const words = word_count(post._content); %>
                     <% const time = duration((words / 150.0) * 60, 'seconds') %>
                     <%= `${ time.locale(get_config('language', 'en')).humanize() } ${ __('article.read')} (${ __('article.about') } ${ words } ${ __('article.words') })` %>
                 </span>
-                <% } %>
-                <% if (!index && (has_config('plugins.busuanzi') ? get_config('plugins.busuanzi') : false)) { %>
+                <% } %> -->
+                <!-- <% if (!index && (has_config('plugins.busuanzi') ? get_config('plugins.busuanzi') : false)) { %>
                 <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
                     <i class="far fa-eye"></i>
                     <%- _p('plugin.visit', '<span id="busuanzi_value_page_pv">0</span>') %>
                 </span>
-                <% } %>
+                <% } %> -->
             </div>
         </div>
         <% } %>
         <% if (!post.nocontent) { %>
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             <% if (index) { %>
-            <a class="has-link-black-ter" href="<%- url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
+            <a class="has-link-black-ter" href="<%- post.redirect ? post.canonical_url.slice(22) : url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
             <% } else { %>
             <%= post.title %>
             <% } %>
@@ -93,12 +96,12 @@
             }) %>
         </div>
         <% } %>
-        <% if (index && post.excerpt) { %>
+        <% if (index && post.excerpt && !post.redirect) { %>
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
                     <a class="button is-size-7 is-light"
-                        href="<%- url_for(post.path) %>#more"><%= __('article.more') %></a>
+                        href="<%- post.redirect ? post.canonical_url.slice(22) : url_for(post.path) + '#more' %>"><%= __('article.more') %></a>
                 </div>
             </div>
         </div>
@@ -225,4 +228,5 @@
     <% } %>
 </div>
 </div>
+<% } %>
 <% } %>

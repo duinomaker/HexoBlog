@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/posts/segment-tree/
 date: 2020-03-09 23:58:03
 categories: [Algorithm Contest, Segment Tree]
 tags: [Segment Tree]
-toc: true
+widgets:
 license: by-sa
 ---
 

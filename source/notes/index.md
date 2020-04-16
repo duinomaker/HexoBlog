@@ -8,9 +8,23 @@ article:
         clipboard: false
 ---
 
----
-
-<figure>
-<a href="/SICP/" target="_self"><img class="image not-gallery-item" src="/images/sicp.jpg" alt="SICP" style="width: 128px;" /></a>
-<p class="rigid">SICP</p>
+<figure class="image has-mb-6">
+<a href="/SICP/" target="_self"><img class="image not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
+<p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
 </figure>
+
+<!-- <div class="tile is-ancestor">
+<div class="tile">
+<figure class="image has-mb-6">
+<a href="/SICP/" target="_self"><img class="image not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
+<p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
+</figure>
+</div>
+
+<div class="tile">
+<figure class="image has-mb-6">
+<a href="/ITC/" target="_self"><img class="image not-gallery-item" src="/images/books/itc.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
+<p class="rigid">Introduction to the<br />Theory of Computation</p>
+</figure>
+</div>
+</div> -->

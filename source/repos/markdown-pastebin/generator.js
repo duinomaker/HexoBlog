@@ -18,7 +18,7 @@ katex_config = {
     ]
 };
 
-clipboard = new ClipboardJS("#permalink", {});
+clipboard = new ClipboardJS("#permalink");
 clipboard.on("success", function (e) {
     permalink_bar.innerHTML = "";
     permalink_hint_bar.innerHTML = "永久链接已复制至剪贴板";
