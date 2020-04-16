@@ -23,6 +23,11 @@ module.exports = {
         [doc]: 'Enable the MathJax plugin\nhttps://ppoffice.github.io/hexo-theme-icarus/Plugins/General/mathjax-plugin/',
         [defaultValue]: true
     },
+    katex: {
+        [type]: 'boolean',
+        [doc]: 'Enable the KaTeX plugin',
+        [defaultValue]: false
+    },
     'back-to-top': {
         [type]: 'boolean',
         [doc]: 'Show the back to top button on mobile devices',

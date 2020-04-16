@@ -1,17 +1,17 @@
-<!-- <script type="text/javascript">
+<script type="text/javascript">
     window.MathJax = {
         chtml: {
-            scale: 0.85,
-            matchFontHeight: true
+            matchFontHeight: false
         },
         tex: {
+            tags: 'ams',
             inlineMath: [
                 ['$', '$']
             ],
-            autoload: {
-                color: [],
-                colorV2: ['color']
-            },
+            // autoload: {
+            //     color: [],
+            //     colorV2: ['color']
+            // },
             packages: { '[+]': ['noerrors'] }
         },
         svg: {
@@ -27,21 +27,4 @@
         }
     };
 </script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" defer></script> -->
-
-<%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
-<%- _js(cdn('katex', 'latest', 'dist/katex.min.js'), true) %>
-<%- _js(cdn('katex', 'latest', 'dist/contrib/auto-render.min.js'), true) %>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function () {
-        contents = document.getElementsByClassName("has-math");
-        for (i = 0; i < contents.length; ++i) {
-            renderMathInElement(contents[i], {
-                delimiters: [
-                    { left: "$$", right: "$$", display: true },
-                    { left: "$", right: "$", display: false }
-                ]
-            });
-        }
-    });
-</script>
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>

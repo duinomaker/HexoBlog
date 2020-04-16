@@ -505,15 +505,15 @@ figure.highlight
  * Fix Math Overflow and Truncation Problems
  * --------------------------------- */
 
-.MJXc-display, .MathJax, .katex-display
+.katex-display, .tagged-math, :not(.tagged-math) > .MathJax
     overflow-x: auto
     overflow-y: hidden
 
-.katex-html
-    padding-top: 1em
-
 .katex-display
     margin-top: -1em !important
+
+.katex-html
+    padding-top: 1em
 
 .katex
     font-size: 1em !important

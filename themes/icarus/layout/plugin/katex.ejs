@@ -1,0 +1,16 @@
+<%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
+<%- _js(cdn('katex', 'latest', 'dist/katex.min.js'), true) %>
+<%- _js(cdn('katex', 'latest', 'dist/contrib/auto-render.min.js'), true) %>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        contents = document.getElementsByClassName("has-math");
+        for (i = 0; i < contents.length; ++i) {
+            renderMathInElement(contents[i], {
+                delimiters: [
+                    { left: "$$", right: "$$", display: true },
+                    { left: "$", right: "$", display: false }
+                ]
+            });
+        }
+    });
+</script>

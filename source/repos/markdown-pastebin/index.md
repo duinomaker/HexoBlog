@@ -3,12 +3,15 @@ title: 'Markdown Pastebin'
 canonical_url: https://duinomaker.top/repos/markdown-pastebin/
 widgets:
 comment:
+plugins:
+    mathjax: false
+    katex: true
 article:
     highlight:
         clipboard: false
 ---
 <style>
-.katex { font-size: initial !important; }
+/* .katex { font-size: initial !important; } */
 .grecaptcha-badge { z-index: 1; }
 </style>
 <hr id="splitter" style="display: none;" />
