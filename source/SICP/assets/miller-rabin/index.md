@@ -3,9 +3,6 @@ title: Miller-Rabin 素性测试
 canonical_url: https://duinomaker.top/SICP/assets/miller-rabin/
 widgets:
 comment:
-plugins:
-    mathjax: true
-    katex: false
 license: by-nc-sa
 ---
 
@@ -23,11 +20,11 @@ $$(a^k-1)(a^k+1)(a^{2k}+1)(a^{4k}+1)\cdots(a^{2^{e-1}k}+1)\equiv0\\;({\rm mod}\\
 
 若 $n$ 为质数，那么上式中的某一项必须等于 $0\\;({\rm mod}\\;n)$，所以
 
-<p class="tagged-math">$$\begin{equation}a^k\equiv1\;({\rm mod}\;n)\;\text{or}\;a^{2^ik}\equiv-1\;({\rm mod}\;n)\;\text{for some}\;i\in\lbrace0,\ldots,n-1\rbrace\end{equation}$$</p>
+$$a^k\equiv1\\;({\rm mod}\\;n)\\;\text{or}\\;a^{2^ik}\equiv-1\\;({\rm mod}\\;n)\\;\text{for some}\\;i\in\lbrace0,\ldots,n-1\rbrace$$
 
 对于一个奇数 $n>1$，在 $\lbrace1,\ldots,n-1\rbrace$ 中取一整数 $a$，如果一个 $a$ 使上式不成立：
 
-<p class="tagged-math">$$\begin{equation}a^k\not\equiv1\;({\rm mod}\;n)\;\text{and}\;a^{2^ik}\not\equiv-1\;({\rm mod}\;n)\;\text{for all}\;i\in\lbrace0,\ldots,n-1\rbrace\end{equation}$$</p>
+$$a^k\not\equiv1\\;({\rm mod}\\;n)\\;\text{and}\\;a^{2^ik}\not\equiv-1\\;({\rm mod}\\;n)\\;\text{for all}\\;i\in\lbrace0,\ldots,n-1\rbrace\quad(*)$$
 
 那么称这个 $a$ 为一个 $Miller\text{-}\\!Rabin\\;witness$，在素性测试中，术语 “$witness$” 意为某个能够证明 $n$ 为合数的数。
 
@@ -35,7 +32,7 @@ $$(a^k-1)(a^k+1)(a^{2k}+1)(a^{4k}+1)\cdots(a^{2^{e-1}k}+1)\equiv0\\;({\rm mod}\\
 
 在 <a href="/SICP/exercises/1.2/#Exercise-1-28">练习 1.28</a> 中实现了该素性测试，其中用 $nontrivial\\;square\\;root$ 的概念巧妙地找出了 $Miller\text{-}\\!Rabin\\;witness$，关键点是修改后的 `expmod` 过程，在本来执行 `square` 的地方加入了检测非平凡平方根的过程。
 
-我也用 C++ 实现了一遍，当然不再是递归版的，思考方式变化极大，不过更加直接地体现了 $(2)$ 式。
+我也用 C++ 实现了一遍，当然不再是递归版的，思考方式变化极大，不过更加直接地体现了 $(*)$ 式。
 
 ``` c++ Miller-Rabin.cpp
 #include <bits/stdc++.h>
