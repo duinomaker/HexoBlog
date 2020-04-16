@@ -22,7 +22,7 @@ $$(a^k-1)(a^k+1)(a^{2k}+1)(a^{4k}+1)\cdots(a^{2^{e-1}k}+1)\equiv0\\;({\rm mod}\\
 
 $$a^k\equiv1\\;({\rm mod}\\;n)\\;\text{or}\\;a^{2^ik}\equiv-1\\;({\rm mod}\\;n)\\;\text{for some}\\;i\in\lbrace0,\ldots,n-1\rbrace$$
 
-对于一个奇数 $n>1$，在 $\lbrace1,\ldots,n-1\rbrace$ 中取一整数 $a$，如果一个 $a$ 使上式不成立：
+对于一个奇数 $n>1$，在 $\lbrace1,\ldots,n-1\rbrace$ 中取一整数 $a$，如果一个 $a$ 使上式不成立，也就是
 
 $$a^k\not\equiv1\\;({\rm mod}\\;n)\\;\text{and}\\;a^{2^ik}\not\equiv-1\\;({\rm mod}\\;n)\\;\text{for all}\\;i\in\lbrace0,\ldots,n-1\rbrace\quad(*)$$
 
