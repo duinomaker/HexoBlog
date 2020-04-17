@@ -269,4 +269,5 @@ providers:
     # Name or URL of the webfont Icon CDN provider
     # iconcdn: fontawesome
     # iconcdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css
-    iconcdn: 'https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css'
+    # iconcdn: 'https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css'
+    iconcdn: /fonts/font-awesome/all.min.css

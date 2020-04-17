@@ -6,16 +6,17 @@ article:
         clipboard: false
 ---
 
-<span class="mono">2020-04-17</span> 去除主页上的 Read More 按钮。
-<span class="mono">2020-04-14</span> 开设 /notes/ 作为笔记的主页。
-<span class="mono">2020-04-09</span> 将数学公式渲染器 MathJax 更换为 KaTeX。
+<span class="mono">2020-04-17</span> 将 font-awesome 字体下载至自己的云主机。
+<span class="mono">2020-04-17</span> 去除主页上的所有 Read More 按钮。
+<span class="mono">2020-04-14</span> 开设 /notes/ 作为笔记的索引页。
+<span class="mono">2020-04-09</span> 将默认的数学公式渲染器 MathJax 更换为 KaTeX。
 <span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
-<span class="mono">2020-04-06</span> 开设 /SICP/ 用于记录 *SICP* 学习心得。
-<span class="mono">2020-04-05</span> 将博客转移至自己的服务器。
-<span class="mono">2020-04-03</span> 修改 hashtag 的 white-space 属性为 nowrap，使它们在空白符处不会自动换行。
+<span class="mono">2020-04-06</span> 开设 /SICP/ 用于记录 *SICP* 笔记。
+<span class="mono">2020-04-05</span> 取消 server.duinomaker.top 子域名，将图片及博客其余内容转移至自己的云主机。
+<span class="mono">2020-04-03</span> 修改文章底部 hashtag 的 white-space 属性为 nowrap，使它们在空白符处不会自动换行。
 <span class="mono">2020-04-03</span> 修改内联代码字体颜色为 currentColor，大小为 0.875em。
 
-<span class="mono">2020-03-30</span> 将版权声明改为中文。
+<span class="mono">2020-03-30</span> 将所有的版权声明改为中文。
 <span class="mono">2020-03-29</span> 将 css 中 text-rendering 属性 改回 optimizeLegibility。
 <span class="mono">2020-03-28</span> 禁用 Google Analytics 插件。
 <span class="mono">2020-03-26</span> 添加网站备案信息。
@@ -38,6 +39,6 @@ article:
 <span class="mono">2020-02-17</span> 更新头像。
 <span class="mono">2020-02-12</span> 将 css 中 text-rendering 属性 改为 geometricPrecision。
 <span class="mono">2020-02-12</span> 增加 gulp 插件压缩 html 文件。
-<span class="mono">2020-02-12</span> 更改字体 CDN。
+<span class="mono">2020-02-12</span> 更改 font-awesome 字体 CDN 为 cdn.bootcss.com。
 <span class="mono">2020-02-12</span> 增加 sitemaps、robots.txt、auto nofollow 插件，方便搜索引擎。
 <span class="mono">2020-02-10</span> 博客诞生。
