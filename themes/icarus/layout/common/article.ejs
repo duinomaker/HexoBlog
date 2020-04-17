@@ -96,7 +96,7 @@
             }) %>
         </div>
         <% } %>
-        <% if (index && post.excerpt && !post.redirect) { %>
+        <!-- <% if (index && post.excerpt && !post.redirect) { %>
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
@@ -105,7 +105,7 @@
                 </div>
             </div>
         </div>
-        <% } %>
+        <% } %> -->
         <% if (!index && has_config('share.type')) { %>
         <%- _partial('share/' + get_config('share.type')) %>
         <% } %>

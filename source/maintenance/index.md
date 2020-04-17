@@ -7,6 +7,8 @@ article:
         clipboard: false
 ---
 
+<span class="mono">2020-04-17</span> 去除主页上的 Read More 按钮。
+<span class="mono">2020-04-14</span> 开设 /notes/ 作为笔记的主页。
 <span class="mono">2020-04-09</span> 将数学公式渲染器 MathJax 更换为 KaTeX。
 <span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
 <span class="mono">2020-04-06</span> 开设 /SICP/ 用于记录 *SICP* 学习心得。
