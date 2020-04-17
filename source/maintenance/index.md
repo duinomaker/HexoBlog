@@ -7,7 +7,7 @@ article:
 ---
 
 <span class="mono">2020-04-17</span> 将 font-awesome 字体下载至自己的云主机。
-<span class="mono">2020-04-17</span> 去除主页文章卡片中的 Read More 按钮。
+<span class="mono">2020-04-17</span> 移除主页文章卡片中的 Read More 按钮。
 <span class="mono">2020-04-14</span> 开设 /notes/ 作为所有笔记的索引页。
 <span class="mono">2020-04-09</span> 将默认的数学公式渲染器 MathJax 更换为 KaTeX。
 <span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
