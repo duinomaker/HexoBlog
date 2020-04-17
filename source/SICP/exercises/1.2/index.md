@@ -282,17 +282,17 @@ $n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验
     (prime? 1729)
     ...
 
-用 `prime?` 确定它们都不是质数，但 “骗过” 了所有费马测试。
+用 `prime?` 确定它们都不是素数，但 “骗过” 了所有费马测试。
 
 ## Exercise 1.28
 
-这题有些难度，用到了一个结论：若存在 $1\lt a\lt n-1$，使得 $a^2\equiv 1\\;({\rm mod}\\;n)$ 成立，则 $n$ 不是质数。
+这题有些难度，用到了一个结论：若存在 $1\lt a\lt n-1$，使得 $a^2\equiv 1\\;({\rm mod}\\;n)$ 成立，则 $n$ 不是素数。
 
-证明这个结论，需要证明若 $n$ 是质数，则 $x_1=1,x_2=n-1$ 是 $x^2\equiv1\\;({\rm mod}\\;n)$ 仅有的两个解：
+证明这个结论，需要证明若 $n$ 是素数，则 $x_1=1,x_2=n-1$ 是 $x^2\equiv1\\;({\rm mod}\\;n)$ 仅有的两个解：
 
-$$\begin{aligned}\begin{aligned}x^2&\equiv1\\;({\rm mod}\\;n)\\\\x^2-1&\equiv0\\;({\rm mod}\\;n)\\\\(x-1)(x+1)&\equiv0\\;({\rm mod}\\;n)\end{aligned}\\\\\begin{aligned}&\therefore n\mid(x-1)\\;\text{或}\\;n\mid(x+1)\\\\&\because n\\;\text{是质数}\\;\therefore(x-1)\\;\text{或}\\;(x+1)\\;\text{是}\\;n\\;\text{的倍数}\\\\&\therefore x_1=1,x_2=n-1\end{aligned}\end{aligned}$$
+$$\begin{aligned}\begin{aligned}x^2&\equiv1\\;({\rm mod}\\;n)\\\\x^2-1&\equiv0\\;({\rm mod}\\;n)\\\\(x-1)(x+1)&\equiv0\\;({\rm mod}\\;n)\end{aligned}\\\\\begin{aligned}&\therefore n\mid(x-1)\\;\text{或}\\;n\mid(x+1)\\\\&\because n\\;\text{是素数}\\;\therefore(x-1)\\;\text{或}\\;(x+1)\\;\text{是}\\;n\\;\text{的倍数}\\\\&\therefore x_1=1,x_2=n-1\end{aligned}\end{aligned}$$
 
-若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 $nontrivial\\;square\\;root$（非平凡平方根）。若 $n$ 有非平凡平方根，则其不是质数。
+若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 非平凡平方根$(nontrivial\\;square\\;root)$ 。若 $n$ 有非平凡平方根，则其不是素数。
 
 这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0$ 。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/SICP/assets/miller-rabin/">${\rm Miller\text{-}Rabin}$素性测试的原理及实现</a>。
 
