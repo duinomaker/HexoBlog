@@ -95,10 +95,10 @@ Lisp 采用应用序求值，部分原因在于这样做能避免对于表达式
 
 $$\exists k_1,k_2,N\\;\forall n>N\\,(k_1f(n)\leq{\rm R}(n)\leq k_2f(n))$$
 
-成立时，我们称 ${\rm R}(n)$ 有 $\Theta(f(n))$ 的增长阶，记作 ${\rm R}(n)\sim\Theta(f(n))$<span class="fix-ml">。</span>
+成立时，我们称 ${\rm R}(n)$ 有 $\Theta(f(n))$ 的增长阶，记作 ${\rm R}(n)\sim\Theta(f(n))&hairsp;。
 
 **Lamé定理**：如果用欧几里德算法计算一对数的 GCD 需要执行 $k$ 步，那么更小的那个数一定不小于第 $k$ 个斐波那契数。
 
-运用这个定理，可以很方便地分析欧几里德算法的增长阶。设更小的数为 $n$，则一定有 $n\geq{\rm Fib}(k)\approx\frac{\phi^k}{\sqrt5}$<span class="fix-ml">。</span>从此可以看出，$k$ 正比于 $\log_\phi(n)$ 增长，所以欧几里德算法的增长阶为 $\Theta(\log n)$<span class="fix-ml">。</span>
+运用这个定理，可以很方便地分析欧几里德算法的增长阶。设更小的数为 $n$，则一定有 $n\geq{\rm Fib}(k)\approx\frac{\phi^k}{\sqrt5}&hairsp;。从此可以看出，$k$ 正比于 $\log_\phi(n)$ 增长，所以欧几里德算法的增长阶为 $\Theta(\log n)&hairsp;。
 
 **费马小定理**：若 $n$ 是素数，则对于任意 $a$ 不是 $n$ 的倍数，都有 $a^n\equiv a\\;\\;({\rm mod}\\;n)$，它的另一个形式是 $a^{n-1}\equiv1\\;\\;({\rm mod}\\;n)$，在<a href="/SICP/assets/miller-rabin/" target="_self">${\rm Miller\text{-}Rabin}$素性测试</a>中得以应用。
