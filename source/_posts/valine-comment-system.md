@@ -3,7 +3,6 @@ title: 新增Valine评论系统
 canonical_url: https://duinomaker.top/posts/valine-comment-system/
 date: 2020-03-04 23:49:17
 widgets:
-plugins:
 article:
     highlight:
         clipboard: false

@@ -3,7 +3,6 @@ title: My Impression of Hexo
 canonical_url: https://duinomaker.top/posts/my-impression-of-hexo/
 date: 2020-02-10 22:53:08
 widgets:
-plugins:
 article:
     highlight:
         clipboard: false
