@@ -23,7 +23,7 @@ article:
 
 <div class="tile">
 <figure class="image has-mb-6">
-<a href="/ITC/" target="_self"><img class="image not-gallery-item" src="/images/books/itc.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
+<a href="/ITOC/" target="_self"><img class="image not-gallery-item" src="/images/books/itoc.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
 <p class="rigid">Introduction to the<br />Theory of Computation</p>
 </figure>
 </div>
