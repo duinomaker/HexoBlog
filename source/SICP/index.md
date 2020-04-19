@@ -21,4 +21,4 @@ article:
 
 <span class="mono rigid">1.1 </span><a href="/SICP/exercises/1.1/" target="_self">The Elements of Programming</a>
 <span class="mono rigid">1.2 </span><a href="/SICP/exercises/1.2/" target="_self">Procedures and the Processes They Generate</a>
-<!-- <span class="mono rigid">1.3 </span><a href="/SICP/exercises/1.3/" target="_self">Formulating Abstractions with Higher-Order Procedures</a> -->
+<span class="mono rigid">1.3 </span><a href="/SICP/exercises/1.3/" target="_self">Formulating Abstractions with Higher-Order Procedures</a>

@@ -100,7 +100,7 @@ void modify(int x, int y, int val, int p = 0)
 
 <img src="/images/segment-tree-lazytag_1.jpg" width="100%">
 
-接着，我们记区间 $i$ 的区间的元素个数为 $span_i$、区间和为 $sum_i$、修改前的初始区间和为 $sum^\prime_i$、区间延迟加法的懒标记为 $lazyadd_i$、区间延迟乘法的懒标记为 $lazymul_i$&hairsp;。于是有以下初始情况，初始情况下，$lazyadd_i=0,lazymul_i=1$：
+接着，我们记区间 $i$ 的区间的元素个数为 $span_i$&hairsp;、区间和为 $sum_i$&hairsp;、修改前的初始区间和为 $sum^\prime_i$&hairsp;、区间延迟加法的懒标记为 $lazyadd_i$&hairsp;、区间延迟乘法的懒标记为 $lazymul_i$&hairsp;。于是有以下初始情况，初始情况下，$lazyadd_i=0,lazymul_i=1$：
 
 $$sum^\prime_0=sum^\prime_0\times\overbrace{1}^{lazymul_0} +\overbrace{0}^{lazyadd_0}\times span_0$$
 

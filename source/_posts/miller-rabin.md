@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/SICP/assets/miller-rabin/
 redirect: true
 categories: [Mathematics]
 tags: [Number Theory]
-date: 2020-04-15 22:23:16
+date: 2020-04-16 22:23:16
 widgets:
 comment:
 plugins:
