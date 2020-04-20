@@ -216,7 +216,7 @@ license: by-nc-sa
           (/ (+ (f (- x dx))
                 (f x)
                 (f (+ x dx)))
-              3)))
+             3)))
       ((repeated smooth n) f))
 
 ## Exercise 1.45
