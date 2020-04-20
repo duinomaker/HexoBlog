@@ -106,7 +106,7 @@ $$\begin{aligned}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5}
 
 考虑 `(cc n 0)` 的情况，由于是叶子节点，所需时间为 $\Theta(1)$&hairsp;；
 再看 `(cc n 1)` 的情况，其下方有一条像链一样连接着的，从 `(cc (- n 1) 1)` 直至 `(cc 0 1)` 的 $n$ 个节点，而这些节点又额外地包含了一个形如 `(cc x 0)`&hairsp;、所需时间为 $\Theta(1)$ 的节点。所以这时的所需时间为 $\Theta(n)$&hairsp;；
-接下来，`(cc n 2)`&hairsp;、`(cc n 3)` 等的情况，可以仿照 `(cc n 1)` 的情况来分析，`kinds` 每增加 `1`，所需时间就得 “乘上一个 $n$”。
+接下来，`(cc n 2)`&hairsp;、`(cc n 3)` 等的情况，可以仿照 `(cc n 1)` 的情况来分析，`kinds` 每增加 $1$，所需时间就得 “乘上一个 $n$”。
 
 综上所述，有 $k$ 种货币时，时间为 $\Theta(n^k)$&hairsp;。
 

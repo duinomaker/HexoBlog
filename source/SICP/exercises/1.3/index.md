@@ -119,8 +119,6 @@ license: by-nc-sa
 正确地逼近了黄金分割比例的值。
 
 ## Exercise 1.36
-
-阻尼法所需的迭代步数更少。
     
     (define (root-x-pow-x start-point)
       (fixed-point (lambda (x) (/ (log 1000) (log x))) start-point 0))
@@ -135,5 +133,127 @@ license: by-nc-sa
     (root-x-pow-x-with-damp 3.0)
     (root-x-pow-x-with-damp 10.0)
 
+阻尼法所需的迭代步数更少。
+
 ## Exercise 1.37
 
+    (define (cont-frac n d k)
+      (define (frac-transform term k)
+        (/ (n k) (+ (d k) term)))
+      (define (rec i)
+        (if (> i k)
+            0.0
+            (frac-transform (rec (+ i 1)) i)))
+      (rec 1))
+    
+    (define (cont-frac-iter n d k)
+      (define (frac-transform term k)
+        (/ (n k) (+ (d k) term)))
+      (define (iter result k)
+        (if (= k 0)
+            result
+            (iter (frac-transform result k) (- k 1))))
+      (iter 0.0 k))
+    
+    (cont-frac      (lambda (x) 1.0) (lambda (x) 1.0) 11)
+    (cont-frac-iter (lambda (x) 1.0) (lambda (x) 1.0) 11)
+
+为了达到 $4$ 位小数的精度，需要十几步计算。
+
+## Exercise 1.38
+
+    (define (approx-e k)
+      (define (arr n)
+        (let ((t (+ n 1)))
+          (if (= (remainder t 3) 0)
+              (* (/ t 3) 2.0)
+              1.0)))
+      (+ (cont-frac (lambda (x) 1.0) arr k) 2))
+    
+## Exercise 1.39
+
+    (define (tan-cf x k)
+      (let ((minus-x2 (- (* x x))))
+        (define (n k) (if (= k 1) x minus-x2))
+        (define (d k) (* (- (* k 2) 1) 1.0))
+        (cont-frac n d k)))
+
+## Exercise 1.40
+
+    (define (cubic a b c)
+      (lambda (x)
+        (+ (* x x x) (* a x x) (* b x) c)))
+
+## Exercise 1.41
+
+  (define (double f)
+    (lambda (x) (f (f x))))
+
+  (((double (double double)) inc) 5)
+
+输出了 $21$，因为 `inc` 外面嵌套了 $4$ 个 `double`，所以一共增加了 $2^4=16$ 次。
+
+## Exercise 1.42
+
+    (define (compose f g)
+      (lambda (x) (f (g x))))
+
+## Exercise 1.43
+
+    (define (repeated f times)
+      (lambda (x)
+        (cond ((= times 0) x)
+              ((even? times)
+               ((double (repeated f (/ times 2))) x))
+              (else
+               ((compose f (repeated f (- times 1))) x)))))
+
+## Exercise 1.44
+
+    (define (n-fold f n dx)
+      (define (smooth f)
+        (lambda (x)
+          (/ (+ (f (- x dx))
+                (f x)
+                (f (+ x dx)))
+              3)))
+      ((repeated smooth n) f))
+
+## Exercise 1.45
+
+    (define (log2-ceil n)
+      (define (iter x ord)
+        (if (< x n)
+            (iter (* x 2) (+ ord 1))
+            ord))
+      (iter 1 0))
+    
+    (define (root-find n ord)
+      (fixed-point-of-transform
+        (lambda (x) (/ n (expt x (- ord 1))))
+        (repeated average-damp
+                  (log2-ceil ord))
+        1.0))
+
+计算 $n$ 次根号，需要将 `average-damp` 重复应用 $\lceil\log_2n\rceil$ 次。
+
+## Exercise 1.46
+
+    (define (iterative-improve good-enough? improve initial-guess)
+      (define (iter guess)
+        (let ((next (improve guess)))
+          (if (good-enough? guess next)
+              next
+              (iter next))))
+      (iter initial-guess))
+    
+    (define (good-enough? a b)
+      (< (abs (- a b)) 0.00001))
+    
+    (define (sqrt n)
+      (define (improve x)
+        (/ (+ x (/ n x)) 2.0))
+      (iterative-improve good-enough? improve 1.0))
+    
+    (define (fixed-point f guess)
+      (iterative-improve good-enough? f guess))
