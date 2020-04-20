@@ -186,10 +186,10 @@ license: by-nc-sa
 
 ## Exercise 1.41
 
-  (define (double f)
-    (lambda (x) (f (f x))))
-
-  (((double (double double)) inc) 5)
+    (define (double f)
+      (lambda (x) (f (f x))))
+  
+    (((double (double double)) inc) 5)
 
 输出了 $21$，因为 `inc` 外面嵌套了 $4$ 个 `double`，所以一共增加了 $2^4=16$ 次。
 
