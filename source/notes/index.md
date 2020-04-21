@@ -9,22 +9,29 @@ article:
 ---
 
 <figure class="image has-mb-6">
-<a href="/SICP/" target="_self"><img class="image not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
-<p class="rigid foreword">Structure and Interpretation<br />of Computer Programs</p>
+<a href="/SICP/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" /></a>
+<p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
 </figure>
 
 <!-- <div class="tile is-ancestor">
 <div class="tile">
 <figure class="image has-mb-6">
-<a href="/SICP/" target="_self"><img class="image not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
-<p class="rigid foreword">Structure and Interpretation<br />of Computer Programs</p>
+<a href="/SICP/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" /></a>
+<p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
 </figure>
 </div>
 
 <div class="tile">
 <figure class="image has-mb-6">
-<a href="/ITOC/" target="_self"><img class="image not-gallery-item" src="/images/books/itoc.jpg" alt="Structure and Interpretation of Computer Programs" style="height: 185px; width: auto;" /></a>
-<p class="rigid foreword">Introduction to the<br />Theory of Computation</p>
+<a href="/CM/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/cm.jpg" alt="Concrete Mathematics" /></a>
+<p class="rigid">Concrete Mathematics</p>
+</figure>
+</div>
+
+<div class="tile">
+<figure class="image has-mb-6">
+<a href="/ITOC/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/itoc.jpg" alt="Introdoction to the Theory of Computation" /></a>
+<p class="rigid">Introduction to the<br />Theory of Computation</p>
 </figure>
 </div>
 </div> -->
