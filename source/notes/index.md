@@ -8,12 +8,12 @@ article:
         clipboard: false
 ---
 
-<figure class="image has-mb-6">
+<!-- <figure class="image has-mb-6">
 <a href="/SICP/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" /></a>
 <p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
-</figure>
+</figure> -->
 
-<!-- <div class="tile is-ancestor">
+<div class="tile is-ancestor" style="margin-top: 1rem;">
 <div class="tile">
 <figure class="image has-mb-6">
 <a href="/SICP/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" /></a>
@@ -28,10 +28,10 @@ article:
 </figure>
 </div>
 
-<div class="tile">
+<!-- <div class="tile">
 <figure class="image has-mb-6">
 <a href="/ITOC/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/itoc.jpg" alt="Introdoction to the Theory of Computation" /></a>
 <p class="rigid">Introduction to the<br />Theory of Computation</p>
 </figure>
-</div>
 </div> -->
+</div>
