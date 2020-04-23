@@ -13,18 +13,18 @@ article:
 <p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
 </figure> -->
 
-<div class="tile is-ancestor" style="margin-top: 1rem;">
-<div class="tile">
-<figure class="image has-mb-6">
+<div class="level" style="margin-top: 1rem;">
+<div class="level-item">
+<figure class="image">
 <a href="/SICP/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/sicp.jpg" alt="Structure and Interpretation of Computer Programs" /></a>
 <p class="rigid">Structure and Interpretation<br />of Computer Programs</p>
 </figure>
 </div>
 
-<div class="tile">
-<figure class="image has-mb-6">
+<div class="level-item">
+<figure class="image">
 <a href="/CM/" target="_self"><img class="image book-cover not-gallery-item" src="/images/books/cm.jpg" alt="Concrete Mathematics" /></a>
-<p class="rigid">Concrete Mathematics</p>
+<p class="rigid">Concrete Mathematics<br /><br /></p>
 </figure>
 </div>
 
