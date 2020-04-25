@@ -94,7 +94,7 @@ $$\begin{aligned}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5}
 
 首先，归纳基础 $\left|\frac{\psi^0}{\sqrt5}\right|\approx0.447<\frac1{2}$ 成立。
 
-假设 $\left|\frac{\psi^{n-1}}{\sqrt5}\right|<\frac1{2}$ 成立，而 $\left|\frac{\psi^n}{\sqrt5}\right|=\left|\frac{\psi^{n-1}}{\sqrt5}\right|\cdot|\psi|$&hairsp;。因为 $|\psi|<1$，所以 $\left|\frac{\psi^n}{\sqrt5}\right|<\left|\frac{\psi^{n-1}}{\sqrt5}\right|<\frac1{2}$&hairsp;。所以 $\left|\frac{\psi^n}{\sqrt5}\right|<\frac1{2}$ 对于一切非负整数 $n$ 成立。
+假设 $\left|\frac{\psi^{n-1}}{\sqrt5}\right|<\frac1{2}$ 成立，而 $\left|\frac{\psi^n}{\sqrt5}\right|=\left|\frac{\psi^{n-1}}{\sqrt5}\right|\cdot|\psi|\\,$。因为 $|\psi|<1$，所以 $\left|\frac{\psi^n}{\sqrt5}\right|<\left|\frac{\psi^{n-1}}{\sqrt5}\right|<\frac1{2}\\,$。所以 $\left|\frac{\psi^n}{\sqrt5}\right|<\frac1{2}$ 对于一切非负整数 $n$ 成立。
 
 所以 ${\rm Fib}(n)$ 是与 $\frac{\phi^n}{\sqrt5}$ 最接近的整数，证毕。
 
@@ -102,13 +102,13 @@ $$\begin{aligned}{\rm Fib}(n)=\frac{\phi^n-\psi^n}{\sqrt5}=\frac{\phi^n}{\sqrt5}
 
 递归过程中只需要记录该节点之上的节点信息，所以需要的空间与调用树的最大深度成正比。
 
-`(cc amount kinds)` 节点包含着种类数不变而零钱量减少某个常数的节点，其以下部分的最大深度显然与 `amount` 成正比，所以空间为 $\Theta(n)$&hairsp;。
+`(cc amount kinds)` 节点包含着种类数不变而零钱量减少某个常数的节点，其以下部分的最大深度显然与 `amount` 成正比，所以空间为 $\Theta(n)\\,$。
 
-考虑 `(cc n 0)` 的情况，由于是叶子节点，所需时间为 $\Theta(1)$&hairsp;；
-再看 `(cc n 1)` 的情况，其下方有一条像链一样连接着的，从 `(cc (- n 1) 1)` 直至 `(cc 0 1)` 的 $n$ 个节点，而这些节点又额外地包含了一个形如 `(cc x 0)`&hairsp;、所需时间为 $\Theta(1)$ 的节点。所以这时的所需时间为 $\Theta(n)$&hairsp;；
+考虑 `(cc n 0)` 的情况，由于是叶子节点，所需时间为 $\Theta(1)\\,$；
+再看 `(cc n 1)` 的情况，其下方有一条像链一样连接着的，从 `(cc (- n 1) 1)` 直至 `(cc 0 1)` 的 $n$ 个节点，而这些节点又额外地包含了一个形如 `(cc x 0)`&hairsp;、所需时间为 $\Theta(1)$ 的节点。所以这时的所需时间为 $\Theta(n)\\,$；
 接下来，`(cc n 2)`&hairsp;、`(cc n 3)` 等的情况，可以仿照 `(cc n 1)` 的情况来分析，`kinds` 每增加 $1$，所需时间就得 “乘上一个 $n$”。
 
-综上所述，有 $k$ 种货币时，时间为 $\Theta(n^k)$&hairsp;。
+综上所述，有 $k$ 种货币时，时间为 $\Theta(n^k)\\,$。
 
 ## Exercise 1.15
 
@@ -245,7 +245,7 @@ $$\begin{aligned}{\rm R}(n)&=n+\sum_{i=0}^nf(i)\\\\{\rm R}(n)&={\rm Fib}(n+4)-3\
               (search-for-primes (+ num 2) cnt))))
     (search-for-primes <an odd number to start with> <how many prime numbers before stop>)
 
-$n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验证该算法的增长阶为 $\Theta(\sqrt n)$&hairsp;。
+$n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验证该算法的增长阶为 $\Theta(\sqrt n)\\,$。
 
 ## Exercise 1.23
 
@@ -261,7 +261,7 @@ $n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验
 
 ## Exercise 1.26
 
-用两次递归调用代替了原来的平方，现在的 `expmod` 呈现树形递归，计算树形递归的所需时间根据树高指数增长。这里树高为 $\log(n)$，那么增长阶为 $\Theta(e^{\log n})=\Theta(n)$&hairsp;。
+用两次递归调用代替了原来的平方，现在的 `expmod` 呈现树形递归，计算树形递归的所需时间根据树高指数增长。这里树高为 $\log(n)$，那么增长阶为 $\Theta(e^{\log n})=\Theta(n)\\,$。
 
 ## Exercise 1.27
 
@@ -292,9 +292,9 @@ $n$ 每增加 $4$ 倍，运行时间大约增加 $2$ 倍，这可以粗略地验
 
 $$\begin{aligned}\begin{aligned}x^2&\equiv1\\;({\rm mod}\\;n)\\\\x^2-1&\equiv0\\;({\rm mod}\\;n)\\\\(x-1)(x+1)&\equiv0\\;({\rm mod}\\;n)\end{aligned}\\\\\begin{aligned}&\therefore n\mid(x-1)\\;\text{或}\\;n\mid(x+1)\\\\&\because n\\;\text{是素数}\\;\therefore(x-1)\\;\text{或}\\;(x+1)\\;\text{是}\\;n\\;\text{的倍数}\\\\&\therefore x_1=1,x_2=n-1\end{aligned}\end{aligned}$$
 
-若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 非平凡平方根$(nontrivial\\;square\\;root)$&hairsp;。若 $n$ 有非平凡平方根，则其不是素数。
+若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 非平凡平方根$(nontrivial\\;square\\;root)\\,$。若 $n$ 有非平凡平方根，则其不是素数。
 
-这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0$&hairsp;。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/SICP/assets/miller-rabin/">${\rm Miller\text{-}Rabin}$素性测试的原理及实现</a>。
+这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0\\,$。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/SICP/assets/miller-rabin/">${\rm Miller\text{-}Rabin}$素性测试的原理及实现</a>。
 
     (define (square x) (* x x))
 

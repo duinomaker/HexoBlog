@@ -32,7 +32,7 @@ $1\leq x\leq n$
 
 ## 题解
 
-对于一个数 $x$，可以将其分解质因数：$x=p_1^{b_1}\times p_2^{b_2}\times\ldots\times p_k^{b_k}$，其中 $p_i$ 指第 $i$ 个素数。于是 $x$ 就可以表示为一个数列 $b$&hairsp;。用这种表示方法，可以很方便地表示最小公倍数。假设有两个数 $x=p_1^{b_1}\times p_2^{b_2}\times\ldots\times p_k^{b_k}$ 和 $y=p_1^{c_1}\times p_2^{c_2}\times\ldots\times p_k^{c_k}$，那么就有：
+对于一个数 $x$，可以将其分解质因数：$x=p_1^{b_1}\times p_2^{b_2}\times\ldots\times p_k^{b_k}$，其中 $p_i$ 指第 $i$ 个素数。于是 $x$ 就可以表示为一个数列 $b\\,$。用这种表示方法，可以很方便地表示最小公倍数。假设有两个数 $x=p_1^{b_1}\times p_2^{b_2}\times\ldots\times p_k^{b_k}$ 和 $y=p_1^{c_1}\times p_2^{c_2}\times\ldots\times p_k^{c_k}$，那么就有：
 
 $${\rm lcm}(x,y)=p_1^{\max(b_1,c_1)}\times p_2^{\max(b_2,c_2)}\times\ldots\times p_k^{\max(b_k,c_k)}$$
 
@@ -40,7 +40,7 @@ $${\rm lcm}(x,y)=p_1^{\max(b_1,c_1)}\times p_2^{\max(b_2,c_2)}\times\ldots\times
 
 $$\begin{aligned}\log(x)&=b_1\log(p_1)+b_2\log(p_2)+\ldots+b_k\log(p_k)\\\\\log(y)&=c_1\log(p_1)+c_2\log(p_2)+\ldots+c_k\log(p_k)\\\\\log(x)&\lt\log(y)\to x\lt y\end{aligned}$$
 
-最后是查询，对于每一个 $x$ 都重新遍历一遍数列是肯定会 TLE 的，所以要先将每一个区间长度的结果处理出来。大概过程是这样的：创建两个 “指针” $l$ 和 $r$&hairsp;。一开始，$l$ 和 $r$ 都指向第一个元素，之后让 $r$ 不断向后移动，直至指向第一个 ${\rm lcm}$ 值$ {\rm lcm}(a_l,a_{l+1},\ldots,a_r)$ 与之前的 ${\rm lcm}$ 值不同的元素，并用之前的 ${\rm lcm}$ 值更新 $ans_{r-l}$ 的值。再向右移动 $r$ 并如此更新，直至数列尾后元素。之后 $l$ 和 $r$ 同时指向第二个元素，重复上述操作，再同时指向第三个元素…… 直至同时指向数列的尾部元素。
+最后是查询，对于每一个 $x$ 都重新遍历一遍数列是肯定会 TLE 的，所以要先将每一个区间长度的结果处理出来。大概过程是这样的：创建两个 “指针” $l$ 和 $r\\,$。一开始，$l$ 和 $r$ 都指向第一个元素，之后让 $r$ 不断向后移动，直至指向第一个 ${\rm lcm}$ 值$ {\rm lcm}(a_l,a_{l+1},\ldots,a_r)$ 与之前的 ${\rm lcm}$ 值不同的元素，并用之前的 ${\rm lcm}$ 值更新 $ans_{r-l}$ 的值。再向右移动 $r$ 并如此更新，直至数列尾后元素。之后 $l$ 和 $r$ 同时指向第二个元素，重复上述操作，再同时指向第三个元素…… 直至同时指向数列的尾部元素。
 
 以数列 $12,3,6,25,5,7$ 举例：
 

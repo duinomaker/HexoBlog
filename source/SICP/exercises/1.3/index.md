@@ -229,11 +229,10 @@ license: by-nc-sa
       (iter 1 0))
     
     (define (root-find n ord)
-      (fixed-point-of-transform
-        (lambda (x) (/ n (expt x (- ord 1))))
-        (repeated average-damp
-                  (log2-ceil ord))
-        1.0))
+      (fixed-point-of-transform (lambda (x) (/ n (expt x (- ord 1))))
+                                (repeated average-damp
+                                          (log2-ceil ord))
+                                1.0))
 
 计算 $n$ 次根号，需要将 `average-damp` 重复应用 $\lceil\log_2n\rceil$ 次。
 
