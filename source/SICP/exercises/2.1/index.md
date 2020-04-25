@@ -165,19 +165,19 @@ Since the tolerance is small enough to ignore the discrepancy between $center$ a
 
 All three problems point to the difficulty to introduce *“identity”* to interval arithmetic.
 
-Suppose we have two numbers $A$ and $B\\,$, which settles within intervals $I_A=[L_A,H_A]$ and $I_B=[L_B,H_B]\\,$, respectively (assuming that all numbers are positive). Then we will have
+Suppose we have two numbers $A$ and $B\\,$, which settles within intervals $I_A=[L_A,H_A]$ and $I_B=[L_B,H_B]\\,$, respectively (assuming that all numbers are positive). Then we'll have
 
-$$\frac{I_A}{I_B}=[\frac{L_A}{H_B},\frac{H_A}{L_B}]$$
+$$\frac{I_A}{I_B}=\left[\frac{L_A}{H_B},\frac{H_A}{L_B}\right]$$
 
 under the definition of interval division. But when we try to divide an interval by itself, we'll get
 
-$$\frac{I_A}{I_A}=[\frac{L_A}{H_A},\frac{H_A}{L_A}]$$
+$$\frac{I_A}{I_A}=\left[\frac{L_A}{H_A},\frac{H_A}{L_A}\right]$$
 
-which is not necessarily identical to $[1,1]$ as we might have expected.
+which is for most of the time not equal to $[1,1]$ which we might have expected.
 
 The above example illustrates that, the re-appearance of an interval in an expression may well introduce uncertainty to the evaluation. This is because, we never know whether two intervals are related to the same number. In other words, intervals don't have *“identity”*&hairsp;.
 
-Intervals don't have identity, but real numbers do. I have devised an approach to eliminate these uncertainties. That is, settle the numbers into their corressponding intervals *randomly* before evaluating the expression. Repeat the “settle-evaluate” loop for say $100,000$ times, we'll get a decent approximation to the actual interval.
+Intervals don't have identity, but real numbers do. I have devised an approach to eliminate these uncertainties. That is, settle the numbers into their corresponding intervals *randomly* before evaluating the expression. By repeating the “settle-evaluate” loop for say $100,000$ times, we'll get a decent approximation to the actual interval.
 
 My approach is inspired by the Monte-Carlo methods, which rely on repeated random sampling to obtain numerical results. The approach may be time-consuming since the evaluation has to be carried out a great many times before the approximation becomes precise enough. But it will always give the right answer.
 
@@ -233,4 +233,4 @@ if __name__ == '__main__':
 
 We know `par2` is the procedure which has its parameters appear only once in its body. So it have no issues with identity.
 
-And in the random sampling approach, both `func_1` and `func_2` evaluate the same answer, equal to the one produced by `par2`&hairsp;.
+And in the random sampling approach, both `func_1` and `func_2` evaluate to the same answer, which is equal to the one produced by `par2`&hairsp;.
