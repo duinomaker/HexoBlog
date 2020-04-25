@@ -92,7 +92,7 @@ Denote a rectangle with its size (i.e. width and height), and, in consideration 
 
 ## Exercise 2.9
 
-For addition and abstraction of two intervals $I_1$ and $I_2\\,$, the width of the result is a function of the widths of the input. Namely
+For addition and abstraction of two intervals $I_1$ and $I_2$&hairsp;, the width of the result is a function of the widths of the input, namely
 
 $$\begin{aligned}2\cdot width&=[H(I_1)+H(I_2)]-[L(I_1)+L(I_2)]\\\\&=[H(I_1)-L(I_1)]+[H(I_2)-L(I_2)]\\\\&=width_1+width_2\\,,\end{aligned}$$
 
@@ -156,7 +156,7 @@ The actual percentage tolerance is
 
 $$\frac{w_1w_2(p_1+p_2)}{center}\\,,\quad\begin{aligned}&\text{where $w$ denotes width, $p$ denotes percentage tolerance}\\\\&\text{and $center$ denotes the center of the product interval.}\end{aligned}$$
 
-Since the tolerance is small enough to ignore the discrepancy between $center$ and $w_1w_2\\,$, the percentage tolerance is $p_1+p_2$ approximately. Thus, we have
+Since the tolerance is small enough to ignore the discrepancy between $center$ and $w_1w_2$&hairsp;, the percentage tolerance is $p_1+p_2$ approximately. Thus, we have
 
     (define (prod-percent-approx a b)
       (+ (percent a) (percent b)))
@@ -165,7 +165,7 @@ Since the tolerance is small enough to ignore the discrepancy between $center$ a
 
 All three problems point to the difficulty to introduce *“identity”* to interval arithmetic.
 
-Suppose we have two numbers $A$ and $B\\,$, which settles within intervals $I_A=[L_A,H_A]$ and $I_B=[L_B,H_B]\\,$, respectively (assuming that all numbers are positive). Then we'll have
+Suppose we have two numbers $A$ and $B$&hairsp;, which settles within intervals $I_A=[L_A,H_A]$ and $I_B=[L_B,H_B]$&hairsp;, respectively (assuming that all numbers are positive). Then we'll have
 
 $$\frac{I_A}{I_B}=\left[\frac{L_A}{H_B},\frac{H_A}{L_B}\right]$$
 
@@ -183,7 +183,7 @@ My approach is inspired by the Monte-Carlo methods, which rely on repeated rando
 
 Sample code written in Python is given below.
 
-``` python Monte-Carlo-Interval-Arithmetic.py
+``` python random-sampling.py
 import random
 
 infty = 1e100
@@ -217,7 +217,9 @@ def evaluate(func, intervals, precision=100000):
 
 
 if __name__ == '__main__':
-
+    # These two functions accept two arguments,
+    # which are values settled for each loop
+    # within their corresponding interval.
     def func_1(a, b):
         return (a * b) / (a + b)
 
