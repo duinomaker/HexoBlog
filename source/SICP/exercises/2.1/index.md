@@ -177,7 +177,7 @@ which is for most of the time not equal to $[1,1]$ which we might have expected.
 
 The above example illustrates that, the re-appearance of an interval in an expression may well introduce uncertainty to the evaluation. This is because, we never know whether two intervals are related to the same number. In other words, intervals don't have *“identity”*&hairsp;.
 
-Intervals don't have identity, but real numbers do. I have devised an approach to eliminate these uncertainties. That is, settle the numbers into their corresponding intervals *randomly* before evaluating the expression. By repeating the “settle-evaluate” loop for say $100,000$ times, we'll get a decent approximation to the actual interval.
+Intervals don't have identity, but real numbers do. I have devised an approach to eliminate these uncertainties. That is, settle the numbers into their corresponding intervals *randomly* before evaluating the expression. After repeating the “settle-evaluate” loop for say $100,000$ times, we'll get a decent approximation to the actual interval.
 
 My approach is inspired by the Monte-Carlo methods, which rely on repeated random sampling to obtain numerical results. The approach may be time-consuming since the evaluation has to be carried out a great many times before the approximation becomes precise enough. But it will always give the right answer.
 
