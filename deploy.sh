@@ -11,9 +11,12 @@ tar -zcf /run/media/duinomaker/BRIDGE/HexoBlog-backup/current.tar.gz /home/duino
 
 git add -A
 git commit -m "$1"
-
 git push origin master
+
+mv ./source/images ./source/_images
 
 hexo generate
 npx gulp
 hexo deploy
+
+mv ./source/_images ./source/images
