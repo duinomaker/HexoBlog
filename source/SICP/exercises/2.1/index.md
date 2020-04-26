@@ -4,7 +4,7 @@ canonical_url: https://duinomaker.top/SICP/exercises/2.1/
 widgets:
 comment:
 license: by-nc-sa
-license_lang: en
+lang: en
 ---
 
 ---
