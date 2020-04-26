@@ -186,7 +186,7 @@ Sample code written in Python is given below.
 ``` python random-sampling.py
 import random
 
-infty = 1e100
+infty = float('inf')
 
 class Interval(object):
     def __init__(self, lower, upper):
