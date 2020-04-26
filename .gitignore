@@ -6,4 +6,5 @@ node_modules/
 public/
 .deploy*/
 source/_hidden/
+source/images/
 /_config.yml
