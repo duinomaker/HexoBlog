@@ -18,7 +18,7 @@ license_lang: en
 
 ### 1.8
 
-Calculate $Q_1$ through $Q_6$&hairsp;, we could find out that $Q(n)$ is periodic.
+Calculate $Q_1$ through $Q_6$&hairsp;, we could find out that $Q$ is periodic.
 
 $$\begin{aligned}Q_m&=\alpha\\,;\\\\Q_{m+1}&=\beta\\,;\\\\Q_{m+2}&=(1+\beta)/\alpha\\,;\\\\Q_{m+3}&=(1+\alpha+\beta)/(\alpha\beta)\\,;\\\\Q_{m+4}&=(1+\alpha)/\beta\\,,\quad\text{for $m\in\lbrace0,5,10,\ldots\rbrace\\,$.}\end{aligned}$$
 
@@ -48,7 +48,7 @@ Then $R_n=2R_n+Q_{n-1}+2$ if we
 2. move the largest disk clockwise;
 3. move $n-1$ disks clockwise;
 4. move the largest disk clockwise again;
-5. move $n-1$ disks back counter-clockwise;
+5. move $n-1$ disks back counter-clockwise.
 
 Plug $Q_n=2R_n-1$ in, then $R_n=Q_n+Q_{n-1}+1$&hairsp;.
 
@@ -62,7 +62,7 @@ Move a double $(n-1)$-tower, them move the two largest disks, which takes $2$ mo
 
 ~~Insert $\sout{H_n}$ to the $\sout{B_n}$ equation, we could get $\sout{B_n=4B_{n-1}+3=4^n-1}$&hairsp;.~~
 
-By referring to the answer, I found out that my approach above is not correct. I've made a mistake that I postulated all disks never change the order during the moves, which is not necessary.
+By referring to the answer, I found out that my approach above is not correct. I've made a mistake that I postulated all disks never change the order during their moves, which is not necessary.
 
 It can be shown that no strategy does better than $B_n=A_{n-1}+2+A_{n-1}+2+B_{n-1}$&hairsp;. This strategy changes the order of bottom two disks twice but doesn't care whether the upper disks keep the order during their moves, which is also the reason why we use $A_n$ here. Thus, $B_n=2^{n+2}-5$&hairsp;.
 
@@ -74,9 +74,9 @@ $A(m_1,\ldots,m_n)=2A(m_1,\ldots,m_{n-1})+m_n$&hairsp;. This is an equation of t
 
 We already know $n$ straight lines define $L_n=\frac{n(n+1)}2+1$ regions on a plane, and when the $n$-th line is added in, $n$ new areas are created.
 
-Let the zig-zags be extremely narrow to be seen as straight lines. So when the $n$-th zig-zag is added in, $n$ new areas are created in “the straight line manner”.
+Let the zig-zags be extremely narrow to be seen as straight lines to some extent. So when the $n$-th zig-zag is added in, $n$ new areas are created in “the straight line manner”.
 
-We could also see that when two zig-zags intersect, $8$ new areas are created around their “intersection”, in the way shown below:
+We could also see that when two zig-zags intersect, $8$ new areas are created “around their intersection”, in the way shown below:
 
 <figure class="image">
 <img src="/images/CM/exercises-1_1.jpg" class="image illustration" />
@@ -100,15 +100,14 @@ The function $I$ has the same recursion relation as $J$&hairsp;, but with differ
 
 Thus, we cannot find a unique $I(1)$ that satisfies this recurrence. So we have to split it into two cases, one with $I(2)=2$ and one with $I(3)=1$&hairsp;.
 
-$n$ has leading bits “$10$” (in terms of binary representation) in the case $I(2)=2$&hairsp;; has leading bits “$11$” in the case $I(3)=1$&hairsp;.
-
 Let's express in terms of $n=2^m+l$&hairsp;, and let $\beta_0=-1,\beta_1=1$&hairsp;. The recurrence unfolds, binary-wise:
 
-$$\begin{aligned}I((b_mb_{m-1}\ldots b_0)_ 2)&=2I((b_mb_{m-1}\ldots b_1)_ 2)+\beta _ {b_0}\\\\&\\;\\;\vdots\\\\&=2^{m-1}I((b_mb_{m-1})_2)+\cdots+2\beta _{b_1}+\beta _{b_0}\\,,\end{aligned}$$
+$$\begin{aligned}I((b_mb_{m-1}\ldots b_0)_ 2)&=2I((b_mb_{m-1}\ldots b_1)_ 2)+\beta _ {b_0}\\\\&\\;\\;\vdots\\\\&=2^{m-1}I((b_mb_{m-1})_2)+\cdots+2\beta _{b_1}+\beta _{b_0}\\,.\end{aligned}$$
 
-and so far the function $I$ have the same form as $J$&hairsp;.
+Then we can stop here, so far the function $I$ have the same form as $J$&hairsp;, and the two leading bits $(b_mb_{m-1})_2$ are enough to contain the two cases:
 
-$J(2)=1,I(2)=2$&hairsp;, so $I(n)-J(n)=2^{m-1}$ in the case $I(2)=2$&hairsp;; $J(3)=3,I(3)=1$&hairsp;, so $I(n)-J(n)=-2^m$ in the case $I(3)=1$&hairsp;.
+1. $J(2)=1,I(2)=2$&hairsp;, so $I(n)-J(n)=2^{m-1}$ in the case $I(2)=2$&hairsp;;
+2. $J(3)=3,I(3)=1$&hairsp;, so $I(n)-J(n)=-2^m$ in the case $I(3)=1$&hairsp;.
 
 That is to say
 

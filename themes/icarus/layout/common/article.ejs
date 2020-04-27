@@ -70,7 +70,7 @@
             <% if (post.license != 'notrust') { %>
                 <% if (post.license_lang == 'en') { %>
                 <p><strong class="rigid">Author:&nbsp;</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
-                <p><strong class="rigid">Link:&nbsp;</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
+                <p><strong class="rigid">Permalink:&nbsp;</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
                 <% } else { %>
                 <p><strong class="rigid">本文作者：</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
                 <p><strong class="rigid">本文链接：</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
