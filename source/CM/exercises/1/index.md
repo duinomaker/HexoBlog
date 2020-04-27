@@ -122,7 +122,7 @@ Let $g(n)=1$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(
 
 $$A(n)-2B(n)-2C(n)=1\\,.\tag{1}$$
 
-Let $g(n)=n$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,0,1,-1)\\,.$&hairsp;. Then
+Let $g(n)=n$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,0,1,-1)$&hairsp;. Then
 
 $$A(n)+C(n)-D(n)=n\\,.\tag{2}$$
 
