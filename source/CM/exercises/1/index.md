@@ -62,7 +62,7 @@ Move a double $(n-1)$-tower, them move the two largest disks, which takes $2$ mo
 
 ~~Insert $\sout{H_n}$ to the $\sout{B_n}$ equation, we could get $\sout{B_n=4B_{n-1}+3=4^n-1}$&hairsp;.~~
 
-By referring to the answer, I found out that my approach above is not correct. I've made a mistake that I postulated all disks never change the order during their moves, which is not necessary.
+By referring to the answer, I found out that my approach above wasn't correct. I've made a mistake that I postulated all disks never change the order during their moves, which is not necessary.
 
 It can be shown that no strategy does better than $B_n=A_{n-1}+2+A_{n-1}+2+B_{n-1}$&hairsp;. This strategy changes the order of bottom two disks twice but doesn't care whether the upper disks keep the order during their moves, which is also the reason why we use $A_n$ here. Thus, $B_n=2^{n+2}-5$&hairsp;.
 
@@ -106,7 +106,7 @@ $$\begin{aligned}I((b_mb_{m-1}\ldots b_0)_ 2)&=2I((b_mb_{m-1}\ldots b_1)_ 2)+\be
 
 Then we can stop here, so far the function $I$ have the same form as $J$&hairsp;, and the two leading bits $(b_mb_{m-1})_2$ are enough to contain the two cases:
 
-$J(2)=1,I(2)=2$&hairsp;, so $I(n)-J(n)=2^{m-1}$ when $I(2)=2$&hairsp;; $J(3)=3,I(3)=1$&hairsp;, so $I(n)-J(n)=-2^m$ when $I(3)=1$&hairsp;.
+$$\begin{aligned}J(2)=1,I(2)=2&\implies I(n)-J(n)=2^{m-1}\\,;\\\\J(3)=3,I(3)=1&\implies I(n)-J(n)=-2^m\\,.\end{aligned}$$
 
 That is to say
 
