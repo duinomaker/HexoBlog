@@ -106,8 +106,7 @@ $$\begin{aligned}I((b_mb_{m-1}\ldots b_0)_ 2)&=2I((b_mb_{m-1}\ldots b_1)_ 2)+\be
 
 Then we can stop here, so far the function $I$ have the same form as $J$&hairsp;, and the two leading bits $(b_mb_{m-1})_2$ are enough to contain the two cases:
 
-1. $J(2)=1,I(2)=2$&hairsp;, so $I(n)-J(n)=2^{m-1}$ in the case $I(2)=2$&hairsp;;
-2. $J(3)=3,I(3)=1$&hairsp;, so $I(n)-J(n)=-2^m$ in the case $I(3)=1$&hairsp;.
+$J(2)=1,I(2)=2$&hairsp;, so $I(n)-J(n)=2^{m-1}$ when $I(2)=2$&hairsp;; $J(3)=3,I(3)=1$&hairsp;, so $I(n)-J(n)=-2^m$ when $I(3)=1$&hairsp;.
 
 That is to say
 
