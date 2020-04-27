@@ -100,7 +100,7 @@ The function $I$ has the same recursion relation as $J$&hairsp;, but with differ
 
 Thus, we cannot find a unique $I(1)$ that satisfies this recurrence. So we have to split it into two cases, one with $I(2)=2$ and one with $I(3)=1$&hairsp;.
 
-Let's express in terms of $n=2^m+l$&hairsp;, and let $\beta_0=-1,\beta_1=1$&hairsp;. The recurrence unfolds, binary-wise:
+Let's represent in terms of $n=2^m+l$&hairsp;, and let $\beta_0=-1,\beta_1=1$&hairsp;. The recurrence unfolds, binary-wise:
 
 $$\begin{aligned}I((b_mb_{m-1}\ldots b_0)_ 2)&=2I((b_mb_{m-1}\ldots b_1)_ 2)+\beta _ {b_0}\\\\&\\;\\;\vdots\\\\&=2^{m-1}I((b_mb_{m-1})_2)+\cdots+2\beta _{b_1}+\beta _{b_0}\\,.\end{aligned}$$
 
@@ -114,4 +114,34 @@ $$I(n)=\begin{cases}J(n)+2^{m-1}\\,,&\text{if $0\leq l<2^{m-1}$}\\,;\\\\J(n)-2^m
 
 ### 1.16
 
-Under investigation...
+Express $g(n)$ in the form
+
+$$g(n)=A(n)\alpha+B(n)\beta_0+C(n)\beta_1+D(n)\gamma\\,.$$
+
+Let $g(n)=1$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,-2,-2,0)$&hairsp;. Then
+
+$$A(n)-2B(n)-2C(n)=1\\,.\tag{1}$$
+
+Let $g(n)=n$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,0,1,-1)\\,.$&hairsp;. Then
+
+$$A(n)+C(n)-D(n)=n\\,.\tag{2}$$
+
+Let $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,-2,-2,0)$&hairsp;, which gives $g(n)=3^m$&hairsp;. Then (note we're representing in terms of $n=2^m+l$&hairsp;)
+
+$$A(n)=3^m\\,.\tag{3}$$
+
+Let $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(0,0,1,0)$&hairsp;. Similar to the binary expansion in the Josephus problem, we have
+
+$$C(n)=(b_{m-1}\ldots b_0)_3\\,.\tag{4}$$
+
+I also checked that for $(1)(2)(3)$ and $(4)$&hairsp;,
+
+$$\left|\begin{array}{cccc}1&-2&-2&0\\\\1&0&1&-1\\\\1&0&0&0\\\\0&0&1&0\end{array}\right|\neq0\\,.$$
+
+So the recurrence is solvable. Hence
+
+$$\begin{aligned}A(n)&=3^m\\,;\\\\B(n)&=[3^m-2(b_{m-1}\ldots b_0)_ 3-1]/2\\,;\\\\C(n)&=(b_{m-1}\ldots b_0)_ 3\\,;\\\\D(n)&=3^m+(b_{m-1}\ldots b_0)_3-n\\,.\end{aligned}$$
+
+Then
+
+$$\begin{aligned}g(n)&=3^m\alpha+[3^m-2(b_{m-1}\ldots b_0)_ 3-1]\beta_0/2+(b_{m-1}\ldots b_0)_ 3\beta_1+[3^m+(b_{m-1}\ldots b_0)_ 3-n]\gamma\\\\&=(\alpha+\frac{\beta_0}2+\gamma)3^m+(-\beta_0+\beta_1+\gamma)(b_{m-1}\ldots b_0)_3-\frac{\beta_0}2-n\gamma\\,.\end{aligned}$$
