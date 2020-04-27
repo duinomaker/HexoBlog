@@ -144,4 +144,4 @@ $$\begin{aligned}A(n)&=3^m\\,;\\\\B(n)&=[3^m-2(b_{m-1}\ldots b_0)_ 3-1]/2\\,;\\\
 
 Then
 
-$$\begin{aligned}g(n)&=3^m\alpha+[3^m-2(b_{m-1}\ldots b_0)_ 3-1]\beta_0/2+(b_{m-1}\ldots b_0)_ 3\beta_1+[3^m+(b_{m-1}\ldots b_0)_ 3-n]\gamma\\\\&=(\alpha+\frac{\beta_0}2+\gamma)3^m+(-\beta_0+\beta_1+\gamma)(b_{m-1}\ldots b_0)_3-\frac{\beta_0}2-n\gamma\\,.\end{aligned}$$
+$$\begin{aligned}g(n)&=3^m\alpha+[3^m-2(b_{m-1}\ldots b_0)_ 3-1]\beta_0/2+(b_{m-1}\ldots b_0)_ 3\beta_1+[3^m+(b_{m-1}\ldots b_0)_ 3-n]\gamma\\\\&=\left(\alpha+\frac{\beta_0}2+\gamma\right)3^m+(-\beta_0+\beta_1+\gamma)(b_{m-1}\ldots b_0)_3-\frac{\beta_0}2-n\gamma\\,.\end{aligned}$$
