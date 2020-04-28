@@ -74,7 +74,7 @@ $A(m_1,\ldots,m_n)=2A(m_1,\ldots,m_{n-1})+m_n$&hairsp;. This is an equation of t
 
 We already know $n$ straight lines define $L_n=\frac{n(n+1)}2+1$ regions on a plane, and when the $n$-th line is added in, $n$ new areas are created.
 
-Let the zig-zags be extremely narrow to be seen as straight lines to some extent. So when the $n$-th zig-zag is added in, $n$ new areas are created in “the straight line manner”.
+Let the zig-zags be extremely narrow to be seen as straight lines to some extent. So when the $n$-th zig-zag is added in, $n$ new areas are created “in the straight line manner”.
 
 We could also see that when two zig-zags intersect, $8$ new areas are created “around their intersection”, in the way shown below:
 
