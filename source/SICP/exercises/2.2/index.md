@@ -240,7 +240,7 @@ It works, because the set of all subsets is a union of:
                    ((pair? x)
                     (count-leaves x))
                    (else 1))
-           y))
+             y))
         0
         tree))
 
