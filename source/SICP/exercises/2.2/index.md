@@ -163,7 +163,7 @@ d.
     (define (branch-structure mobile)
       (cdr mobile))
 
-Only four procedures have to be changed. That's the convinience brought by abstraction barriers.
+Only four procedures have to be changed. That's the convinience abstraction barriers bring to us.
 
 ## Exercise 2.30
 
@@ -390,17 +390,17 @@ to check whether two queens are safe with respect to each other. And uses
                 #t
                 rest-of-queens)
 
-to replace the original `examine` procedure. I thought that it would sacrifice readability of my program, and gave it up. But it this level of abstraction provides a fundamental basis for analyzing the algorithms in <a href="#Exercise-2-43">Exercise 2.43</a>.
+to replace the original `examine` procedure. I gave it up thinking that it would sacrifice readability of my program. But this level of abstraction provides a fundamental basis for analyzing the algorithms in <a href="#Exercise-2-43">Exercise 2.43</a>.
 
 ## Exercise 2.43
 
-Exchanging the order of the mapping causes `(queen-cols (- k 1))` to be called for every element in `(enumerate-interval 1 board-size)`&hairsp;.
+Exchanging the order of the mapping causes `(queen-cols (- k 1))` to be invoked for every element in `(enumerate-interval 1 board-size)`&hairsp;.
 
 Let's say that $A_{k,n}$ is the number of all ways to place queens in the first $k$ columns of an $n\times n$ board. In the $8\times8$ case, we get
 
 $$\begin{array}{r|ccccccccc}k&0&1&2&3&4&5&6&7&8\\\\A_{k,8}&1&8&42&140&344&568&550&312&92\end{array}$$
 
-If we stipulate that `two-queens-safe?` (defined in <a href="#two-queens-safe">Exercise 2.42</a>) is the primitive operation, since it takes a constant time to determine whether two queens are safe with respect to each other. Let's say $B_{k,n}$ is the number `two-queens-safe?` is called when calling `(queen-cols k)` of the original algorithm, and the board is $n\times n$&hairsp;. We have the recurrence
+If we stipulate that `two-queens-safe?` (defined in <a href="#two-queens-safe">Exercise 2.42</a>) is the primitive operation, since it takes a constant time to determine whether two queens are safe with respect to each other. Let's say $B_{k,n}$ is the number `two-queens-safe?` is invoked when calling `(queen-cols k)` of the original algorithm, and the board is $n\times n$&hairsp;. We have the recurrence
 
 $$B_{k,n}=\begin{cases}0\\,,&\text{if $k=0$}\\,;\\\\n(k-1)A_{k-1,n}+B_{k-1,n}\\,,&\text{if $k>0$}\\,.\end{cases}$$
 
@@ -408,11 +408,11 @@ In the recurrence above, multiply $A_{k-1,n}$ by $n(k-1)$ means we have to attac
 
 In the original algorithm, $B_{8,8}=81696$&hairsp;.
 
-Exchanging the order of mapping causes `(queen-cols (- k 1))` to be called $n$ times instead of one, the recurrence is simply
+Exchanging the order of mapping causes `(queen-cols (- k 1))` to be invoked $n$ times instead of one, the recurrence is simply
 
 $$B^\prime_{k,n}=\begin{cases}0\\,,&\text{if $k=0$}\\,;\\\\n(k-1)A_{k-1,n}+nB^\prime_{k-1,n}\\,,&\text{if $k>0$}\\,.\end{cases}$$
 
-In Louis' algorithm, $B^\prime_{8,8}=59878720$&hairsp;. So the time is about $733T$&hairsp;.
+In Louis' algorithm, $B^\prime_{8,8}=59878720$&hairsp;. So the required time is about $733T$&hairsp;.
 
 ## Exercise 2.44
 
@@ -563,7 +563,7 @@ b.
                    (beside up-smaller
                            (corner-split painter (- n 1)))))))
 
-c. Made all Mr. Rogers look outward.
+c. Made Mr. Rogers look outward.
 
     (define (compose . procs)
       (lambda (x)
