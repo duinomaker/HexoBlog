@@ -96,7 +96,7 @@ For addition and abstraction of two intervals $I_1$ and $I_2$&hairsp;, the width
 
 $$\begin{aligned}2\cdot width&=[H(I_1)+H(I_2)]-[L(I_1)+L(I_2)]\\\\&=[H(I_1)-L(I_1)]+[H(I_2)-L(I_2)]\\\\&=width_1+width_2\\,,\end{aligned}$$
 
-where $H(I)$ stands for `(upper-bound I)`, $L(I)$ stands for `(lower-bound I)`, and $width_1,width_2$ stands for the width of the two intervals, respectively.
+where $H(I)$ stands for `(upper-bound I)`&hairsp;, $L(I)$ stands for `(lower-bound I)`&hairsp;, and $width_1,width_2$ stands for the width of the two intervals, respectively.
 
 But the equation above doesn't hold for a multiplication or a division. Presume that the width of the result was a function of the widths of the inputs, then multiplying different intervals with the same widths should give the same answer. But
 

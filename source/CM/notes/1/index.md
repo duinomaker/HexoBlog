@@ -46,7 +46,7 @@ $$\begin{aligned}f(1)&=\alpha\\,;\\\\f(2n)&=2f(n)+\beta\\,,\quad\text{for}\\;n\g
 
 还是刚才的例子，选取这些特殊情况，分别是
 
-$$\begin{aligned}(\alpha,\beta,\gamma)=(1,0,0)&\Rightarrow A(n)=2^m\\,;\\\\f(n)=1&\Rightarrow(\alpha,\beta,\gamma)=(1,-1,-1)\\,;\\\\f(n)=n&\Rightarrow(\alpha,\beta,\gamma)=(1,0,1)\\,.\end{aligned}$$
+$$\begin{aligned}(\alpha,\beta,\gamma)\rightarrow(1,0,0)&\implies A(n)=2^m\\,;\\\\f(n)=1&\implies(\alpha,\beta,\gamma)\rightarrow(1,-1,-1)\\,;\\\\f(n)=n&\implies(\alpha,\beta,\gamma)\rightarrow(1,0,1)\\,.\end{aligned}$$
 
 代入 $(*)$ 式可得到
 
