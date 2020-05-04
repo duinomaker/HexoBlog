@@ -396,11 +396,11 @@ to replace the original `examine` procedure. I gave it up thinking that it would
 
 Exchanging the order of the mapping causes `(queen-cols (- k 1))` to be invoked for every element in `(enumerate-interval 1 board-size)`&hairsp;.
 
-Let's say that $A_{k,n}$ is the number of all ways to place queens in the first $k$ columns of an $n\times n$ board. For the $8\times8$ case, we get
+Let's say that $A_{k,n}$ is the number of all ways to place queens in the first $k$ columns of an $n\times n$ board. For the $8\times8$ case, we have
 
 $$\begin{array}{r|ccccccccc}k&0&1&2&3&4&5&6&7&8\\\\A_{k,8}&1&8&42&140&344&568&550&312&92\end{array}$$
 
-If we stipulate that `two-queens-safe?` (defined in <a href="#two-queens-safe">Exercise 2.42</a>) is the primitive operation, since it takes a constant time to determine whether two queens are safe with respect to each other. Let's say $B_{k,n}$ is the number of times `two-queens-safe?` to be invoked when calling `(queen-cols k)` of the original algorithm, and the board is $n\times n$&hairsp;. We have the recurrence
+If we stipulate that `two-queens-safe?` (defined in <a href="#two-queens-safe">Exercise 2.42</a>) is the primitive operation, since it takes a constant time to determine whether two queens are safe with respect to each other. Let's say $B_{k,n}$ is the number of times `two-queens-safe?` to be invoked when calling `(queen-cols k)` of the original algorithm on an $n\times n$ board. We have the recurrence
 
 $$B_{k,n}=\begin{cases}0\\,,&\text{if $k=0$}\\,;\\\\n(k-1)A_{k-1,n}+B_{k-1,n}\\,,&\text{if $k>0$}\\,.\end{cases}$$
 
