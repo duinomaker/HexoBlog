@@ -408,7 +408,7 @@ In the recurrence above, multiply $A_{k-1,n}$ by $n(k-1)$ means we have to attac
 
 In the original algorithm, $B_{8,8}=81696$&hairsp;.
 
-Exchanging the order of mapping causes `(queen-cols (- k 1))` to be invoked $n$ times instead of one, the recurrence is simply
+Exchanging the order of mapping causes `(queen-cols (- k 1))` to be invoked $n$ times instead of once, the recurrence is simply
 
 $$B^\prime_{k,n}=\begin{cases}0\\,,&\text{if $k=0$}\\,;\\\\n(k-1)A_{k-1,n}+nB^\prime_{k-1,n}\\,,&\text{if $k>0$}\\,.\end{cases}$$
 
