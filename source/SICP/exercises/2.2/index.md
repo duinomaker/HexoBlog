@@ -37,7 +37,7 @@ license_lang: en
     (define (except-first-denomination coins)
       (cdr coins))
 
-The order of denominations doesn't affect the result. Becuase both procedures compute all possible combinations.
+The order of denominations doesn't affect the result. Because both procedures compute all possible combinations.
 
 ## Exercise 2.20
 
@@ -163,7 +163,7 @@ d.
     (define (branch-structure mobile)
       (cdr mobile))
 
-Only four procedures have to be changed. That's the convinience abstraction barriers bring to us.
+Only four procedures have to be changed. That's the convenience abstraction barriers bring to us.
 
 ## Exercise 2.30
 
