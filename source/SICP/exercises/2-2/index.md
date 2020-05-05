@@ -1,6 +1,6 @@
 ---
 title: 2.2  Hierarchical Data and the Closure Property
-canonical_url: https://duinomaker.top/SICP/exercises/2.2/
+canonical_url: https://duinomaker.top/SICP/exercises/2-2/
 widgets:
 comment:
 article:

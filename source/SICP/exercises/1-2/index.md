@@ -1,6 +1,6 @@
 ---
 title: 1.2 过程与它们所产生的计算
-canonical_url: https://duinomaker.top/SICP/exercises/1.2/
+canonical_url: https://duinomaker.top/SICP/exercises/1-2/
 widgets:
 comment:
 article:

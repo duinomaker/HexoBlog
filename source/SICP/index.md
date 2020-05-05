@@ -25,8 +25,8 @@ To advance my proficiency in written English, I'll be taking notes in English si
 
 ## Exercises
 
-<span class="mono rigid">1.1&nbsp;</span><a href="/SICP/exercises/1.1/" target="_self">The Elements of Programming</a>
-<span class="mono rigid">1.2&nbsp;</span><a href="/SICP/exercises/1.2/" target="_self">Procedures and the Processes They Generate</a>
-<span class="mono rigid">1.3&nbsp;</span><a href="/SICP/exercises/1.3/" target="_self">Formulating Abstractions with Higher-Order Procedures</a>
-<span class="mono rigid">2.1&nbsp;</span><a href="/SICP/exercises/2.1/" target="_self">Introduction to Data Abstraction</a>
-<span class="mono rigid">2.2&nbsp;</span><a href="/SICP/exercises/2.2/" target="_self">Hierarchical Data and the Closure Property</a>
+<span class="mono rigid">1.1&nbsp;</span><a href="/SICP/exercises/1-1/" target="_self">The Elements of Programming</a>
+<span class="mono rigid">1.2&nbsp;</span><a href="/SICP/exercises/1-2/" target="_self">Procedures and the Processes They Generate</a>
+<span class="mono rigid">1.3&nbsp;</span><a href="/SICP/exercises/1-3/" target="_self">Formulating Abstractions with Higher-Order Procedures</a>
+<span class="mono rigid">2.1&nbsp;</span><a href="/SICP/exercises/2-1/" target="_self">Introduction to Data Abstraction</a>
+<span class="mono rigid">2.2&nbsp;</span><a href="/SICP/exercises/2-2/" target="_self">Hierarchical Data and the Closure Property</a>
