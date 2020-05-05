@@ -390,7 +390,7 @@ to check whether two queens are safe with respect to each other. And uses
                 #t
                 rest-of-queens)
 
-to replace the original `examine` procedure. I gave it up thinking that it would sacrifice readability of my program. But this level of abstraction provides a fundamental basis for analyzing the algorithms in <a href="#Exercise-2-43">Exercise 2.43</a>.
+to replace the original `examine` procedure. I gave it up thinking that it would sacrifice the readability of my program. But this level of abstraction provides a fundamental basis for the algorithm analyses in <a href="#Exercise-2-43">Exercise 2.43</a>.
 
 ## Exercise 2.43
 
