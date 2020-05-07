@@ -48,7 +48,7 @@ $$s_na_nT_n=s_{n-1}a_{n-1}T_{n-1}+s_nc_n\\,.$$
 
 Hence
 
-$$T_n=\frac1{s_na_n}\left(s_1b_1T_0\sum_{k=1}^ns_kc_k\right)\\,,$$
+$$T_n=\frac1{s_na_n}\left(s_1b_1T_0+\sum_{k=1}^ns_kc_k\right)\\,,$$
 
 where $s_n=s_{n-1}\frac{a_{n-1}}{b_n}$ can be unfolded as
 
