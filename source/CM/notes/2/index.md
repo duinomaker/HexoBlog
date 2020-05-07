@@ -9,7 +9,7 @@ article:
 license: by-nc-sa
 license_lang: en
 ---
-<style>.has-math { font-family: KaTeX_Main; }</style>
+<style>.has-math { font-family: KaTeX_Main, serif; }</style>
 ---
 
 ## 2.1 Notation

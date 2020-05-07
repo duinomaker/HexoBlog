@@ -9,7 +9,7 @@ article:
 license: by-nc-sa
 license_lang: en
 ---
-<style>.has-math { font-family: KaTeX_Main; }</style>
+<style>.has-math { font-family: KaTeX_Main, serif; }</style>
 ---
 
 ## <a href="/images/CM/warmups_1.jpg" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
