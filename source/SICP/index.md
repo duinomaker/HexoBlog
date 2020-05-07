@@ -11,7 +11,7 @@ article:
 
 ## Preface
 
-These are my personal notes for *Structure and Interpretation of Computer Programs*&hairsp;.
+These are my personal notes for *Structure and Interpretation of Computer Programs*.
 
 To advance my proficiency in written English, I'll be taking notes in English since April 25, 2020. Although previous works are done in Chinese, I feel no need to translate them, since it would be time-consuming and would have little to do with my comprehension of the book.
 

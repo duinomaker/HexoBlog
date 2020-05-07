@@ -16,7 +16,7 @@ license_lang: en
 
 The summation of an explicit sequence denoted as a succession of additions like $a_1+a_2+\cdots+a_n$ can be written explicitly in the delimited form $\sum_{k=1}^na_k$&hairsp;, which is called Sigma-notation.
 
-The quantity after $\sum$ is called the ***summand***&hairsp;; the index variable is said to be ***bound*** to the $\sum$ sign.
+The quantity after $\sum$ is called the ***summand***; the index variable is said to be ***bound*** to the $\sum$ sign.
 
 Sometimes it's tempting to write for example
 
@@ -60,7 +60,7 @@ After solving the recurrence arises in the study of “quick-sort” algorithm, 
 
 $$H_n=1+\frac12+\cdots+\frac1n=\sum_{k=1}^n\frac1k\\,.$$
 
-The letter $H$ stands for “harmonic”; $H_n$ is a ***harmonic number***&hairsp;.
+The letter $H$ stands for “harmonic”; $H_n$ is a ***harmonic number***.
 
 ---
 

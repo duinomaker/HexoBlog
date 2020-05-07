@@ -28,7 +28,7 @@ A ***pair*** is a compound structure that enables us to implement the concrete l
     (car (cons a b)) -> a
     (cdr (cons a b)) -> b
 
-Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***&hairsp;, and in Chapter 3 it will be used as a basic tool to address the issues of modeling and simulation.
+Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***, and in Chapter 3 it will be used as a basic tool to address the issues of modeling and simulation.
 
 ***Abstraction barriers*** isolate different “levels” of the system. It requires us to identify for each of type of data object a set of operations in terms of which all manipulations of data objects of that type will be expressed, and then to use only those operations in manipulating the data.
 
@@ -47,7 +47,7 @@ The use of the word “closure” here comes from abstract algebra, where a set 
 
 ---
 
-A ***sequence*** is an ordered collection of data objects. There are many ways to represent sequences. In our language, a sequence produced by `(list <a1> <a2> ... <an>)` is equivalent to `(cons <a1> (cons <a2> (cons ... (cons <an> nil) ...)))`&hairsp;. Such a sequence is called a ***list***&hairsp;.
+A ***sequence*** is an ordered collection of data objects. There are many ways to represent sequences. In our language, a sequence produced by `(list <a1> <a2> ... <an>)` is equivalent to `(cons <a1> (cons <a2> (cons ... (cons <an> nil) ...)))`&hairsp;. Such a sequence is called a ***list***.
 
 ***Trees*** are sequences whose elements are sequences. Trees could easily be dealt with recursions, with which we can reduce operations on trees to operations on their branches, which reduce in turn to operations on the branches of the branches, and so on, until we reach the leaves of the tree.
 
@@ -57,7 +57,7 @@ Sequences serve as a conventional interface that permits us to combine processin
 
 The approach of ***stratified design*** is the notion that a complex system should be structured as a sequence of levels; each level is constructed by combining parts that are regarded as primitive at that level.
 
-Stratified design helps make programs ***robust***&hairsp;, that is, it makes it likely that small changes in a specification will require correspondingly small changes in the program.
+Stratified design helps make programs ***robust***, that is, it makes it likely that small changes in a specification will require correspondingly small changes in the program.
 
 ## 2.3 Symbolic Data
 
