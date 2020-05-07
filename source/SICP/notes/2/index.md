@@ -28,7 +28,7 @@ A ***pair*** is a compound structure that enables us to implement the concrete l
     (car (cons a b)) -> a
     (cdr (cons a b)) -> b
 
-Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***&hairsp;, and in chapter 3 it will be used as a basic tool to address the issues of modeling and simulation.
+Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***&hairsp;, and in Chapter 3 it will be used as a basic tool to address the issues of modeling and simulation.
 
 ***Abstraction barriers*** isolate different “levels” of the system. It requires us to identify for each of type of data object a set of operations in terms of which all manipulations of data objects of that type will be expressed, and then to use only those operations in manipulating the data.
 

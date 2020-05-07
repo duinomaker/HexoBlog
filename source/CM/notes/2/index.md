@@ -9,7 +9,7 @@ article:
 license: by-nc-sa
 license_lang: en
 ---
-<style>.has-math { font-family: KaTeX_Main, serif; }</style>
+<style>.has-math { font-family: KaTeX_Main, "Times New Roman", serif; }</style>
 ---
 
 ## 2.1 Notation
@@ -36,7 +36,7 @@ is equivalent to the recurrence
 
 $$\begin{aligned}S_0&=a_0\\,;\\\\S_n&=S_{n-1}+a_n\\,,\quad\text{for $n>0$}\\,.\end{aligned}$$
 
-Therefore we can evaluate sums in closed form by using methods to solve recurrences in closed form, such as the repertoire method mentioned before.
+Therefore we can evaluate sums in closed form by using methods to solve recurrences in closed form, such as the repertoire method mentioned in Chapter 1.
 
 By generalizing the Tower of Hanoi case, we have a technique that can reduce any recurrence of the form
 

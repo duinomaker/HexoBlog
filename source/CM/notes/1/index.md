@@ -28,7 +28,7 @@ license: by-nc-sa
 
 总之，这样一来，就得出了
 
-$$\begin{aligned}&T_0=0\\,;\\\\&T_n=2T_{n-1}+1\\,,\quad\text{for}\\;n>0\\,.\end{aligned}$$
+$$\begin{aligned}T_0&=0\\,;\\\\T_n&=2T_{n-1}+1\\,,\quad\text{for}\\;n>0\\,.\end{aligned}$$
 
 这样的式子叫做**递归式$(\text{recurrence})$**，由**边界值**和**递归关系**组成。为了方便有时只写出递归关系，尽管完整的式子是包含边界值的。
 
