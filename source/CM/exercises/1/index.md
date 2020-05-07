@@ -82,7 +82,9 @@ We could also see that when two zig-zags intersect, $8$ new areas are created �
 <img src="/images/CM/exercises-1_1.jpg" class="image illustration" />
 </figure>
 
-And when the $n$-th zig-zag is added in, there are at most $n-1$ new “intersections”. So, $Z\\!Z_n=Z\\!Z_{n-1}+n+8(n-1)=\frac92n^2+\frac72n+1$&hairsp;.
+And when the $n$-th zig-zag is added in, there are at most $n-1$ new “intersections”. So
+
+$$Z\\!Z_n=Z\\!Z_{n-1}+n+8(n-1)=\frac92n^2+\frac72n+1\\,.$$
 
 ### 1.14
 
