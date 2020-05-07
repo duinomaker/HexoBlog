@@ -19,7 +19,8 @@ To advance my proficiency in written English, I'll be taking notes in English si
 
 ## Notes
 
-<span class="mono rigid">Chapter I&nbsp;</span><a href="/CM/notes/1/" target="_self">Recurrent Problems</a>
+<span class="mono rigid">Chapter I&nbsp;&nbsp;</span><a href="/CM/notes/1/" target="_self">Recurrent Problems</a>
+<span class="mono rigid">Chapter II&nbsp;</span><a href="/CM/notes/2/" target="_self">Sums</a>
 
 ## Exercises
 

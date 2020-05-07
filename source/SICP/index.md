@@ -17,9 +17,9 @@ To advance my proficiency in written English, I'll be taking notes in English si
 
 ## Notes
 
-<span class="mono rigid">Chapter I&nbsp;</span><a href="/SICP/notes/1/" target="_self">Building Abstractions with Procedures</a>
-<!-- <span class="mono rigid">Chapter II&nbsp;&nbsp;</span>Building Abstractions with Data
-<span class="mono rigid">Chapter III&nbsp;</span>Modularity, Objects, and State
+<span class="mono rigid">Chapter I&nbsp;&nbsp;</span><a href="/SICP/notes/1/" target="_self">Building Abstractions with Procedures</a>
+<span class="mono rigid">Chapter II&nbsp;</span><a href="/SICP/notes/2/" target="_self">Building Abstractions with Data</a>
+<!-- <span class="mono rigid">Chapter III&nbsp;</span>Modularity, Objects, and State
 <span class="mono rigid">Chapter IV&nbsp;&nbsp;</span>Metalinguistic Abstraction
 <span class="mono rigid">Chapter V&nbsp;&nbsp;&nbsp;</span>Computing with Register Machines -->
 
