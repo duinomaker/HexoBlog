@@ -16,7 +16,7 @@ license_lang: en
 
 The summation of an explicit sequence denoted as a succession of additions like $a_1+a_2+\cdots+a_n$ can be written explicitly in the delimited form $\sum_{k=1}^na_k$&hairsp;, which is called Sigma-notation.
 
-The quantity after $\sum$ is called the *summand*&hairsp;; the index variable is said to be *bound* to the $\sum$ sign.
+The quantity after $\sum$ is called the ***summand***&hairsp;; the index variable is said to be ***bound*** to the $\sum$ sign.
 
 Sometimes it's tempting to write for example
 
@@ -42,11 +42,11 @@ By generalizing the Tower of Hanoi case, we have a technique that can reduce any
 
 $$a_nT_n=b_nT_{n-1}+c_n$$
 
-to a sum, by multiplying both sides by a *summation factor*, $s_n$&hairsp;, which is cleverly chosen to make $s_nb_n=s_{n-1}a_{n-1}$&hairsp;:
+to a sum, by multiplying both sides by a ***summation factor***, $s_n$&hairsp;, which is cleverly chosen to make $s_nb_n=s_{n-1}a_{n-1}$&hairsp;:
 
 $$s_na_nT_n=s_{n-1}a_{n-1}T_{n-1}+s_nc_n\\,.$$
 
-Hence
+Hence ($s_0a_0=s_1b_1$)
 
 $$T_n=\frac1{s_na_n}\left(s_1b_1T_0+\sum_{k=1}^ns_kc_k\right)\\,,$$
 
@@ -60,7 +60,7 @@ After solving the recurrence arises in the study of “quick-sort” algorithm, 
 
 $$H_n=1+\frac12+\cdots+\frac1n=\sum_{k=1}^n\frac1k\\,.$$
 
-The letter $H$ stands for “harmonic”; $H_n$ is a *harmonic number*&hairsp;.
+The letter $H$ stands for “harmonic”; $H_n$ is a ***harmonic number***&hairsp;.
 
 ---
 
