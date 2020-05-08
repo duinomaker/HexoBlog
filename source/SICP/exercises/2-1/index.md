@@ -173,7 +173,7 @@ under the definition of interval division. But when we try to divide an interval
 
 $$\frac{I_A}{I_A}=\left[\frac{L_A}{H_A},\frac{H_A}{L_A}\right]$$
 
-which is for most of the time not equal to $[1,1]$ which we might have expected.
+which is for most of the time not equal to $[1,1]$ as we might have expected.
 
 The above example illustrates that, the re-appearance of an interval in an expression may well introduce uncertainty to the evaluation. This is because, we never know whether two intervals are related to the same number. In other words, intervals don't have ***“identity”***.
 
