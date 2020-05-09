@@ -34,13 +34,13 @@ Procedural representations of data will play a central role in our programming r
 
 ## 2.2 Hierarchical Data and the Closure Property
 
-<div class="foreword">
+<div class="foreword has-mb-5">
 
 The ability to create pairs whose elements are pairs is the essence of list structure which benefits from the <strong><em>closure property</em></strong> of <code>cons</code>&hairsp;.
 
 Closure is the key to power in any means of combination because it permits us to create <strong><em>hierarchical</em></strong> structures —— structures made up of parts, which themselves are made up of parts, and so on.
 </div>
-<div class="has-mb-5"></div>
+
 {% blockquote %}
 The use of the word “closure” here comes from abstract algebra, where a set of elements is said to be closed under an operation if applying the operation to elements in the set produces an element that is again an element of the set.
 {% endblockquote %}

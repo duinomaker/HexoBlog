@@ -6,10 +6,11 @@ comment:
 article:
     highlight:
         clipboard: false
+serif_content: true
 license: by-nc-sa
 license_lang: en
 ---
-<style>.has-math { font-family: KaTeX_Main, "Times New Roman", serif; }</style>
+
 ---
 
 ## 2.1 Notation

@@ -6,10 +6,11 @@ comment:
 article:
     highlight:
         clipboard: false
+serif_content: true
 license: by-nc-sa
 license_lang: en
 ---
-<style>.has-math { font-family: KaTeX_Main, "Times New Roman", serif; }</style>
+
 ---
 
 ## <a href="/images/CM/warmups_1.jpg" class="has-link-grey" style="text-decoration: underline;">Warmups</a>

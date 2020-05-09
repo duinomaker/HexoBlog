@@ -59,7 +59,7 @@
         </h1>
         <% } %>
         <% if (!post.nocontent) { %>
-            <div class="content has-math">
+            <div class="content has-math<%= post.serif_content ? ' serif' : '' %>">
         <% } %>
             <%- index && post.excerpt ? post.excerpt : post.content %>
         <% if (!post.nocontent) { %>
