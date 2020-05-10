@@ -6,9 +6,9 @@ comment:
 article:
     highlight:
         clipboard: false
-plugins:
-    katex: false
-    mathjax: true
+# plugins:
+#     katex: false
+#     mathjax: true
 serif_content: true
 license: by-nc-sa
 license_lang: en

@@ -520,10 +520,13 @@ figure.highlight
     overflow-y: hidden
 
 .MJX-TEX[display="true"], .MathJax[display="true"] > svg
-    margin-left: 2em !important
+    margin-left: 2em
 
 .MathJax[display="true"]
-    padding: 1em
+    padding-top: 1em
+    padding-bottom: 1em
+    margin-top: -1em !important
+    margin-bottom: -1em !important
 
 .katex
     font-size: 1em !important
@@ -533,23 +536,22 @@ figure.highlight
     margin-top: -1em !important
     .katex
         text-align: left !important
-        margin-left: 2em !important
-
-.katex-html
-    padding-top: 1em
-    .tag
-        align-items: unset
-        background-color: unset
-        border-radius: unset
-        color: unset
-        display: unset
-        font-size: unset
-        height: unset
-        justify-content: unset
-        line-height: unset
-        padding-left: unset
-        padding-right: unset
-        white-space: unset
+        margin-left: 2em
+        .katex-html
+            padding-top: 1em
+            .tag
+                align-items: unset
+                background-color: unset
+                border-radius: unset
+                color: unset
+                display: unset
+                font-size: unset
+                height: unset
+                justify-content: unset
+                line-height: unset
+                padding-left: unset
+                padding-right: unset
+                white-space: unset
 
 /* ---------------------------------
  *     Book Cover Preferences
