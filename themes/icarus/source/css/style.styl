@@ -1,6 +1,6 @@
 family-sans = "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
 family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
-family-serif = MJXTEX, KaTeX_Main, "Times New Roman", serif
+family-serif = KaTeX_Main, MathJax_Main, "Times New Roman", serif
 gap = 64px
 screen-tablet = 769px
 screen-desktop = 1088px
@@ -8,20 +8,18 @@ screen-widescreen = 1280px
 screen-fullhd = 1472px
 
 @font-face {
-    font-family: MJXTEX;
+    font-family: MathJax_Main;
     font-style: normal;
     font-weight: 400;
-    src: local(MathJax_Main-Regula),
-         url("/fonts/MathJax_Main-Regular.ttf") format('truetype'),
+    src: local(MathJax_Main-Regular),
          url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff) format('woff');
 }
 
 @font-face {
-    font-family: MJXTEX;
+    font-family: MathJax_Main;
     font-style: italic;
     font-weight: 400;
-    src: local(MathJax_Main-Itali),
-         url("/fonts/MathJax_Main-Italic.ttf") format('truetype'),
+    src: local(MathJax_Main-Italic),
          url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff) format('woff');
 }
 
