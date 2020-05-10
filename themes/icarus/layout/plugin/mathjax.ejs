@@ -6,30 +6,25 @@
             displayIndent: '2em'
         },
         tex: {
-            // tags: 'ams',
-            // tagSide: 'left',
-            // useLabelIds: true,
             inlineMath: [
                 ['$', '$']
             ],
             displayMath: [
                 ['$$', '$$']
             ],
-            // autoload: {
-            //     color: [],
-            //     colorV2: ['color']
-            // },
             packages: { '[+]': ['noerrors'] }
         },
         svg: {
-            scale: 1.0,
             fontCache: 'global',
             displayAlign: 'left',
             displayIndent: '2em'
         },
         options: {
             ignoreHtmlClass: 'tex2jax_ignore',
-            processHtmlClass: 'tex2jax_process'
+            processHtmlClass: 'tex2jax_process',
+            renderActions: {
+                addMenu: []
+            }
         },
         loader: {
             load: ['[tex]/noerrors']
