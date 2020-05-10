@@ -20,7 +20,7 @@ license_lang: en
 
 The summation of an explicit sequence denoted as a succession of additions like $a_1+a_2+\cdots+a_n$ can be written explicitly in the delimited form $\sum_{k=1}^na_k$&hairsp;, which is called Sigma-notation.
 
-The quantity after $\sum$ is called the *summand*; the index variable is said to be *bound* to the $\sum$ sign.
+The quantity after $\sum$ is called the ***summand***; the index variable is said to be ***bound*** to the $\sum$ sign.
 
 Sometimes it's tempting to write for example
 
@@ -46,7 +46,7 @@ By generalizing the Tower of Hanoi case, we have a technique that can reduce any
 
 $$a_nT_n=b_nT_{n-1}+c_n$$
 
-to a sum, by multiplying both sides by a *summation factor*, $s_n$&hairsp;, which is cleverly chosen to make $s_nb_n=s_{n-1}a_{n-1}$&hairsp;:
+to a sum, by multiplying both sides by a ***summation factor***, $s_n$&hairsp;, which is cleverly chosen to make $s_nb_n=s_{n-1}a_{n-1}$&hairsp;:
 
 $$s_na_nT_n=s_{n-1}a_{n-1}T_{n-1}+s_nc_n\\,.$$
 
@@ -64,7 +64,7 @@ After solving the recurrence arises in the study of “quick-sort” algorithm, 
 
 $$H_n=1+\frac12+\cdots+\frac1n=\sum_{k=1}^n\frac1k\\,.$$
 
-The letter $H$ stands for “harmonic”; $H_n$ is the $n$-th *harmonic number*.
+The letter $H$ stands for “harmonic”; $H_n$ is the $n$-th ***harmonic number***.
 
 In addition, the harmonic numbers satisfy the series identity
 
@@ -96,7 +96,7 @@ $$f^-(k)=\lbrace j\mid f(j)=k\rbrace\\,.$$
 
 If $f$ is an one-to-one corresspondance between $J$ and $K$&hairsp;, we have $\\#f^-(k)=1$ for all $k$&hairsp;, and the formula reduces to the commutative law.
 
-Splitting off a term is the basis of a *perturbation method* that often allows us to evaluate a sum in closed form:
+Splitting off a term is the basis of a ***perturbation method*** that often allows us to evaluate a sum in closed form:
 
 1. Start with an unknown sum and call it $S_n$&hairsp;;
 2. rewrite $S_{n+1}$ in two ways, by splitting off both its last term and its first term;
