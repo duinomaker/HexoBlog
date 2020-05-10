@@ -18,7 +18,7 @@ license_lang: en
 
 ## 2.1 Notation
 
-The summation of an explicit sequence denoted as a succession of additions like $a_1+a_2+\cdots+a_n$ can be written explicitly in the delimited form $\sum_{k=1}^na_k$&hairsp;, which is called Sigma-notation.
+The summation of an explicit sequence denoted as a succession of additions like $a_1+a_2+\cdots+a_n$ can be written in the delimited form $\sum_{k=1}^na_k$&hairsp;, which is called Sigma-notation.
 
 The quantity after $\sum$ is called the ***summand***; the index variable is said to be ***bound*** to the $\sum$ sign.
 
