@@ -96,7 +96,7 @@ $$f^-(k)=\lbrace j\mid f(j)=k\rbrace\\,.$$
 
 If $f$ is an one-to-one corresspondance between $J$ and $K$&hairsp;, we have $\\#f^-(k)=1$ for all $k$&hairsp;, and the formula reduces to the commutative law.
 
-Splitting off a term is the basis of a _**perturbation method**_ that often allows us to evaluate a sum in closed form:
+Splitting off a term is the basis of a ***perturbation method*** that often allows us to evaluate a sum in closed form:
 
 1. Start with an unknown sum and call it $S_n$&hairsp;;
 2. rewrite $S_{n+1}$ in two ways, by splitting off both its last term and its first term;
