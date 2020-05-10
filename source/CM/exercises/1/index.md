@@ -6,6 +6,9 @@ comment:
 article:
     highlight:
         clipboard: false
+plugins:
+    katex: false
+    mathjax: true
 serif_content: true
 license: by-nc-sa
 license_lang: en
@@ -59,9 +62,9 @@ Move a double $(n-1)$-tower, them move the two largest disks, which takes $2$ mo
 
 ### 1.11b
 
-~~Let $\sout{B_n}$ be the minimum number of moves to move a double $\sout{n}$-tower in the original order; $\sout{H_n}$ be the minimum number of moves to move a double $\sout{n}$-tower except for the bottom disk. Then we have $\sout{B_n=H_n+1+B_{n-1}+1+B_{n-1}}$ and $\sout{H_n=B_{n-1}+1+B_{n-1}}$&hairsp;.~~
+~~Let $\require{enclose}\enclose{horizontalstrike}{B_n}$ be the minimum number of moves to move a double $\require{enclose}\enclose{horizontalstrike}{n}$-tower in the original order; $\require{enclose}\enclose{horizontalstrike}{H_n}$ be the minimum number of moves to move a double $\require{enclose}\enclose{horizontalstrike}{n}$-tower except for the bottom disk. Then we have $\require{enclose}\enclose{horizontalstrike}{B_n=H_n+1+B_{n-1}+1+B_{n-1}}$ and $\require{enclose}\enclose{horizontalstrike}{H_n=B_{n-1}+1+B_{n-1}}$&hairsp;.~~
 
-~~Insert $\sout{H_n}$ to the $\sout{B_n}$ equation, we could get $\sout{B_n=4B_{n-1}+3=4^n-1}$&hairsp;.~~
+~~Insert $\require{enclose}\enclose{horizontalstrike}{H_n}$ to the $\require{enclose}\enclose{horizontalstrike}{B_n}$ equation, we could get $\require{enclose}\enclose{horizontalstrike}{B_n=4B_{n-1}+3=4^n-1}$&hairsp;.~~
 
 By referring to the answer, I found out that my approach above wasn't correct. I've made a mistake that I postulated all disks never change the order during their moves, which is not necessary.
 
@@ -121,19 +124,19 @@ Express $g(n)$ in the form
 
 $$g(n)=A(n)\alpha+B(n)\beta_0+C(n)\beta_1+D(n)\gamma\\,.$$
 
-Let $g(n)=1$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,-2,-2,0)$&hairsp;. Then
+Let $g(n)=1$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\to(1,-2,-2,0)$&hairsp;. Then
 
 $$A(n)-2B(n)-2C(n)=1\\,.\tag{1}$$
 
-Let $g(n)=n$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,0,1,-1)$&hairsp;. Then
+Let $g(n)=n$&hairsp;, which implies $(\alpha,\beta_0,\beta_1,\gamma)\to(1,0,1,-1)$&hairsp;. Then
 
 $$A(n)+C(n)-D(n)=n\\,.\tag{2}$$
 
-Let $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(1,-2,-2,0)$&hairsp;, which gives $g(n)=3^m$&hairsp;. Then (note we're representing in terms of $n=2^m+l$&hairsp;)
+Let $(\alpha,\beta_0,\beta_1,\gamma)\to(1,-2,-2,0)$&hairsp;, which gives $g(n)=3^m$&hairsp;. Then (note we're representing in terms of $n=2^m+l$&hairsp;)
 
 $$A(n)=3^m\\,.\tag{3}$$
 
-Let $(\alpha,\beta_0,\beta_1,\gamma)\rightarrow(0,0,1,0)$&hairsp;. Similar to the binary expansion in the Josephus problem, we have
+Let $(\alpha,\beta_0,\beta_1,\gamma)\to(0,0,1,0)$&hairsp;. Similar to the binary expansion in the Josephus problem, we have
 
 $$C(n)=(b_{m-1}\ldots b_0)_3\\,.\tag{4}$$
 

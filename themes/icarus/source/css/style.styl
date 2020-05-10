@@ -1,6 +1,6 @@
 family-sans = "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
 family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
-family-serif = KaTeX_Main, "Times New Roman", serif
+family-serif = KaTeX_Main, MJXZERO, MJXTEX, "Times New Roman", serif
 gap = 64px
 screen-tablet = 769px
 screen-desktop = 1088px
@@ -519,6 +519,11 @@ figure.highlight
     overflow-x: auto
     overflow-y: hidden
 
+.MathJax
+    text-align: left !important
+    .MJX-TEX[display="true"]
+        margin-left: 2em !important
+
 .katex
     font-size: 1em !important
     white-space: nowrap
@@ -526,8 +531,8 @@ figure.highlight
 .katex-display
     margin-top: -1em !important
     .katex
-        margin-left: 2em !important
         text-align: left !important
+        margin-left: 2em !important
 
 .katex-html
     padding-top: 1em
