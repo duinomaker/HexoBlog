@@ -540,10 +540,10 @@ figure.highlight
     overflow-x: auto
     overflow-y: hidden
 
-.MJX-TEX[display="true"], .MathJax[display="true"] > svg
+.MathJax[display="true"] > svg, .MJX-TEX[display="true"]
     margin-left: 2em !important
 
-.MathJax[display="true"][jax="SVG"]
+.MathJax[display="true"][jax="SVG"], .MJX-TEX:not([display="true"])
     padding-top: 1em
     padding-bottom: 1em
     margin-top: -1em !important
@@ -554,10 +554,6 @@ figure.highlight
     padding-bottom: 1em
     margin-top: -1.5em !important
     margin-bottom: -1em !important
-
-.MJX-TEX:not([display="true"])
-    padding-top: 1em
-    margin-top: -1em !important
 
 .katex
     font-size: 1em !important
