@@ -1,32 +1,32 @@
 family-sans = "Ubuntu", "Roboto", "Open Sans", "Microsoft YaHei", sans-serif
 family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
-family-serif = KaTeX_Main, MJXTEX, "Times New Roman", serif
+family-serif = KaTeX_Main, MJXZERO, MJXTEX, "Times New Roman", serif
 gap = 64px
 screen-tablet = 769px
 screen-desktop = 1088px
 screen-widescreen = 1280px
 screen-fullhd = 1472px
 
-// @font-face {
-//   font-family: MJXTEX;
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local(MathJax_Main-Regular), url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff) format('woff2');
-// }
+@font-face {
+  font-family: MJXTEX;
+  font-style: normal;
+  font-weight: 400;
+  src: local(MathJax_Main-Regular), url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff) format('woff2');
+}
 
-// @font-face {
-//   font-family: MJXTEX;
-//   font-style: normal;
-//   font-weight: bold;
-//   src: local(MathJax_Main-Bold), url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff) format('woff2');
-// }
+@font-face {
+  font-family: MJXTEX;
+  font-style: normal;
+  font-weight: bold;
+  src: local(MathJax_Main-Bold), url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff) format('woff2');
+}
 
-// @font-face {
-//   font-family: MJXTEX;
-//   font-style: italic;
-//   font-weight: 400;
-//   src: local(MathJax_Main-Italic), url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff) format('woff2');
-// }
+@font-face {
+  font-family: MJXTEX;
+  font-style: italic;
+  font-weight: 400;
+  src: local(MathJax_Main-Italic), url(https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff) format('woff2');
+}
 
 /* ---------------------------------
  *       Override CSS Framework
@@ -434,7 +434,7 @@ figure.highlight
         width: auto
 
         tr td
-                border: none
+            border: none
         tr:not(:first-child) td
             padding-top: 0
         tr:not(:last-child) td
@@ -546,7 +546,7 @@ figure.highlight
 .MathJax[display="true"], .MJX-TEX:not([display="true"])
     padding-top: 1em
     padding-bottom: 1em
-    margin-top: -1em !important
+    margin-top: -1.5em !important
     margin-bottom: -1em !important
 
 .katex
