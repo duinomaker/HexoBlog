@@ -6,6 +6,9 @@ comment:
 article:
     highlight:
         clipboard: false
+plugins:
+    katex: false
+    mathjax: true
 tex_content: true
 license: by-nc-sa
 ---
