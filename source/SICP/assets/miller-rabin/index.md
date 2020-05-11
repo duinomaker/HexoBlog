@@ -29,7 +29,7 @@ $$a^k\equiv1\\;({\rm mod}\\;n)\\;\text{or}\\;a^{2^ik}\equiv-1\\;({\rm mod}\\;n)\
 
 $$a^k\not\equiv1\\;({\rm mod}\\;n)\\;\text{and}\\;a^{2^ik}\not\equiv-1\\;({\rm mod}\\;n)\\;\text{for all}\\;i\in\lbrace0,\ldots,n-1\rbrace\quad(*)$$
 
-那么称这个 $a$ 为一个 *$\textit{Miller-\\!Rabin witness}$*&hairsp;，在素性测试中，术语 “*$\textit{witness}$*” 意为某个能够证明 $n$ 为合数的数。
+那么称这个 $a$ 为一个 *$\textit{Miller-\\!Rabin witness}$*&hairsp;，在素性测试中，术语 *$\textit{“witness”}$* 意为某个能够证明 $n$ 为合数的数。
 
 可以证明 <sup class="serif">[<a href="#cite-1">1</a>]</sup>，若一奇数是合数，那么 $\lbrace2,\ldots,n-2\rbrace$ 中超过 $75\\%$ 的数都是 *$\textit{Miller-\\!Rabin witness}$*&hairsp;。所以经过 $k$ 轮的随机检测，*$\textit{Miller-\\!Rabin}$* 判断某个数是素数时，它有概率至少为 $(1-4^{-k})$ 的把握。
 
