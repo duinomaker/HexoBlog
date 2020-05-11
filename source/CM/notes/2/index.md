@@ -9,7 +9,7 @@ article:
 plugins:
     katex: false
     mathjax: true
-serif_content: true
+tex_content: true
 license: by-nc-sa
 license_lang: en
 ---

@@ -24,4 +24,4 @@ To advance my proficiency in written English, I'll be taking notes in English si
 
 ## Exercises
 
-<span class="mono rigid">Chapter I&nbsp;</span><a href="/CM/exercises/1/" target="_self">Recurrent Problems</a>
+<span class="mono rigid">Chapter I&nbsp;&nbsp;</span><a href="/CM/exercises/1/" target="_self">Recurrent Problems</a>
