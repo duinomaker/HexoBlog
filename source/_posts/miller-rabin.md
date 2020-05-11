@@ -43,7 +43,7 @@ $$a^k\not\equiv1\\;({\rm mod}\\;n)\\;\text{and}\\;a^{2^ik}\not\equiv-1\\;({\rm m
 
 可以证明 <sup class="serif">[<a href="#cite-1">1</a>]</sup>，若一奇数是合数，那么 $\lbrace2,\ldots,n-2\rbrace$ 中超过 $75\\%$ 的数都是 *$\textit{Miller-\\!Rabin witness}$*&hairsp;。所以经过 $k$ 轮的随机检测，*$\textit{Miller-\\!Rabin}$* 判断某个数是素数时，它有概率至少为 $(1-4^{-k})$ 的把握。
 
-在 <a href="/SICP/exercises/1.2/#Exercise-1-28">练习 1.28</a> 中实现了该素性测试，其中用 非平凡平方根&hairsp;(*$\textit{nontrivial square root}$*) 的概念巧妙地找出了 *$\textit{Miller-\\!Rabin witness}$*，关键点是修改后的 `expmod` 过程，在本来执行 `square` 的地方加入了检测非平凡平方根的过程。
+在 <a href="/SICP/exercises/1-2/#Exercise-1-28">练习 1.28</a> 中实现了该素性测试，其中用 非平凡平方根&hairsp;(*$\textit{nontrivial square root}$*) 的概念巧妙地找出了 *$\textit{Miller-\\!Rabin witness}$*，关键点是修改后的 `expmod` 过程，在本来执行 `square` 的地方加入了检测非平凡平方根的过程。
 
 我也用 C++ 实现了一遍，当然不再是递归版的，思考方式变化极大，不过更加直接地体现了 $(*)$ 式。
 
