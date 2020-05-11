@@ -131,7 +131,7 @@ $$\exists k_1,k_2,N\\;\forall n>N\\,(k_1f(n)\leq{\rm R}(n)\leq k_2f(n))$$
 
 `let` 也是一种特殊形式，和调用过程时，将表达式的值绑定给形式参数的原理一样，它并没有引入新的机制。
 
-“$\mapsto$” 这个符号叫做**映射$(\text{maps to})$**，是 `lambda` 在数学中的表达。例如 $y\mapsto x/y$ 可以被表达为 `(lambda (y) (/ x y))`&hairsp;。
+“$\mapsto$” 这个符号叫做**映射**&hairsp;$($*$\textit{maps to}$*$)$，是 `lambda` 在数学中的表达。例如 $y\mapsto x/y$ 可以被表达为 `(lambda (y) (/ x y))`&hairsp;。
 
 一般来说，程序语言会对计算元素的可操作方式作出限制。而带有最少限制的元素被称为拥有**第一级**状态，这些元素有这些特点：
 

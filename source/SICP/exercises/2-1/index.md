@@ -163,7 +163,7 @@ Since the tolerance is small enough to ignore the discrepancy between $center$ a
 
 ## Exercises 2.14 ~ 2.16
 
-All three problems point to the difficulty to introduce “***identity***” to interval arithmetic.
+All three problems point to the difficulty to introduce ***“identity”*** to interval arithmetic.
 
 Suppose we have two numbers $A$ and $B$&hairsp;, which settles within intervals $I_A=[L_A,H_A]$ and $I_B=[L_B,H_B]$&hairsp;, respectively (assuming that all numbers are positive). Then we'll have
 
@@ -175,7 +175,7 @@ $$\frac{I_A}{I_A}=\left[\frac{L_A}{H_A},\frac{H_A}{L_A}\right]$$
 
 which is for most of the time not equal to $[1,1]$ as we might have expected.
 
-The above example illustrates that, the re-appearance of an interval in an expression may well introduce uncertainty to the evaluation. This is because, we never know whether two intervals are related to the same number. In other words, intervals don't have “***identity***”.
+The above example illustrates that, the re-appearance of an interval in an expression may well introduce uncertainty to the evaluation. This is because, we never know whether two intervals are related to the same number. In other words, intervals don't have ***“identity”***.
 
 Intervals don't have identity, but real numbers do. I have devised an approach to eliminate these uncertainties. That is, settle the numbers into their corresponding intervals ***randomly*** before evaluating the expression. After repeating the “settle-evaluate” loop for say $100,000$ times, we'll get a decent approximation to the actual interval.
 
