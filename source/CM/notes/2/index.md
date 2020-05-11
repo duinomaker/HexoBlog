@@ -74,7 +74,7 @@ $$\sum_{k=1}^nH_k=(n+1)(H_{n+1}-1)\\,.$$
 
 ## 2.3 Manipulation of Sums
 
-To evaluate sums in closed form or to simplify sums, the key success is the ability to change one summation into another under a few basic rules.
+To evaluate sums in closed form or to simplify sums, the key to success is the ability to change one summation into another under a few basic rules.
 
 Let $K$ be any finite set of integers. Sums over the elements of $K$ can be transformed by using three rules:
 
