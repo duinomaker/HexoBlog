@@ -22,11 +22,11 @@ The summation of an explicit sequence denoted as a succession of additions like 
 
 The quantity after $\sum$ is called the *summand*; the index variable is said to be *bound* to the $\sum$ sign.
 
-Sometimes it's tempting to write for example
+Sometimes it's tempting to write, for example
 
 $$\sum_{k=2}^{n-1}k(k-1)(n-k)\quad\text{instead of}\quad\sum_{k=0}^nk(k-1)(n-k)$$
 
-to omit zero terms. But this kind of “simplification” makes the summation harder to understand. Zero terms are not harmful; it's always advantageous to keep upper and lower bounds as simple as possible.
+to omit zero terms. But this kind of “simplification” makes the summation hard to understand. Zero terms are not harmful; it's always advantageous to keep upper and lower bounds as simple as possible.
 
 ---
 
@@ -50,7 +50,7 @@ to a sum, by multiplying both sides by a *summation factor*, $s_n$&hairsp;, whic
 
 $$s_na_nT_n=s_{n-1}a_{n-1}T_{n-1}+s_nc_n\\,.$$
 
-Hence $(s_0a_0=s_1b_1)$
+Hence
 
 $$T_n=\frac1{s_na_n}\left(s_1b_1T_0+\sum_{k=1}^ns_kc_k\right)\\,,$$
 
@@ -64,9 +64,7 @@ After solving the recurrence arises in the study of “quick-sort” algorithm, 
 
 $$H_n=1+\frac12+\cdots+\frac1n=\sum_{k=1}^n\frac1k\\,.$$
 
-The letter $H$ stands for “harmonic”; $H_n$ is the $n$-th *harmonic number*.
-
-In addition, the harmonic numbers satisfy the series identity
+$H_n$ is the $n$-th *harmonic number*; and the harmonic numbers satisfy the series identity
 
 $$\sum_{k=1}^nH_k=(n+1)(H_{n+1}-1)\\,.$$
 
@@ -102,7 +100,7 @@ Splitting off a term is the basis of a *perturbation method* that often allows u
 2. rewrite $S_{n+1}$ in two ways, by splitting off both its last term and its first term;
 3. try to express the last sum in terms of $S_n$&hairsp;.
 
-In addition, there're many connections between calculus and discrete mathematics.
+It's also mentioned that there're many connections between calculus and discrete mathematics.
 
 ## 2.4 Multiple Sums
 

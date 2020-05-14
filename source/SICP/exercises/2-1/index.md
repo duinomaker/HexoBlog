@@ -33,7 +33,7 @@ license_lang: en
 
 ## Exercise 2.3
 
-Denote a rectangle with its size (i.e. width and height), and, in consideration for further extensibility, with its origin point and rotation.
+Denote a rectangle with its size (i.e., width and height), and, in consideration for further extensibility, with its origin point and rotation.
 
     (define (make-rect width height origin rotation)
       (cons (make-size width height)

@@ -72,7 +72,9 @@ It can be shown that no strategy does better than $B_n=A_{n-1}+2+A_{n-1}+2+B_{n-
 
 ### 1.12
 
-$A(m_1,\ldots,m_n)=2A(m_1,\ldots,m_{n-1})+m_n$&hairsp;. This is an equation of the “generalized Josephus” type, whose solution is $(m_1\ldots m_k)_2$&hairsp;.
+$$A(m_1,\ldots,m_n)=2A(m_1,\ldots,m_{n-1})+m_n\\,.$$
+
+This is an equation of the “generalized Josephus” type, whose solution is $(m_1\ldots m_k)_2$&hairsp;.
 
 ### 1.13
 
@@ -98,7 +100,7 @@ So, in recurrence form
 
 $$P_n=\begin{cases}1\\,,&\text{if $n=0$}\\,;\\\\P_{n-1}+L_{n-1}\\,,&\text{if $n>0$}\\,.\end{cases}$$
 
-Hence $P_5=26$&hairsp;.
+We have $P_5=26$&hairsp;.
 
 ### 1.15
 

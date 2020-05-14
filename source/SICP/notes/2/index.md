@@ -28,7 +28,7 @@ A ***pair*** is a compound structure that enables us to implement the concrete l
     (car (cons a b)) -> a
     (cdr (cons a b)) -> b
 
-Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***, and in Chapter 3 it will be used as a basic tool to address the issues of modeling and simulation.
+<!-- Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***, and in Chapter 3 it will be used as a basic tool to address the issues of modeling and simulation. -->
 
 ***Abstraction barriers*** isolate different “levels” of the system. It requires us to identify for each of type of data object a set of operations in terms of which all manipulations of data objects of that type will be expressed, and then to use only those operations in manipulating the data.
 
@@ -38,7 +38,7 @@ Procedural representations of data will play a central role in our programming r
 
 The ability to create pairs whose elements are pairs is the essence of list structure which benefits from the <strong><em>closure property</em></strong> of <code>cons</code>&hairsp;.
 
-Closure is the key to power in any means of combination because it permits us to create <strong><em>hierarchical</em></strong> structures —— structures made up of parts, which themselves are made up of parts, and so on.
+Closure is the key to power in any means of combination because it permits us to create <strong><em>hierarchical</em></strong> structures — structures made up of parts, which themselves are made up of parts, and so on.
 </div>
 
 {% blockquote %}
@@ -49,16 +49,25 @@ The use of the word “closure” here comes from abstract algebra, where a set 
 
 A ***sequence*** is an ordered collection of data objects. There are many ways to represent sequences. In our language, a sequence produced by `(list <a1> <a2> ... <an>)` is equivalent to `(cons <a1> (cons <a2> (cons ... (cons <an> nil) ...)))`&hairsp;. Such a sequence is called a ***list***.
 
-***Trees*** are sequences whose elements are sequences. Trees could easily be dealt with recursions, with which we can reduce operations on trees to operations on their branches, which reduce in turn to operations on the branches of the branches, and so on, until we reach the leaves of the tree.
+***Trees*** are sequences whose elements are sequences. Trees could easily be dealt with recursions, with which we can reduce operations on trees to operations on their branches, and so on, until we reach the leaves of the tree.
 
 The use of ***conventional interfaces*** is a powerful design principle for working with tree structures. In this way, lists are operated on as if they were “signals”, and the program concentrate on the “signals” that flow from one stage in the process to the next.
 
 Sequences serve as a conventional interface that permits us to combine processing modules (e.g. maps, filters, and accumulations).
 
-The approach of ***stratified design*** is the notion that a complex system should be structured as a sequence of levels; each level is constructed by combining parts that are regarded as primitive at that level.
-
-Stratified design helps make programs ***robust***, that is, it makes it likely that small changes in a specification will require correspondingly small changes in the program.
+The approach of ***stratified design*** helps make programs robust, that is, it makes it likely that small changes in a specification will require correspondingly small changes in the program.
 
 ## 2.3 Symbolic Data
+
+<div class="foreword">
+
+To extend the representational capability of our language, we introduce the ability to ***quote*** a data object, that is, to work with arbitrary symbols as data.
+</div>
+
+---
+
+To distinguish symbols in variable-length codes, we can design the code in such a way that no complete code of any symbol is the prefix of the code for another symbol. Such a code is called ***prefix code***. One particular scheme for doing this uses Huffman encoding tree.
+
+## 2.4 Multiple Representations for Abstract Data
 
 $\cdots\cdots$

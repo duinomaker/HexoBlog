@@ -1,5 +1,5 @@
 ---
-title: 2.2  Hierarchical Data and the Closure Property
+title: 2.2 Hierarchical Data and the Closure Property
 canonical_url: https://duinomaker.top/SICP/exercises/2-2/
 widgets:
 comment:
@@ -400,11 +400,11 @@ Let's say that $A_{k,n}$ is the number of all ways to place queens in the first 
 
 $$\begin{array}{r|ccccccccc}k&0&1&2&3&4&5&6&7&8\\\\A_{k,8}&1&8&42&140&344&568&550&312&92\end{array}$$
 
-If we stipulate that `two-queens-safe?` (defined in <a href="#two-queens-safe">Exercise 2.42</a>) is the primitive operation, since it takes a constant time to determine whether two queens are safe with respect to each other. Let's say $B_{k,n}$ is the number of times `two-queens-safe?` to be invoked when calling `(queen-cols k)` of the original algorithm on an $n\times n$ board. We have the recurrence
+Since that `two-queens-safe?` defined in <a href="#two-queens-safe">Exercise 2.42</a> takes a constant time to determine whether two queens are safe with respect to each other, we stipulate that it is the primitive operation. Let's say $B_{k,n}$ is the number of times `two-queens-safe?` to be invoked when calling `(queen-cols k)` of the original algorithm on an $n\times n$ board. We have the recurrence
 
 $$B_{k,n}=\begin{cases}0\\,,&\text{if $k=0$}\\,;\\\\n(k-1)A_{k-1,n}+B_{k-1,n}\\,,&\text{if $k>0$}\\,.\end{cases}$$
 
-In the recurrence above, multiply $A_{k-1,n}$ by $n(k-1)$ means we have to attach $n$ possible new queens to each of ways to place previous queens, and filter each of them; when filtering, the new queen has to be examined with the other $k-1$ queens.
+In the recurrence above, multiply $A_{k-1,n}$ by $n(k-1)$ means we have to attach $n$ possible new queens to each of ways to place previous queens, and filter each of them, during which the new queen has to be examined with the other $k-1$ queens.
 
 In the original algorithm, $B_{8,8}=81696$&hairsp;.
 
@@ -412,7 +412,7 @@ Exchanging the order of mapping causes `(queen-cols (- k 1))` to be invoked $n$ 
 
 $$B^\prime_{k,n}=\begin{cases}0\\,,&\text{if $k=0$}\\,;\\\\n(k-1)A_{k-1,n}+nB^\prime_{k-1,n}\\,,&\text{if $k>0$}\\,.\end{cases}$$
 
-In Louis' algorithm, $B^\prime_{8,8}=59878720$&hairsp;. So the required time is about $733T$&hairsp;.
+In Louis' algorithm, $B^\prime_{8,8}=59878720$&hairsp;, about $733\cdot B_{8,8}$&hairsp;. So the required time is about $733T$&hairsp;.
 
 ## Exercise 2.44
 
