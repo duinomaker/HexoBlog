@@ -170,7 +170,7 @@ b. A simple solution works under the assumption that the expression contains onl
 
 `adjoin-set` was changed to allow duplicates.
 
-`adjoin-set` is sufficiently more efficient, it has a time complexity of $\Theta(1)$ rather than $\Theta(n)$&hairsp;.
+`adjoin-set` is sufficiently more efficient, it has a time complexity of $\Theta(1)$ compared to the original $\Theta(n)$&hairsp;.
 
 The set allowing duplicates is suitable for situations that require frequent adjoin operations.
 
@@ -319,7 +319,7 @@ At first, I wrote a procedure with a helper procedure `encode-1` instead of `enc
       (define (symbol->next-bit symbol tree)
         (cond ((element-of-set? symbol (symbols (left-branch tree))) 0)
               ((element-of-set? symbol (symbols (right-branch tree))) 1)
-              (else (error "bad symbol: CHOOSE-BRANCH" symbol))))
+              (else (error "bad symbol: SYMBOL->NEXTBIT" symbol))))
       (define (encode-1 symbols current-branch)
         (if (null? symbols)
             '()
@@ -348,7 +348,7 @@ $84$ bits are needed using Huffman encoding method; $108$ bits are needed using 
 
 ## Exercise 2.71
 
-Such a tree looks like
+Such trees look like
 
         /\
        /\ 2^(n-1)

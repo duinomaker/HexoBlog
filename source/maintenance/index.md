@@ -6,19 +6,20 @@ article:
         clipboard: false
 ---
 
-<span class="mono">2020-05-10</span> 针对 MathJax 做了大量优化。
+<span class="mono">2020-05-15</span> 增加页面内容的水平占比，调整卡片间的垂直距离。
+<span class="mono">2020-05-10</span> 优化 MathJax 在移动设备上的显示效果。
 
-<!-- <span class="mono">2020-04-17</span> 将 font-awesome 字体下载至自己的云主机。 -->
-<span class="mono">2020-04-17</span> 移除主页文章卡片中的 Read More 按钮。
-<span class="mono">2020-04-14</span> 开设 /notes/ 作为所有笔记的索引页。
-<span class="mono">2020-04-09</span> 将默认的数学公式渲染器 MathJax 更换为 KaTeX。
+<span class="mono">2020-04-17</span> 将 font-awesome 字体下载至云主机。
+<span class="mono">2020-04-17</span> 移除主页卡片中的 “Read More” 按钮。
+<span class="mono">2020-04-14</span> 开设 /notes/ 作为笔记的索引页。
+<span class="mono">2020-04-09</span> 默认的数学公式渲染器由 MathJax 改为 KaTeX。
 <span class="mono">2020-04-08</span> 将 MathJax 更新至 3.x 版本。
 <span class="mono">2020-04-06</span> 开设 /SICP/ 用于记录 *SICP* 阅读笔记。
-<span class="mono">2020-04-05</span> 博客所有内容转移至自己的云主机。
-<span class="mono">2020-04-03</span> 修改文章底部 hashtag 的 white-space 属性为 nowrap，使它们在空白符处不会自动换行。
+<span class="mono">2020-04-05</span> 博客所有内容转移至云主机。
+<span class="mono">2020-04-03</span> 修改文章底部 hashtags 的样式，禁止其内容自动换行。
 <span class="mono">2020-04-03</span> 修改内联代码字体颜色为 currentColor，大小为 0.875em。
 
-<span class="mono">2020-03-30</span> 将所有的版权声明改为中文。
+<!-- <span class="mono">2020-03-30</span> 将所有的版权声明改为中文。 -->
 <span class="mono">2020-03-28</span> 禁用 Google Analytics 插件。
 <span class="mono">2020-03-26</span> 添加网站备案信息。
 <!-- <span class="mono">2020-03-26</span> 将图片迁移至 server.duinomaker.top，取消使用七牛云。
@@ -35,7 +36,7 @@ article:
 <span class="mono">2020-02-20</span> 禁止内置搜索引擎搜索 pages。
 <span class="mono">2020-02-20</span> 调整导航栏 logo 垂直位置，使之在各平台都可以居中。
 <span class="mono">2020-02-20</span> 禁用页面动画效果。
-<span class="mono">2020-02-19</span> 博客转移至 GitHub Pages。
+<!-- <span class="mono">2020-02-19</span> 博客转移至 GitHub Pages。 -->
 <span class="mono">2020-02-17</span> 更新 profile 中的头像。
 <span class="mono">2020-02-12</span> 增加 gulp 插件压缩 html 文件。
 <!-- <span class="mono">2020-02-12</span> 更改 font-awesome 字体 CDN 为 cdn.bootcss.com。 -->

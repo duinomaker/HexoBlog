@@ -49,7 +49,7 @@ body, button, input, select, textarea
 
 @media screen and (max-width: screen-tablet - 1)
     .section
-        padding: 1.5rem 1rem
+        padding: 1rem 0.75rem
 
 @media screen and (min-width: screen-tablet)
     .column-main,
@@ -69,12 +69,15 @@ body, button, input, select, textarea
     &.is-grey
         background: #e7e7e7
 
+.column
+    padding-bottom: 0.25rem
+
 .card
     border-radius: 4px
     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
     & + .card,
     & + .column-right-shadow
-        margin-top: 1.5rem
+        margin-top: 1rem
     &.card-transparent
         box-shadow: none
         background: transparent
@@ -138,6 +141,7 @@ img.thumbnail
 .footer
     background: white
     padding: 1.5rem 1.5rem 1.5rem
+    margin-top: 0.5rem
     @media screen and (max-width: screen-tablet - 1)
         padding: 1.5rem 1.5rem 0.5rem
     .field

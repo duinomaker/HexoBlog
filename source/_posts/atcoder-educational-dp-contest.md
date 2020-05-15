@@ -1,7 +1,7 @@
 ---
 title: AtCoder动态规划专题
 canonical_url: https://duinomaker.top/posts/atcoder-educational-dp-contest/
-date: 2020-05-15 23:14:59
+date: 2020-06-15 23:14:59
 categories: [Algorithm Contest]
 tags: [Dynamic Programming]
 widgets:

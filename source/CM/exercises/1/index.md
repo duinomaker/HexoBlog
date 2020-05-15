@@ -28,11 +28,11 @@ $$\begin{aligned}Q_m&=\alpha\\,;\\\\Q_{m+1}&=\beta\\,;\\\\Q_{m+2}&=(1+\beta)/\al
 
 ### 1.9a
 
-$$\begin{aligned}x_1\ldots x_{n}&\leq\left(\frac{x_1+\cdots+x_{n-1}+x_n}{n}\right)^n\quad\text{apply $(n-1)x_n=x_1+\cdots+x_{n-1}$}\\\\x_1\ldots x_{n}&\leq\left[\frac{(n-1)x_n+x_n}{n}\right]^n\\\\x_1\ldots x_{n-1}&\leq(x_n)^{n-1}\\\\x_1\ldots x_{n-1}&\leq\left(\frac{x_1+\cdots+x_{n-1}}{n-1}\right)^{n-1}\\,.\end{aligned}$$
+$$\begin{aligned}x_1\ldots x_{n}&\leq\left(\frac{x_1+\cdots+x_{n-1}+x_n}{n}\right)^n\qquad\text{by $(n-1)x_n=x_1+\cdots+x_{n-1}$}\\\\x_1\ldots x_{n}&\leq\left[\frac{(n-1)x_n+x_n}{n}\right]^n\\\\x_1\ldots x_{n-1}&\leq(x_n)^{n-1}\\\\x_1\ldots x_{n-1}&\leq\left(\frac{x_1+\cdots+x_{n-1}}{n-1}\right)^{n-1}\\,.\end{aligned}$$
 
 ### 1.9b
 
-$$\begin{aligned}x_1\ldots x_n x_{n+1}\ldots x_{2n}&\leq\left(\frac{x_1+\cdots+x_n}{n}\right)^n\left(\frac{x_{n+1}+\cdots+x_{2n}}{n}\right)^n\quad\text{apply $P(2):x_1x_2\leq\left(\frac{x_1+x_2}2\right)^2$}\\\\&\leq\left[\frac{\left(\frac{x_1+\cdots+x_n+x_{n+1}+\cdots+x_{2n}}2\right)^2}{n^2}\right]^n\\\\&\leq\left(\frac{x_1+\cdots+x_n+x_{n+1}+\cdots+x_{2n}}{2n}\right)^{2n}\\,.\end{aligned}$$
+$$\begin{aligned}x_1\ldots x_n x_{n+1}\ldots x_{2n}&\leq\left(\frac{x_1+\cdots+x_n}{n}\right)^n\left(\frac{x_{n+1}+\cdots+x_{2n}}{n}\right)^n\qquad\text{by $P(2):x_1x_2\leq\left(\frac{x_1+x_2}2\right)^2$}\\\\&\leq\left[\frac{\left(\frac{x_1+\cdots+x_n+x_{n+1}+\cdots+x_{2n}}2\right)^2}{n^2}\right]^n\\\\&\leq\left(\frac{x_1+\cdots+x_n+x_{n+1}+\cdots+x_{2n}}{2n}\right)^{2n}\\,.\end{aligned}$$
 
 ### 1.9c
 
