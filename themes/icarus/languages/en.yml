@@ -16,7 +16,7 @@ common:
 widget:
     follow: 'Follow'
     recents: 'Recent'
-    links: 'Friends (Sorted by ASCII)'
+    links: 'Friends (lexicographical order)'
     tag_cloud: 'Tag Cloud'
     catalogue: 'Catalogue'
     email:
