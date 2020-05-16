@@ -3,7 +3,6 @@ title: 1.1 程序设计的基本元素
 canonical_url: https://duinomaker.top/SICP/exercises/1-1/
 widgets:
 comment:
-plugins:
 article:
     highlight:
         clipboard: false

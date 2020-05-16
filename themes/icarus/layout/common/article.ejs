@@ -50,7 +50,7 @@
         </div>
         <% } %>
         <% if (!post.nocontent) { %>
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal <%= post.content_style %>">
             <% if (index) { %>
             <a class="has-link-black-ter" href="<%- post.redirect ? post.canonical_url.slice(22) : url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
             <% } else { %>
@@ -59,7 +59,10 @@
         </h1>
         <% } %>
         <% if (!post.nocontent) { %>
-            <div class="content has-math<%= post.tex_content ? ' serif' : '' %>">
+            <div class="content has-math <%= post.content_style %>">
+            <% if (post.license_lang == 'en') { %>
+            <style>strong{font-weight:500;}</style>
+            <% } %>
         <% } %>
             <%- index && post.excerpt ? post.excerpt : post.content %>
         <% if (!post.nocontent) { %>
@@ -69,8 +72,8 @@
         <div class="copyright">
             <% if (post.license != 'notrust') { %>
                 <% if (post.license_lang == 'en') { %>
-                <p><strong class="rigid">Author:&nbsp;</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
-                <p><strong class="rigid">Permalink:&nbsp;</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
+                <p><strong class="rigid" style="font-weight:500;">Author:&nbsp;</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
+                <p><strong class="rigid" style="font-weight:500;">Permalink:&nbsp;</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
                 <% } else { %>
                 <p><strong class="rigid">本文作者：</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
                 <p><strong class="rigid">本文链接：</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
@@ -85,7 +88,7 @@
                 rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/"
                 title="Creative Commons Attribution-ShareAlike 4.0 International License" target="_blank">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可，转载请注明出处。</p>
             <% } else if (post.license_lang == 'en'){ %>
-                <p><strong class="rigid">Copyright:&nbsp;</strong>This work is licensed under a <a
+                <p><strong class="rigid" style="font-weight:500;">Copyright:&nbsp;</strong>This work is licensed under a <a
                 rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
                 target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
             <% } else { %>

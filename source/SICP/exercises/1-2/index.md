@@ -316,7 +316,7 @@ $$\begin{aligned}\begin{aligned}x^2&\equiv1\\;({\rm mod}\\;n)\\\\x^2-1&\equiv0\\
     (define (miller-rabin-test n rounds)
       (define (test-it a)
         (define (test-impl expmod-a)
-          (and (= expmod-a 1) (not (= expmod-a 0))))
+          (= expmod-a 1))
         (test-impl (miller-rabin-expmod a (- n 1) n)))
       (cond ((= rounds 0) #t)
             ((test-it (+ 1 (random (- n 1))))

@@ -3,7 +3,7 @@ title: Miller-Rabin 素性测试
 canonical_url: https://duinomaker.top/SICP/assets/miller-rabin/
 widgets:
 comment:
-tex_content: true
+content_style: tex-math
 license: by-nc-sa
 ---
 
