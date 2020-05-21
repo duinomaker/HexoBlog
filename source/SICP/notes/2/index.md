@@ -21,16 +21,16 @@ Similar to procedural abstraction, data abstraction is a methodology that enable
 
 ---
 
-***Selectors*** and ***constructors*** is a set of procedures used as the interface between the construction of data and the use of data, through which programs are as if operating on “abstract data”.
+***Selectors*** and ***constructors*** are sets of procedures used as the interface between the construction of data and the use of data, through which programs are as if operating on “abstract data”.
 
-A ***pair*** is a compound structure that enables us to implement the concrete level of our data abstraction. The behavior of a pair could be specified as
+A ***pair*** is a compound structure, whose behavior could be specified as
 
     (car (cons a b)) -> a
     (cdr (cons a b)) -> b
 
 <!-- Procedural representations of data will play a central role in our programming repertoire. This style of programming is often called ***message passing***, and in Chapter 3 it will be used as a basic tool to address the issues of modeling and simulation. -->
 
-***Abstraction barriers*** isolate different “levels” of the system. It requires us to identify for each of type of data object a set of operations in terms of which all manipulations of data objects of that type will be expressed, and then to use only those operations in manipulating the data.
+***Abstraction barriers*** isolate different “levels” of the system. Identify for each of type of data object a set of operations, and use only those operations in manipulating data objects.
 
 ## 2.2 Hierarchical Data and the Closure Property
 
@@ -49,11 +49,11 @@ The use of the word “closure” here comes from abstract algebra, where a set 
 
 A ***sequence*** is an ordered collection of data objects. There are many ways to represent sequences. In our language, a sequence produced by `(list <a1> <a2> ... <an>)` is equivalent to `(cons <a1> (cons <a2> (cons ... (cons <an> nil) ...)))`&hairsp;. Such a sequence is called a ***list***.
 
-***Trees*** are sequences whose elements are sequences. Trees could easily be dealt with recursions, with which we can reduce operations on trees to operations on their branches, and so on, until we reach the leaves of the tree.
-
-The use of ***conventional interfaces*** is a powerful design principle for working with tree structures. In this way, lists are operated on as if they were “signals”, and the program concentrate on the “signals” that flow from one stage in the process to the next.
-
 Sequences serve as a conventional interface that permits us to combine processing modules (e.g. maps, filters, and accumulations).
+
+***Trees*** are sequences whose elements are sequences. Trees can be naturally and easily dealt with recursions.
+
+<!-- The use of ***conventional interfaces*** is a powerful design principle for working with tree structures. In this way, lists are operated on as if they were “signals”, and the program concentrate on the “signals” that flow from one stage in the process to the next. -->
 
 The approach of ***stratified design*** helps make programs robust, that is, it makes it likely that small changes in a specification will require correspondingly small changes in the program.
 
@@ -66,8 +66,27 @@ To extend the representational capability of our language, we introduce the abil
 
 ---
 
-To distinguish symbols in variable-length codes, we can design the code in such a way that no complete code of any symbol is the prefix of the code for another symbol. Such a code is called ***prefix code***. One particular scheme for doing this uses Huffman encoding tree.
+***Prefix code*** is a way of coding such that no complete code of any symbol is the prefix of the code for another symbol. One particular scheme uses Huffmen encoding tree.
 
 ## 2.4 Multiple Representations for Abstract Data
+
+<div class="foreword">
+
+This section introduces a new kind of data-abstraction barriers that isolate different representations of data from each other.
+</div>
+
+---
+
+As systems evolve over time, we need conventions to incorporate new modules into systems ***additively***, that is, without having to re-implement the modules.
+
+***Generic procedures*** are procedures that can operate on data that has multiple representations. We'll need the help of ***type tags***, specifying how the data are to be processed.
+
+Two styles of organizing system with generic operations are introduced, they are:
+
+***Data-directed*** style, where we handle generic operations by dealing explicitly with operation-and-type tables.
+
+***Message-passing*** style, where we create data objects as dispatching procedures. Such a procedure takes in an operation name to be performed.
+
+## 2.5 Systems with Generic Operations
 
 $\cdots\cdots$
