@@ -12,7 +12,7 @@ license: by-sa
 
 <!-- more -->
 
-本文的简介部分主要参照了 {% link ${\rm OI\,WiKi}$ https://oi-wiki.org/ %} 的{% link 这篇文章 https://oi-wiki.org/ds/sparse-table/ ST 表 - OI Wiki %}。${\rm OI\\,WiKi}$ 整合了各类有关编程竞赛的实用知识，感谢贡献者们！
+本文的简介部分主要参照了 {% link $\text{OI WiKi}$ https://oi-wiki.org/ %} 的{% link 这篇文章 https://oi-wiki.org/ds/sparse-table/ ST 表 - OI Wiki %}。$\text{OI WiKi}$ 整合了各类有关编程竞赛的实用知识，感谢贡献者们！
 
 ---
 
