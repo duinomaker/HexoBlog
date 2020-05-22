@@ -31,14 +31,14 @@
         sectionTitle = CONFIG.TRANSLATION[type];
         switch (type) {
             case 'POSTS':
-            // case 'PAGES':
+            case 'PAGES':
                 $searchItems = array.map(function (item) {
                     // Use config.root instead of permalink to fix url issue
-                    return searchItem('file', item.title, null, item.text.slice(0, 150), item.link);
+                    return searchItem(type === 'POSTS' ? 'file-code' : 'file-word', item.title, null, item.text.slice(0, 150), item.link);
                 });
                 break;
-            case 'CATEGORIES':
-            case 'TAGS':
+            // case 'CATEGORIES':
+            // case 'TAGS':
                 $searchItems = array.map(function (item) {
                     return searchItem(type === 'CATEGORIES' ? 'folder' : 'tag', item.name, item.slug, null, item.link);
                 });
@@ -63,6 +63,16 @@
      * @param Array<String>     fields  Object's fields to find matches
      */
     function filter (keywords, obj, fields) {
+        if (obj.link === '/404.html' ||
+            obj.link === '/about/' ||
+            obj.link === '/maintenance/' ||
+            obj.link === '/posts/miller-rabin/' ||
+            obj.link.substr(0, 9) === '/diaries/' || 
+            obj.link.substr(0, 7) === '/repos/' ||
+            obj.link.substr(0, 7) === '/notes/' ||
+            obj.link.substr(0, 3) === '/p/') {
+            return false;
+        }
         var keywordArray = parseKeywords(keywords);
         var containKeywords = keywordArray.filter(function (keyword) {
             var containFields = fields.filter(function (field) {
