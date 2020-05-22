@@ -52,7 +52,7 @@ A ***sequence*** is an ordered collection of data objects. There are many ways t
 
 Sequences serve as a conventional interface that permits us to combine processing modules (e.g. maps, filters, and accumulations).
 
-***Trees*** are sequences whose elements are sequences. Trees can be naturally and easily dealt with recursions.
+***Trees*** are sequences whose elements are sequences. They can be dealt naturally with recursions.
 
 <!-- The use of ***conventional interfaces*** is a powerful design principle for working with tree structures. In this way, lists are operated on as if they were “signals”, and the program concentrate on the “signals” that flow from one stage in the process to the next. -->
 
@@ -86,7 +86,7 @@ Two styles of organizing system with generic operations are introduced, they are
 
 ***Data-directed*** style. In this style, we handle generic operations by dealing explicitly with operation-and-type tables.
 
-***Message-passing*** style. In this style, we create data objects as dispatching procedures. Such a procedure takes in an operation name to be performed.
+***Message-passing*** style. In this style, we create data objects as dispatching procedures. Such a procedure takes as argument the name of an operation to be performed.
 
 ## 2.5 Systems with Generic Operations
 
