@@ -16,7 +16,7 @@ license: by-sa
 
 ---
 
-基本概念部分，因为是初学，理解没有那么深入，自己总结出来可能质量不高，所以本文的前半部分基本照搬了 {% link ${\rm SilentEAG}$ https://www.cnblogs.com/silentEAG/ SilentEAG - 博客园 %} 大佬的 {% link 这篇文章 https://www.cnblogs.com/silentEAG/p/10808978.html 【讲●解】超全面的线段树：从入门到入坟 %}（有修改），自己着重写了习题部分。
+基本概念部分，因为是初学，理解没有那么深入，自己总结出来可能质量不高，所以本文的前半部分基本照搬了 {% link $\text{SilentEAG}$ https://www.cnblogs.com/silentEAG/ SilentEAG - 博客园 %} 大佬的 {% link 这篇文章 https://www.cnblogs.com/silentEAG/p/10808978.html 【讲●解】超全面的线段树：从入门到入坟 %}（有修改），自己着重写了习题部分。
 
 ## 什么是线段树？
 
@@ -173,7 +173,7 @@ int query(int x, int y, int p = 1)
 第 $1$ 和第 $2$ 种情况，答案就是左边部分(右边部分)的最大子段和。
 第 $3$ 种情况复杂一点，答案等于 左边部分从其右端开始的最大子段和 加上 右边部分从其左端开始的最大子段和。
 
-当然，为了维护区间从其端点开始的最大子段和，还需维护区间和$(sum)$&hairsp;。如此，一个区间从其左端开始的最大子段和，假设左右儿子的位置分别为 $chl$ 和 $chr$，便可以如此维护：
+当然，为了维护区间从其端点开始的最大子段和，还需维护区间和&hairsp;$(sum)$&hairsp;。如此，一个区间从其左端开始的最大子段和，假设左右儿子的位置分别为 $chl$ 和 $chr$，便可以如此维护：
 
 $$prel_p =\max\lbrace prel_{chl} , sum_{chl} + prel_{chr}\rbrace$$
 
@@ -181,10 +181,10 @@ $$prel_p =\max\lbrace prel_{chl} , sum_{chl} + prel_{chr}\rbrace$$
 
 总的来说，我们要维护这几种区间信息：
 
-1. 区间的最大连续子段和$(val)$
-2. 区间和$(sum)$
-2. 区间从其左端开始的最大子段和$(prel)$
-3. 区间从其左端开始的最大子段和$(prer)$
+1. 区间的最大连续子段和&hairsp;$(val)$
+2. 区间和&hairsp;$(sum)$
+2. 区间从其左端开始的最大子段和&hairsp;$(prel)$
+3. 区间从其左端开始的最大子段和&hairsp;$(prer)$
 
 接下来是查询部分，一开始当然是在根节点查询所给的区间。在每个节点处的查询又可以分为三种情况处理：
 
