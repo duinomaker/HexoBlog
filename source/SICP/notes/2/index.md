@@ -78,7 +78,7 @@ This section introduces a new kind of data-abstraction barriers that isolate dif
 
 ---
 
-***Generic procedures*** are procedures that can operate on data that has multiple representations. We'll need the help of ***type tags***, specifying how the data are to be processed.
+***Generic procedures*** are procedures that can operate on data that has multiple representations. We'll need the help of ***type tags*** that specify how the data are to be processed.
 
 As systems evolve over time, we need conventions to incorporate new modules into systems ***additively***, that is, without having to re-implement the modules.
 

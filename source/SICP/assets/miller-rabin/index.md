@@ -23,7 +23,7 @@ $$(a^k-1)(a^k+1)(a^{2k}+1)(a^{4k}+1)\cdots(a^{2^{e-1}k}+1)\equiv0\\;({\rm mod}\\
 
 $$a^k\equiv1\\;({\rm mod}\\;n)\\;\text{or}\\;a^{2^ik}\equiv-1\\;({\rm mod}\\;n)\\;\text{for some}\\;i\in\lbrace0,\ldots,n-1\rbrace$$
 
-像 Fermat test&hairsp;、Miller-Rabin test 等基于概率的素性测试算法，目的是找出能够证明 $n$ 是合数的证据。若找不到这样的证据，那么 $n$ 很可能是素数。用这类方法找出的素数称为伪素数&hairsp;(*$\textit{pseudo prime}$*)&hairsp;。
+像 $\text{Fermat test}$&hairsp;、$\text{Miller-}\\!\text{Rabin test}$ 等基于概率的素性测试算法，目的是找出能够证明 $n$ 是合数的证据。若找不到这样的证据，那么 $n$ 很可能是素数。用这类方法找出的素数称为伪素数&hairsp;(*$\textit{pseudo prime}$*)&hairsp;。
 
 对于一个奇数 $n>1$，在 $\lbrace1,\ldots,n-1\rbrace$ 中取一整数 $a$，如果某个 $a$ 使上式不成立，也就是
 
