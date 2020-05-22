@@ -6,6 +6,7 @@ comment:
 article:
     highlight:
         clipboard: false
+content_style: serif
 license: by-nc-sa
 license_lang: en
 ---
@@ -66,7 +67,7 @@ To extend the representational capability of our language, we introduce the abil
 
 ---
 
-***Prefix code*** is a way of coding such that no complete code of any symbol is the prefix of the code for another symbol. One particular scheme uses Huffmen encoding tree.
+***Prefix code*** is a way of coding such that no complete code of any symbol is the prefix of the code for another symbol. One particular scheme uses Huffman encoding tree.
 
 ## 2.4 Multiple Representations for Abstract Data
 
@@ -77,15 +78,15 @@ This section introduces a new kind of data-abstraction barriers that isolate dif
 
 ---
 
-As systems evolve over time, we need conventions to incorporate new modules into systems ***additively***, that is, without having to re-implement the modules.
-
 ***Generic procedures*** are procedures that can operate on data that has multiple representations. We'll need the help of ***type tags***, specifying how the data are to be processed.
+
+As systems evolve over time, we need conventions to incorporate new modules into systems ***additively***, that is, without having to re-implement the modules.
 
 Two styles of organizing system with generic operations are introduced, they are:
 
-***Data-directed*** style, where we handle generic operations by dealing explicitly with operation-and-type tables.
+***Data-directed*** style. In this style, we handle generic operations by dealing explicitly with operation-and-type tables.
 
-***Message-passing*** style, where we create data objects as dispatching procedures. Such a procedure takes in an operation name to be performed.
+***Message-passing*** style. In this style, we create data objects as dispatching procedures. Such a procedure takes in an operation name to be performed.
 
 ## 2.5 Systems with Generic Operations
 

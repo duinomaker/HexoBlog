@@ -3,6 +3,7 @@ title: 2.1 Introduction to Data Abstraction
 canonical_url: https://duinomaker.top/SICP/exercises/2-1/
 widgets:
 comment:
+content_style: serif
 license: by-nc-sa
 license_lang: en
 ---

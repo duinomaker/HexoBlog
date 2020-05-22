@@ -6,6 +6,7 @@ comment:
 article:
     highlight:
         clipboard: false
+content_style: serif
 license: by-nc-sa
 license_lang: en
 ---

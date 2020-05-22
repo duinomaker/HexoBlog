@@ -7,13 +7,14 @@ plugins:
 article:
     highlight:
         clipboard: false
+content_style: tex-math
 ---
 
 ## Preface
 
-These are my *Concrete Mathematics* notes and solutions to the exercises.
+These are my notes and solutions to the exercises for *Concrete Mathematics*.
 
-The exercises in this book, compared to the *SICP* counterparts, are really more challenging. I'm running out of my brain power (together with draft paper) while solving them.
+Exercises in this book, compared to their *SICP* counterparts, are really more challenging. I'm running out of my brain power (together with draft paper) while solving them.
 
 To advance my proficiency in written English, I'll be taking notes in English since April 25, 2020. Although previous works are done in Chinese, I feel no need to translate them, since it would be time-consuming and would have little to do with my comprehension of the book.
 
