@@ -183,22 +183,22 @@
 
 <% friends = [
     {
-        nick: '0xfaner', title: '现役ACMer柏老板的博客',
+        nick: '<span style="font-weight:500;">0xfaner</span>', title: '现役ACMer柏老板的博客',
         link: 'https://0xfaner.top/',
         avatar: '/images/friends/0xfaner.jpg'
     },
     {
-        nick: 'Brethland', title: 'PLT / Mathematics / Literature / Otaku',
+        nick: '<span style="font-weight:500;">Brethland</span>', title: 'PLT / Mathematics / Literature / Otaku',
         link: 'http://yuki.systems/',
         avatar: '/images/friends/brethland.jpg'
     },
     {
-        nick: 'matrix72', title: 'matrix72的万事屋',
+        nick: '<span style="font-weight:500;">matrix72</span>', title: 'matrix72的万事屋',
         link: 'https://www.matrix72.top/',
         avatar: '/images/friends/matrix72.jpg'
     },
     {
-        nick: 'xjzsq', title: '珂学家的代码日常',
+        nick: '<span style="font-weight:500;">xjzsq</span>', title: '珂学家的代码日常',
         link: 'https://www.xjdesyxx.top/',
         avatar: '/images/friends/xjzsq.jpg'
     },
@@ -226,7 +226,7 @@
             <div class="tile is-parent">
                 <a href="<%= friends[i].link %>" target="_blank" rel="friend noopener">
                     <article class="tile is-child box">
-                        <p class="title rigid" style="font-weight:500;"><%= friends[i].nick %></p>
+                        <p class="title rigid"><%- friends[i].nick %></p>
                         <p class="subtitle"><%= friends[i].title %></p>
                         <div class="content">
                             <figure class="image has-mb-6">
