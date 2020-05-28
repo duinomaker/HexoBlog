@@ -180,9 +180,9 @@ The above example illustrates that, the re-appearance of an interval in an expre
 
 Intervals don't have identity, but real numbers do. I have devised an approach to eliminate these uncertainties. That is, settle the numbers into their corresponding intervals ***randomly*** before evaluating the expression. After repeating the “settle-evaluate” loop for say $100,000$ times, we'll get a decent approximation to the actual interval.
 
-My approach is inspired by the Monte-Carlo methods, which rely on repeated random sampling to obtain numerical results. The approach may be time-consuming since the evaluation has to be carried out a great many times before the approximation becomes precise enough. But it will always give the right answer.
+My approach is inspired by the Monte Carlo methods, which rely on repeated random sampling to obtain numerical results. The approach may be time-consuming since the evaluation has to be carried out a great many times before the approximation becomes precise enough. But it will always give the right answer.
 
-Sample code written in Python is given below.
+My code written in Python is given below:
 
 ``` python random-sampling.py
 import random
