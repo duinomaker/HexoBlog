@@ -30,7 +30,7 @@ license: noshare
 </p>
 </div>
 
-<span class="encrypted" iv="BaFixc1njAd2awYG">66 87 b8 d8 c4 6c aa 41 1a a0 c5 dc 1d 34 67 00 75 63 57 08 cd 7c d7 50 21 6b 40 40 e3 c6 aa 8b 99 fe 2f 79 83 aa 6d 36 16 02 17 9b 30 26 40 f7</span>
+<span class="encrypted" iv="TFrj94oPvfn7G59s">8a 8c 1c 03 8f c8 93 ed 3c 00 26 c8 66 90 e2 7c 1c 26 25 7a 48 18 49 69 ad 05 21 3b b2 58 a2 7e c8 b4 45 10 9e 55 af e3 cc 7f 05 55 68 16 87 60</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
