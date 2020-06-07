@@ -30,7 +30,7 @@ license: noshare
 </p>
 </div>
 
-<span class="encrypted" iv="Jj5pWoP+ZTL9xewj">d3 7e 65 64 bb 00 83 d6 48 fd b2 f6 59 8d e8 ec 49 e2 f0 a7 32 a5 39 55 c1 b7 52 65 9f 47 be e7 25 00 0d 78 1a ab d6 fe e8 9d 22 bb 22 a3 cf 5e</span>
+<span class="encrypted" iv="FoSCP8ahEzcuL5OL">77 cb 6d eb ec 28 24 17 ef 1d a0 4b ea 97 d7 7d 83 09 81 89 cb 36 ac 61 b5 02 2f 31 39 4b e2 e6 91 f6 ab 0a ab dd 5f 59 0e be 2b ba 2c 49 19 d4</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
@@ -40,7 +40,7 @@ license: noshare
 
 ## 目录
 
-<a href="/diaries/2020-06-07/"><code>2020-06-07</code></a>
+<a href="/diaries/2020-06-07/"><span class="mono">2020-06-07</span></a>
 
 <!-- <span class="mono">2020-05-28</span>&nbsp;<a href="/diaries/anxiety/">/diaries/anxiety/</a>
 <span class="mono">2020-03-21</span>&nbsp;<a href="/diaries/waste-of-time/">/diaries/waste-of-time/</a>
