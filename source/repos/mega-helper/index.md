@@ -1,5 +1,5 @@
 ---
-title: 'Mega Helper'
+title: 'MEGA Helper'
 canonical_url: https://duinomaker.top/repos/mega-helper/
 widgets:
 comment:
