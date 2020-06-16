@@ -17,3 +17,14 @@ article:
 </div>
 
 <script src="test.js" type="text/javascript"></script>
+
+---
+
+该项目的源代码由<a rel="license" href="https://opensource.org/licenses/mit-license.php" title="The MIT License" target="_blank">MIT许可证</a>进行许可。
+
+``` plain project-hierarchy >folded
+mega-helper
+├── index.html
+├── LICENSE
+└── test.js
+```
