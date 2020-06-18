@@ -1,6 +1,6 @@
 function browserdetails(useragent) {
     var os = false;
-    var brand = false;
+    // var brand = false;
     var details = {};
 
     if (Object(useragent).details !== undefined) {
@@ -8,10 +8,10 @@ function browserdetails(useragent) {
     }
     useragent = (' ' + useragent).toLowerCase();
 
-    if (useragent.indexOf('~:') !== -1) {
-        brand = useragent.match(/~:(\d+)/);
-        brand = brand && brand.pop() | 0;
-    }
+    // if (useragent.indexOf('~:') !== -1) {
+    //     brand = useragent.match(/~:(\d+)/);
+    //     brand = brand && brand.pop() | 0;
+    // }
 
     if (useragent.indexOf('windows phone') > 0) {
         os = 'Windows Phone';
@@ -31,15 +31,15 @@ function browserdetails(useragent) {
     else if (useragent.indexOf(' edga/') > 0) {
         os = 'Android';
     }
-    else if (useragent.indexOf(' crios') > 0) {
-        details.brand = 'CriOS';
-    }
+    // else if (useragent.indexOf(' crios') > 0) {
+    //     details.brand = 'CriOS';
+    // }
 
     details.os = os || '';
 
-    if (brand) {
-        details.brand = brand;
-    }
+    // if (brand) {
+    //     details.brand = brand;
+    // }
 
     return details;
 }
@@ -117,6 +117,9 @@ function getStoreLink() {
 
         case 'Android':
             return 'https://play.google.com/store/apps/details?id=mega.privacy.android.app&referrer=meganzindexandroid';
+        
+        default:
+            return false;
     }
 }
 
@@ -125,7 +128,7 @@ function redirectToApp() {
     var redirectLink = getAppLink();
 
     if (!redirectLink) {
-        alert("The link is invalid.");
+        window.alert("The link is invalid.");
         return;
     }
 
@@ -168,12 +171,17 @@ function redirectToApp() {
     }
     else {
         // Otherwise show an error saying the device is unsupported
-        alert('This device is unsupported.');
+        window.alert('This device is unsupported.');
     }
 
     return false;
 }
 
 function redirectToStore() {
-    window.top.location = getStoreLink();
+    var storeLink = getStoreLink();
+    if (!storeLink) {
+        window.alert('This device is unsupported.');
+        return;
+    }
+    window.top.location = storeLink;
 }

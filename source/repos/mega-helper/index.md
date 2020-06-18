@@ -16,7 +16,7 @@ article:
 <p class="control"><button class="button" onclick="redirectToApp();">OPEN IN MEGA APP</button></p>
 </div>
 
-<script src="test.js" type="text/javascript"></script>
+<script src="helper.js" type="text/javascript"></script>
 
 ---
 
@@ -24,7 +24,7 @@ article:
 
 ``` plain project-hierarchy >folded
 mega-helper
+├── helper.js
 ├── index.html
-├── LICENSE
-└── test.js
+└── LICENSE
 ```
