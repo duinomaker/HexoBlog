@@ -33,4 +33,4 @@ To advance my proficiency in written English, I'll be taking notes in English si
 <code class="rigid">2.2&nbsp;</code><a href="/SICP/exercises/2-2/" target="_self">Hierarchical Data and the Closure Property</a>
 <code class="rigid">2.3&nbsp;</code><a href="/SICP/exercises/2-3/" target="_self">Symbolic Data</a>
 <code class="rigid">2.4&nbsp;</code><a href="/SICP/exercises/2-4/" target="_self">Multiple Representations for Abstract Data</a>
-<code class="rigid">2.5&nbsp;</code><a href="/SICP/exercises/2-5/" target="_self">Systems with Generic Operations</a>
+<!-- <code class="rigid">2.5&nbsp;</code><a href="/SICP/exercises/2-5/" target="_self">Systems with Generic Operations</a> -->
