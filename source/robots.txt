@@ -1,30 +1,14 @@
 User-agent: *
 
-Allow: /*
-Allow: /posts/*
-Allow: /posts/*/*
-Allow: /notes/*
-Allow: /SICP/*
-Allow: /SICP/*/*
-Allow: /SICP/*/*/*
-Allow: /about/*
-
-Disallow: /diaries/*
-Disallow: /diaries/*/*
-Disallow: /repos/*
-Disallow: /repos/*/*
-Disallow: /maintenance/*
-Disallow: /archives/*
-Disallow: /archives/*/*
-Disallow: /archives/*/*/*
-Disallow: /categories/*
-Disallow: /categories/*/*
-Disallow: /tags/*
-Disallow: /tags/*/*
-Disallow: /css/*
-Disallow: /images/*
-Disallow: /js/*
-
+Disallow: /archives/
+Disallow: /categories/
+Disallow: /css/
+Disallow: /diaries/
+Disallow: /js/
+Disallow: /maintenance/
+Disallow: /page/
+Disallow: /repos/
+Disallow: /tags/
 Disallow: /404.html
 
 Sitemap: https://duinomaker.top/sitemap.xml
