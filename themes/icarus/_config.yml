@@ -195,7 +195,7 @@ widgets:
             matrix72: 'https://www.matrix72.top/'
             xjzsq: 'https://www.xjdesyxx.top/'
             故心人不见: 'https://yuhi.xyz/'
-            雨落新痕: 'http://mashiro.zone/'
+            雨落新痕: 'https://mashiro.zone/'
             
     -
         # Widget name
@@ -241,9 +241,9 @@ plugins:
     back-to-top: false
     # # Google Analytics plugin settings
     # # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
-    # google-analytics:
-    #     # Google Analytics tracking id
-    #     tracking_id: UA-158094635-1
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: UA-158094635-1
     # # Baidu Analytics plugin settings
     # # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     # baidu-analytics:
@@ -270,4 +270,5 @@ providers:
     # iconcdn: fontawesome
     # iconcdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css
     # iconcdn: 'https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css'
-    iconcdn: /fonts/font-awesome/all.min.css
+    # iconcdn: /fonts/font-awesome/all.min.css
+    iconcdn: 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/fonts/font-awesome/all.min.css'
