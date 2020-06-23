@@ -241,9 +241,9 @@ plugins:
     back-to-top: false
     # # Google Analytics plugin settings
     # # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
-    google-analytics:
-        # Google Analytics tracking id
-        tracking_id: UA-158094635-1
+    # google-analytics:
+    #     # Google Analytics tracking id
+    #     tracking_id: UA-158094635-1
     # # Baidu Analytics plugin settings
     # # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     # baidu-analytics:
