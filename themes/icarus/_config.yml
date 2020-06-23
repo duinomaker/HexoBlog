@@ -165,21 +165,21 @@ widgets:
         # Whether to show avatar image rounded or square
         avatar_rounded: true
         # Path or URL for the follow button
-        follow_link: '/atom.xml'
+        follow_link: 'https://github.com/duinomaker'
         # Links to be shown on the bottom of the profile widget
-        social_links:
-            Github:
-                icon: fab fa-github
-                url: 'https://github.com/duinomaker'
-            E-Mail:
-                icon: fas fa-envelope
-                url: 'mailto:duinomaker@gmail.com'
+        # social_links:
+            # Github:
+            #     icon: fab fa-github
+            #     url: 'https://github.com/duinomaker'
+            # E-Mail:
+            #     icon: fas fa-envelope
+            #     url: 'mailto:duinomaker@gmail.com'
             # Facebook:
             #     icon: fab fa-facebook
             #     url: 'https://facebook.com'
-            Twitter:
-                icon: fab fa-twitter
-                url: 'https://twitter.com/duinomaker'
+            # Twitter:
+            #     icon: fab fa-twitter
+            #     url: 'https://twitter.com/duinomaker'
             # RSS:
             #     icon: fas fa-rss
             #     url: /atom.xml
