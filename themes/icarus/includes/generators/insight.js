@@ -36,7 +36,7 @@ module.exports = function (hexo) {
             categories: locals.categories.map(tagMapper)
         };
         return {
-            path: '/content.json',
+            path: '../assets/content.json',
             data: JSON.stringify(site)
         };
     });
