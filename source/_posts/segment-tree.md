@@ -41,7 +41,7 @@ license: by-sa
 3. 线段树的每个叶节点表示一个长度为 $1$ 的元区间，如 $[x,x]$&hairsp;；
 4. 线段树上的每个节点 $[l,r]$，它的左子节点是 $[l,mid]$，右子节点是 $[mid+1,r]$，其中 $mid=(l+r)/2$ (这是线段树最常见的写法，也会有适用于不同问题的其它写法，不过这用于理解线段树的要义足矣）。
 
-<img src="/images/segment-tree_1.jpg" width="100%" alt="区间长度为 $2$ 的整数次幂">
+<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/segment-tree_1.jpg" width="100%" alt="区间长度为 $2$ 的整数次幂">
 
 如图，这就是一棵线段树。我们可以发现，当整个区间统计长度为 $2$ 的整数次幂时，整棵线段树一定是一棵完全二叉树，那我们就可以用堆的编号方法来给线段树来编号啊（其实图中已经编好了）。
 
@@ -51,7 +51,7 @@ license: by-sa
 
 诶等等，那万一整个区间长度不是 $2$ 的整数次幂呢？
 
-<img src="/images/segment-tree_2.jpg" width="100%" alt="区间长度不为 $2$ 的整数次幂">
+<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/segment-tree_2.jpg" width="100%" alt="区间长度不为 $2$ 的整数次幂">
 
 可以~~惊讶~~地发现，我们同样可以使用 “父子二倍标记法”。正确性显然，只不过，正是因为这种情况，所以树的最后一层节点编号在数组中的位置可能不是连续的。
 
@@ -301,7 +301,7 @@ $$\begin{aligned}x_p=x_{chl}+(\cos(ang_p)\times x_{chr}-\sin(ang_p)\times y_{chr
 
 比较难维护的是第二个值，旋转角度。我随手画了个图方便理解。
 
-<img src="/images/segment-tree_3.jpg" width="100%">
+<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/segment-tree_3.jpg" width="100%">
 
 这张图是 $N=8$ 时的两种情况，左图是将第 $5$ 节变为 $90$ 度，右图是将 $2$ 节变为 $90$ 度。每个带方向的箭头都是某个节点所对应的向量。其中标记黑点的代表需要更新角度值，标记圆圈的代表需要更新向量值。
 
