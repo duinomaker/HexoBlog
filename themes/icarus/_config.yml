@@ -7,7 +7,7 @@ meta:
 # canonical_url of your site
 canonical_url: https://duinomaker.top/
 # Path or URL to RSS atom.xml
-rss: /atom.xml
+rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 # logo: /images/logo.svg
 logo: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/misc/logo.svg
