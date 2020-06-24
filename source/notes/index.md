@@ -6,6 +6,7 @@ plugins:
 article:
     highlight:
         clipboard: false
+prerender: https://duinomaker.top/SICP/
 ---
 
 <!-- <figure class="image has-mb-6">
