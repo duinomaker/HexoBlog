@@ -63,11 +63,8 @@
             <% if (post.license_lang == 'en') { %>
             <style>strong{font-weight:500;}</style>
             <% } %>
-            <% if (post.has_serif || post.content_style == 'serif') { %>
-            <%- _css(fontcdn('Alegreya:400,italic,500,500italic')) %>
             <% if (post.content_style == 'serif') { %>
             <style>em{margin-left:0;margin-right:0;}.article .content{font-size:1.2rem;}</style>
-            <% } %>
             <% } %>
         <% } %>
             <%- index && post.excerpt ? post.excerpt : post.content %>

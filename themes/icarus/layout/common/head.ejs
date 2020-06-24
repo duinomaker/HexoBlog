@@ -36,9 +36,33 @@
 <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/favicon-32x32.ico" />
 <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/favicon-16x16.ico" />
 
+<link rel="preload" href="https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw72.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
 <%- _css(cdn('bulma', 'latest', 'css/bulma.min.css')) %>
 <%- _css(iconcdn()) %>
-<%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %>
+<% if (((x) => x !== undefined && x.katex !== undefined && x.katex)(get_config('plugins'))) { %>
+    <%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
+<% } else if (get_config('content_style') === 'tex-math') { %>
+<style>
+@font-face {
+  font-family: KaTeX_Main;
+  src: url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Italic.woff2") format("woff2"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Italic.woff") format("woff"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: KaTeX_Main;
+  src: url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+<% } %>
+<% if ((get_config('has_serif') || get_config('content_style') === 'serif')) { %>
+    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %>
+<% } else { %>
+    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %>
+<% } %>
 <%- _css(cdn('highlight.js', 'latest', 'styles/' + get_config('article.highlight.theme') + '.min.css')) %>
 
 <%- _css('css/style.css') %>
