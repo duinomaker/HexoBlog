@@ -13,6 +13,9 @@ mv ./source/images ./source/_images
 
 hexo generate
 npx gulp
+rm -f ./assets/style.css
+mv ./public/css/style.css ./assets
+rm -rf ./public/css
 hexo deploy
 
 mv ./source/_images ./source/images
