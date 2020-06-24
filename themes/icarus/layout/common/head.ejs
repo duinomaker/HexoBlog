@@ -40,11 +40,11 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
-<%- ((x) => x !== undefined ? '<' + 'link rel="prerender" href="' + x + '" />' : '')(get_config('prerender')) %>
+<%- ((x) => x ? '<' + 'link rel="prerender" href="' + x + '" />' : '')(get_config('prerender')) %>
 
 <%- _css(cdn('bulma', 'latest', 'css/bulma.min.css')) %>
 <%- _css(iconcdn()) %>
-<% if (((x) => x !== undefined && x.katex !== undefined && x.katex)(get_config('plugins'))) { %>
+<% if (((x) => x !== undefined && x.katex)(get_config('plugins'))) { %>
     <%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
 <% } else if (get_config('content_style') === 'tex-math') { %>
 <style>
