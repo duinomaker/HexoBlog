@@ -58,7 +58,7 @@ Plug $Q_n=2R_n-1$ in, then $R_n=Q_n+Q_{n-1}+1$&hairsp;.
 
 ### 1.11a
 
-Move a double $(n-1)$-tower, them move the two largest disks, which takes $2$ moves, then move the double $(n-1)$-tower again. Let $A_n$ be the minimum number of moves, hence $A_n=2A_{n-1}+2=2^{n+1}-2$&hairsp;.
+Move a double $(n-1)$-tower, then move the two largest disks, which takes $2$ moves, then move the double $(n-1)$-tower again. Let $A_n$ be the minimum number of moves, hence $A_n=2A_{n-1}+2=2^{n+1}-2$&hairsp;.
 
 ### 1.11b
 
