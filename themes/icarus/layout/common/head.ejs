@@ -40,9 +40,12 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
-<%- ((x) => x ? '<' + 'link rel="prerender" href="' + x + '" />' : '')(get_config('prerender')) %>
-
 <%- _css(cdn('bulma', 'latest', 'css/bulma.min.css')) %>
+<% if (get_config('has_serif') || get_config('content_style') === 'serif') { %>
+    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %>
+<% } else { %>
+    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %>
+<% } %>
 <%- _css(iconcdn()) %>
 <% if (((x) => x !== undefined && x.katex)(get_config('plugins'))) { %>
     <%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
@@ -62,11 +65,6 @@
 }
 </style>
 <% } %>
-<% if ((get_config('has_serif') || get_config('content_style') === 'serif')) { %>
-    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %>
-<% } else { %>
-    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %>
-<% } %>
 <%- _css(cdn('highlight.js', 'latest', 'styles/' + get_config('article.highlight.theme') + '.min.css')) %>
 
 <!-- <%- _css('css/style.css') %> -->
@@ -77,3 +75,5 @@
     <%- _partial('plugin/' + plugin, { head: true, plugin: get_config('plugins')[plugin] }) %>
     <% } %>
 <% } %>
+
+<%- ((x) => x ? '<' + 'link rel="prerender" href="' + x + '" />' : '')(get_config('prerender')) %>
