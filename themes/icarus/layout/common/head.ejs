@@ -41,9 +41,11 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
 <% if (get_config('has_serif') || get_config('content_style') === 'serif') { %>
-    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %>
+    <!-- <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %> -->
+    <%- _css('https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/fonts_main_extra.css') %>
 <% } else { %>
-    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %>
+    <!-- <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %> -->
+    <%- _css('https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/fonts_main.css') %>
 <% } %>
 <%- _css(cdn('bulma', 'latest', 'css/bulma.min.css')) %>
 <%- _css(iconcdn()) %>
