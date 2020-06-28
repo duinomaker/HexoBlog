@@ -80,7 +80,7 @@ module.exports = function (hexo) {
         else if (hasThumbnail)
             og_image = getThumbnail(post);
         else
-            og_image = getConfig('article.og_image', 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/og_image.png');
+            og_image = getConfig('article.og_image', 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/source/images/og_image.png');
 
         return this.url_for(og_image);
     });

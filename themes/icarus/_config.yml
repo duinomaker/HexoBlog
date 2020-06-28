@@ -10,7 +10,7 @@ canonical_url: https://duinomaker.top/
 rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 # logo: /images/logo.svg
-logo: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/misc/logo.svg
+logo: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/source/images/misc/logo.svg
 
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
@@ -87,12 +87,12 @@ search:
 # Comment plugin settings
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
-    type: valine
-    app_id: jUDJCYuOij3UzEzFmRpQer5U-gzGzoHsz   # (required) LeanCloud application id
-    app_key: h2AVOMeF8QsLYFdVVbbf9d7k           # (required) LeanCloud application key
-    notify: false               # (optional) receive email notification
-    verify: false               # (optional) show verification code
-    placeholder: 说些什么吧…… # (optional) comment box placeholder text
+    # type: valine
+    # app_id: jUDJCYuOij3UzEzFmRpQer5U-gzGzoHsz   # (required) LeanCloud application id
+    # app_key: h2AVOMeF8QsLYFdVVbbf9d7k           # (required) LeanCloud application key
+    # notify: false               # (optional) receive email notification
+    # verify: false               # (optional) show verification code
+    # placeholder: 说些什么吧…… # (optional) comment box placeholder text
 
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
@@ -159,7 +159,7 @@ widgets:
         location: Jiangsu, China
         # Path or URL to the avatar to be shown in the profile widget
         # avatar: /images/avatar.jpg
-        avatar: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/source/images/misc/avatar.jpg
+        avatar: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/source/images/misc/avatar.jpg
         # Email address for the Gravatar to be shown in the profile widget
         gravatar: 
         # Whether to show avatar image rounded or square
@@ -271,4 +271,4 @@ providers:
     # iconcdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css
     # iconcdn: 'https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css'
     # iconcdn: /fonts/font-awesome/all.min.css
-    iconcdn: 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog/assets/font-awesome/all.min.css'
+    iconcdn: 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/assets/font-awesome/all.min.css'
