@@ -14,4 +14,4 @@ article:
 
 <i class="fas fa-envelope"></i>&nbsp;E-Mail: <a target="_blank" rel="external nofollow noopener noreferrer" title="duinomaker's E-Mail" href="mailto:duinomaker@gmail.com">duinomaker@gmail.com</a>
 
-<script src="test.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/assets/test.js" type="text/javascript"></script>
