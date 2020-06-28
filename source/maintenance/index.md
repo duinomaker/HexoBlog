@@ -7,6 +7,7 @@ article:
         clipboard: false
 ---
 
+`2020-06-28` 禁用 Valine 评论系统
 `2020-06-24` 取消 RSS 订阅功能
 `2020-06-23` 移除网站备案信息
 `2020-06-23` 博客迁移至 Github Pages，页面资源使用 jsdelivr 提供
