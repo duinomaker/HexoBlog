@@ -437,7 +437,7 @@ img.thumbnail {
 }
 .content code,
 .content pre {
-  font-family: "Source Code Pro", monospace, "Microsoft YaHei";
+  font-family: "Source Code Pro", monospace, "Open Sans", "Microsoft YaHei";
 }
 .content pre {
   font-size: 0.85em;
@@ -507,7 +507,7 @@ figure.highlight figcaption {
 }
 figure.highlight figcaption span {
   font-weight: 500;
-  font-family: "Source Code Pro", monospace, "Microsoft YaHei";
+  font-family: "Source Code Pro", monospace, "Open Sans", "Microsoft YaHei";
 }
 figure.highlight figcaption .fold,
 figure.highlight figcaption a {
@@ -653,11 +653,11 @@ figure.highlight .section {
   margin-bottom: -1em;
 }
 .encrypted {
-  font-family: "Source Code Pro", monospace, "Microsoft YaHei";
+  font-family: "Source Code Pro", monospace, "Open Sans", "Microsoft YaHei";
   color: #50a14f;
 }
 .mono {
-  font-family: "Source Code Pro", monospace, "Microsoft YaHei";
+  font-family: "Source Code Pro", monospace, "Open Sans", "Microsoft YaHei";
 }
 .rigid,
 .rigid-link {
@@ -667,10 +667,10 @@ figure.highlight .section {
   font-size: 0.85em;
 }
 .serif {
-  font-family: "Alegreya", "Times New Roman", serif, "Microsoft YaHei";
+  font-family: "Alegreya", "Times New Roman", serif, "Open Sans", "Microsoft YaHei";
 }
 .tex-math {
-  font-family: KaTeX_Main, "Times New Roman", serif, "Microsoft YaHei";
+  font-family: KaTeX_Main, "Times New Roman", serif, "Open Sans", "Microsoft YaHei";
 }
 strong {
   white-space: nowrap;

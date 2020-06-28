@@ -1,7 +1,4 @@
 <% post = post(); %>
-<% if (!index && post.redirect) { %>
-    <script type="text/javascript">document.location = "<%= post.canonical_url.slice(22) %>";</script>
-<% } else { %>
 <div class="card">
     <% if (has_thumbnail(post)) { %>
     <div class="card-image">
@@ -50,16 +47,16 @@
         </div>
         <% } %>
         <% if (!post.nocontent) { %>
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal <%= post.content_style %>">
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal <%= index ? '' : post.content_style %>">
             <% if (index) { %>
-            <a class="has-link-black-ter" href="<%- post.redirect ? post.canonical_url.slice(22) : url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
+            <a class="has-link-black-ter" href="<%- url_for(post.link ? post.link : post.path) %>"><%= post.title %></a>
             <% } else { %>
             <%= post.title %>
             <% } %>
         </h1>
         <% } %>
         <% if (!post.nocontent) { %>
-            <div class="content has-math <%= post.content_style %>">
+            <div class="content has-math <%= index ? '' : post.content_style %>">
             <% if (post.license_lang == 'en') { %>
             <style>strong{font-weight:500;}</style>
             <% } %>
@@ -75,19 +72,19 @@
         <div id="copyright">
             <% if (post.license != 'notrust') { %>
                 <% if (post.license_lang == 'en') { %>
-                <p><strong class="rigid" style="font-weight:500;">Author:&nbsp;</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
-                <p><strong class="rigid" style="font-weight:500;">Permalink:&nbsp;</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
+                    <p><strong class="rigid" style="font-weight:500;">Author:&nbsp;</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
+                    <p><strong class="rigid" style="font-weight:500;">Permalink:&nbsp;</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
                 <% } else { %>
-                <p><strong class="rigid">本文作者：</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
-                <p><strong class="rigid">本文链接：</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
+                    <p><strong class="rigid">本文作者：</strong><a rel="author" href="https://duinomaker.top/">duinomaker</a></p>
+                    <p><strong class="rigid">本文链接：</strong><a href="<%= url_for(post.link ? post.link : post.path) %>" title="<%= post.title %>"><%- 'https://duinomaker.top' + url_for(post.link ? post.link : post.path) %></a></p>
                 <% } %>
             <% } %>
             <% if (post.license == 'noshare') { %>
-            <% if (post.license_lang == 'en') { %>
-                <p><strong class="rigid" style="font-weight:500;">Copyright:&nbsp;</strong>All rights reserved. Unauthorized reproduction or distribution prohibited.</p>
-            <% } else {%>
-                <p><strong class="rigid">版权声明：</strong>作者对该作品保留所有权利，未经允许禁止转载。</p>
-            <% } %>
+                <% if (post.license_lang == 'en') { %>
+                    <p><strong class="rigid" style="font-weight:500;">Copyright:&nbsp;</strong>All rights reserved. Unauthorized reproduction or distribution prohibited.</p>
+                <% } else {%>
+                    <p><strong class="rigid">版权声明：</strong>作者对该作品保留所有权利，未经允许禁止转载。</p>
+                <% } %>
             <% } else if (post.license == 'notrust') { %>
                 <p><strong class="rigid">免责声明：</strong>该页面内容来自网络，未经网站管理者审核、不代表本网站及其管理者的观点或立场。本网站一概毋须以任何方式就任何信息传递或传送的失误、不准确或错误对用户或任何其他人士负任何直接或间接的责任。</p>
             <% } else if (post.license == 'by-sa') { %>
@@ -115,16 +112,6 @@
             }) %>
         </div>
         <% } %>
-        <!-- <% if (index && post.excerpt && !post.redirect) { %>
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                    <a class="button is-size-7 is-light"
-                        href="<%- post.redirect ? post.canonical_url.slice(22) : url_for(post.path) + '#more' %>"><%= __('article.more') %></a>
-                </div>
-            </div>
-        </div>
-        <% } %> -->
         <% if (!index && has_config('share.type')) { %>
         <%- _partial('share/' + get_config('share.type')) %>
         <% } %>
@@ -247,5 +234,4 @@
     <% } %>
 </div>
 </div>
-<% } %>
 <% } %>
