@@ -26,3 +26,4 @@ $$\begin{aligned}\sum_{0\leq k\lt n}(a_{k+1}-a_k)b_k&=\sum_{0\leq k\lt n}(a_{k+1
 
 ### 2.12
 
+$$x=\begin{cases}k+c\\,,\quad\text{if $k$ is even$\\,$;}\\\\k-c\\,,\quad\text{if $k$ is odd$\\,$.}\end{cases}$$
