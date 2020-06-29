@@ -398,6 +398,9 @@ img.thumbnail {
   .has-mt-5-mobile {
     margin-top: 1em !important;
   }
+  .has-mb-5-mobile {
+    margin-bottom: 1em !important;
+  }
 }
 /* ---------------------------------
  *         Font icon fixes
