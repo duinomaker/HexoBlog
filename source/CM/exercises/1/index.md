@@ -82,7 +82,7 @@ We already know $n$ straight lines define $L_n=\frac{n(n+1)}2+1$ regions on a pl
 
 Let the zig-zags be extremely narrow to be seen as straight lines to some extent. So when the $n$-th zig-zag is added in, $n$ new areas are created “in the straight line manner”.
 
-We could also see that when two zig-zags intersect, $8$ new areas are created “around their intersection,” in the way shown below:
+We could also see that when two zig-zags intersect, $8$ new areas are created “around their intersection” in the way shown below:
 
 <figure class="image">
 <img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/source/images/CM/exercises-1_1.jpg" class="image illustration" />

@@ -54,8 +54,6 @@ Sequences serve as a conventional interface that permits us to combine processin
 
 ***Trees*** are sequences whose elements are sequences. They can be dealt naturally with recursions.
 
-<!-- The use of ***conventional interfaces*** is a powerful design principle for working with tree structures. In this way, lists are operated on as if they were “signals,” and the program concentrate on the “signals” that flow from one stage in the process to the next. -->
-
 The approach of ***stratified design*** helps make programs robust, that is, it makes it likely that small changes in a specification will require correspondingly small changes in the program.
 
 ## 2.3 Symbolic Data
