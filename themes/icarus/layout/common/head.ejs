@@ -72,8 +72,8 @@
 <% } %>
 <%- _css(cdn('highlight.js', 'latest', 'styles/' + get_config('article.highlight.theme') + '.min.css')) %>
 
-<%- _css('css/style.css') %>
-<!-- <%- _css('https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/assets/style.css') %> -->
+<!-- <%- _css('css/style.css') %> -->
+<%- _css('https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@master/assets/style.css') %>
 
 <% if (has_config('plugins')) { %>
     <% for (let plugin in get_config('plugins')) { %>
