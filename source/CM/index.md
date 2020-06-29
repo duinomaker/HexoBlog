@@ -21,7 +21,7 @@ To advance my proficiency in written English, I'll be taking notes in English si
 ## Notes
 
 <code class="rigid">Chapter I&nbsp;&nbsp;</code><a href="/CM/notes/1/" target="_self">Recurrent Problems</a>
-<code class="rigid">Chapter II&nbsp;</code><a href="/CM/notes/2/" target="_self">Sums</a>
+<!-- <code class="rigid">Chapter II&nbsp;</code><a href="/CM/notes/2/" target="_self">Sums</a> -->
 
 ## Exercises
 
