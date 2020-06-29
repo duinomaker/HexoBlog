@@ -81,7 +81,7 @@ For all finite subset $F\subseteq K$, there must be a bounding constant $B$ such
 
 $$\sum_{k\in F}|a_k|\leq\sum_{k\in F}((\Re a_k)^++(\Re a_k)^-+(\Im a_k)^++(\Im a_k)^-)\leq B.$$
 
-Conversely, there's a bounding constant $B$ such that $\sum_{k\in F}|a_k|\leq B$. Together with the fact that $(\Re z)^+,(\Re z)^-,(\Im z)^+,(\Im z)^-\leq|z|$, $\sum_{k\in K}(\Re a_k)^+$, $\sum_{k\in K}(\Re a_k)^-$, $\sum_{k\in K}(\Im a_k)^+$ and $\sum_{k\in K}(\Im a_k)^-$ are each absolutely convergent, so is $\sum_{k\in K}a_k$.
+Conversely, with the fact that $(\Re z)^+,(\Re z)^-,(\Im z)^+,(\Im z)^-\leq|z|$, $\sum_{k\in K}(\Re a_k)^+$, $\sum_{k\in K}(\Re a_k)^-$, $\sum_{k\in K}(\Im a_k)^+$ and $\sum_{k\in K}(\Im a_k)^-$ are each absolutely convergent, so is $\sum_{k\in K}a_k$.
 
 ## Homework exercises
 
