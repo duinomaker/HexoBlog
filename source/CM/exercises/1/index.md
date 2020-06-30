@@ -22,7 +22,7 @@ license_lang: en
 
 ### 1.8
 
-Calculate $Q_1$ through $Q_6$, we could find out that $Q$ is periodic.
+List $Q_1$ through $Q_6$, we could find out that $Q$ is periodic.
 
 $$\begin{aligned}Q_m&=\alpha;\\\\Q_{m+1}&=\beta;\\\\Q_{m+2}&=(1+\beta)/\alpha;\\\\Q_{m+3}&=(1+\alpha+\beta)/(\alpha\beta);\\\\Q_{m+4}&=(1+\alpha)/\beta,\quad\text{for $m\in\lbrace0,5,10,\ldots\rbrace$.}\end{aligned}$$
 
@@ -110,7 +110,7 @@ Thus, we cannot find a unique $I(1)$ that satisfies this recurrence. So we have 
 
 Let's represent in terms of $n=2^m+l$, and let $\beta_0=-1,\beta_1=1$. The recurrence unfolds, binary-wise:
 
-$$\begin{aligned}I((b_mb_{m-1}\ldots b_0)_ 2)&=2I((b_mb_{m-1}\ldots b_1)_ 2)+\beta _ {b_0}\\\\&\\;\\;\vdots\\\\&=2^{m-1}I((b_mb_{m-1})_2)+\cdots+2\beta _{b_1}+\beta _{b_0}.\end{aligned}$$
+$$\begin{aligned}I\big((b_mb_{m-1}\ldots b_0)_ 2\big)&=2I\big((b_mb_{m-1}\ldots b_1)_ 2\big)+\beta _ {b_0}\\\\&\\;\\;\vdots\\\\&=2^{m-1}I\big((b_mb_{m-1})_2\big)+\cdots+2\beta _{b_1}+\beta _{b_0}.\end{aligned}$$
 
 Then we can stop here, so far the function $I$ have the same form as $J$, and the two leading bits $(b_mb_{m-1})_2$ are enough to contain the two cases:
 
@@ -126,19 +126,19 @@ Express $g(n)$ in the form
 
 $$g(n)=A(n)\alpha+B(n)\beta_0+C(n)\beta_1+D(n)\gamma.$$
 
-Let $g(n)=1$, which implies $(\alpha,\beta_0,\beta_1,\gamma)\to(1,-2,-2,0)$. Then
+Let $g(n)=1$, which implies $(\alpha,\beta_0,\beta_1,\gamma)=(1,-2,-2,0)$. Then
 
 $$A(n)-2B(n)-2C(n)=1.\tag{1}$$
 
-Let $g(n)=n$, which implies $(\alpha,\beta_0,\beta_1,\gamma)\to(1,0,1,-1)$. Then
+Let $g(n)=n$, which implies $(\alpha,\beta_0,\beta_1,\gamma)=(1,0,1,-1)$. Then
 
 $$A(n)+C(n)-D(n)=n.\tag{2}$$
 
-Let $(\alpha,\beta_0,\beta_1,\gamma)\to(1,-2,-2,0)$, which gives $g(n)=3^m$. Then (note we're representing in terms of $n=2^m+l$)
+Let $(\alpha,\beta_0,\beta_1,\gamma)=(1,-2,-2,0)$, which gives $g(n)=3^m$. Then (note we're representing in terms of $n=2^m+l$)
 
 $$A(n)=3^m.\tag{3}$$
 
-Let $(\alpha,\beta_0,\beta_1,\gamma)\to(0,0,1,0)$. Similar to the binary expansion in the Josephus problem, we have
+Let $(\alpha,\beta_0,\beta_1,\gamma)=(0,0,1,0)$. Similar to the binary expansion in the Josephus problem, we have
 
 $$C(n)=(b_{m-1}\ldots b_0)_3.\tag{4}$$
 
@@ -146,10 +146,10 @@ I also checked that for $(1)(2)(3)$ and $(4)$,
 
 $$\left|\begin{array}{cccc}1&-2&-2&0\\\\1&0&1&-1\\\\1&0&0&0\\\\0&0&1&0\end{array}\right|\neq0.$$
 
-So the recurrence is solvable. Hence
+The recurrence is solvable; hence
 
-$$\begin{aligned}A(n)&=3^m;\\\\B(n)&=(3^m-2(b_{m-1}\ldots b_0)_ 3-1)/2;\\\\C(n)&=(b_{m-1}\ldots b_0)_ 3;\\\\D(n)&=3^m+(b_{m-1}\ldots b_0)_3-n.\end{aligned}$$
+$$\begin{aligned}A(n)&=3^m;\\\\B(n)&=\big(3^m-2(b_{m-1}\ldots b_0)_ 3-1\big)/2;\\\\C(n)&=(b_{m-1}\ldots b_0)_ 3;\\\\D(n)&=3^m+(b_{m-1}\ldots b_0)_3-n.\end{aligned}$$
 
 Then
 
-$$\begin{aligned}g(n)&=3^m\alpha+(3^m-2(b_{m-1}\ldots b_0)_ 3-1)\frac{\beta_0}2+(b_{m-1}\ldots b_0)_ 3\beta_1+(3^m+(b_{m-1}\ldots b_0)_ 3-n)\gamma\\\\&=\left(\alpha+\frac{\beta_0}2+\gamma\right)3^m+(-\beta_0+\beta_1+\gamma)(b_{m-1}\ldots b_0)_3-\frac{\beta_0}2-n\gamma.\end{aligned}$$
+$$\begin{aligned}g(n)&=3^m\alpha+\big(3^m-2(b_{m-1}\ldots b_0)_ 3-1\big)\frac{\beta_0}2+(b_{m-1}\ldots b_0)_ 3\beta_1+\big(3^m+(b_{m-1}\ldots b_0)_ 3-n\big)\gamma\\\\&=\left(\alpha+\frac{\beta_0}2+\gamma\right)3^m+(-\beta_0+\beta_1+\gamma)(b_{m-1}\ldots b_0)_3-\frac{\beta_0}2-n\gamma.\end{aligned}$$

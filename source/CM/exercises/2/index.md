@@ -16,25 +16,25 @@ license_lang: en
 
 ---
 
-## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@latest/source/images/CM/warmups_2.jpg" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
+## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@latest/source/images/CM/warmups_2.png" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
 
 ## Basics
 
 ### 2.11
 
-$$\begin{aligned}\sum_{0\leq k\lt n}(a_{k+1}-a_k)b_k&=\sum_{0\leq k\lt n}(a_{k+1}b_{k+1}-a_kb_k-a_{k+1}(b_{k+1}-b_k))\\\\&=\sum_{0\leq k\lt n}(a_{k+1}b_{k+1}-a_kb_k)-\sum_{0\leq k\lt n}a_{k+1}(b_{k+1}-b_k)\\\\&=a_nb_n-a_0b_0-\sum_{0\leq k\lt n}a_{k+1}(b_{k+1}-b_k),\quad\text{for $n\geq0$.}\end{aligned}$$
+$$\begin{aligned}\sum_{0\leq k\lt n}(a_{k+1}-a_k)b_k&=\sum_{0\leq k\lt n}\big(a_{k+1}b_{k+1}-a_kb_k-a_{k+1}(b_{k+1}-b_k)\big)\\\\&=\sum_{0\leq k\lt n}(a_{k+1}b_{k+1}-a_kb_k)-\sum_{0\leq k\lt n}a_{k+1}(b_{k+1}-b_k)\\\\&=a_nb_n-a_0b_0-\sum_{0\leq k\lt n}a_{k+1}(b_{k+1}-b_k),\quad\text{for $n\geq0$.}\end{aligned}$$
 
 ### 2.12
 
-If $x=p(k)$ then $x+c=k+((-1)^k+1)c$. Observe that $((-1)^k+1)c$ is even, $x+c$ must have the same parity as $k$. This gives $(-1)^k=(-1)^{x+c}$ and $k=x-(-1)^{x+c}c$. Conversely, this value of $k$ yields $x=p(k)$.
+If $x=p(k)$ then $x+c=k+\big((-1)^k+1\big)c$. Observe that $\big((-1)^k+1\big)c$ is even, $x+c$ must have the same parity as $k$. This gives $(-1)^k=(-1)^{x+c}$ and $k=x-(-1)^{x+c}c$. Conversely, this value of $k$ yields $x=p(k)$.
 
 ### 2.13
 
-The sum is equivalent to the recurrence
+The sum is a special case of the general recurrence
 
 $$\begin{aligned}R_0&=\alpha;\\\\R_n&=R_{n-1}+(-1)^n(\beta+\gamma n+\delta n^2),\quad\text{for $n>0$,}\end{aligned}$$
 
-whose solution would be the general form
+whose solution would be
 
 $$R(n)=A(n)\alpha+B(n)\beta+C(n)\gamma+D(n)\delta.$$
 
@@ -45,7 +45,9 @@ Setting $R_n=(-1)^nn^2$ yields $-C(n)+2D(n)=(-1)^nn^2$.
 
 Therefore, $D(n)=(-1)^n(n^2+n)/2$.
 
-For this sum, we have $\delta=1$; hence $\sum_{k=0}^n(-1)^kk^2=(-1)^n(n^2+n)/2$.
+For this sum, we have $\delta=1$; hence
+
+$$\sum_{k=0}^n(-1)^kk^2=(-1)^n(n^2+n)/2.$$
 
 ### 2.14
 
@@ -53,23 +55,23 @@ $$\begin{aligned}\sum_{k=1}^nk2^k&=\sum_{1\leq j\leq k\leq n}2^k\\\\&=\sum_{1\le
 
 ### 2.15
 
-$$\begin{aligned}\sum_{k=1}^nk^3-\sum_{k=1}^nk^2&=2\sum_{1\leq j\leq k\leq n}jk\\\\\sum_{k=1}^nk^3-\sum_{k=1}^nk^2&=\left(\sum_{1\leq k\leq n}k\right)^2+\sum_{1\leq k\leq n}k^2\\\\\sum_{k=1}^nk^3&=\left(\sum_{1\leq k\leq n}k\right)^2+3\sum_{1\leq k\leq n}k^2\\\\\sum_{k=1}^nk^3&=\frac12(n(n+1)+n(n+1)(2n+1))\\\\\sum_{k=1}^nk^3&=n(n+1)^2.\end{aligned}$$
+$$\begin{aligned}\sum_{k=1}^nk^3-\sum_{k=1}^nk^2&=2\sum_{1\leq j\leq k\leq n}jk\\\\\sum_{k=1}^nk^3-\sum_{k=1}^nk^2&=\left(\sum_{1\leq k\leq n}k\right)^2+\sum_{1\leq k\leq n}k^2\\\\\sum_{k=1}^nk^3&=\left(\sum_{1\leq k\leq n}k\right)^2+3\sum_{1\leq k\leq n}k^2\\\\\sum_{k=1}^nk^3&=\frac12\big(n(n+1)+n(n+1)(2n+1)\big)\\\\\sum_{k=1}^nk^3&=n(n+1)^2.\end{aligned}$$
 
 ### 2.16
 
 If no denominator is zero,
 
-$$\begin{aligned}x^{\underline{m}}/(x-n)^{\underline{m}}&=x^{\underline{n}}/(x-m)^{\underline{n}}\\\\x^{\underline{m}}(x-m)^{\underline{n}}&=x^{\underline{n}}(x-n)^{\underline{m}},\end{aligned}$$
+$$\begin{aligned}x^{\underline m}/(x-n)^{\underline m}&=x^{\underline n}/(x-m)^{\underline n}\\\\x^{\underline m}(x-m)^{\underline n}&=x^{\underline n}(x-n)^{\underline m},\end{aligned}$$
 
-which is applicable to the law of exponents.
+the latter is applicable to the law of exponents.
 
 ### 2.17
 
-$$\begin{aligned}x^{\overline{m}}&=x(x+1)\cdots(x+m-1)\\\\&=(-1)^m(-x)(-x-1)\cdots(-x-m+1)\\\\&=(-1)^m(-x)^{\underline{m}}.\end{aligned}$$
+$$\begin{aligned}x^{\overline m}&=x(x+1)\cdots(x+m-1)\\\\&=(-1)^m(-x)(-x-1)\cdots(-x-m+1)\\\\&=(-1)^m(-x)^{\underline m}.\end{aligned}$$
 
-$$\begin{aligned}x^{\overline{m}}&=x(x+1)\cdots(x+m-1)\\\\&=(x+m-1)\cdots(x+1)x\\\\&=(x+m-1)^{\underline{m}}.\end{aligned}$$
+$$\begin{aligned}x^{\overline m}&=x(x+1)\cdots(x+m-1)\\\\&=(x+m-1)\cdots(x+1)x\\\\&=(x+m-1)^{\underline m}.\end{aligned}$$
 
-$$\begin{aligned}x^{\overline{m}}&=x(x+1)\cdots(x+m-1)\\\\&=1/(x-1)^{\underline{-m}}.\end{aligned}$$
+$$\begin{aligned}x^{\overline m}&=x(x+1)\cdots(x+m-1)\\\\&=1/(x-1)^{\underline{-m}}.\end{aligned}$$
 
 The second line is similar.
 
@@ -77,9 +79,9 @@ The second line is similar.
 
 If $\sum_{k\in K}a_k$ is absolutely convergent, so are $\sum_{k\in K}(\Re a_k)^+$, $\sum_{k\in K}(\Re a_k)^-$, $\sum_{k\in K}(\Im a_k)^+$ and $\sum_{k\in K}(\Im a_k)^-$.
 
-For all finite subset $F\subseteq K$, there must be a bounding constant $B$ such that
+For all finite subset $F\subsetneq K$, there must be a bounding constant $B$ such that
 
-$$\sum_{k\in F}|a_k|\leq\sum_{k\in F}((\Re a_k)^++(\Re a_k)^-+(\Im a_k)^++(\Im a_k)^-)\leq B.$$
+$$\sum_{k\in F}|a_k|\leq\sum_{k\in F}\big((\Re a_k)^++(\Re a_k)^-+(\Im a_k)^++(\Im a_k)^-\big)\leq B.$$
 
 Conversely, with the fact that $(\Re z)^+,(\Re z)^-,(\Im z)^+,(\Im z)^-\leq|z|$, we know that $\sum_{k\in K}(\Re a_k)^+$, $\sum_{k\in K}(\Re a_k)^-$, $\sum_{k\in K}(\Im a_k)^+$ and $\sum_{k\in K}(\Im a_k)^-$ are each absolutely convergent, so is $\sum_{k\in K}a_k$.
 
@@ -87,11 +89,64 @@ Conversely, with the fact that $(\Re z)^+,(\Re z)^-,(\Im z)^+,(\Im z)^-\leq|z|$,
 
 ### 2.19
 
-$$T_n=\frac1{s_na_n}\left(s_1b_1T_0+\sum_{k=1}^ns_kc_k\right),$$
+Multiply both sides by $2^{n-1}/n!$, we get
 
-where $a_n=2$, $b_n=n$, $c_n=3\cdot n!$ and $s_n=2^{n-1}/n!$.
-
-$$\begin{aligned}T_n&=\frac{n!}{2^n}\left(5+\sum_{k=1}^n3\cdot2^{n-1}\right)\\\\&=3\cdot n!+\frac{n!}{2^{n-1}}.\end{aligned}$$
+$$\begin{aligned}\frac{2^n}{n!}T_n&=\frac{2^{n-1}}{(n-1)!}T_{n-1}+3\cdot2^{n-1}\\\\T_n&=\frac{n!}{2^n}\left(T_0+\sum_{k=1}^n3\cdot2^{n-1}\right)\\\\T_n&=3\cdot n!+\frac{n!}{2^{n-1}}.\end{aligned}$$
 
 ### 2.20
 
+$$\begin{aligned}\sum_{k=0}^nkH_k&=\sum_{k=0}^n\big((k+1)H_{k+1}-(n+1)H_{n+1}\big)\\\\\sum_{k=0}^nkH_k&=\sum_{k=0}^nkH_{k+1}+\sum_{k=0}^nH_{k+1}-(n+1)H_{n+1}\\\\(n+1)H_{n+1}&=\sum_{k=0}^n\frac k{k+1}+\sum_{k=0}^nH_{k+1}\\\\(n+1)H_{n+1}&=\sum_{k=0}^n(H_k+1)\\\\(n+1)(H_n-1)&=\sum_{k=0}^nH_k.\end{aligned}$$
+
+### 2.21
+
+$$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}&=\sum_{k=0}^n(-1)^{n-k-1}+(-1)^n+1\\\\2\sum_{k=0}^n(-1)^{n-k}&=(-1)^n+1\\\\S_n&=\begin{cases}1,&\text{$n$ is even;}\\\\0,&\text{$n$ id odd.}\end{cases}\end{aligned}$$
+
+$$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}k&=\sum_{k=0}^n-(-1)^{n-k}(k+1)+n+1\\\\2\sum_{k=0}^n(-1)^{n-k}k&=-\sum_{k=0}^n(-1)^{n-k}+n+1\\\\2T_n&=-S_n+n+1\\\\T_n&=\\begin{cases}n/2,&\text{$n$ is even;}\\\\(n+1)/2,&\text{$n$ is odd.}\end{cases}\end{aligned}$$
+
+If we did the first step for $T_n$ differently, we could find out that $\sum_{k=0}^n(-1)^{n-k}(2k+1)=n+1$, which would be useful later.
+
+$$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}k^2&=\sum_{k=0}^n-(-1)^{n-k}(k^2+2k+1)+n^2+2n+1\\\\2\sum_{k=0}^n(-1)^{n-k}k^2&=-\sum_{k=0}^n(-1)^{n-k}(2k+1)+n^2+2n+1\\\\2\sum_{k=0}^n(-1)^{n-k}k^2&=n^2+n\\\\U_n&=n(n+1)/2.\end{aligned}$$
+
+### 2.22
+
+$$\begin{aligned}\sum_{1\leq j\lt k\leq n}(a_jb_k-a_kb_j)(A_jB_k-A_kB_j)&=\sum_{1\leq j\lt k\leq n}(a_jb_kA_jB_k+a_kb_jA_kB_j)-\sum_{1\leq j\lt k\leq n}(a_jb_kA_kB_j+a_kb_jA_jB_k)\\\\&=\sum_{1\leq j,k\leq n}a_jb_kA_jB_k-\sum_{1\leq k\leq n}a_kb_kA_kB_k-\sum_{1\leq j,k\leq n}a_jb_kA_kB_j+\sum_{1\leq k\leq n}a_kb_kA_kB_k\\\\&=\sum_{1\leq j,k\leq n}a_jb_kA_jB_k-\sum_{1\leq j,k\leq n}a_jb_kA_kB_j\\\\&=\left(\sum_{k=1}^na_kA_k\right)\left(\sum_{k=1}^nb_kB_k\right)-\left(\sum_{k=1}^na_kB_k\right)\left(\sum_{k=1}^nb_kA_k\right).\end{aligned}$$
+
+### 2.23a
+
+$$\begin{aligned}\sum_{k=1}^n\frac{2k+1}{k(k+1)}&=\sum_{k=1}^n(2k+1)\left(\frac1{k}-\frac1{k+1}\right)\\\\&=\sum_{k=1}^n\frac1k+\sum_{k=1}^n\frac1{k+1}\\\\&=2H_n-\frac n{n+1}.\end{aligned}$$
+
+### 2.23b
+
+Let $u=2k+1$, then $\Delta v=(k-1)^{\underline{-2}}$, $\Delta u=2$ and $v=-(k-1)^{\underline{-1}}$.
+
+$$\begin{aligned}\sum_{k=1}^n\frac{2k+1}{k(k+1)}&=-\frac{2k+1}k\Bigg|_1^{n+1}+\sum _{1\leq k\lt n+1}2k^{\underline{-1}}\\\\&=2H_n-\frac n{n+1}.\end{aligned}$$
+
+### 2.24
+
+Sum by parts to evaluate the general form $\sum_{0\leq k\lt n}H_kk^{\underline m}$, let $u=H_k$, then $\Delta v=k^{\underline m}$, $\Delta u=k^{\underline{-1}}$ and $v=k^{\underline{m+1}}/(m+1)$.
+
+$$\begin{aligned}\sum_{0\leq k\lt n}H_kk^{\underline m}&=H_k\frac{k^{\underline{m+1}}}{m+1}\Bigg|_0^n-\sum _{0\leq k\lt n}\frac{k^{\underline m}}{(m+1)^2}\\\\&=\frac{0^{\underline{m+1}}}{(m+1)^2}+\left(\frac{H_n}{m+1}-\frac1{(m+1)^2}\right).\end{aligned}$$
+
+In this case, we have $m=-2$, so the sum is $1-(H_n+1)/(n+1)$.
+
+### 2.25
+
+$$\begin{aligned}&\prod_{k\in K}a_k^c=\left(\prod_{k\in K}a_k\right)^c;&&\text{(distributive law)}\\\\&\prod_{k\in K}a_kb_k=\left(\prod_{k\in K}a_k\right)\left(\prod_{k\in K}b_k\right);&&\text{(associative law)}\\\\&\prod_{k\in K}a_k=\prod_{p(k)\in K}a_{p(k)};&&\text{(commutative law)}\\\\&\prod_{k\in K}a_k=\prod_ka_k^{[k\in K]};&&\text{(Iverson's convention)}\\\\&\prod_{\substack{j\in J\\\\k\in K}}a_{j,k}=\prod_{j\in J}\prod_{k\in K}a_{j,k};&&\text{(interchanging the order)}\\\\&\prod_{\substack{j\in J\\\\k\in K}}a_j^{b_k}=\left(\prod_{j\in J}a_j\right)^{\sum_{k\in K}b_k}.&&\text{(general distributive law)}\end{aligned}$$
+
+### 2.26
+
+$$\begin{aligned}\left(\prod_{1\leq j\leq k\leq n}a_ja_k\right)^2&=\left(\prod_{1\leq j,k\leq n}a_ja_k\right)\left(\prod_{1\leq j=k\leq n}a_ja_k\right)\\\\\left(\prod_{1\leq j\leq k\leq n}a_ja_k\right)^2&=\left(\prod_{1\leq k\leq n}a_k\right)^n\left(\prod_{1\leq k\leq n}a_k\right)^n\left(\prod_{1\leq k\leq n}a_k^2\right)\\\\\prod_{1\leq j\leq k\leq n}a_ja_k&=\left(\prod_{1\leq k\leq n}a_k\right)^{n+1}.\end{aligned}$$
+
+### 2.27
+
+$$\begin{aligned}\Delta(c^{\underline x})&=c^{\underline{x+1}}-c^{\underline x}\\\\&=(c-1)c^{\underline x}-xc^{\underline x}.\end{aligned}$$
+
+$$\begin{aligned}\sum_{k=1}^n\frac{(-2)^{\underline k}}k&=\sum_{1\leq k\lt n+1}(k+1)(-2)^{\underline{k-2}}\\\\&=\sum_{1\leq k\lt n+1}(k-2)(-2)^{\underline{k-2}}-(-3)(-2)^{\underline{k-2}}\\\\&=-(-2)^{\underline{k-2}}\Big|_{1}^{n+1}\\\\&=(-1)^nn!-1.\end{aligned}$$
+
+### 2.28
+
+From the second line to the third line, the interchange of summation is not justifiable. That's because the terms in
+
+$$\sum_{k\geq1}\sum_{j\geq1}\left(\frac{k}j[j=k+1]-\frac{j}k[j=k-1]\right)$$
+
+do not converge absolutely.
