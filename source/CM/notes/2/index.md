@@ -108,4 +108,4 @@ This rule is useful when $\sum{\rm E}v\Delta u$ is easier to evaluate than the o
 
 ## 2.7 Infinite Sums
 
-This section, we proved the validity of the three basic laws for absolutely convergent sums. Make sure the sum converges absolutely before applying these rules.
+In this section, we proved the validity of the three basic laws for absolutely convergent sums. Make sure the sum converges absolutely before applying these rules.
