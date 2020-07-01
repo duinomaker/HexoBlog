@@ -46,7 +46,7 @@ Let $K$ be any finite set of integers. Sums over the elements of $K$ can be tran
 
 $$\begin{aligned}\sum_{k\in K}{ca_k}&=c\sum_{k\in K}{a_k};&&\text{(distributive law)}\\\\\\sum_{k\in K}(a_k+b_k)&=\sum_{k\in K}a_k+\sum_{k\in K}b_k;&&\text{(associative law)}\\\\\sum_{k\in K}a_k&=\sum_{p(k)\in K}a_{p(k)}.&&\text{(commutative law)}\end{aligned}$$
 
-The commutative law allows us to reorder terms; here $p(k)$ is any permutation of the set of all integers. Actually, it's a special case of a more generalized rule:
+The commutative law allows us to reorder terms. Here $p(k)$ is any permutation of the set of all integers. Actually, it's a special case of a more generalized rule:
 
 Suppose there's an arbitrary function $f:J\to K$ that takes an integer $j\in J$ into an integer $k\in K$. The formula is
 

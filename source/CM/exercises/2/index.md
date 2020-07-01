@@ -99,7 +99,7 @@ $$\begin{aligned}\sum_{k=0}^nkH_k&=\sum_{k=0}^n\big((k+1)H_{k+1}-(n+1)H_{n+1}\bi
 
 ### 2.21
 
-$$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}&=\sum_{k=0}^n(-1)^{n-k-1}+(-1)^n+1\\\\2\sum_{k=0}^n(-1)^{n-k}&=(-1)^n+1\\\\S_n&=\begin{cases}1,&\text{$n$ is even;}\\\\0,&\text{$n$ id odd.}\end{cases}\end{aligned}$$
+$$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}&=\sum_{k=0}^n(-1)^{n-k-1}+(-1)^n+1\\\\2\sum_{k=0}^n(-1)^{n-k}&=(-1)^n+1\\\\S_n&=\begin{cases}1,&\text{$n$ is even;}\\\\0,&\text{$n$ is odd.}\end{cases}\end{aligned}$$
 
 $$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}k&=\sum_{k=0}^n-(-1)^{n-k}(k+1)+n+1\\\\2\sum_{k=0}^n(-1)^{n-k}k&=-\sum_{k=0}^n(-1)^{n-k}+n+1\\\\2T_n&=-S_n+n+1\\\\T_n&=\begin{cases}n/2,&\text{$n$ is even;}\\\\(n+1)/2,&\text{$n$ is odd.}\end{cases}\end{aligned}$$
 

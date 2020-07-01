@@ -1,7 +1,7 @@
 ---
 title: Concrete Mathematics Notes
 canonical_url: https://duinomaker.top/CM/
-date: 2020-07-01 07:34:49
+date: 2020-07-01 09:26:46
 categories: [Mathematics]
 tags: []
 widgets:
