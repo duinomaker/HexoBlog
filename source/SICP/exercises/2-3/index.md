@@ -2,6 +2,8 @@
 title: 2.3 Symbolic Data
 description: Solutions to exercises in SICP section 2.3 - Symbolic Data
 canonical_url: https://duinomaker.top/SICP/exercises/2-3/
+date: 2020-04-29 23:01:20
+show_meta: true
 widgets:
 # comment:
 article:

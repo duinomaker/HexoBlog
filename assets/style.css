@@ -155,7 +155,7 @@ img.thumbnail {
 }
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 1.5rem 1.5rem 0.5rem;
+    padding: 1rem 1.5rem 0;
   }
 }
 .footer .field .button {

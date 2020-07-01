@@ -2,6 +2,8 @@
 title: 1.2 过程与它们所产生的计算
 description: Solutions to exercises in SICP section 1.2 - Procedures and the Processes They Generate
 canonical_url: https://duinomaker.top/SICP/exercises/1-2/
+date: 2020-04-09 23:10:45
+show_meta: true
 widgets:
 # comment:
 article:

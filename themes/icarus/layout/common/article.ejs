@@ -17,7 +17,7 @@
                 <time class="level-item has-text-grey"
                     datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
                 <% } %>
-                <% if (post.categories && post.categories.length) { %>
+                <% if (index && post.categories && post.categories.length) { %>
                 <div class="level-item">
                     <%- list_categories(post.categories, {
                     class: 'has-link-grey ',
@@ -27,9 +27,16 @@
                 }) %>
                 </div>
                 <% } %>
+                <% if (index) { %>
                 <span class="level-item has-text-grey">
                     <i class="fas fa-file-word"></i>&nbsp;<%= wordcount(post.content) %>&nbsp;words
                 </span>
+                <% } %>
+                <% if (!index) { %>
+                <span class="level-item has-text-grey">
+                    <i class="fas fa-user"></i>&nbsp;<a class="has-link-grey" rel="author" href="https://duinomaker.top/">duinomaker</a>
+                </span>
+                <% } %>
                 <!-- <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
                 <span class="level-item has-text-grey">
                     <% const words = word_count(post._content); %>
@@ -43,6 +50,16 @@
                     <%- _p('plugin.visit', '<span id="busuanzi_value_page_pv">0</span>') %>
                 </span>
                 <% } %> -->
+            </div>
+        </div>
+        <% } else if (post.show_meta) { %>
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey"
+                    datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
+                <span class="level-item has-text-grey">
+                    <i class="fas fa-user"></i>&nbsp;<a class="has-link-grey" rel="author" href="https://duinomaker.top/">duinomaker</a>
+                </span>
             </div>
         </div>
         <% } %>
@@ -68,7 +85,7 @@
         <% if (!post.nocontent) { %>
             </div>
         <% } %>
-        <% if (!index && (post.layout == 'post' || post.license != null)) { %>
+        <!-- <% if (!index && (post.layout == 'post' || post.license != null)) { %>
         <div id="copyright">
             <% if (post.license !== 'notrust') { %>
                 <% if (post.license_lang == 'en') { %>
@@ -101,7 +118,7 @@
                 title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可，非商业性转载请注明出处，商业性转载请联系作者获得授权。</p>
             <% } %>
         </div>
-        <% } %>
+        <% } %> -->
         <% if (!index && post.tags && post.tags.length) { %>
         <div class="article-tags is-size-7 is-uppercase" style="word-wrap: anywhere;">
             <span class="is-size-6 has-mr-8 has-text-grey rigid">#</span><%- list_tags(post.tags, {

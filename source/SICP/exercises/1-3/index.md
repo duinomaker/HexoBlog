@@ -2,6 +2,8 @@
 title: 1.3 用高阶函数做抽象
 description: Solutions to exercises in SICP section 1.3 - Formulating Abstractions with Higher-Order Procedures
 canonical_url: https://duinomaker.top/SICP/exercises/1-3/
+date: 2020-04-09 23:10:45
+show_meta: true
 widgets:
 # comment:
 article:

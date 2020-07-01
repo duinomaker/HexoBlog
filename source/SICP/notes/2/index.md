@@ -2,6 +2,8 @@
 title: Chapter 2 Building Abstractions with Data
 description: Notes on SICP chapter 2 - Building Abstractions with Data
 canonical_url: https://duinomaker.top/SICP/notes/2/
+date: 2020-05-14 22:12:05
+show_meta: true
 widgets:
 # comment:
 article:

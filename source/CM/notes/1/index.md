@@ -2,6 +2,8 @@
 title: 第一章 递归问题
 description: Notes on Concrete Mathematics chapter 1 - Recurrent Problems
 canonical_url: https://duinomaker.top/CM/notes/1/
+date: 2020-04-14 22:36:15
+show_meta: true
 widgets:
 # comment:
 article:
