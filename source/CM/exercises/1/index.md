@@ -3,7 +3,7 @@ title: Chapter 1 Recurrent Problems
 description: Solutions to exercises in Concrete Mathematics chapter 1 - Recurrent Problems
 canonical_url: https://duinomaker.top/CM/exercises/1/
 widgets:
-comment:
+# comment:
 article:
     highlight:
         clipboard: false

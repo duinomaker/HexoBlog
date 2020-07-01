@@ -87,12 +87,13 @@ search:
 # Comment plugin settings
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
-    # type: valine
-    # app_id: jUDJCYuOij3UzEzFmRpQer5U-gzGzoHsz   # (required) LeanCloud application id
-    # app_key: h2AVOMeF8QsLYFdVVbbf9d7k           # (required) LeanCloud application key
-    # notify: false               # (optional) receive email notification
-    # verify: false               # (optional) show verification code
-    # placeholder: 说些什么吧…… # (optional) comment box placeholder text
+    type: valine
+    app_id: jUDJCYuOij3UzEzFmRpQer5U-gzGzoHsz   # (required) LeanCloud application id
+    app_key: h2AVOMeF8QsLYFdVVbbf9d7k           # (required) LeanCloud application key
+    notify: false               # (optional) receive email notification
+    verify: false               # (optional) show verification code
+    placeholder: Suggestions are welcome. # (optional) comment box placeholder text
+    lang: en
 
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/

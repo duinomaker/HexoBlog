@@ -3,7 +3,7 @@ title: 第一章 构造抽象过程
 description: Notes on SICP chapter 1 - Building Abstractions with Procedures
 canonical_url: https://duinomaker.top/SICP/notes/1/
 widgets:
-comment:
+# comment:
 article:
     highlight:
         clipboard: false
