@@ -1,6 +1,7 @@
 ---
 title: Concrete Mathematics Notes
 canonical_url: https://duinomaker.top/CM/
+redirect: true
 date: 2020-07-01 09:26:46
 categories: [Mathematics]
 tags: []
@@ -9,4 +10,4 @@ license_lang: en
 pinned: true
 ---
 
-I have finished reading *Concrete Mathematics* Chapter 2. You could find my notes and solutions to exercises <a href="/CM/">here</a>.
+I have finished reading the second chapter of *Concrete Mathematics*. Here are my notes and solutions to exercises.

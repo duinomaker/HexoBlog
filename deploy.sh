@@ -16,6 +16,7 @@ npx gulp
 rm -f ./assets/style.css
 mv ./public/css/style.css ./assets
 rm -rf ./public/css
+rm -rf ./public/redirect
 hexo deploy
 
 mv ./source/_images ./source/images
