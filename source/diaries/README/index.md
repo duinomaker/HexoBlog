@@ -16,7 +16,7 @@ license: noshare
 
 某些时候，一些特定的内容涉及隐私。这些内容我不想揭露，但必须得写下来，于是就有了加密机制。下方是加密内容的一个例子，我使用了 AES (CBC 模式 + PKCS7 填充)：
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@latest/assets/crypto-js.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@8ff73fa/assets/crypto-js.min.js" defer></script>
 <script type="text/javascript" src="/js/decrypt.js" defer></script>
 <div class="field has-addons">
 <p class="control has-icons-left">
@@ -30,7 +30,7 @@ license: noshare
 </p>
 </div>
 
-<span class="encrypted" iv="HUUvZlsDPmDdoHwr">76 00 2e f2 d5 7d 6b d1 f8 58 c5 1d 8e 3e 90 17 21 b8 aa 60 f4 25 6d e0 cf 3a 89 62 89 7d e6 8a b6 37 fd 0a 0a b4 42 fb 0e 61 5f 17 e3 2a 9c 01</span>
+<span class="encrypted" iv="vuRPn2KnsXRKxy+i">35 c5 64 3d a4 bd e2 aa 59 21 dc 19 8f b6 39 ee 83 4e 81 b2 4d de 85 b6 2c 90 75 05 c0 88 44 82 77 60 6b 88 ea b4 b1 fc b3 d1 9b 37 45 e6 bb 7d</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
