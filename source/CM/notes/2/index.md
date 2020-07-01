@@ -71,7 +71,7 @@ Here the sets $J$, $K(j)$, $K^\prime$ and $J^\prime(k)$ must be related in such 
 
 $$[k\in K][j\in J(k)]=[j\in J^\prime][k\in K^\prime(j)].$$
 
-It might be hard to understand at the first sight. But imagine that all items spread within the table like the one here:
+It might be hard to understand at the first sight. But imagine that all items spread within a table like the one here:
 
 <img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@latest/source/images/CM/exercises-2_1.jpg" width="256" style="margin-left:2em;">
 

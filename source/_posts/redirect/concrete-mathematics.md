@@ -10,4 +10,4 @@ license_lang: en
 pinned: true
 ---
 
-I have finished reading the second chapter of *Concrete Mathematics*. Here are my notes and solutions to exercises.
+I have finished reading the second chapter of *Concrete Mathematics*. Here are my notes on the book and solutions to the exercises.

@@ -1,5 +1,6 @@
 ---
 title: Notes
+description: The index page of my notes on SICP and Concrete Mathematics
 canonical_url: https://duinomaker.top/notes/
 comment:
 plugins:

@@ -1,6 +1,6 @@
 ---
 title: Concrete Mathematics Notes
-description: Notes on Concrete Mathematics and the solutions to the exercises
+description: Notes on Concrete Mathematics and solutions to the exercises
 canonical_url: https://duinomaker.top/CM/
 widgets:
 comment:
@@ -13,7 +13,7 @@ content_style: tex-math
 
 ## Preface
 
-These are my notes and solutions to the exercises for *Concrete Mathematics*.
+These are my notes on *Concrete Mathematics*.
 
 Exercises in this book, compared to their *SICP* counterparts, are really more challenging. I'm running out of my brain power (together with draft paper) while solving them.
 

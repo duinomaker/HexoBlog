@@ -1,6 +1,6 @@
 ---
 title: SICP Notes
-description: My notes on SICP and the solutions to the exercises
+description: Notes on SICP and solutions to the exercises
 canonical_url: https://duinomaker.top/SICP/
 widgets:
 comment:
@@ -13,7 +13,7 @@ content_style: serif
 
 ## Preface
 
-These are my notes for *Structure and Interpretation of Computer Programs*.
+These are my notes on *Structure and Interpretation of Computer Programs*.
 
 To advance my proficiency in written English, I'll be taking notes in English since April 25, 2020. Although previous works are done in Chinese, I feel no need to translate them, since it would be time-consuming and would have little to do with my comprehension of the book.
 
