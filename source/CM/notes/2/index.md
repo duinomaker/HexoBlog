@@ -1,5 +1,6 @@
 ---
 title: Chapter 2 Sums
+description: Notes on Concrete Mathematics chapter 2 - Sums
 canonical_url: https://duinomaker.top/CM/notes/2/
 widgets:
 comment:

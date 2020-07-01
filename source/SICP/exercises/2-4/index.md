@@ -1,5 +1,6 @@
 ---
 title: 2.4 Multiple Representations for Abstract Data
+description: Solutions to exercises in SICP section 2.4 - Multiple Representations for Abstract Data
 canonical_url: https://duinomaker.top/SICP/exercises/2-4/
 widgets:
 comment:

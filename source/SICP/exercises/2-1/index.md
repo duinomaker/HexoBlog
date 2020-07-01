@@ -1,5 +1,6 @@
 ---
 title: 2.1 Introduction to Data Abstraction
+description: Solutions to exercises in SICP section 2.1 - Introduction to Data Abstraction
 canonical_url: https://duinomaker.top/SICP/exercises/2-1/
 widgets:
 comment:

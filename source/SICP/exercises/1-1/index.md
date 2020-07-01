@@ -1,5 +1,6 @@
 ---
 title: 1.1 程序设计的基本元素
+description: Solutions to exercises in SICP section 1.1 - The Elements of Programming
 canonical_url: https://duinomaker.top/SICP/exercises/1-1/
 widgets:
 comment:

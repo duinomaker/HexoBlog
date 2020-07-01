@@ -1,5 +1,6 @@
 ---
 title: SICP Notes
+description: My notes on SICP and the solutions to the exercises
 canonical_url: https://duinomaker.top/SICP/
 widgets:
 comment:

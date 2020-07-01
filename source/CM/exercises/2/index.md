@@ -1,5 +1,6 @@
 ---
 title: Chapter 2 Sums
+description: Solutions to exercises in Concrete Mathematics chapter 2 - Sums
 canonical_url: https://duinomaker.top/CM/exercises/2/
 widgets:
 comment:

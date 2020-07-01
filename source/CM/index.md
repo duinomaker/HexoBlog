@@ -1,5 +1,6 @@
 ---
 title: Concrete Mathematics Notes
+description: Notes on Concrete Mathematics and the solutions to the exercises
 canonical_url: https://duinomaker.top/CM/
 widgets:
 comment:
