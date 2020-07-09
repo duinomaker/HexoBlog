@@ -83,7 +83,7 @@ This is an equation of the “generalized Josephus” type, whose solution is $(
 
 We already know $n$ straight lines define $L_n=\frac{n(n+1)}2+1$ regions on a plane, and when the $n$-th line is added in, $n$ new areas are created.
 
-Let the zig-zags be extremely narrow to be seen as straight lines to some extent. So when the $n$-th zig-zag is added in, $n$ new areas are created “in the straight line manner”.
+Let the zig-zags be extremely narrow to be seen as straight lines to some extent. So when the $n$-th zig-zag is added in, $n$ new areas are created “in the straight line manner.”
 
 We could also see that when two zig-zags intersect, $8$ new areas are created “around their intersection” in the way shown below:
 
@@ -91,7 +91,7 @@ We could also see that when two zig-zags intersect, $8$ new areas are created �
 <img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@f7e83a7/source/images/CM/exercises-1_1.jpg" class="image illustration" />
 </figure>
 
-And when the $n$-th zig-zag is added in, there are at most $n-1$ new “intersections”. So
+And when the $n$-th zig-zag is added in, there are at most $n-1$ new “intersections.” So
 
 $$Z\\!Z_n=Z\\!Z_{n-1}+n+8(n-1)=\frac92n^2+\frac72n+1.$$
 

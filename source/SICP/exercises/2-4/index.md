@@ -150,6 +150,6 @@ d. The new company should provide a package that includes `employee-records->rec
 
 For generic operations with explicit dispatch, when you add a new type, you have to edit every existing operation; when you add a new operation, you have to create an operation that takes account of all types. This style is appropriate for a system in which new operations must often be added.
 
-For message-passing, when you add a new type, you have to create a new “operation dispatcher” that does all operations; when you add a new operation, you have to edit every existing “operation dispatcher”. This style is appropriate for a system in which new types must often be added.
+For message-passing, when you add a new type, you have to create a new “operation dispatcher” that does all operations; when you add a new operation, you have to edit every existing “operation dispatcher.” This style is appropriate for a system in which new types must often be added.
 
 I placed data-directed style at last, because it actually eliminates the deficiencies above. In this style, operations are organized in a table. To add a new type, you can fill out a new column in the table, that is, create a package for that type, as what we've done in the book. To add a new operation, you can fill out a new row in the table, that is, create a package for that operation. Everything is additive no matter whether you're adding a new type or a new operation.

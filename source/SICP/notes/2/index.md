@@ -25,7 +25,7 @@ Similar to procedural abstraction, data abstraction is a methodology that enable
 
 ---
 
-***Selectors*** and ***constructors*** are sets of procedures used as the interface between the construction of data and the use of data, through which programs are as if operating on “abstract data”.
+***Selectors*** and ***constructors*** are sets of procedures used as the interface between the construction of data and the use of data, through which programs are as if operating on “abstract data.”
 
 A ***pair*** is a compound structure, whose behavior could be specified as
 
