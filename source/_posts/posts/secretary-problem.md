@@ -55,7 +55,7 @@ In line 9, $(j-1)^{\underline j}=0$, due to the definition of falling factorial 
 
 Finally, in our initial problem, we have $N=8$ and $K=3$; thus
 
-$$\begin{aligned}P_{8,3}&=\frac38(H_7-H_2)\\\\&=\frac38(\frac13+\frac14+\frac15+\frac16+\frac17)\\\\&=\frac{459}{1120}.\end{aligned}$$
+$$\begin{aligned}P_{8,3}&=\frac38(H_7-H_2)\\\\&=\frac38\left(\frac13+\frac14+\frac15+\frac16+\frac17\right)\\\\&=\frac{459}{1120}.\end{aligned}$$
 
 ## Remarks
 
