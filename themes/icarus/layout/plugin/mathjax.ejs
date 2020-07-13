@@ -1,5 +1,18 @@
 <script type="text/javascript">
     window.MathJax = {
+        startup: {
+            ready() {
+                if (MathJax.version === '3.0.5') {
+                    const SVGWrapper = MathJax._.output.svg.Wrapper.SVGWrapper;
+                    const CommonWrapper = SVGWrapper.prototype.__proto__;
+                    SVGWrapper.prototype.unicodeChars = function (text, variant) {
+                        if (!variant) variant = this.variant || 'normal';
+                        return CommonWrapper.unicodeChars.call(this, text, variant);
+                    }
+                }
+                MathJax.startup.defaultReady();
+            }
+        },
         chtml: {
             matchFontHeight: false,
             displayAlign: 'left',
@@ -31,7 +44,8 @@
         }
     };
 </script>
-<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    async></script>
 <!-- <script type="text/javascript">
     var iOS = (/iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && !window.MSStream;
     if (iOS) {
