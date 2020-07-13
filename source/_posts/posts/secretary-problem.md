@@ -17,7 +17,7 @@ license: by-nc-sa
 license_lang: en
 ---
 
-“Imagine there are eight roses in your garden; you inspect them one-by-one randomly. Take the first three roses you encounter as sample and go on. Once you encounter a rose more beautiful than any of the first three roses, you pick it up and stop. How much is the chance that the one you picked up is the most beautiful one?”
+“Imagine there are eight roses in your garden; you inspect them one-by-one randomly. Take the first three roses you encounter as sample and go on. Once you encounter a rose more beautiful than any of the first three roses, you pick it up and stop. How likely is that the one you picked up is the most beautiful one?”
 
 <!-- more -->
 
