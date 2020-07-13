@@ -1,6 +1,6 @@
 ---
 title: Secretary Problem
-description: One approach to solve secretary problem using combination and various summation strategies
+description: A partial solution to secretary problem using combination and various summation strategies
 canonical_url: https://duinomaker.top/posts/secretary-problem/
 date: 2020-07-13 22:51:43
 categories: [Mathematics]
@@ -21,7 +21,7 @@ license_lang: en
 
 <!-- more -->
 
-At the first sight of the problem, I thought that I could solve it using the methods learnt from the second chapter of *Concrete Mathematics*, and I did managed to. In this post, I will generalize the problem above into the case of $N$ roses and $K$ worth of sample size, then show you how to derive the probability in a closed form, using combination and summation strategies.
+At the first sight of the problem, I thought that I could solve it using the methods learned from the second chapter of *Concrete Mathematics*, and I did managed to. In this post, I will generalize the problem above into the case of $N$ roses and $K$ worth of sample size, then show you how to derive the probability in a closed form, using combination and summation strategies.
 
 ---
 
@@ -56,3 +56,7 @@ In line 9, $(j-1)^{\underline j}=0$, due to the definition of falling factorial 
 Finally, in our initial problem, we have $N=8$ and $K=3$; thus
 
 $$\begin{aligned}P_{8,3}&=\frac38(H_7-H_2)\\\\&=\frac38(\frac13+\frac14+\frac15+\frac16+\frac17)\\\\&=\frac{459}{1120}.\end{aligned}$$
+
+## Remarks
+
+So far, I have derived means of evaluating the probability given $N$ and $K$. Further derivations such as methods of optimizing the probability is still under investigation.
