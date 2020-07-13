@@ -49,11 +49,11 @@ From line 6 to line 7, I changed the order of summations, in order that $(N-j-1)
 
 From line 8 to line 9, I used the rule
 
-$$\sum_{a\leq n\lt b}x^{\underline m}=\frac{b^{\underline{m+1}}-a^{\underline{m+1}}}{m+1}.$$
+$$\sum_{a\leq n\lt b}x^{\underline m}=\frac{b^{\underline{m+1}}-a^{\underline{m+1}}}{m+1},\quad\text{for $m\neq-1$.}$$
 
 In line 9, $(j-1)^{\underline j}=0$, due to the definition of falling factorial powers.
 
-Finally, in our initial problem, we have $N=8$ and $K=3$; thus
+Back to our initial problem, we have $N=8$ and $K=3$; thus
 
 $$\begin{aligned}P_{8,3}&=\frac38(H_7-H_2)\\\\&=\frac38\left(\frac13+\frac14+\frac15+\frac16+\frac17\right)\\\\&=\frac{459}{1120}.\end{aligned}$$
 
