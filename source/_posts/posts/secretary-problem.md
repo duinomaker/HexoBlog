@@ -59,4 +59,4 @@ $$\begin{aligned}P_{8,3}&=\frac38(H_7-H_2)\\\\&=\frac38\left(\frac13+\frac14+\fr
 
 ## Remarks
 
-So far, I have derived means of evaluating the probability given $N$ and $K$. Further derivations such as methods of optimizing the probability is still under investigation.
+So far, I have derived means of evaluating the probability given $N$ and $K$. Further derivations such as methods of optimizing the probability are still under investigation.
