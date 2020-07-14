@@ -19,7 +19,7 @@ license_lang: en
 
 ---
 
-## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@f7e83a7/source/images/CM/warmups_2.png" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
+## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@cf02697/source/images/CM/warmups_2.png" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
 
 ## Basics
 

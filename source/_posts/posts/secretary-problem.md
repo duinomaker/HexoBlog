@@ -39,19 +39,19 @@ Alright, we will readily be able to evaluate the probability if we know how ofte
 
 $$\begin{aligned}Q(k)&=\frac{\binom{k-1}{K-1}}{\binom NK}\\\\&=\frac K{N^{\underline K}}(k-1)^{\underline{K-1}},\quad\text{for $k\geq K$.}\end{aligned}$$
 
-To sum up all what was said above, let $P_{N,K}$ be the ultimate probability we're pursuing. We have
+To sum up all what was said above, let $P_{N,K}$ be the ultimate probability we've been pursuing. We have
 
 $$\begin{aligned}P_{N,K}&=\sum_{k=K}^{N-1}Q(k)\sum_{j=K}^k\frac{(N-j-1)!(k-K)^{\underline{j-K}}}{(N-K)!}\\\\&=\sum_{k=K}^{N-1}\frac K{N^{\underline K}}(k-1)^{\underline{K-1}}\sum_{j=K}^k\frac{(N-j-1)!(k-K)^{\underline{j-K}}}{(N-K)!}\\\\&=\frac K{N^{\underline K}(N-K)!}\sum_{k=K}^{N-1}\sum_{j=K}^k(N-j-1)!(k-1)^{\underline{K-1}}(k-K)^{\underline{j-K}}\\\\&=\frac K{N!}\sum_{k=K}^{N-1}\sum_{j=K}^k(N-j-1)!(k-1)^{\underline{K-1}}(k-K)^{\underline{j-K}}\\\\&=\frac K{N!}\sum_{k=K}^{N-1}\sum_{j=K}^k(N-j-1)!(k-1)^{\underline{j-1}}\\\\&=\frac K{N!}\sum_{K\leq k\lt N}\sum_{K\leq j\leq k}(N-j-1)!(k-1)^{\underline{j-1}}\\\\&=\frac K{N!}\sum_{K\leq j\lt N}\sum_{j\leq k\lt N}(N-j-1)!(k-1)^{\underline{j-1}}\\\\&=\frac K{N!}\sum_{K\leq j\lt N}(N-j-1)!\sum_{j\leq k\lt N}(k-1)^{\underline{j-1}}\\\\&=\frac K{N!}\sum_{K\leq j\lt N}(N-j-1)!\frac{(N-1)^{\underline j}-(j-1)^{\underline j}}j\\\\&=\frac K{N!}\sum_{K\leq j\lt N}\frac{(N-j-1)!(N-1)^{\underline j}}j\\\\&=\frac K{N!}\sum_{K\leq j\lt N}\frac{(N-1)!}j\\\\&=\frac{K(N-1)!}{N!}(H_{N-1}-H_{K-1})\\\\&=\frac KN(H_{N-1}-H_{K-1}).\end{aligned}$$
 
 Here are some critical observations about the steps above:
 
-From line 6 to line 7, I changed the order of summations, in order that $(N-j-1)!$ could be factored out.
+From line 6 to line 7, I interchanged the order of summation, such that $(N-j-1)!$ could be factored out.
 
 From line 8 to line 9, I used the rule
 
 $$\sum_{a\leq n\lt b}x^{\underline m}=\frac{b^{\underline{m+1}}-a^{\underline{m+1}}}{m+1},\quad\text{for $m\neq-1$.}$$
 
-In line 9, $(j-1)^{\underline j}=0$, due to the definition of falling factorial powers.
+In line 9, $(j-1)^{\underline j}=0$, by the definition of falling factorial powers.
 
 Back to our initial problem, we have $N=8$ and $K=3$; thus
 
