@@ -19,7 +19,7 @@ license_lang: en
 
 ---
 
-## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@cf02697/source/images/CM/warmups_1.jpg" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
+## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@5fa4ab4/source/images/CM/warmups_1.jpg" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
 
 ## Homework exercises
 
@@ -88,7 +88,7 @@ Let the zig-zags be extremely narrow to be seen as straight lines to some extent
 We could also see that when two zig-zags intersect, $8$ new areas are created “around their intersection” in the way shown below:
 
 <figure class="image">
-<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@cf02697/source/images/CM/exercises-1_1.jpg" class="image illustration" />
+<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@5fa4ab4/source/images/CM/exercises-1_1.jpg" class="image illustration" />
 </figure>
 
 And when the $n$-th zig-zag is added in, there are at most $n-1$ new “intersections.” So
