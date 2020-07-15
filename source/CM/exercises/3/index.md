@@ -48,7 +48,7 @@ $$N(\alpha,n)+N(\beta,n)=n.$$
 
 ### 3.14
 
-$$\begin{aligned}(x\\,{\rm mod}\\,ny)\\,{\rm mod}\\,y&=x-ny\left\lfloor\frac x{ny}\right\rfloor-y\left\lfloor\frac{x-ny\left\lfloor\frac x{ny}\right\rfloor}y\right\rfloor\\\\&=x-y\left\lfloor\frac xy-n\left\lfloor\frac x{ny}\right\rfloor+n\left\lfloor\frac x{ny}\right\rfloor\right\rfloor\\\\&=x-y\left\lfloor\frac xy\right\rfloor=x\\,{\rm mod}\\,y.\end{aligned}$$
+$$\begin{aligned}(x\\,{\rm mod}\\,ny)\\,{\rm mod}\\,y&=x-ny\left\lfloor\frac x{ny}\right\rfloor-y\left\lfloor\frac{x-ny\left\lfloor\frac x{ny}\right\rfloor}y\right\rfloor\\\\&=x-y\Bigg\lfloor\frac xy-n\left\lfloor\frac x{ny}\right\rfloor+n\left\lfloor\frac x{ny}\right\rfloor\Bigg\rfloor\\\\&=x-y\left\lfloor\frac xy\right\rfloor=x\\,{\rm mod}\\,y.\end{aligned}$$
 
 ### 3.15
 
