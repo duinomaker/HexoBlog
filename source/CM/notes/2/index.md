@@ -99,7 +99,7 @@ Method 7 will be introduced in later chapters.
 
 ## 2.6 Finite and Inifinite Calculus
 
-Just like in calculus, we need a huge repertoire to evaluate sums effectively. Here are some useful formula:
+Just like in calculus, we need a huge repertoire to evaluate sums effectively. Here are some useful formulas:
 
 $$\begin{aligned}&x^{\underline{m+n}}=x^{\underline m}(x-m)^{\underline n};\\\\&\sum\nolimits_a^bc^x\delta x=\frac{c^b-c^a}{c-1};\\\\&\sum\nolimits_a^bx^{\underline m}\delta x=\begin{cases}\frac{x^{\underline{m+1}}}{m+1}\Big|_a^b,&\text{if $m\neq-1$;}\\\\H_x\Big|_a^b,&\text{if $m=-1$.}\end{cases}\end{aligned}$$
 
