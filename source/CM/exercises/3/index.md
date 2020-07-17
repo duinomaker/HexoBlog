@@ -2,7 +2,7 @@
 title: Chapter 3 Integer Functions
 description: Solutions to exercises in Concrete Mathematics chapter 3 - Integer Functions
 canonical_url: https://duinomaker.top/CM/exercises/3/
-date: 2020-07-16 01:02:03
+date: 2020-07-18 00:19:49
 show_meta: true
 widgets:
 article:
@@ -73,5 +73,57 @@ Hence, $n\\,{\rm mod}\\,3=1+\frac13\big((\omega-1)\omega^n-(\omega+2)\omega^{2n}
 ### 3.17
 
 $$\begin{aligned}\sum_{0\leq k\lt m}\left\lfloor x+\frac km\right\rfloor&=\sum_{j,k\geq0}\left[1\leq j\leq x+\frac km\right][k\lt m]\\\\&=\sum_{j,k\geq0}\big[1\leq j\leq\lceil x\rceil\big]\big[m(j-x)\leq k\lt m\big]\\\\&=\sum_k\Big[m\big(\lceil x\rceil-x\big)\leq k\lt m\Big]+\sum_{j,k}\big[1\leq j\lt\lceil x\rceil\big][0\leq k\lt m]\\\\&=\lceil m\rceil-\Big\lceil m\big(\lceil x\rceil-x\big)\Big\rceil+m\big(\lceil x\rceil-1\big)\\\\&=-\lceil-mx\rceil=\lfloor mx\rfloor.\end{aligned}$$
+
+## Homework exercises
+
+### 3.19
+
+$$\begin{aligned}&\big\lfloor\log_b\lfloor x\rfloor\big\rfloor=m\\\\&\iff m\leq\log_b\lfloor x\rfloor\lt m+1\\\\&\iff b^m\leq\lfloor x\rfloor\lt b^{m+1};\\\\\\\\&\lfloor\log_bx\rfloor=m\\\\&\iff m\leq\log_bx\lt m+1\\\\&\iff b^m\leq x\lt b^{m+1}.\end{aligned}$$
+
+If and only if $b^m,b^{m+1}$ are integers, we have $b^m\leq\lfloor x\rfloor\lt b^{m+1}$$\iff$$b^m\leq x\lt b^{m+1}$. Since $m\geq0$, this happens only when $b$ is an integer.
+
+### 3.20
+
+$$\begin{aligned}\sum_kkx[\alpha\leq kx\leq\beta]&=x\sum_kk\left[\frac\alpha x\leq k\leq\frac\beta x\right]\\\\&=\frac12x\big(\left\lfloor\beta/x\right\rfloor+\left\lceil\alpha/x\right\rceil\big)\big(\left\lfloor\beta/x\right\rfloor-\left\lceil\alpha/x\right\rceil+1\big).\end{aligned}$$
+
+### 3.21
+
+(Note: ‘$\lg x$’ is binary logarithm, and ‘$\log x$’ is common logarithm.)
+
+$$\begin{aligned}&\sum_{k,m}\big[10^k\leq2^m\lt2\cdot10^k\big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\big[\lg10^k\leq m\lt\lg2\cdot10^k\big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\Big[\left\lceil\lg10^k\right\rceil\leq m\lt\left\lceil\lg10^k\right\rceil+1\Big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\big[m=\lceil k\lg10\rceil\big][-1\lt m\leq M]\\\\&\quad=\sum_k[-\log2\lt k\leq M\log2]\\\\&\quad=1+\lfloor M\log2\rfloor.\end{aligned}$$
+
+### 3.22
+
+An integer $n$ can always be decomposed into $2^{k-1}q$, where $k,q$ are integers and $q$ is odd. Hence, only the $k$-th term in $S_{n-1}$ is one less than $S_n$. In other words, we have the recurrence
+
+$$\begin{aligned}S_0&=0;\\\\S_n&=S_{n-1}+1,\quad\text{for $n\geq1$,}\end{aligned}$$
+
+which implies $S_n=n$.
+
+Likewise, only the $k$-th term in $T_{n-1}$ is $2^kq=2n$ less than $T_n$. We have the recurrence
+
+$$\begin{aligned}T_0&=0;\\\\T_n&=T_{n-1}+2n,\quad\text{for $n\geq1$,}\end{aligned}$$
+
+which implies $T_n=n(n+1)$.
+
+### 3.23
+
+The $n$-th element of the sequence equals to $m$, which gives
+
+$$\begin{aligned}&\frac{m(m-1)}2\lt n\leq\frac{m(m+1)}2\\\\&\iff m^2-m\lt 2n\leq m^2+m\\\\&\iff m^2-m+\frac14\leq 2n\lt m^2+m+\frac14\\\\&\iff m-\frac12\leq\sqrt{2n}\lt m+\frac12\\\\&\iff m=\left\lfloor\sqrt{2n}+\frac12\right\rfloor.\end{aligned}$$
+
+### 3.24
+
+The number of times a non-negative integer occurs in ${\rm Spec}\big(\alpha/(\alpha+1)\big)$ is exactly one more than the number of times it occurs in ${\rm Spec}(\alpha)$. That's because
+
+$$\begin{aligned}N\big(\alpha/(\alpha+1),n\big)-N(\alpha,n)&=\left\lceil(\alpha+1)\frac{n+1}\alpha\right\rceil-\left\lceil\frac{n+1}\alpha\right\rceil\\\\&=n+1.\end{aligned}$$
+
+### 3.25
+
+If we could find an $m$ such that $K_m\leq m$, we could violate the stated inequality. But the existence of such an $m=n^\prime+1$ requires
+
+$$K_{\lfloor n^\prime/2\rfloor}\leq\lfloor n^\prime/2\rfloor\quad\text{or}\quad K_{\lfloor n^\prime/3\rfloor}\leq\lfloor n^\prime/3\rfloor.$$
+
+This goes down further and further, implying that $K_0\leq0$, which contradicts $K_0=1$. Hence, there's no such an $m$, and the inequality that $K_n>n$ stands.
 
 $\cdots\cdots$
