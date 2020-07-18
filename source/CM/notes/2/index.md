@@ -55,7 +55,7 @@ Suppose there's an arbitrary function $f:J\to K$ that takes an integer $j\in J$ 
 
 $$\sum_{j\in J}a_{f(j)}=\sum_{k\in K}a_k\\#f^-(k),$$
 
-where $\\#f^-(k)$ stands for the number of elements in the set $f^-(k)=\lbrace j\mid f(j)=k\rbrace$.
+where $\\#f^-(k)$ stands for the number of elements in the set $f^-(k)=\big\\{j\mid f(j)=k\big\\}$.
 
 If $f$ is an one-to-one correspondence between $J$ and $K$, we have $\\#f^-(k)=1$ for all $k$, and the formula reduces to the commutative law.
 
@@ -63,7 +63,7 @@ If $f$ is an one-to-one correspondence between $J$ and $K$, we have $\\#f^-(k)=1
 
 Multiple sums follow two additional rules:
 
-$$\begin{aligned}\sum_{P(j,k)}a_{j,k}&=\sum_j\sum_ka_{j,k}[P(j,k)]=\sum_k\sum_ja_{j,k}[P(j,k)];&&\text{(interchanging the order of summation)}\\\\\sum_{\substack{j\in J\\\\k\in K}}a_jb_k&=\left(\sum_{j\in J}a_j\right)\left(\sum_{k\in K}b_k\right).&&\text{(general distributive law)}\end{aligned}$$
+$$\begin{aligned}\sum_{P(j,k)}a_{j,k}&=\sum_j\sum_ka_{j,k}\big[P(j,k)\big]=\sum_k\sum_ja_{j,k}\big[P(j,k)\big];&&\text{(interchanging the order of summation)}\\\\\sum_{\substack{j\in J\\\\k\in K}}a_jb_k&=\left(\sum_{j\in J}a_j\right)\left(\sum_{k\in K}b_k\right).&&\text{(general distributive law)}\end{aligned}$$
 
 Another representation of the law of interchanging the order of summation is
 
@@ -71,7 +71,7 @@ $$\sum_{j\in J}\sum_{k\in K(j)}a_{j,k}=\sum_{k\in K^\prime}\sum_{j\in J^\prime(k
 
 Here the sets $J$, $K(j)$, $K^\prime$ and $J^\prime(k)$ must be related in such a way that
 
-$$[k\in K][j\in J(k)]=[j\in J^\prime][k\in K^\prime(j)].$$
+$$[k\in K]\big[j\in J(k)\big]=[j\in J^\prime]\big[k\in K^\prime(j)\big].$$
 
 It might be hard to understand at the first sight. But imagine that all items spread within a table like the one here:
 

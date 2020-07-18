@@ -27,7 +27,7 @@ license_lang: en
 
 List $Q_1$ through $Q_6$, we could find out that $Q$ is periodic.
 
-$$\begin{aligned}Q_m&=\alpha;\\\\Q_{m+1}&=\beta;\\\\Q_{m+2}&=(1+\beta)/\alpha;\\\\Q_{m+3}&=(1+\alpha+\beta)/(\alpha\beta);\\\\Q_{m+4}&=(1+\alpha)/\beta,\quad\text{for $m\in\lbrace0,5,10,\ldots\rbrace$.}\end{aligned}$$
+$$\begin{aligned}Q_m&=\alpha;\\\\Q_{m+1}&=\beta;\\\\Q_{m+2}&=(1+\beta)/\alpha;\\\\Q_{m+3}&=(1+\alpha+\beta)/(\alpha\beta);\\\\Q_{m+4}&=(1+\alpha)/\beta,\quad\text{for $m\in\\{0,5,10,\ldots\\}$.}\end{aligned}$$
 
 ### 1.9a
 

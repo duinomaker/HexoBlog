@@ -175,7 +175,7 @@ int query(int x, int y, int p = 1)
 
 当然，为了维护区间从其端点开始的最大子段和，还需维护区间和&hairsp;$(sum)$&hairsp;。如此，一个区间从其左端开始的最大子段和，假设左右儿子的位置分别为 $chl$ 和 $chr$，便可以如此维护：
 
-$$prel_p =\max\lbrace prel_{chl} , sum_{chl} + prel_{chr}\rbrace$$
+$$prel_p =\max\\{prel_{chl} , sum_{chl} + prel_{chr}\\}$$
 
 从右端开始的最大子段和同理。
 

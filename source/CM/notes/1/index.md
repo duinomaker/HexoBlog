@@ -35,7 +35,7 @@ license: by-nc-sa
 
 总之，这样一来，就得出了
 
-$$\begin{aligned}T_0&=0\\,;\\\\T_n&=2T_{n-1}+1\\,,\quad\text{for}\\;n>0\\,.\end{aligned}$$
+$$\begin{aligned}T_0&=0;\\\\T_n&=2T_{n-1}+1,\quad\text{for}\\;n>0.\end{aligned}$$
 
 这样的式子叫做**递归式**&hairsp;(*recurrence*)，由**边界值**和**递归关系**组成。为了方便有时只写出递归关系，尽管完整的式子是包含边界值的。
 
@@ -45,18 +45,18 @@ $$\begin{aligned}T_0&=0\\,;\\\\T_n&=2T_{n-1}+1\\,,\quad\text{for}\\;n>0\\,.\end{
 
 在推广约瑟夫问题时，我们需要求解
 
-$$\begin{aligned}f(1)&=\alpha\\,;\\\\f(2n)&=2f(n)+\beta\\,,\quad\text{for}\\;n\geq1\\,;\\\\f(2n+1)&=2f(n)+\gamma\\,,\quad\text{for}\\;n\geq1\\,.\end{aligned}$$
+$$\begin{aligned}f(1)&=\alpha;\\\\f(2n)&=2f(n)+\beta,\quad\text{for}\\;n\geq1;\\\\f(2n+1)&=2f(n)+\gamma,\quad\text{for}\\;n\geq1.\end{aligned}$$
 
-可以将上式的解表示为 $f(n)=A(n)\alpha+B(n)\beta+C(n)\gamma\\,.\quad(*)$
+可以将上式的解表示为 $f(n)=A(n)\alpha+B(n)\beta+C(n)\gamma.\quad(*)$
 
 于是我们引入**成套方法**&hairsp;(*repertoire method*)，它的本质是求解线性方程组。首先求出某些特殊情况的解，等攒够了特殊情况（有多少个未知函数就需要多少个特殊情况），再代入原式求解。
 
 还是刚才的例子，选取这些特殊情况，分别是
 
-$$\begin{aligned}(\alpha,\beta,\gamma)\to(1,0,0)&\implies A(n)=2^m\\,;\\\\f(n)=1&\implies(\alpha,\beta,\gamma)\to(1,-1,-1)\\,;\\\\f(n)=n&\implies(\alpha,\beta,\gamma)\to(1,0,1)\\,.\end{aligned}$$
+$$\begin{aligned}f(n)=2^m&\implies(\alpha,\beta,\gamma)=(1,0,0);\\\\f(n)=1&\implies(\alpha,\beta,\gamma)=(1,-1,-1);\\\\f(n)=n&\implies(\alpha,\beta,\gamma)=(1,0,1).\end{aligned}$$
 
 代入 $(*)$ 式可得到
 
-$$\begin{aligned}A(n)&=2^m\\,,\quad\text{where}\\;n=2^m+l\\;\text{and}\\;0\leq l<2^m\\,;\\\\A(n)-B(n)-C(n)&=1\\,;\\\\A(n)+C(n)&=n\\,.\end{aligned}$$
+$$\begin{aligned}A(n)&=2^m,\quad\text{where}\\;n=2^m+l\\;\text{and}\\;0\leq l<2^m;\\\\A(n)-B(n)-C(n)&=1;\\\\A(n)+C(n)&=n.\end{aligned}$$
 
 求出 $A(n)$&hairsp;、$B(n)$&hairsp;、$C(n)$ 后代入 $(*)$ 式，即可得解。

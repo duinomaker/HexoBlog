@@ -112,7 +112,7 @@ $$\begin{aligned}\sum_{k=0}^n(-1)^{n-k}k^2&=\sum_{k=0}^n-(-1)^{n-k}(k^2+2k+1)+n^
 
 ### 2.22
 
-$$\begin{aligned}\sum_{1\leq j\lt k\leq n}(a_jb_k-a_kb_j)(A_jB_k-A_kB_j)&=\sum_{1\leq j\lt k\leq n}(a_jb_kA_jB_k+a_kb_jA_kB_j)-\sum_{1\leq j\lt k\leq n}(a_jb_kA_kB_j+a_kb_jA_jB_k)\\\\&=\sum_{1\leq j,k\leq n}a_jb_kA_jB_k-\sum_{1\leq k\leq n}a_kb_kA_kB_k-\sum_{1\leq j,k\leq n}a_jb_kA_kB_j+\sum_{1\leq k\leq n}a_kb_kA_kB_k\\\\&=\sum_{1\leq j,k\leq n}a_jb_kA_jB_k-\sum_{1\leq j,k\leq n}a_jb_kA_kB_j\\\\&=\left(\sum_{k=1}^na_kA_k\right)\left(\sum_{k=1}^nb_kB_k\right)-\left(\sum_{k=1}^na_kB_k\right)\left(\sum_{k=1}^nb_kA_k\right).\end{aligned}$$
+$$\begin{aligned}&\sum_{1\leq j\lt k\leq n}(a_jb_k-a_kb_j)(A_jB_k-A_kB_j)\\\\&\quad=\sum_{1\leq j\lt k\leq n}(a_jb_kA_jB_k+a_kb_jA_kB_j)-\sum_{1\leq j\lt k\leq n}(a_jb_kA_kB_j+a_kb_jA_jB_k)\\\\&\quad=\sum_{1\leq j,k\leq n}a_jb_kA_jB_k-\sum_{1\leq k\leq n}a_kb_kA_kB_k-\sum_{1\leq j,k\leq n}a_jb_kA_kB_j+\sum_{1\leq k\leq n}a_kb_kA_kB_k\\\\&\quad=\sum_{1\leq j,k\leq n}a_jb_kA_jB_k-\sum_{1\leq j,k\leq n}a_jb_kA_kB_j\\\\&\quad=\left(\sum_{k=1}^na_kA_k\right)\left(\sum_{k=1}^nb_kB_k\right)-\left(\sum_{k=1}^na_kB_k\right)\left(\sum_{k=1}^nb_kA_k\right).\end{aligned}$$
 
 ### 2.23a
 

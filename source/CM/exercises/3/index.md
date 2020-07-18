@@ -96,15 +96,15 @@ $$\begin{aligned}&\sum_{k,m}\big[10^k\leq2^m\lt2\cdot10^k\big][0\leq m\leq M]\\\
 
 An integer $n$ can always be decomposed into $2^{k-1}q$, where $k,q$ are integers and $q$ is odd. Hence, only the $k$-th term in $S_{n-1}$ is one less than $S_n$. In other words, we have the recurrence
 
-$$\begin{aligned}S_0&=0;\\\\S_n&=S_{n-1}+1,\quad\text{for $n\geq1$,}\end{aligned}$$
+$$\begin{aligned}S_0&=0;\\\\S_n&=S_{n-1}+1,\quad\text{for $n\geq1$.}\end{aligned}$$
 
-which implies $S_n=n$.
+This implies $S_n=n$.
 
 Likewise, only the $k$-th term in $T_{n-1}$ is $2^kq=2n$ less than $T_n$. We have the recurrence
 
-$$\begin{aligned}T_0&=0;\\\\T_n&=T_{n-1}+2n,\quad\text{for $n\geq1$,}\end{aligned}$$
+$$\begin{aligned}T_0&=0;\\\\T_n&=T_{n-1}+2n,\quad\text{for $n\geq1$.}\end{aligned}$$
 
-which implies $T_n=n(n+1)$.
+This implies $T_n=n(n+1)$.
 
 ### 3.23
 
@@ -125,5 +125,43 @@ If we could find an $m$ such that $K_m\leq m$, we could violate the stated inequ
 $$K_{\lfloor n^\prime/2\rfloor}\leq\lfloor n^\prime/2\rfloor\quad\text{or}\quad K_{\lfloor n^\prime/3\rfloor}\leq\lfloor n^\prime/3\rfloor.$$
 
 This goes down further and further, implying that $K_0\leq0$, which contradicts $K_0=1$. Hence, there's no such an $m$, and the inequality that $K_n>n$ stands.
+
+### 3.26
+
+$D_n^{(q)}$ is an auxiliary Josephus number that satisfies the recurrence
+
+$$\begin{aligned}D_0^{(q)}&=1;\\\\D_n^{(q)}&=\left\lceil\frac q{q-1}D_{n-1}^{(q)}\right\rceil,\quad\text{for $n\geq0$.}\end{aligned}$$
+
+Show that the auxiliary Josephus numbers satisfy
+
+$$\left(\frac q{q-1}\right)^n\leq D_n^{(q)}\leq q\left(\frac q{q-1}\right)^n,\quad\text{for $n\geq0$.}$$
+
+The left part is easy to prove. First, the basis $1\leq D_0^{(q)}$ stands when $n=0$; then
+
+$$\begin{aligned}&\left(\frac q{q-1}\right)^{n-1}\leq D_{n-1}^{(q)}\\\\&\iff\left(\frac q{q-1}\right)^n\leq\frac q{q-1}D_{n-1}^{(q)}\\\\&\implies\left(\frac q{q-1}\right)^n\leq\left\lceil\frac q{q-1}D_{n-1}^{(q)}\right\rceil\\\\&\iff\left(\frac q{q-1}\right)^n\leq D_n^{(q)}.\end{aligned}$$
+
+But the right part is a little tricky. Let's try to prove it directly, we would have
+
+$$\begin{aligned}&D_{n-1}^{(q)}\leq q\left(\frac q{q-1}\right)^n\\\\&\iff\frac q{q-1}D_{n-1}^{(q)}\leq q\left(\frac q{q-1}\right)^{n+1}\end{aligned}$$
+
+but no more, because there's no “space” left on the right-hand side for us to add a pair of ceiling on the left-hand side.
+
+To proceed, we would have to substract something from the right-hand side at the beginning. For example, we could substract $q-1$ from the right-hand side and then prove the stronger hypothesis:
+
+$$D_n^{(q)}\leq q\left(\frac q{q-1}\right)^n-q+1=(q-1)\left(\left(\frac q{q-1}\right)^{n+1}-1\right),\quad\text{for $n\geq0$.}$$
+
+First, the basis $D_0^{(q)}\leq1$ stands when $n=0$; then
+
+$$\begin{aligned}&D_{n-1}^{(q)}\leq(q-1)\left(\left(\frac q{q-1}\right)^n-1\right)\\\\&\iff\frac q{q-1}D_{n-1}^{(q)}\leq(q-1)\left(\left(\frac q{q-1}\right)^{n+1}-1\right)-1\\\\&\implies\left\lceil\frac q{q-1}D_{n-1}^{(q)}\right\rceil\lt(q-1)\left(\left(\frac q{q-1}\right)^{n+1}-1\right)\\\\&\iff D_n^{(q)}\lt(q-1)\left(\left(\frac q{q-1}\right)^{n+1}-1\right).\end{aligned}$$
+
+Since the hypothesis is stronger than original, in other words, $(q-1)\left(\left(\frac q{q-1}\right)^{n+1}-1\right)\lt q\left(\frac q{q-1}\right)^n$, we have $D_n^{(q)}\leq q\left(\frac q{q-1}\right)^n$.
+
+### 3.27
+
+Any positive integer could be decomposed into $2^mb+a$, where integer $m\geq1$, positive integer $b$ is odd, and $a$ is $0$ or $1$. If $D_n^{(3)}=2^mb-a$, we can deduce that
+
+$$\begin{aligned}&D_n^{(3)}=2^mb-a\\\\&\iff D_{n+m}^{(3)}=3^mb-a\\\\&\iff D_{n+m}^{(3)}=(3^mb-1)+(1-a)\\\\&\iff D_{n+m}^{(3)}=2^{m^\prime}b^\prime+(1-a).\end{aligned}$$
+
+Then, we have a new version of the three original variables. Since $m^\prime\geq1$, we could push $D_n^{(3)}$ further and further with larger $n$’s. While we're proceeding with $D_n^{(3)}$, $a$ alters between $1$ and $0$ every iteration; since $2^mb$ is even, this causes $D_n^{(3)}$ to change between odd and even every iteration. Thus, infinitely many of the numbers $D_n^{(3)}$ are even, and that infinitely many are odd.
 
 $\cdots\cdots$
