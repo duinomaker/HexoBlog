@@ -5,6 +5,8 @@ date: 2020-03-09 23:58:03
 categories: [Algorithm Contest, Segment Tree]
 tags: [Segment Tree]
 widgets:
+plugins:
+    katex: true
 license: by-sa
 ---
 

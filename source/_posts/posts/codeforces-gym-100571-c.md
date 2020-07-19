@@ -5,6 +5,8 @@ date: 2020-03-27 18:14:59
 categories: [Algorithm Contest]
 tags: [Offline Query, Sparse Table]
 widgets:
+plugins:
+    katex: true
 ---
 
 题目链接：{% link Codeforces Hello 2015 (Div.2) - LCM Query https://codeforces.com/gym/100571/problem/C %}

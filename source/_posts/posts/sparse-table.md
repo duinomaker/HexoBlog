@@ -5,6 +5,8 @@ date: 2020-03-25 23:49:12
 categories: [Algorithm Contest]
 tags: [Sparse Table]
 widgets:
+plugins:
+    katex: true
 license: by-sa
 ---
 

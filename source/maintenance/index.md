@@ -1,7 +1,6 @@
 ---
 title: 博客维护记录
 canonical_url: https://duinomaker.top/maintenance/
-plugins:
 article:
     highlight:
         clipboard: false

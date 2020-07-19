@@ -5,7 +5,8 @@ date: 2020-04-16 22:23:16
 categories: [Mathematics]
 tags: [Number Theory]
 widgets:
-# comment:
+plugins:
+    katex: true
 has_serif: true
 content_style: tex-math
 ---

@@ -237,7 +237,7 @@ plugins:
     # Enable the MathJax plugin
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/mathjax-plugin/
     mathjax: false
-    katex: true
+    katex: false
     # Show the back to top button on mobile devices
     back-to-top: false
     # # Google Analytics plugin settings

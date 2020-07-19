@@ -5,13 +5,11 @@ canonical_url: https://duinomaker.top/CM/notes/3/
 date: 2020-07-18 09:26:46
 show_meta: true
 widgets:
-# comment:
+plugins:
+    mathjax: true
 article:
     highlight:
         clipboard: false
-plugins:
-    katex: false
-    mathjax: true
 content_style: tex-math
 has_serif: true
 license: by-nc-sa

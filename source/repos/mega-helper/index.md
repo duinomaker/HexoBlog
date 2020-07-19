@@ -3,7 +3,6 @@ title: 'MEGA Helper'
 canonical_url: https://duinomaker.top/repos/mega-helper/
 widgets:
 comment:
-plugins:
 article:
     highlight:
         clipboard: false

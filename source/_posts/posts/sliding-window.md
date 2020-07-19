@@ -3,8 +3,10 @@ title: “滑动窗口” 的优先队列解法
 canonical_url: https://duinomaker.top/posts/sliding-window/
 date: 2020-03-10 22:43:52
 categories: [Algorithm Contest]
-widgets:
 tags: [Segment Tree, Monotonic Queue]
+widgets:
+plugins:
+    katex: true
 ---
 
 题目链接：{% link POJ2823 - Sliding Window http://poj.org/problem?id=2823 %}

@@ -4,14 +4,12 @@ description: A partial solution to secretary problem using combination and vario
 canonical_url: https://duinomaker.top/posts/secretary-problem/
 date: 2020-07-13 22:51:43
 categories: [Mathematics]
-tags: []
 widgets:
+plugins:
+    mathjax: true
 article:
     highlight:
         clipboard: false
-plugins:
-    katex: false
-    mathjax: true
 content_style: tex-math
 license: by-nc-sa
 license_lang: en

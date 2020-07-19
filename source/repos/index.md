@@ -1,7 +1,6 @@
 ---
 title: Repositories
 canonical_url: https://duinomaker.top/repos/
-plugins:
 article:
     highlight:
         clipboard: false

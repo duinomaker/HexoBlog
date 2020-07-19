@@ -5,12 +5,11 @@ canonical_url: https://duinomaker.top/CM/exercises/3/
 date: 2020-07-18 00:19:49
 show_meta: true
 widgets:
+plugins:
+    mathjax: true
 article:
     highlight:
         clipboard: false
-plugins:
-    katex: false
-    mathjax: true
 content_style: tex-math
 license: by-nc-sa
 license_lang: en

@@ -5,7 +5,8 @@ canonical_url: https://duinomaker.top/SICP/exercises/1-1/
 date: 2020-04-09 23:10:45
 show_meta: true
 widgets:
-# comment:
+plugins:
+    katex: true
 article:
     highlight:
         clipboard: false

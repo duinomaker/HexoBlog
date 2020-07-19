@@ -4,7 +4,6 @@ description: Notes on SICP and solutions to the exercises
 canonical_url: https://duinomaker.top/SICP/
 widgets:
 comment:
-plugins:
 article:
     highlight:
         clipboard: false

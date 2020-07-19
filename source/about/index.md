@@ -1,11 +1,10 @@
 ---
 title: About
 canonical_url: https://duinomaker.top/about/
-plugins:
+comment:
 article:
     highlight:
         clipboard: false
-comment:
 ---
 
 我是 duinomaker，就读于南京邮电大学，大一学生。

@@ -4,7 +4,6 @@ description: Notes on Concrete Mathematics and solutions to the exercises
 canonical_url: https://duinomaker.top/CM/
 widgets:
 comment:
-plugins:
 article:
     highlight:
         clipboard: false
