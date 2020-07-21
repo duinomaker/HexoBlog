@@ -1,9 +1,7 @@
 ---
 title: Repositories
 canonical_url: https://duinomaker.top/repos/
-article:
-    highlight:
-        clipboard: false
+language: zh
 ---
 
 随手写的一些实用工具。

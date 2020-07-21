@@ -7,10 +7,7 @@ show_meta: true
 widgets:
 plugins:
     katex: true
-article:
-    highlight:
-        clipboard: false
-license: by-nc-sa
+language: zh
 ---
 
 ---

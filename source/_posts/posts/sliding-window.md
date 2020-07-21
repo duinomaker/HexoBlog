@@ -7,6 +7,10 @@ tags: [Segment Tree, Monotonic Queue]
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
+language: zh
 ---
 
 题目链接：{% link POJ2823 - Sliding Window http://poj.org/problem?id=2823 %}

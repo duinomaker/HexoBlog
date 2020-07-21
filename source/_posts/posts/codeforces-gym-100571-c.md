@@ -7,6 +7,10 @@ tags: [Offline Query, Sparse Table]
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
+language: zh
 ---
 
 题目链接：{% link Codeforces Hello 2015 (Div.2) - LCM Query https://codeforces.com/gym/100571/problem/C %}

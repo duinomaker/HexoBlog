@@ -680,8 +680,6 @@ strong {
 }
 em {
   color: #363636;
-  margin-left: -0.06em;
-  margin-right: 0.06em;
 }
 @media screen and (max-width: 768px) {
   .illustration {

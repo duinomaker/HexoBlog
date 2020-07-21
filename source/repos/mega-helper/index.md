@@ -3,9 +3,7 @@ title: 'MEGA Helper'
 canonical_url: https://duinomaker.top/repos/mega-helper/
 widgets:
 comment:
-article:
-    highlight:
-        clipboard: false
+language: zh
 ---
 
 如果您未安装MEGA应用，<a onclick="redirectToStore();">点击此处</a>下载安装。

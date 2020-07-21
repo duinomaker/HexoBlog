@@ -6,6 +6,10 @@ categories: [Algorithm Contest]
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
+language: zh
 ---
 
 解题报告 ( <font color="#0db104">A</font><font color="#0db104">B</font><font color="#7a7a7a">C</font><font color="#0db104">D</font><font color="#0db104">E</font><font color="#7a7a7a">F</font><font color="#7a7a7a">G</font><font color="#0db104">H</font><font color="#0db104">I</font><font color="#0db104">J</font> )

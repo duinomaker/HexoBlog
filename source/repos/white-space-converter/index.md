@@ -3,9 +3,7 @@ title: 'White-space Converter'
 canonical_url: https://duinomaker.top/repos/white-space-converter/
 widgets:
 comment:
-article:
-    highlight:
-        clipboard: false
+language: zh
 ---
 
 <div class="field has-addons">

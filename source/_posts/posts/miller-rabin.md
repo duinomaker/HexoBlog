@@ -1,14 +1,18 @@
 ---
 title: Miller–Rabin 素性测试
-canonical_url: https://duinomaker.top/SICP/assets/miller-rabin/
+canonical_url: https://duinomaker.top/posts/miller-rabin/
 date: 2020-04-16 22:23:16
 categories: [Mathematics]
 tags: [Number Theory]
 widgets:
 plugins:
     katex: true
-has_serif: true
+article:
+    highlight:
+        clipboard: true
 content_style: tex-math
+has_serif: true
+language: zh
 ---
 
 整理了 Miller–Rabin 素性测试的原理及实现方法。

@@ -3,9 +3,7 @@ title: 新增Valine评论系统
 canonical_url: https://duinomaker.top/posts/valine-comment-system/
 date: 2020-03-04 23:49:17
 widgets:
-article:
-    highlight:
-        clipboard: false
+language: zh
 ---
 
 给博客添加了评论系统 {% link Valine https://valine.js.org/ %}，支持 Markdown 写作和 Gravatar 头像。

@@ -1,9 +1,7 @@
 ---
 title: 博客维护记录
 canonical_url: https://duinomaker.top/maintenance/
-article:
-    highlight:
-        clipboard: false
+language: zh
 ---
 
 `2020-07-01` 改进字数统计功能，使其能统计到各笔记页面的字数

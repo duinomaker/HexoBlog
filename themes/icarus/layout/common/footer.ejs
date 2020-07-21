@@ -1,4 +1,4 @@
-<% has_license = ((x) => x !== 'noshare' && x !== 'notrust')(get_config('license')); %>
+<% has_license = get_config('license') !== 'noshare'; %>
 <footer class="footer">
     <div class="container">
         <div class="level">

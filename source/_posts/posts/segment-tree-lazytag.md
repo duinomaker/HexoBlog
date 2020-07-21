@@ -7,6 +7,10 @@ tags: [Segment Tree]
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
+language: zh
 license: by-sa
 ---
 

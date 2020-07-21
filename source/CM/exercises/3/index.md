@@ -7,12 +7,7 @@ show_meta: true
 widgets:
 plugins:
     mathjax: true
-article:
-    highlight:
-        clipboard: false
 content_style: tex-math
-license: by-nc-sa
-license_lang: en
 ---
 
 ---

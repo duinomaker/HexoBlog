@@ -7,9 +7,10 @@ show_meta: true
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
 content_style: serif
-license: by-nc-sa
-license_lang: en
 ---
 
 ---

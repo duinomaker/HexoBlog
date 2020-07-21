@@ -7,6 +7,10 @@ tags: [Graph Theory, Depth-first Searching, Dynamic Programming]
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
+language: zh
 ---
 
 刷 AtCoder 动态规划专题时，卡在了{% link G题 https://atcoder.jp/contests/dp/tasks/dp_g/ AtCoder Educational DP Contest - G - Longest Path %}上面，大概是因为不熟悉拓扑顺序。

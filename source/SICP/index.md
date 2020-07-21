@@ -4,9 +4,6 @@ description: Notes on SICP and solutions to the exercises
 canonical_url: https://duinomaker.top/SICP/
 widgets:
 comment:
-article:
-    highlight:
-        clipboard: false
 content_style: serif
 ---
 
@@ -34,7 +31,3 @@ To advance my proficiency in written English, I'll be taking notes in English si
 <code class="rigid">2.3&nbsp;</code><a href="/SICP/exercises/2-3/" target="_self">Symbolic Data</a>
 <code class="rigid">2.4&nbsp;</code><a href="/SICP/exercises/2-4/" target="_self">Multiple Representations for Abstract Data</a>
 <!-- <code class="rigid">2.5&nbsp;</code><a href="/SICP/exercises/2-5/" target="_self">Systems with Generic Operations</a> -->
-
-## Assets
-
-<code class="rigid">1&nbsp;</code><a href="/SICP/assets/miller-rabin/" target="_self">The Miller–Rabin Primality Test</a>

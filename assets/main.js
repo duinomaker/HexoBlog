@@ -9,12 +9,6 @@
         }
     });
 
-    if (typeof (moment) === 'function') {
-        $('.article-meta time').each(function () {
-            $(this).text(moment($(this).attr('datetime')).format('MMMM DD, YYYY'));
-        });
-    }
-
     $('.article > .content > table').each(function () {
         if ($(this).width() > $(this).parent().width()) {
             $(this).wrap('<div class="table-overflow"></div>');
@@ -45,7 +39,6 @@
                 $(this).removeClass(classes[0]);
             }
         });
-
 
         var clipboard = IcarusThemeSettings.article.highlight.clipboard;
         var fold = IcarusThemeSettings.article.highlight.fold;
@@ -81,25 +74,12 @@
         if (fold) {
             var button = '<span class="fold">' + (fold === 'unfolded' ? '<i class="fas fa-angle-down"></i>' : '<i class="fas fa-angle-right"></i>') + '</span>';
             $('figure.highlight').each(function () {
-                // 此处find ">folded" span,如果有自定义code头,并且">folded"进行处理
-                // 使用示例，.md 文件中头行标记">folded"
-                // ```java main.java >folded
-                // import main.java
-                // private static void main(){
-                //     // test
-                //     int i = 0;
-                //     return i;
-                // }
-                // ```
                 if ($(this).find('figcaption').find('span').length > 0) {
                     let spanArr = $(this).find('figcaption').find('span');
                     if (spanArr[0].innerText.indexOf(">folded") > -1) {
-                        // 去掉folded
                         spanArr[0].innerText = spanArr[0].innerText.replace(">folded", "")
                         button = '<span class="fold"><i class="fas fa-angle-right"></i></span>';
                         $(this).find('figcaption div.level-left').prepend(button);
-
-                        // 收叠代码块
                         toggleFold(this, true);
                         return;
                     }
@@ -115,9 +95,6 @@
                 !isFolded ? $toggle.addClass('fa-angle-down') : $toggle.addClass('fa-angle-right');
             }
 
-            // $('figure.highlight').each(function () {
-            //     toggleFold(this, fold === 'folded');
-            // });
             $('figure.highlight figcaption .fold').click(function () {
                 var $code = $(this).closest('figure.highlight');
                 toggleFold($code.eq(0), !$code.hasClass('folded'));

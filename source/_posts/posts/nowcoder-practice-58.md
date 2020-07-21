@@ -7,6 +7,10 @@ tags: [Brute Force, Depth-first Searching, Dynamic Programming, Offline Query]
 widgets:
 plugins:
     katex: true
+article:
+    highlight:
+        clipboard: true
+language: zh
 ---
 
 解题报告 ( <font color="#0db104">A</font><font color="#0db104">B</font><font color="#0db104">C</font><font color="#0db104">D</font><font color="#0db104">E</font><font color="#7a7a7a">F</font> )

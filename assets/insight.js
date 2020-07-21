@@ -66,7 +66,6 @@
         if (obj.link === '/404.html' ||
             obj.link === '/about/' ||
             obj.link === '/maintenance/' ||
-            obj.link === '/posts/miller-rabin/' ||
             obj.link.substr(0, 9) === '/diaries/' || 
             obj.link.substr(0, 7) === '/repos/' ||
             obj.link.substr(0, 7) === '/notes/' ||
