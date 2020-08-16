@@ -554,7 +554,7 @@ $1\leq N,M\leq100,000$ 且 $1\leq|X_i|,|Y_i|,|P_i|,|Q_i|\leq10^9$
 
 但如果我们在坐标系中添加这样一条辅助线&hairsp;$(x+y=0)$呢？
 
-<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@018a0eb/source/images/nowcoder-2020-winter-camp-6_1.jpg" width="100%">
+<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@08759d2/source/images/nowcoder-2020-winter-camp-6_1.jpg" width="100%">
 
 如图所示，上述运动便可描述为 “云朵们**面对辅助线，向对面的云靠近**，并同时向右下角移动”。
 
