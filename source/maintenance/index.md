@@ -4,6 +4,9 @@ canonical_url: https://duinomaker.top/maintenance/
 language: zh
 ---
 
+`2020-08-16` 加深部分文字颜色，提高文章内容可读性
+`2020-08-16` 更新 Hexo 至 ^5.0.0 版本
+
 `2020-07-01` 改进字数统计功能，使其能统计到各笔记页面的字数
 
 `2020-06-28` 禁用 Valine 评论系统

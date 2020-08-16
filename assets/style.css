@@ -678,9 +678,6 @@ figure.highlight .section {
 strong {
   white-space: nowrap;
 }
-em {
-  color: #363636;
-}
 @media screen and (max-width: 768px) {
   .illustration {
     width: 192px !important;
@@ -690,4 +687,21 @@ em {
   .illustration {
     width: 256px !important;
   }
+}
+/* Redefine some colors */
+.card {
+  color: #323232;
+}
+em,
+strong {
+  color: #000;
+}
+.title,
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: #242424;
 }
