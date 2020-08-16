@@ -10,7 +10,7 @@ canonical_url: https://duinomaker.top/
 rss:
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 # logo: /images/logo.svg
-logo: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@a2f7d59/source/images/misc/logo.svg
+logo: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@b46c6cb/source/images/misc/logo.svg
 
 # Open Graph metadata
 # https://hexo.io/docs/helpers.html#open-graph
@@ -160,7 +160,7 @@ widgets:
         location: Jiangsu, China
         # Path or URL to the avatar to be shown in the profile widget
         # avatar: /images/avatar.jpg
-        avatar: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@a2f7d59/source/images/misc/avatar.jpg
+        avatar: https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@b46c6cb/source/images/misc/avatar.jpg
         # Email address for the Gravatar to be shown in the profile widget
         gravatar: 
         # Whether to show avatar image rounded or square
@@ -272,4 +272,4 @@ providers:
     # iconcdn: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css
     # iconcdn: 'https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css'
     # iconcdn: /fonts/font-awesome/all.min.css
-    iconcdn: 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@a2f7d59/assets/font-awesome/all.min.css'
+    iconcdn: 'https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@b46c6cb/assets/font-awesome/all.min.css'
