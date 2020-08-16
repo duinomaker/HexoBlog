@@ -11,7 +11,6 @@ article:
     highlight:
         clipboard: true
 content_style: tex-math
-has_serif: true
 language: zh
 ---
 

@@ -90,7 +90,7 @@ Method 6 is the topic of the next section.
 
 Method 7 will be introduced in later chapters.
 
-## 2.6 Finite and Inifinite Calculus
+## 2.6 Finite and Infinite Calculus
 
 Just like in calculus, we need a huge repertoire to evaluate sums effectively. Here are some useful formulas:
 

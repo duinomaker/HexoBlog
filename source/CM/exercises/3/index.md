@@ -110,7 +110,7 @@ $$\begin{aligned}&\frac{m(m-1)}2\lt n\leq\frac{m(m+1)}2\\\\&\iff m^2-m\lt 2n\leq
 
 The number of times a non-negative integer occurs in ${\rm Spec}\big(\alpha/(\alpha+1)\big)$ is exactly one more than the number of times it occurs in ${\rm Spec}(\alpha)$. That's because
 
-$$\begin{aligned}N\big(\alpha/(\alpha+1),n\big)-N(\alpha,n)&=\left\lceil(\alpha+1)\frac{n+1}\alpha\right\rceil-\left\lceil\frac{n+1}\alpha\right\rceil\\\\&=n+1.\end{aligned}$$
+$$\begin{aligned}&N\big(\alpha/(\alpha+1),n\big)-N(\alpha,n)\\\\&\quad=\left\lceil(\alpha+1)\frac{n+1}\alpha\right\rceil-1-\left\lceil\frac{n+1}\alpha\right\rceil+1\\\\&\quad=n+1.\end{aligned}$$
 
 ### 3.25
 
@@ -140,7 +140,7 @@ $$\begin{aligned}&D_{n-1}^{(q)}\leq q\left(\frac q{q-1}\right)^n\\\\&\iff\frac q
 
 but no more, because there's no “space” left on the right-hand side for us to add a pair of ceiling on the left-hand side.
 
-To proceed, we would have to substract something from the right-hand side at the beginning. For example, we could substract $q-1$ from the right-hand side and then prove the stronger hypothesis:
+To proceed, we would have to subtract something from the right-hand side at the beginning. For example, we could subtract $q-1$ from the right-hand side and then prove the stronger hypothesis:
 
 $$D_n^{(q)}\leq q\left(\frac q{q-1}\right)^n-q+1=(q-1)\left(\left(\frac q{q-1}\right)^{n+1}-1\right),\quad\text{for $n\geq0$.}$$
 

@@ -57,10 +57,10 @@
             <% } %>
         </h1>
         <div class="content has-math <%= index ? '' : post.content_style %>">
-            <% if (post.language !== 'zh') { %>
+            <% if (post.language !== 'zh' && post.content_style !== 'tex-math') { %>
             <style>strong{font-weight:500;}</style>
             <% } %>
-            <% if (post.content_style == 'serif') { %>
+            <% if (post.content_style === 'serif') { %>
             <style>.article .content{font-size:1.2rem;}</style>
             <% } %>
             <%- index && post.excerpt ? post.excerpt : post.content %>
