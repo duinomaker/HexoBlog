@@ -68,7 +68,7 @@ $$[k\in K]\big[j\in J(k)\big]=[j\in J^\prime]\big[k\in K^\prime(j)\big].$$
 
 It might be hard to understand at the first sight. But imagine that all items spread within a table like the one here:
 
-<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@08759d2/source/images/CM/exercises-2_1.jpg" width="256" style="margin-left:2em;">
+<img src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@a2f7d59/source/images/CM/exercises-2_1.jpg" width="256" style="margin-left:2em;">
 
 the left-hand side of the equation means for every $k$, sum up all items available in the $k$-th column, that is, all items in $J(k)$; the right-hand side is similar, $K^\prime(j)$ is the set of all items available in the $j$-th row.
 
