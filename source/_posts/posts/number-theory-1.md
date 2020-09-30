@@ -17,7 +17,7 @@ language: zh
 
 ---
 
-接下来我将给出 “如果 $a,b$ 和 $c$ 为整数, 且 $c\mid ab$, 则 $c\mid(a,c)(b,c)$” 这一命题的证明, 因为书中所给的证明过程有误, 用到了 “若 $p^\alpha\mid c$, $p^\beta\mid c$, 则 $p^{\max(\alpha,\beta)}|c$” 这样的错误结论.
+接下来我将给出 “如果 $a,b$ 和 $c$ 为整数, 且 $c\mid ab$, 则 $c\mid(a,c)(b,c)$” 这一命题的证明, 因为书中所给的证明过程有误, 用到了 “若 $p^\alpha\mid c$, $p^\beta\mid c$, 则 $p^{\max(\alpha,\beta)}\mid c$” 这样的错误结论.
 
 **定义.** 设 $p$ 为素数, $n$ 为正整数. 如果 $p^a\mid n$ 但是 $p^{a+1}\nmid n$, 我们称 $p^a$ *恰整除(exactly divides)* $n$, 记为 $p\\,\\|\\,n$. 由此定义, 还可以给出恰整除的另一种表示法: $p^a$ 恰整除 $n$ 当且仅当 $n=p^aQ$, 其中 $Q$ 是不能被 $p$ 整除的整数.
 
