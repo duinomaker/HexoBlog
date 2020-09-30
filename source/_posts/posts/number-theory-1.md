@@ -33,3 +33,5 @@ language: zh
 **定理.** 如果 $a,b$ 和 $c$ 为整数, 且 $c\mid ab$, 则 $c\mid(a,c)(b,c)$.
 **证明.** 设 $p^r\\,\\|\\,c$, $p^s\\,\\|\\,a$ 和 $p^t\\,\\|\\,b$. 由 $p^r\\,\\|\\,c$ 和 $c\mid ab$ 得 $p^r\mid ab$. 由 $p^s\\,\\|\\,a$, $p^t\\,\\|\\,b$ 和引理 1得 $p^{s+t}\\,\\|\\,ab$. 故 $r\leq s+t$. 由引理 2得 $p^{\min(r,s)}\\,\\|\\,(a,c)$ 和 $p^{\min(r,t)}\\,\\|\\,(b,c)$. 再由引理 1得 $p^{\min(r,s)+\min(r,t)}\\,\\|\\,(a,c)(b,c)$. 由引理 3得 $r\leq\min(r,s)+\min(r,t)$, 故 $p^r\mid(a,c)(b,c)$.
 &emsp;&emsp;如果 $c=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_n^{\alpha_n}$ 是 $c$ 的素幂因子分解, 那么 $p_j^{\alpha_j}\mid(a,c)(b,c),\\;j=1,2,\ldots,n$. 我们想证明 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_i^{\alpha_i}\mid(a,c)(b,c)$ 成立. 利用数学归纳法, 归纳基础是 $p_1^{\alpha_1}\mid(a,c)(b,c)$, 且假设对于 $i=k-1$, 有 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}}\mid(a,c)(b,c)$ 成立. 已知 $p_k^{\alpha_k}\mid(a,c)(b,c)$, 则由 $(p_k^{\alpha_k},p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}})=1$, 可得出 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}\\,\\|\\,(a,c)(b,c)$, 即 $i=k$ 时命题成立. 从而 $i=n$ 时有 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_n^{\alpha_n}=c\mid(a,c)(b,c)$ 成立.
+
+如上述证明过程有误, 或者有表述含糊的地方, 请不吝在评论区指出. 如对上述命题有更好的证明方法, 欢迎分享.

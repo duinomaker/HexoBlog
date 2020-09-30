@@ -12,7 +12,7 @@ content_style: tex-math
 
 ---
 
-## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@4c88580/source/images/CM/warmups_2.png" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
+## <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@c15983a/source/images/CM/warmups_2.png" class="has-link-grey" style="text-decoration: underline;">Warmups</a>
 
 ## Basics
 
