@@ -84,7 +84,7 @@ $$\begin{aligned}\sum_kkx[\alpha\leq kx\leq\beta]&=x\sum_kk\left[\frac\alpha x\l
 
 (Note: ‘$\lg x$’ is binary logarithm, and ‘$\log x$’ is common logarithm.)
 
-$$\begin{aligned}&\sum_{k,m}\big[10^k\leq2^m\lt2\cdot10^k\big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\big[\lg10^k\leq m\lt\lg2\cdot10^k\big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\Big[\left\lceil\lg10^k\right\rceil\leq m\lt\left\lceil\lg10^k\right\rceil+1\Big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\big[m=\lceil k\lg10\rceil\big][-1\lt m\leq M]\\\\&\quad=\sum_k[-\log2\lt k\leq M\log2]\\\\&\quad=1+\lfloor M\log2\rfloor.\end{aligned}$$
+$$\begin{aligned}&\sum_{k,m}\big[10^k\leq2^m\lt2\cdot10^k\big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\big[\lg10^k\leq m\lt\lg2\cdot10^k\big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\Big[\left\lceil\lg10^k\right\rceil\leq m\lt\left\lceil\lg10^k\right\rceil+1\Big][0\leq m\leq M]\\\\&\quad=\sum_{k,m}\big[m=\lceil k\lg10\rceil\big][-1\lt m\leq M]\\\\&\quad=\sum_k\big[-\log2\lt k\leq M\log2\big]\\\\&\quad=1+\lfloor M\log2\rfloor.\end{aligned}$$
 
 ### 3.22
 
