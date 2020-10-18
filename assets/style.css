@@ -602,7 +602,7 @@ figure.highlight .section {
 }
 .katex {
   font-size: 1em !important;
-  white-space: nowrap;
+  white-space: normal;
 }
 .katex-display {
   margin-top: -1em !important;
@@ -627,9 +627,6 @@ figure.highlight .section {
   padding-left: unset;
   padding-right: unset;
   white-space: unset;
-}
-.qed::after {
-  content: "□";
 }
 .qed {
   float: right;

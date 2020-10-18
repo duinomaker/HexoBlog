@@ -4,12 +4,22 @@ canonical_url: https://duinomaker.top/maintenance/
 language: zh
 ---
 
+### 链接变动
+
+/posts/number-theory-1/ 改至 <a href="/posts/elementary-number-theory-exercises/">/posts/elementary-number-theory-exercises/</a>
+
+---
+
+### 其他变动
+
+`2020-10-18` 更改 KaTeX 公式的 white-space 策略，使公式自行换行
+
 `2020-08-16` 加深部分文字颜色，提高文章内容可读性
 `2020-08-16` 更新 Hexo 至 ^5.0.0 版本
 
 `2020-07-01` 改进字数统计功能，使其能统计到各笔记页面的字数
 
-`2020-06-28` 禁用 Valine 评论系统
+<!-- `2020-06-28` 禁用 Valine 评论系统 -->
 `2020-06-24` 取消 RSS 订阅功能
 `2020-06-23` 移除网站备案信息
 `2020-06-23` 博客迁移至 Github Pages，页面资源使用 jsdelivr 提供
@@ -20,7 +30,7 @@ language: zh
 `2020-04-17` 移除主页卡片中的 “Read More” 按钮
 `2020-04-14` 开设 /notes/ 作为笔记的索引页
 `2020-04-14` 开设 /CM/ 用于记录 *Concrete Mathematics* 阅读笔记
-`2020-04-09` 默认的数学公式渲染器由 MathJax 改为 KaTeX
+<!-- `2020-04-09` 默认的数学公式渲染器由 MathJax 改为 KaTeX -->
 `2020-04-08` 将 MathJax 更新至 3.x 版本
 `2020-04-06` 开设 /SICP/ 用于记录 *SICP* 阅读笔记
 `2020-04-05` 博客迁移至云主机
