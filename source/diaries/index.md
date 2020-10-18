@@ -14,7 +14,7 @@ There're possibly three reasons to explain your clicking on my avatar:
 2. You wanted to access my profile page
 3. You are excited about discovering something different
 
-If it was case one, here's <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@c15983a/source/images/misc/avatar_hd.png">a high resolution one</a>.
+If it was case one, here's <a href="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@e7e7df7/source/images/misc/avatar_hd.png">a high resolution one</a>.
 
 If it was case two, go to <a href="/about/">the "About" page</a>.
 
