@@ -59,7 +59,7 @@ $$a^\prime x\equiv c^\prime-b^\prime y\pmod{m^\prime}.\tag{$*$}$$
 
 该同余式有解, 当且仅当 $g=(a^\prime,m^\prime)\mid c^\prime-b^\prime y$, 这相当于同余式 $b^\prime y\equiv c^\prime\pmod g$ 有解. 这必然成立, 因为 $(b^\prime,g)=(b^\prime,a^\prime,m^\prime)=1$, 表示该同余式恰有一个解, 我们将其记作 $y_0$. 注意到, 数列 $y_0,y_0+g,y_0+2g,$&thinsp;$\ldots,y_0+(m^\prime/g-1)g$ 中的元素关于 $g$ 都同余, 但是关于 $m^\prime$ 都不同余, 也就是说这 $m^\prime/g$ 个数中的的每一个都会在 $(\*)$ 式中得到模 $m^\prime$ 不同余的 $c^\prime-b^\prime y$. 而这每个不同余的 $c^\prime-b^\prime y$ 都可以得出 $(\*)$ 式的 $g$ 个不同余的解. 所以 $(\*)$ 式共有 $(m^\prime/g)g=m^\prime$ 个不同余的解.
 
-现在假设 $(x_1,y_1)$ 是原同余式的一组解. 类似地, 注意到数列 $x_1,x_1+m^\prime,x_1+2m^\prime$&thinsp;$\ldots,x_1+(d-1)m^\prime$ 中的 $d$ 个数关于 $m^\prime$ 都同余, 关于 $m$ 都不同余; 数列 $y_1,y_1+m^\prime,x_y+2m^\prime$&thinsp;$\ldots,y_1+(d-1)m^\prime$ 中的 $d$ 个数关于 $m^\prime$ 都同余, 关于 $m$ 都不同余. 所以对于 $(\*)$ 式中的每一个解, 都能在原同余式中生成 $d^2$ 个解. 由于 $(\*)$ 式共有 $m^\prime$ 个解, 我们得出原同余式共有 $d^2m^\prime=dm$ 个解. <span class="qed"></span>
+现在假设 $(x_1,y_1)$ 是原同余式的一个解. 类似地, 注意到数列 $x_1,x_1+m^\prime,x_1+2m^\prime,$&thinsp;$\ldots,x_1+(d-1)m^\prime$ 中的 $d$ 个数关于 $m^\prime$ 都同余, 关于 $m$ 都不同余; 数列 $y_1,y_1+m^\prime,y_1+2m^\prime,$&thinsp;$\ldots,y_1+(d-1)m^\prime$ 中的 $d$ 个数关于 $m^\prime$ 都同余, 关于 $m$ 都不同余. 所以对于 $(\*)$ 式中的每一个解, 都能在原同余式中生成 $d^2$ 个解. 由于 $(\*)$ 式共有 $m^\prime$ 个解, 我们得出原同余式共有 $d^2m^\prime=dm$ 个解. <span class="qed"></span>
 
 如上述各命题的证明过程有误, 或者有表述含糊的地方, 请不吝在评论区指出. 如有更好的证明方法, 欢迎分享.
 
