@@ -628,6 +628,12 @@ figure.highlight .section {
   padding-right: unset;
   white-space: unset;
 }
+.qed::after {
+  content: "□";
+}
+.qed {
+  float: right;
+}
 /* ---------------------------------
  *     Book Cover Preferences
  * --------------------------------- */
