@@ -44,7 +44,7 @@ language: zh
 **定理.** 如果 $a,b$ 和 $c$ 为整数, 且 $c\mid ab$, 则 $c\mid(a,c)(b,c)$.
 **证明.** 设 $p^r\\,\\|\\,c$, $p^s\\,\\|\\,a$ 和 $p^t\\,\\|\\,b$. 由 $p^r\\,\\|\\,c$ 和 $c\mid ab$ 得 $p^r\mid ab$. 由 $p^s\\,\\|\\,a$, $p^t\\,\\|\\,b$ 和引理 1 得 $p^{s+t}\\,\\|\\,ab$. 故 $r\leq s+t$. 由引理 2 得 $p^{\min(r,s)}\\,\\|\\,(a,c)$ 和 $p^{\min(r,t)}\\,\\|\\,(b,c)$. 再由引理 1 得 $p^{\min(r,s)+\min(r,t)}\\,\\|\\,(a,c)(b,c)$. 由引理 3 得 $r\leq\min(r,s)+\min(r,t)$, 故 $p^r\mid(a,c)(b,c)$.
 
-通过上述推理, 如果 $c=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_n^{\alpha_n}$ 是 $c$ 的素幂因子分解, 那么 $p_j^{\alpha_j}\mid(a,c)(b,c),\\;j=1,2,\ldots,n$. 我们想证明 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_i^{\alpha_i}\mid(a,c)(b,c)$ 成立. 利用数学归纳法, 当 $i=1$ 时, 有归纳基础 $p_1^{\alpha_1}\mid(a,c)(b,c)$ 成立. 假设对于 $i=k-1$, 有 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}}\mid(a,c)(b,c)$ 成立. 已知 $p_k^{\alpha_k}\mid(a,c)(b,c)$, 则由 $(p_k^{\alpha_k},p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}})=1$, 可得出 $p_k^{\alpha_k}\cdot p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}}=$ $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}\mid(a,c)(b,c)$, 即 $i=k$ 时命题成立. 从而 $i=n$ 时有 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_n^{\alpha_n}=c\mid(a,c)(b,c)$ 成立. <span class="qed"></span>
+通过上述推理, 如果 $c=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_n^{\alpha_n}$ 是 $c$ 的素幂因子分解, 那么 $p_j^{\alpha_j}\mid(a,c)(b,c),\\;j=1,2,\ldots,n$. 我们想证明 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_i^{\alpha_i}\mid(a,c)(b,c)$ 成立. 利用数学归纳法, 当 $i=1$ 时, 有归纳基础 $p_1^{\alpha_1}\mid(a,c)(b,c)$ 成立. 假设对于 $i=k-1$, 有 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}}\mid(a,c)(b,c)$ 成立. 已知 $p_k^{\alpha_k}\mid(a,c)(b,c)$, 则由 $(p_k^{\alpha_k},p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}})=1$, 可得出 $p_k^{\alpha_k}\cdot p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_{k-1}^{\alpha_{k-1}}=$ $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k}\mid(a,c)(b,c)$, 即 $i=k$ 时命题成立. 从而 $i=n$ 时有 $p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_n^{\alpha_n}=$ $c\mid(a,c)(b,c)$ 成立. <span class="qed"></span>
 
 ---
 
@@ -53,9 +53,9 @@ language: zh
 **定理.** 设 $a,b,c$ 和 $m$ 是整数, $m>0$ 且 $d=(a,b,m)$. 那么二元线性同余方程 $ax+by\equiv c\pmod m$ 在 $d\mid c$ 时恰有 $dm$ 个不同余的解, 其他情形无解.
 **证明.** 若 $ax+by\equiv c\pmod m$, 那么存在整数 $k$, 使得 $ax+by-mk=c$. 因为 $d$ 是 $a,b,m$ 的公因数, 故 $d\mid ax+by-mk$, 进而 $d\mid c$. 所以若 $d\nmid c$, 那么该同余式无解.
 
-现在假设同余式有解, 即 $d\mid c$. 令 $a=da^\prime$, $b=db^\prime$, $c=dc^\prime$, $e=de^\prime$. 那么 $(a^\prime,b^\prime,m^\prime)=1$, 我们可以将同余式除以 $m^\prime$, 得到
+现在假设同余式有解, 即 $d\mid c$. 令 $a=da^\prime$, $b=db^\prime$, $c=dc^\prime$, $e=de^\prime$. 那么 $(a^\prime,b^\prime,m^\prime)=1$, 我们可以将同余式除以 $m^\prime$, 得到 $a^\prime x+b^\prime y\equiv c^\prime$&#8203;$\pmod{m^\prime}$, 或者
 
-$$a^\prime x+b^\prime y\equiv c^\prime\pmod{m^\prime}\qquad\text{或者}\qquad a^\prime x\equiv c^\prime-b^\prime y\pmod{m^\prime}\tag{$*$}$$
+$$a^\prime x\equiv c^\prime-b^\prime y\pmod{m^\prime}.\tag{$*$}$$
 
 该同余式有解, 当且仅当 $g=(a^\prime,m^\prime)\mid c^\prime-b^\prime y$, 这相当于同余式 $b^\prime y\equiv c^\prime\pmod g$ 有解. 这必然成立, 因为 $(b^\prime,g)=(b^\prime,a^\prime,m^\prime)=1$, 表示该同余式恰有一个解, 我们将其记作 $y_0$. 注意到, 数列 $y_0,y_0+g,y_0+2g,$&thinsp;$\ldots,y_0+(m^\prime/g-1)g$ 中的元素关于 $g$ 都同余, 但是关于 $m^\prime$ 都不同余, 也就是说这 $m^\prime/g$ 个数中的的每一个都会在 $(\*)$ 式中得到模 $m^\prime$ 不同余的 $c^\prime-b^\prime y$. 而这每个不同余的 $c^\prime-b^\prime y$ 都可以得出 $(\*)$ 式的 $g$ 个不同余的解. 所以 $(\*)$ 式共有 $(m^\prime/g)g=m^\prime$ 个不同余的解.
 
