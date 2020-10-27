@@ -4,14 +4,6 @@ canonical_url: https://duinomaker.top/maintenance/
 language: zh
 ---
 
-### 链接变动
-
-/posts/number-theory-1/ 改至 <a href="/posts/elementary-number-theory-exercises/">/posts/elementary-number-theory-exercises/</a>
-
----
-
-### 其他变动
-
 `2020-10-18` 更改 KaTeX 公式的 white-space 策略，使公式自行换行
 
 `2020-08-16` 加深部分文字颜色，提高文章内容可读性
