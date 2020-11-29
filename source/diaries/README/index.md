@@ -16,7 +16,7 @@ license: noshare
 
 某些时候，一些特定的内容涉及隐私。这些内容我不想揭露，但必须得写下来，于是就有了加密机制。下方是加密内容的一个例子，我使用了 AES (CBC 模式 + PKCS7 填充)：
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@0a32904/assets/crypto-js.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@d638cb1/assets/crypto-js.min.js" defer></script>
 <script type="text/javascript" src="/js/decrypt.js" defer></script>
 <div class="field has-addons">
 <p class="control has-icons-left">
