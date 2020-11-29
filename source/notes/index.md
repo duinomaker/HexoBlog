@@ -1,6 +1,6 @@
 ---
 title: Notes
-description: The index page of my notes on SICP and Concrete Mathematics
+description: The index page of my notes on SICP, Concrete Mathematics and Introduction to Algorithms
 canonical_url: https://duinomaker.top/notes/
 comment:
 prerender: https://duinomaker.top/CM/
@@ -27,4 +27,13 @@ prerender: https://duinomaker.top/CM/
 <p class="rigid">Introduction to the<br />Theory of Computation</p>
 </figure>
 </div> -->
+</div>
+
+<div class="level" style="margin-top: 1rem;">
+<div class="level-item">
+<figure class="image">
+<a href="/CLRS/" target="_self"><img class="image book-cover not-gallery-item" src="https://cdn.jsdelivr.net/gh/duinomaker/HexoBlog@a8eb462/source/images/books/clrs.jpg" alt="Introduction to Algorithms" /></a>
+<p class="rigid">Introduction to Algorithms</p>
+</figure>
+</div>
 </div>

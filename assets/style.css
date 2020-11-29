@@ -677,6 +677,10 @@ figure.highlight .section {
 }
 .tex-math {
   font-family: "CMU Concrete", KaTeX_Main, "Times New Roman", serif;
+/* Italic correction */
+}
+.tex-math em {
+  padding-right: 0.06em;
 }
 .katex-math {
   font-family: KaTeX_Main, "Times New Roman", serif;

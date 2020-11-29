@@ -80,7 +80,10 @@
         <% if (widget.follow_link) { %>
         <div class="level">
             <a class="level-item button is-link is-rounded" href="<%= url_for(widget.follow_link) %>" target="_blank" rel="noopener">
-                <%= __('widget.follow') %></a>
+                <!-- <%= __('widget.follow') %> -->
+                <i class="fab fa-github has-mr-7"></i>
+                <span>GitHub</span>
+            </a>
         </div>
         <% } %>
         <% const socialLinks = get_config_from_obj(widget, 'social_links'); %>
