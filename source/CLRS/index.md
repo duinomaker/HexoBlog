@@ -12,7 +12,7 @@ content_style: tex-math
 
 ## Preface
 
-Recently I joined a STITP (Science and Technology Training Program) team. Our team wish to delve into the field of machine learning, in particular, into graph neural networks—a research hotspot in recent years.
+Recently I joined a STITP (Science and Technology Innovation Training Program) team. Our team wish to delve into the field of machine learning, in particular, into graph neural networks—a research hotspot in recent years.
 
 In order to lay a solid foundation for further studies, I chose to read related chapters on *Introduction to Algorithms* first. Here are my notes on these chapters.
 

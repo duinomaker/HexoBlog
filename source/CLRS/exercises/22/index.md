@@ -72,17 +72,27 @@ The running time for both algorithms is $O(V^3)$.
 
 ### 22.1-6
 
-Denote the value of the $i$-th row and $j$-th column as $a_{i,j}$. Then a graph contains a universal sink if it has a column filled with $1$’s.
-Start from $a_{1,1}$. If current entry $a_{i,j}$ is $0$, we let $j=j+1$ (move to the next column), otherwise $a_{i,j}$ is $1$, we let $i=i+1$ (move to the next row). Do that repeatedly until one if $i$ and $j$ reaches $|G.V|$. If the final value of $i$ is $|G.V|$, check if vertex $j$ is a universal sink, otherwise $j$ equals $|G.V|$ and the graph has no universal sink.
+Denote the value of the $i$-th row and $j$-th column as $a_{i,j}$. Then if vertex $k$ is a universal sink, the graph must have the $k$-th row filled with $0$ and the $k$-th column filled with $1$ except for the $k$-th row.
+
+We could find the universal as follows: Start from $a_{1,1}$. If the current entry $a_{i,j}$ is $0$, we let $j=j+1$ (move to the next column); otherwise $a_{i,j}$ is $1$, we let $i=i+1$ (move to the next row). Do this repeatedly until $j$ reaches $|V|$. Check if the final $j$ is a universal sink; if not, this means $G$ doesn’t contain a universal sink.
+
 The running time is $O(V)$.
 
 ### 22.1-7
 
-> TODO
+Let $M=BB^{\rm T}$, then $M_{i,j}=\sum_{k=0}^{|E|}B_{i,k}B_{j,k}$. There are two types of values:
+
+1. if $i=j$, then $B_{i,k}B_{j,k}=1$ if edge $k$ leaves or enters vertex $i$;
+2. otherwise $i\neq j$, then $B_{i,k}B_{j,k}=-1$ if and only if edge $k$ connects vertex $i$ and $j$.
+
+So, when summed up,
+
+$$M_{i,j}=\begin{cases}\text{degree of vertex $i$}&\text{if $i=j$,}\\\\-(\text{number of edges connecting $i$ and $j$})&\text{if $i\neq j$.}\end{cases}$$
 
 ### 22.1-8
 
 The expected time is $O(1)$, the same as a hash table lookup. The disadvantage of using hash-tables is they take up more space than list.
+
 We can use binary search trees to store lists of adjacent vertices; they takes up the same amount of spaces as lists, but the time complexity for both inserting a new vertex and for lookups is $O(\log V)$ instead of $O(1)$.
 
 ---
@@ -90,9 +100,10 @@ We can use binary search trees to store lists of adjacent vertices; they takes u
 ## 2 Breadth-first search
 ### 22.2-1
 
-    vertex  |  1    2    3    4    5    6
-    d       |  ∞    3    0    2    1    1
-    π       |  NIL  4    NIL  5    3    3
+| vertex | 1    | 2    | 3    | 4    | 5    | 6    |
+| ------ | ---- | ---- | ---- | ---- | ---- | ---- |
+| d      | ∞    | 3    | 0    | 2    | 1    | 1    |
+| π      | NIL  | 4    | NIL  | 5    | 3    | 3    |
 
 ### 22.2-3
 
