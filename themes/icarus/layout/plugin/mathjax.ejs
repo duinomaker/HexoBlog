@@ -1,0 +1,42 @@
+<script>
+    window.MathJax = {
+        chtml: {
+            matchFontHeight: false,
+            displayAlign: 'left',
+            displayIndent: '2em'
+        },
+        tex: {
+            inlineMath: [
+                ['$', '$']
+            ],
+            displayMath: [
+                ['$$', '$$']
+            ],
+            packages: { '[+]': ['noerrors'] }
+        },
+        svg: {
+            fontCache: 'global',
+            displayAlign: 'left',
+            displayIndent: '2em'
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process',
+            renderActions: {
+                addMenu: []
+            }
+        },
+        loader: {
+            load: ['[tex]/noerrors']
+        }
+    };
+</script>
+<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<!-- <script>
+    var iOS = (/iPad|iPhone|iPod/.test(navigator.platform) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && !window.MSStream;
+    if (iOS) {
+        document.write('<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async><\/script>');
+    } else {
+        document.write('<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async><\/script>');
+    }
+</script> -->

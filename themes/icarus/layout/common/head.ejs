@@ -1,0 +1,107 @@
+<meta charset="utf-8" />
+<% if (get_config('meta_generator', true)) { %>
+<meta name="generator" content="Hexo <%= hexo_version() %>" />
+<% } %>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<%- meta() %>
+<meta name="format-detection" content="telephone=no" />
+<title><%= page_title() %></title>
+
+<% if (has_config('open_graph')) { %>
+    <%- open_graph({
+        twitter_id: get_config('open_graph.twitter_id'),
+        twitter_site: get_config('open_graph.twitter_site'),
+        google_plus: get_config('open_graph.google_plus'),
+        fb_admins: get_config('open_graph.fb_admins'),
+        fb_app_id: get_config('open_graph.fb_app_id'),
+        image: get_og_image(page)
+    }) %>
+<% } %>
+
+<% if (has_config('canonical_url')) { %>
+<link rel="canonical" href="<%- get_config('canonical_url') %>" />
+<% } %>
+
+<% if (has_config('rss')) { %>
+<link rel="alternative" href="<%- get_config('rss') %>" title="<%= get_config('title') %>" type="application/atom+xml">
+<% } %>
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+
+<link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://server.duinomaker.top/blog/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://server.duinomaker.top/blog/images/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://server.duinomaker.top/blog/images/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="144x144" href="https://server.duinomaker.top/blog/images/apple-touch-icon-144x144.png" />
+<link rel="icon" type="image/svg+xml" href="https://server.duinomaker.top/blog/images/favicon.svg" />
+<link rel="alternate icon" type="image/png" href="https://server.duinomaker.top/blog/images/favicon.png" />
+<link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="https://server.duinomaker.top/blog/images/favicon-32x32.ico" />
+<link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="https://server.duinomaker.top/blog/images/favicon-16x16.ico" />
+
+<link rel="preload" href="https://server.duinomaker.top/blog/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="https://server.duinomaker.top/blog/assets/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+<%- _css(cdn('bulma', 'latest', 'css/bulma.min.css')) %>
+<!-- <% if (get_config('has_serif') || get_config('content_style') === 'serif') { %>
+    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %>
+<% } else { %>
+    <%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro')) %>
+<% } %> -->
+<%- _css(fontcdn('Ubuntu:400,italic,500,500italic|Source+Code+Pro|Alegreya:400,italic,500,500italic')) %>
+<%- _css(iconcdn()) %>
+<% if (((x) => x !== undefined && x.katex)(get_config('plugins'))) { %>
+    <%- _css(cdn('katex', 'latest', 'dist/katex.min.css')) %>
+<% } %>
+<% if (get_config('content_style') === 'tex-math') { %>
+<style>
+/* @font-face {
+  font-family: KaTeX_Main;
+  src: url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Italic.woff2") format("woff2"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Italic.woff") format("woff"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: KaTeX_Main;
+  src: url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2") format("woff2"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff") format("woff"), url("https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+} */
+@font-face {
+    font-family: "CMU Concrete";
+    src: local("CMU Concrete Roman"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunorm.woff") format("woff"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunorm.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CMU Concrete";
+    src: local("CMU Concrete Italic"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunoti.woff") format("woff"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunoti.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "CMU Concrete";
+    src: local("CMU Concrete Bold"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunobx.woff") format("woff"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunobx.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "CMU Concrete";
+    src: local("CMU Concrete BoldItalic"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunobi.woff") format("woff"), url("https://server.duinomaker.top/blog/assets/webfonts/cmu/cmunobi.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+</style>
+<% } %>
+<%- _css(cdn('highlight.js', 'latest', 'styles/' + get_config('article.highlight.theme') + '.min.css')) %>
+
+<!-- <%- _css('css/style.css') %> -->
+<%- _css('https://server.duinomaker.top/blog/assets/style.css') %>
+
+<% if (has_config('plugins')) { %>
+    <% for (let plugin in get_config('plugins')) { %>
+    <%- _partial('plugin/' + plugin, { head: true, plugin: get_config('plugins')[plugin] }) %>
+    <% } %>
+<% } %>
+
+<%- ((x) => x ? '<' + 'link rel="prerender" href="' + x + '" />' : '')(get_config('prerender')) %>
