@@ -71,7 +71,7 @@ Maintain a local list of encountered pairs; only count a pair if it hasn’t bee
 
 ## Exercises 3.18–3.19
 
-I came up with this solution during a post-shower daze time, when creativity peaks(x. The idea is to have two sentinels running through the linked list at different speeds, for example, one takes one `cdr` at a time while the other takes two `cdr`’s. If one sentinel reaches the end, the linked list cannot have a loop; otherwise the a sentinel chases the other inside a loop and will eventually “catch” the other. The program is given below.
+I came up with this solution during a post-shower daze time, when creativity peaks(x. The idea is to have two sentinels running through the linked list at different speeds, for example, one takes one `cdr` at a time while the other takes two `cdr`’s. If one sentinel reaches the end, the linked list cannot have a loop; otherwise a sentinel chases the other inside a loop and will eventually “catch” the other. The program is given below.
 
     (define (has-loop? l)
       (define (scdr l)

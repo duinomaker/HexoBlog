@@ -29,7 +29,7 @@ prerender: https://duinomaker.top/SICP/
 </div> -->
 </div>
 
-<div class="level" style="margin-top: 1rem;">
+<div class="level">
 <div class="level-item">
 <figure class="image">
 <a href="/CM/" target="_self"><img class="image book-cover not-gallery-item" src="https://server.duinomaker.top/blog/images/books/cm.jpg" alt="Concrete Mathematics" /></a>
