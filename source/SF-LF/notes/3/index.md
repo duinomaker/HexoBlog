@@ -39,10 +39,10 @@ We could use `Search` command to search for theorems, using wildcards like `(_ +
 
 ## Options
 
-Sometimes, an operation is not valid, such as taking the first element out of an empty list; in such cases, we could create a new datatype “wrapping around” the original type `T`, with two constructors `Some T` and `None`, together with a function for unwrapping.
+Sometimes, an operation is not valid, such as taking the first element out of an empty list; in such cases, we could create a new data-type “wrapping around” the original type `T`, with two constructors `Some T` and `None`, together with a function for unwrapping.
 
 Coq doesn’t have a built-in boolean type, any inductive type defined with exactly two constructors are considered a boolean; the    guard is considered true if it evaluates to the first constructor and false if it evaluates to the second.
 
 ## Partial Maps
 
-Partial maps are constructed similar to lists, with an “empty” constructor and the other constructor taking an id, a value, and the rest of the partial map(also a partial map). Updating a partial map can be achieved by simply adding a record to the front; the new record shadows the original one.
+Partial maps are constructed similar to lists, with an “empty” constructor and the other constructor taking an id, a value, and the rest of the partial map (also a partial map). Updating a partial map can be achieved by simply adding a record to the front; the new record shadows the original one.

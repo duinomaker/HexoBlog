@@ -35,3 +35,4 @@ To advance my proficiency in written English, I'll be taking notes in English si
 <code class="rigid">3.1&nbsp;</code><a href="/SICP/exercises/3-1/" target="_self">Assignment and Local State</a>
 <code class="rigid">3.2&nbsp;</code><a href="/SICP/exercises/3-2/" target="_self">The Environment Model of Evaluation</a>
 <code class="rigid">3.3&nbsp;</code><a href="/SICP/exercises/3-3/" target="_self">Modeling with Mutable Data</a>
+<!-- <code class="rigid">3.4&nbsp;</code><a href="/SICP/exercises/3-4/" target="_self">Concurrency: Time Is of the Essence</a> -->
