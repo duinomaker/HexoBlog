@@ -295,7 +295,7 @@ $$\begin{aligned}\begin{aligned}x^2&\equiv1\\;({\rm mod}\\;n)\\\\x^2-1&\equiv0\\
 
 若 $1\lt a\lt n-1$ 是其解，则称 $a$ 为 $n$ 的 非平凡平方根&hairsp;$($*$\textit{nontrivial square root}$*$)$&hairsp;。若 $n$ 有非平凡平方根，则其不是素数。
 
-这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0$&hairsp;。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/SICP/assets/miller-rabin/">$\text{Miller–Rabin}$素性测试的原理及实现</a>。
+这题用到了另一个技巧，修改了 `expmod` 过程，使其在找到非平凡平方根后返回 $0$&hairsp;。这样一来，一旦过程中出现非平凡平方根，整个 `expmod` 的值将是 $0$，便于之后的判断。为了理解这一点，我整理了<a href="/posts/miller-rabin/">$\text{Miller–Rabin}$素性测试的原理及实现</a>。
 
     (define (square x) (* x x))
 

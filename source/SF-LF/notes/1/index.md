@@ -30,7 +30,7 @@ Use `Notation` to introduce our own notations; we could make several annotations
 
 Although `reflexivity` does more simplifications than `simpl`, we sometimes need `simpl` to read and understand the new goal it creates, so as to not leaving the goal in a messy state.
 
-Use `intros` tactic to introduce a quantifier in the goals to context of current assumptions. If the quantifier is $\forall n:\mathbb{N}$, `intros n` is like saying “Suppose $n$ is some number...”
+Use `intros` tactic to introduce a quantifier in the goals to context of current assumptions. If the quantifier is $\forall n:\mathbb{N}$, `intros` `n` is like saying “Suppose $n$ is some number...”
 
 ## Proof by Rewriting
 
@@ -40,6 +40,6 @@ When writing long proofs, its desirable to use `Admitted` to temporarily accept 
 
 ## Proof by Case Analysis
 
-The `destruct` tactic can be used with any inductively defined data-type; this tactic would separate the original goal into several subgoals, amounting to the number of constructors of the data-type. Using this tactic, we could annotate variable names using _intro pattern_, separating lists of names by `|` and give name to subgoal equations using `eqn:<equation name>`.
+The `destruct` tactic can be used with any inductively defined data-type; this tactic would separate the original goal into several subgoals, amounting to the number of constructors of the data-type. Using this tactic, we could annotate variable names using _intro pattern_, separating lists of names by `|` and give name to subgoal equations using the `eqn:` qualifier.
 
 The *bullets* mark the parts of the proof correspond to subgoals, preventing proofs for different subgoals from getting mixed up.

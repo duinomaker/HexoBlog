@@ -32,3 +32,4 @@ Coq is a proof assistant yet a functional programming language. These two sides 
 <code class="rigid">Chapter III&nbsp;</code><a href="/SF-LF/notes/3/" target="_self">Working with Structured Data</a>
 <code class="rigid">Chapter IV&nbsp;&nbsp;</code><a href="/SF-LF/notes/4/" target="_self">Polymorphism and Higher-Order Functions</a>
 <code class="rigid">Chapter V&nbsp;&nbsp;&nbsp;</code><a href="/SF-LF/notes/5/" target="_self">More Basic Tactics</a>
+<code class="rigid">Chapter VI&nbsp;&nbsp;</code><a href="/SF-LF/notes/6/" target="_self">Logic in Coq</a>

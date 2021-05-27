@@ -18,9 +18,9 @@ In order to create data-types that build on different types but are similar in s
 
 Coq is able to do _type inference_ to deduce types that are not explicitly stated. But don’t rely too much on this mechanism, as explicit type annotations can serve as good documentation for your code.
 
-The syntax of Coq is flexible enough that we can enable type inference with statements like `Arguments cons {X} _ _` and disable it with a `@` prefix.
+The syntax of Coq is flexible enough that we can enable type inference with `Arguments` statements and disable it with a `@` prefix.
 
-When using polymorphic pairs, note that the common symbol for the type of a pair `(x,y)` is `X×Y`, that is “the product type of `X` and `Y`”.
+When using polymorphic pairs, note that the common symbol for the type of a pair `(x,y)` is `X×Y`, that is “the product type of `X` and `Y`.”
 
 ## Functions as Data
 

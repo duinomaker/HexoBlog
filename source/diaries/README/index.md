@@ -18,7 +18,7 @@ language: zh
 <script src="https://server.duinomaker.top/blog/assets/decrypt.js" defer></script>
 <div class="field has-addons">
 <p class="control has-icons-left">
-    <input id="password" class="input" type="password" maxlength="16" placeholder="Type your AES key here" digest="bedb3f44cff2bc61c5dd36efadaded5a2cc3d940a1e84c31fc73a28e5bba6a14">
+    <input id="password" class="input" type="password" maxlength="16" placeholder="Type your AES key here" digest="7cd7927ef22ffc44e9f0c46c47719b233adfa26299aba68fd924d9e7f48482a6">
     <span class="icon is-small is-left">
         <i id="input-bar-icon" class="fas fa-lock"></i>
     </span>
@@ -28,7 +28,7 @@ language: zh
 </p>
 </div>
 
-<span class="encrypted" iv="7TlwgXVG4GTzurXZ">3d b3 17 59 bb 2f 26 b7 67 f0 78 ec ed c8 46 3e f1 87 d2 36 32 6e 7c 18 9a b4 b7 ec 63 55 9f 5d c2 4a bc 04 a5 86 f1 0e d6 cf c3 8b 6a b2 d3 86</span>
+<span class="encrypted" iv="0YNi6FMTtTa0zyMk">a8 db af ba 53 0d a7 d8 72 c5 f8 d6 4f c5 e3 62 b2 94 06 a4 2c 6f 7f 57 c6 a0 cb b2 df 6b d8 65 c9 e5 bc dd de e3 de 1b ba 2a d4 cf c9 75 32 bf</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
