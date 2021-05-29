@@ -4,6 +4,8 @@ canonical_url: https://duinomaker.top/maintenance/
 language: zh
 ---
 
+`2021-05-12` 开设 /SF-LF/ 用于记录 *Logical Foundations* 阅读笔记
+
 `2021-01-18` 在 /about/ 页面中增加七天总结模块
 `2021-01-02` 更改中文博文的标题字体为微软雅黑
 
