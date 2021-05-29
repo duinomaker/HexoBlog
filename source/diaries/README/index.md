@@ -28,7 +28,7 @@ language: zh
 </p>
 </div>
 
-<span class="encrypted" iv="n0fpudqKA6hVrWSd">67 96 ea 9a b5 bc 99 a2 ce a3 63 ff a9 c2 b6 1f 00 e4 90 63 aa 7c 16 33 9b c2 7f 59 91 a1 e0 7a 34 d2 34 98 6c a4 ae dc 84 5b 1c 21 30 88 ec 3e</span>
+<span class="encrypted" iv="4s5X1fOkZl6TSSI1">70 9c fc 4d e5 e0 c6 d9 9f 21 ed 0a cd 55 f6 f8 4c ea 5f 00 9c f6 d9 66 89 da f5 e8 e9 2d 65 fb 37 93 cd 24 3d 4b e8 62 16 e9 2c 6d 41 44 19 5c</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
