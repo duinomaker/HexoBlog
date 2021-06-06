@@ -14,7 +14,9 @@ content_style: serif
 
 ## Proof by Induction
 
-The `destruct` tactic could push the proof one step further, but this won’t work for arbitrary large data-types like natural numbers; instead, we could use _induction_.
+The `destruct` tactic could push the proof one step further, but it won’t work in some cases.
+
+Proof by *induction* is useful when we want to prove that some property holds for all the members of an infinite set, such natural numbers, as well as lists, trees, and other data-types.
 
 In Coq, we use induction beginning with a goal of proving the proposition $P(n)$ for all $n$ and break it down into separate subgoals, each having its own inductive hypothesis.
 
@@ -34,6 +36,6 @@ Sometimes a proof requires trivial facts that are too small to separate as lemma
 
 A proof of a mathematical proposition $P$ is a written or spoken text that convinces someone that $P$ is true.
 
-Coq is like a “reader” of such text (proof), and the proof guides the program to check if $P$ could be derived from certain rules. Such proofs are _formal_ proofs.
+Coq is like a “reader” of such text (proof), and the proof guides the program to check if $P$ could be derived from certain rules. Such proofs are *formal* proofs.
 
 Formal proofs are explicit in some way, such as what tactics are used, but less explicit in other ways, such as the “proof state” at given point in proof.

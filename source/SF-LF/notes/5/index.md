@@ -20,11 +20,11 @@ Sometimes `apply` cannot instantiate all unknown variables, we need to manually 
 
 ## The `injection` and `discriminate` Tactics
 
-The _principle of explosion_ states that a contradictory hypothesis entails anything, even false things.
+The *principle of explosion* states that a contradictory hypothesis entails anything, even false things.
 
-All constructors of a data-type are _injective_. We use `injection` to “undo” one application of the constructor.
+All constructors of a data-type are *injective*. We use `injection` to “undo” one application of the constructor.
 
-Any two constructors of a data-type are _disjoint_, and no two terms beginning with different constructors can be equal. Use `discriminate` on hypotheses involving such inequalities to solve the goal.
+Any two constructors of a data-type are *disjoint*, and no two terms beginning with different constructors can be equal. Use `discriminate` on hypotheses involving such inequalities to solve the goal.
 
 ## Using Tactics on Hypotheses
 

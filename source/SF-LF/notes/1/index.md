@@ -18,7 +18,7 @@ Coq’s set of built-in features is extremely small, we could define new data-ty
 
 Every expression in Coq has a type, describing what sort of thing it computes.
 
-Coq allows us to create data-types by explicitly enumerating a finite set of elements, called _constructors_. Constructor expressions are formed by applying to a constructor zero or more other constructor expressions.
+Coq allows us to create data-types by explicitly enumerating a finite set of elements, called *constructors*. Constructor expressions are formed by applying to a constructor zero or more other constructor expressions.
 
 To test the correctness of a function, we check that it works on some examples. We could (1) use `Compute` to evaluate an expression, (2) use `Example` with the expected result given, then prove by tactics, (3) extract the function to another language like Haskell.
 
@@ -40,6 +40,6 @@ When writing long proofs, its desirable to use `Admitted` to temporarily accept 
 
 ## Proof by Case Analysis
 
-The `destruct` tactic can be used with any inductively defined data-type; this tactic would separate the original goal into several subgoals, amounting to the number of constructors of the data-type. Using this tactic, we could annotate variable names using _intro pattern_, separating lists of names by `|` and give name to subgoal equations using the `eqn:` qualifier.
+The `destruct` tactic can be used with any inductively defined data-type; this tactic would separate the original goal into several subgoals, amounting to the number of constructors of the data-type. Using this tactic, we could annotate variable names using *intro pattern*, separating lists of names by `|` and give name to subgoal equations using the `eqn:` qualifier.
 
 The *bullets* mark the parts of the proof correspond to subgoals, preventing proofs for different subgoals from getting mixed up.
