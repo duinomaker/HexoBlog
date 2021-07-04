@@ -27,10 +27,11 @@ Coq is a proof assistant yet a functional programming language. These two sides 
 
 ## Notes
 
-<code class="rigid">Chapter I&nbsp;&nbsp;&nbsp;</code><a href="/SF-LF/notes/1/" target="_self">Functional Programming in Coq</a>
-<code class="rigid">Chapter II&nbsp;&nbsp;</code><a href="/SF-LF/notes/2/" target="_self">Proof by Induction</a>
-<code class="rigid">Chapter III&nbsp;</code><a href="/SF-LF/notes/3/" target="_self">Working with Structured Data</a>
-<code class="rigid">Chapter IV&nbsp;&nbsp;</code><a href="/SF-LF/notes/4/" target="_self">Polymorphism and Higher-Order Functions</a>
-<code class="rigid">Chapter V&nbsp;&nbsp;&nbsp;</code><a href="/SF-LF/notes/5/" target="_self">More Basic Tactics</a>
-<code class="rigid">Chapter VI&nbsp;&nbsp;</code><a href="/SF-LF/notes/6/" target="_self">Logic in Coq</a>
-<code class="rigid">Chapter VII&nbsp;</code><a href="/SF-LF/notes/7/" target="_self">Inductively Defined Propositions</a>
+<code class="rigid">Chapter 1&nbsp;</code><a href="/SF-LF/notes/1/" target="_self">Functional Programming in Coq</a>
+<code class="rigid">Chapter 2&nbsp;</code><a href="/SF-LF/notes/2/" target="_self">Proof by Induction</a>
+<code class="rigid">Chapter 3&nbsp;</code><a href="/SF-LF/notes/3/" target="_self">Working with Structured Data</a>
+<code class="rigid">Chapter 4&nbsp;</code><a href="/SF-LF/notes/4/" target="_self">Polymorphism and Higher-Order Functions</a>
+<code class="rigid">Chapter 5&nbsp;</code><a href="/SF-LF/notes/5/" target="_self">More Basic Tactics</a>
+<code class="rigid">Chapter 6&nbsp;</code><a href="/SF-LF/notes/6/" target="_self">Logic in Coq</a>
+<code class="rigid">Chapter 7&nbsp;</code><a href="/SF-LF/notes/7/" target="_self">Inductively Defined Propositions</a>
+<code class="rigid">Chapter 8&nbsp;</code><a href="/SF-LF/notes/8/" target="_self">Total and Partial Maps</a>
