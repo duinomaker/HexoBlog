@@ -35,3 +35,4 @@ Coq is a proof assistant yet a functional programming language. These two sides 
 <code class="rigid">Chapter 6&nbsp;</code><a href="/SF-LF/notes/6/" target="_self">Logic in Coq</a>
 <code class="rigid">Chapter 7&nbsp;</code><a href="/SF-LF/notes/7/" target="_self">Inductively Defined Propositions</a>
 <code class="rigid">Chapter 8&nbsp;</code><a href="/SF-LF/notes/8/" target="_self">Total and Partial Maps</a>
+<code class="rigid">Chapter 9&nbsp;</code><a href="/SF-LF/notes/9/" target="_self">The Curry–Howard Correspondence</a>
