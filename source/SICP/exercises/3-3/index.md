@@ -302,7 +302,7 @@ Each `memo-fib` first calculates the first branch, then the second branch. When 
 
 If the procedures are not immediately run, all wires will have $0$ as their `signal-value`, which would fail on the encounter of an inverter, which have different signal values on both ends. Take the half-adder in <a href="#fig-1">figure 1</a> as an example, when `A` changes from $0$ to $1$ while `B` keeps $0$ unchanged, the and-gate before `S` would produce $0$ rather than the expected result $1$, due to a failure of the inverter.
 
-<figure class="image" id="fig-3.1">
+<figure class="image" id="fig-1">
 <img src="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/ch3-Z-G-25.gif" class="image illustration" alt="Fig 1: A half-adder circuit." />
 </figure>
 

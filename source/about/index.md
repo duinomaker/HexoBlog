@@ -5,9 +5,9 @@ comment:
 language: zh
 ---
 
-我是 duinomaker，就读于南京邮电大学计算机学院，大二学生。
+我是 duinomaker，就读于南京邮电大学的计算机学院，信息安全专业，大三学生。
 
-当前，我正在读《Software Foundations》系列以及《Structure and Interpretation of Computer Programs》的第四、五章；阅读的同时我将自己的笔记发布到此博客。
+我对编程语言极有兴趣，当前正在读《Software Foundations》系列以及《Category Theory for Programmers》。我参与的项目涉及设计用于并行计算的中间语言和使用这门中间语言将程序编译成硬件 (如 FPGA、ASIC) 设计。由于项目的需要，我当前也正在学习硬件设计的基础知识。
 
 我使用了 <a href="https://toggl.com/track/">Toggl Track</a> 平台来记录自己的各类学习时长，并辅之以几个脚本，用来将过去一周内的记录显示在本页面，每到整点更新一次。
 
