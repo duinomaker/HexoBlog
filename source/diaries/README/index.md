@@ -12,13 +12,17 @@ language: zh
 
 这是个很矛盾的想法，其实我是写给自己看的——毕竟实际看到这个页面的人很少。但我又想在名义上沾上一些 “公开”，于是就这样做了。另外，如果你看到了这些页面，<strong class="rigid">不要告诉我</strong>，不确定是个十分奇妙的感受。让其处于 被其他人看到了 和 没有被其他人看到 相互交织的一种状态，就像薛定谔的猫一样。
 
-某些时候，一些特定的内容涉及隐私。这些内容我不想揭露，但必须得写下来，于是就有了加密机制。下方是加密内容的一个例子，我使用了 AES (CBC 模式 + PKCS7 填充)：
+某些时候，一些特定的内容涉及隐私。这些内容我不想揭露给对我完全陌生的人，但必须得写下来，于是就有了加密机制。
 
-<script async src="https://server.duinomaker.top/blog/assets/crypto-js.min.js" defer></script>
-<script src="https://server.duinomaker.top/blog/assets/decrypt.js" defer></script>
+密码是带给我信念的，那位嗜书的人物的姓名。例如，如果姓名是 “雾雨魔理沙”（虽然不是），那么密码就是 “KirisameMarisa”，不包含引号，姓、名的首字母大写，且姓名之间不带空格。
+
+下方是加密内容的一个例子，我使用了 AES (CBC 模式 + PKCS7 填充)：
+
+<script async src="/assets/crypto-js.min.js" defer></script>
+<script src="/assets/decrypt.js" defer></script>
 <div class="field has-addons">
 <p class="control has-icons-left">
-    <input id="password" class="input" type="password" maxlength="16" placeholder="Type your AES key here" digest="7cd7927ef22ffc44e9f0c46c47719b233adfa26299aba68fd924d9e7f48482a6">
+    <input id="password" class="input" type="password" maxlength="16" placeholder="Type her name here" digest="7a9b646798cc6ecdc8b22f5b3202fdcdbf9124869a1697ab391fd22d39e826e3">
     <span class="icon is-small is-left">
         <i id="input-bar-icon" class="fas fa-lock"></i>
     </span>
@@ -28,18 +32,22 @@ language: zh
 </p>
 </div>
 
-<span class="encrypted" iv="++0dra3jg7X+Zvuc">47 3a 07 05 90 0a 8d 8a 02 f9 6a 19 f5 09 4a 10 15 ee 8f e0 ad a3 67 10 8c 1b 34 ef 44 c3 be e9 03 1a 09 77 85 bd 1f 58 51 6a c9 c1 a7 81 3a a3</span>
+<span class="encrypted" iv="MKv58n3ksdPFqlVJ">f9 2f 2c 99 61 e8 34 86 81 c0 43 6e be 22 67 96 a4 77 e8 84 ca 71 14 9e 13 5b 16 c3 24 ce 00 cf 56 d1 e1 83 26 4b d7 07 7d 2d 98 46 ba 75 cc e4</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
 密码正确的话，这些绿色的字节就会变为：
 
-“这是一段加密文字。”
+“这是一段加密了的文字。”
 
 ## 目录
 
-<span class="mono">2021-01-30&nbsp;</span><a href="/diaries/2021-01-30/">实践之前</a>
+<!-- <span class="mono">2021-01-30&nbsp;</span><a href="/diaries/2021-01-30/">实践之前</a>
 <span class="mono">2020-12-19&nbsp;</span><a href="/diaries/2020-12-19/">近期小结</a>
 <span class="mono">2020-11-08&nbsp;</span><a href="/diaries/2020-11-08/">Domestic Life is Harmful</a>
 <span class="mono">2020-11-07&nbsp;</span><a href="/diaries/2020-11-07/">The Reason I Regard a Smile as an Emblem of Evil</a>
-<span class="mono">2020-11-03&nbsp;</span><a href="/diaries/2020-11-03/">Initial Commit</a>
+<span class="mono">2020-11-03&nbsp;</span><a href="/diaries/2020-11-03/">Initial Commit</a> -->
+<span class="mono">2022-05-05&nbsp;</span><a href="/diaries/2022-05-05/">欺骗的忏悔</a>
+<span class="mono">2022-04-26&nbsp;</span><a href="/diaries/2022-04-26/">会议记录</a>
+<span class="mono">2022-04-16&nbsp;</span><a href="/diaries/2022-04-16/">重新发明名词</a>
+<span class="mono">2022-04-09&nbsp;</span><a href="/diaries/2022-04-09/">便利贴</a>

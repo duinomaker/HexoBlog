@@ -5,7 +5,7 @@ yarn hexo clean
 
 /usr/local/opt/miniconda3/envs/common/bin/python ./source/_hidden/_diaries/encrypt.py
 
-mv ./source/images ./blog/images
+# mv ./source/images ./blog/images
 
 yarn hexo generate
 npx gulp
@@ -14,12 +14,13 @@ mv ./public/css/style.css ./assets
 rm -rf ./public/css
 rm -rf ./public/js
 rm -rf ./public/redirect
+cp -r ./assets ./public
 yarn hexo deploy
 
-mv ./blog/images ./source/images
+# mv ./blog/images ./source/images
 
 git add -A
 git commit -am "$1"
 git push origin master
 
-./update_assets.sh
+# ./update_assets.sh

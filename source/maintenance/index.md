@@ -4,6 +4,8 @@ canonical_url: https://duinomaker.top/maintenance/
 language: zh
 ---
 
+`2022-05-06` 博客和全部资源迁移至 Github Pages
+
 `2021-05-12` 开设 /SF-LF/ 用于记录 *Logical Foundations* 阅读笔记
 
 `2021-01-18` 在 /about/ 页面中增加七天总结模块

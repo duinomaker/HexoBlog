@@ -20,7 +20,7 @@
                 UNTITLED: '<%= __("insight.untitled") %>',
             },
             // CONTENT_URL: '<%- url_for("/content.json")%>',
-            CONTENT_URL: 'https://server.duinomaker.top/blog/assets/content.json',
+            CONTENT_URL: '/assets/content.json',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
@@ -28,6 +28,6 @@
 <!-- <%- _js('js/insight', true) %> -->
 <!-- <%- _css('css/search') %> -->
 <!-- <%- _css('css/insight') %> -->
-<%- _js('https://server.duinomaker.top/blog/assets/insight.js', true) %>
-<%- _css('https://server.duinomaker.top/blog/assets/search.css') %>
-<%- _css('https://server.duinomaker.top/blog/assets/insight.css') %>
+<%- _js('/assets/insight.js', true) %>
+<%- _css('/assets/search.css') %>
+<%- _css('/assets/insight.css') %>
