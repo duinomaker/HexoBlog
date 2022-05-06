@@ -4,13 +4,12 @@
 
 # Site
 title: duinomaker's blog
-subtitle: All progress occurs outside of the comfort zone.
-description: All progress occurs outside of the comfort zone.
+subtitle: All art constantly aspires towards the condition of music.
+description: All art constantly aspires towards the condition of music.
 keywords:
-  - algorithm
+  - mathematics
   - programming
-  - concrete mathematics
-  - sicp
+  - algorithm
 author: duinomaker
 language: en
 timezone: Asia/Shanghai
@@ -131,6 +130,7 @@ nofollow:
     - 0xfaner.top
     - yuki.systems
     - www.matrix72.top
+    - sast.njupt.edu.cn
     - xjzsq.ren
     - yuhi.xyz
     - mashiro.zone
