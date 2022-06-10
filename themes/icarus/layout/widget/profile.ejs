@@ -16,7 +16,7 @@
                 <div>
                     <% const is_rounded = get_config_from_obj(widget, 'avatar_rounded', false); %>
                     <figure class="image is-128x128 has-mb-6">
-                        <a href="/diaries/">
+                        <a href="/journals/">
                         <img class="<%= is_rounded ? 'is-rounded' : '' %>" src="<%= avatar() %>" alt="<%= get_config_from_obj(widget, 'author') %>">
                         </a>
                     </figure>

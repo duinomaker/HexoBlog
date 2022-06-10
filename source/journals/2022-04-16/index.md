@@ -1,7 +1,7 @@
 ---
 title: '重新发明名词'
 description: Diary - 重新发明名词
-canonical_url: https://duinomaker.top/diaries/2022-04-16/
+canonical_url: https://duinomaker.top/journals/2022-04-16/
 date: 2022-04-16 22:00:00
 show_meta: true
 widgets:

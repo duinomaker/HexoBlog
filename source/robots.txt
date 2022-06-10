@@ -3,7 +3,7 @@ User-agent: *
 Disallow: /archives/
 Disallow: /categories/
 Disallow: /css/
-Disallow: /diaries/
+Disallow: /journals/
 Disallow: /js/
 Disallow: /maintenance/
 Disallow: /page/

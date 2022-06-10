@@ -1,7 +1,7 @@
 ---
 title: 'README'
 description: Diary - README
-canonical_url: https://duinomaker.top/diaries/README/
+canonical_url: https://duinomaker.top/journals/README/
 widgets:
 comment:
 license: noshare
@@ -32,7 +32,7 @@ language: zh
 </p>
 </div>
 
-<span class="encrypted" iv="HXOpnstWJeEqGXI3">e0 da 7d 29 69 83 24 84 d9 3e 33 32 f2 3d 10 f5 2d c6 fd bb c0 9e d7 4a 93 2e b6 49 61 33 62 24 fa 04 56 ec e0 af 13 7e 74 6f 28 09 57 1a c9 a5</span>
+<span class="encrypted" iv="m0YlZsEukkAYMHcv">49 19 ae d8 9e a5 6d fe 73 1c ab 7c f1 a0 ad 33 cc 84 1b 3d 0d d1 6b 29 3f 6d d5 cd e2 5f 5a 46 fa 29 b4 71 c0 d8 56 d7 2b f7 98 75 ec 13 77 8e</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
@@ -42,12 +42,12 @@ language: zh
 
 ## 目录
 
-<!-- <span class="mono">2021-01-30&nbsp;</span><a href="/diaries/2021-01-30/">实践之前</a>
-<span class="mono">2020-12-19&nbsp;</span><a href="/diaries/2020-12-19/">近期小结</a>
-<span class="mono">2020-11-08&nbsp;</span><a href="/diaries/2020-11-08/">Domestic Life is Harmful</a>
-<span class="mono">2020-11-07&nbsp;</span><a href="/diaries/2020-11-07/">The Reason I Regard a Smile as an Emblem of Evil</a>
-<span class="mono">2020-11-03&nbsp;</span><a href="/diaries/2020-11-03/">Initial Commit</a> -->
-<span class="mono">2022-05-05&nbsp;</span><a href="/diaries/2022-05-05/">欺骗的忏悔</a>
-<span class="mono">2022-04-26&nbsp;</span><a href="/diaries/2022-04-26/">会议记录</a>
-<span class="mono">2022-04-16&nbsp;</span><a href="/diaries/2022-04-16/">重新发明名词</a>
-<span class="mono">2022-04-09&nbsp;</span><a href="/diaries/2022-04-09/">便利贴</a>
+<!-- <span class="mono">2021-01-30&nbsp;</span><a href="/journals/2021-01-30/">实践之前</a>
+<span class="mono">2020-12-19&nbsp;</span><a href="/journals/2020-12-19/">近期小结</a>
+<span class="mono">2020-11-08&nbsp;</span><a href="/journals/2020-11-08/">Domestic Life is Harmful</a>
+<span class="mono">2020-11-07&nbsp;</span><a href="/journals/2020-11-07/">The Reason I Regard a Smile as an Emblem of Evil</a>
+<span class="mono">2020-11-03&nbsp;</span><a href="/journals/2020-11-03/">Initial Commit</a> -->
+<span class="mono">2022-05-05&nbsp;</span><a href="/journals/2022-05-05/">欺骗的忏悔</a>
+<span class="mono">2022-04-26&nbsp;</span><a href="/journals/2022-04-26/">会议记录</a>
+<span class="mono">2022-04-16&nbsp;</span><a href="/journals/2022-04-16/">重新发明名词</a>
+<span class="mono">2022-04-09&nbsp;</span><a href="/journals/2022-04-09/">便利贴</a>

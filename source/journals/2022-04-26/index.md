@@ -1,7 +1,7 @@
 ---
 title: '会议记录'
 description: Diary - 会议记录
-canonical_url: https://duinomaker.top/diaries/2022-04-26/
+canonical_url: https://duinomaker.top/journals/2022-04-26/
 date: 2022-04-26 22:00:00
 show_meta: true
 widgets:

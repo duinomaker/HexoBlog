@@ -1,7 +1,7 @@
 ---
 title: '欺骗的忏悔'
 description: Diary - 欺骗的忏悔
-canonical_url: https://duinomaker.top/diaries/2022-05-05/
+canonical_url: https://duinomaker.top/journals/2022-05-05/
 date: 2022-05-05 22:00:00
 show_meta: true
 widgets:
@@ -42,7 +42,7 @@ language: zh
 思索着代数结构的我也是一样，喜欢的自己
 总要偷偷地瞄，在投来的眼神里寻找哪怕一点赞许。
 
-<p class="encrypted" iv="9tGT1ntPdclgkk1O">4c 85 cb cc 99 f5 fb d1 b0 f7 4f 15 ca 05 13 90 9b e2 84 12 49 21 b3 57 a2 3b 80 1a 21 80 0a 77 26 f1 ad 20 88 39 d1 c0 51 a0 6b 30 e1 51 0c de 76 67 3b 06 27 a3 3b e3 56 84 05 9b f7 a6 bd 8e ef a6 cd b6 3d 9d 68 c9 fa 30 18 a3 39 2f 2d 67 a9 39 30 b3 c7 5b dd 12 35 9a 74 7b 45 49 fb c9 12 dc a4 bc e8 d5 ff 6d d6 d7 17 b2 43 ac 19 26 89 5f ed 8b 9e 82 be df d9 a1 dd 4a ea 2d 03 f9 d4 48 8c fa 30 65 20 a3 97 46 22 34 0f d8 34 9e e8 8a 56 b9 81 9a ac 71 0b 8e ab 81 92 73 d3 c9</p>
+<p class="encrypted" iv="pOfpMAtmUsJarBR2">1b ff a4 46 f2 e4 e9 a2 62 2b 6d 7f 46 98 f8 ac 5b 2e b5 44 22 0b e0 6e 3d 81 03 fe d9 59 42 7c e5 32 c3 68 0e f1 56 c1 fa 5b 6a 09 59 f4 b0 76 f0 34 b0 51 16 c6 ac 36 cf e1 cc f6 02 d4 03 f3 41 d7 84 ac d5 84 04 2b 48 51 8f ab be b2 66 5f 36 21 54 62 f4 3e 7c da 76 a8 dc f6 72 68 ea 57 9e de eb 62 e5 a1 6f 53 b4 7a 51 f0 9a d2 9c ee f3 f1 af 83 d1 ee 90 f9 4e 4c d0 3d 16 d6 73 17 10 2b 7b d1 ea c7 ee 70 12 51 fb 0a 9c 5d 79 70 66 9b d6 c9 80 cc 69 fa 78 67 fc 7a 1b 7b 75 e0</p>
 </span>
 
 我害怕，因为无法得到赞许，或者，

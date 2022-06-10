@@ -1,6 +1,6 @@
 ---
 title: 'Hello, intrepid explorer'
-canonical_url: https://duinomaker.top/diaries/
+canonical_url: https://duinomaker.top/journals/
 comment:
 plugins:
 ---
