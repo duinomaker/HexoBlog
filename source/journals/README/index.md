@@ -32,7 +32,7 @@ language: zh
 </p>
 </div>
 
-<span class="encrypted" iv="m0YlZsEukkAYMHcv">49 19 ae d8 9e a5 6d fe 73 1c ab 7c f1 a0 ad 33 cc 84 1b 3d 0d d1 6b 29 3f 6d d5 cd e2 5f 5a 46 fa 29 b4 71 c0 d8 56 d7 2b f7 98 75 ec 13 77 8e</span>
+<span class="encrypted" iv="5ayuWGbPUwxlQTYE">d9 3e 27 d4 0f ac 03 ec 10 9c da da ac 2f 72 10 4d a3 c9 55 87 8b c8 69 e9 e7 66 c7 64 52 d7 f9 8d a1 70 79 f9 36 48 cd 2c 66 7c d3 f9 56 f4 50</span>
 
 密码错误的话，会提示再试一次。好奇的你可能会对密码输入框 “Inspect Element”，接着会发现一段长长的 SHA256 Digest，之后开始怀疑我是否严谨。说明一下吧，我喜欢烹饪，可是加盐时从来不考虑口味（雾
 
@@ -47,6 +47,7 @@ language: zh
 <span class="mono">2020-11-08&nbsp;</span><a href="/journals/2020-11-08/">Domestic Life is Harmful</a>
 <span class="mono">2020-11-07&nbsp;</span><a href="/journals/2020-11-07/">The Reason I Regard a Smile as an Emblem of Evil</a>
 <span class="mono">2020-11-03&nbsp;</span><a href="/journals/2020-11-03/">Initial Commit</a> -->
+<span class="mono">2022-06-08&nbsp;</span><a href="/journals/2022-06-08/">无从感受</a>
 <span class="mono">2022-05-05&nbsp;</span><a href="/journals/2022-05-05/">欺骗的忏悔</a>
 <span class="mono">2022-04-26&nbsp;</span><a href="/journals/2022-04-26/">会议记录</a>
 <span class="mono">2022-04-16&nbsp;</span><a href="/journals/2022-04-16/">重新发明名词</a>
