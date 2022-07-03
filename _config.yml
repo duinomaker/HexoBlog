@@ -127,7 +127,7 @@ sitemap:
 nofollow:
   enable: true
   exclude:
-    - 0xfaner.top
+    - blog.0xfaner.site
     - typ.moe
     - www.matrix72.top
     - sast.njupt.edu.cn

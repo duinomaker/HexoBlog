@@ -29,7 +29,7 @@ language: zh
 此时我完全理解他们，知道了忽视为何物。
 
 即使这样压抑着思考，我仍未能透过
-<span class="encrypted" iv="WP0Ngd/dkKBRDCwq">31 4f 8a 67 dc d8 25 23 23 18 31 48 10 4a ea c5</span>那双眼睛，看到她的的情与思。
+<span class="encrypted" iv="J3EU95MDjeEux9IA">10 e6 75 12 27 24 40 ed 56 6e e0 bd f9 d6 08 8d</span>那双眼睛，看到她的的情与思。
 或许我的情感，对我来说真是虚幻之物，
 只有当它造访时，我才有机会一瞥它的面目，
 悲伤是召唤它出现的咒语。
@@ -38,7 +38,7 @@ language: zh
 我曾不以为意的那些感受，
 回顾时，已经失去了那时的含义。
 
-<span class="encrypted" iv="uV8KM2iZaJYdqj5L">6e b1 29 dc 0a b9 7f 1c e6 fa 7d 42 68 d9 cb 02</span>，你相信<span class="encrypted" iv="CIqCynArtOyVvLYX">a9 b1 ee 1d 46 e6 8f 96 68 95 7b 41 95 f8 3a d1 43 32 cd bb df 25 4d e5 9b eb c6 63 6d ca fd 55</span>，
+<span class="encrypted" iv="CY4LPjk/YfGz+23Q">78 84 c8 f1 b9 65 ba 84 9b c2 04 8e 2e 58 8e b7</span>，你相信<span class="encrypted" iv="Ax+zWYvVL4cqwruF">42 64 f3 10 95 3c 02 3c b0 74 2d c2 74 d3 3c e4 21 b9 93 77 dc 79 91 59 d2 27 82 94 16 b6 66 a8</span>，
 无论以什么方式，无论传达什么——
 让我伤心也好，我由衷这样希望。
 现在的我连一丝忧愁都感受不到，
