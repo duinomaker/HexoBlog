@@ -2,12 +2,9 @@
 <footer class="footer">
     <div class="container">
         <div class="level">
-            <div class="level-start has-text-centered-mobile <%= has_license ? 'has-mb-6-mobile' : 'has-mb-5-mobile' %>">
-                <p class="is-size-7">&copy;&nbsp;2020<span style="padding-left: 0.06em;">–</span>2022&nbsp;<%= author || title %><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><i class="fas fa-file-word"></i>&nbsp;<%= totalcount(site) %>&nbsp;words in total<% if (has_license) { %><% if (get_config('license') === 'by-sa') { %><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a class="has-link-black-ter" rel="license noopener" title="Creative Commons Attribution-ShareAlike 4.0 International License" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><i class="fab fa-creative-commons"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-sa"></i></a><% } else { %><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a class="has-link-black-ter" rel="license noopener" title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><i class="fab fa-creative-commons"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-nc"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-sa"></i></a><% } %><% } %></p>
-            </div>
-            <div class="level-item">
+            <!-- <div class="level-item">
                 <a href="http://www.beian.miit.gov.cn/" class="is-size-7 has-link-grey has-underline-grey">苏ICP备20014891号-1</a>
-            </div>
+            </div> -->
             <% if (has_license) { %>
             <div class="level-end has-text-centered-mobile has-mb-5-mobile">
                 <% if (get_config('license') === 'by-sa') { %>
@@ -17,6 +14,9 @@
                 <% } %>
             </div>
             <% } %>
+            <div class="level-start has-text-centered-mobile <%= has_license ? 'has-mb-6-mobile' : 'has-mb-5-mobile' %>">
+                <p class="is-size-7">&copy;&nbsp;2020<span style="padding-left: 0.06em;">–</span>2022&nbsp;<%= author || title %><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><i class="fas fa-file-word"></i>&nbsp;<%= totalcount(site) %>&nbsp;words in total<% if (has_license) { %><% if (get_config('license') === 'by-sa') { %><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a class="has-link-black-ter" rel="license noopener" title="Creative Commons Attribution-ShareAlike 4.0 International License" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><i class="fab fa-creative-commons"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-sa"></i></a><% } else { %><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a class="has-link-black-ter" rel="license noopener" title="Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><i class="fab fa-creative-commons"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-by"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-nc"></i>&nbsp;&nbsp;<i class="fab fa-creative-commons-sa"></i></a><% } %><% } %></p>
+            </div>
         </div>
     </div>
 </footer>
