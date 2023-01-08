@@ -3,7 +3,7 @@ if [ -d ".deploy_git" ]; then
 fi
 yarn hexo clean
 
-/usr/local/opt/miniconda3/envs/common/bin/python ./source/_hidden/_journals/encrypt.py
+/opt/miniconda3/envs/common/bin/python ./source/_hidden/_journals/encrypt.py
 
 # mv ./source/images ./blog/images
 
